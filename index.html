@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票基本面分析报告</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1E40AF;
+            --secondary: #3B82F6;
+            --cta: #F59E0B;
+            --background: #F8FAFC;
+            --text: #1E3A8A;
+            --surface: #FFFFFF;
+            --border: #E2E8F0;
+            --muted: #64748B;
+            --success: #16A34A;
+            --danger: #DC2626;
+        }
+
+        .dark {
+            --primary: #60A5FA;
+            --secondary: #93C5FD;
+            --cta: #FBBF24;
+            --background: #0F172A;
+            --text: #F1F5F9;
+            --surface: #1E293B;
+            --border: #334155;
+            --muted: #94A3B8;
+            --success: #4ADE80;
+            --danger: #F87171;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.5;
+            min-height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .dark .header-icon {
+            background: var(--secondary);
+            color: #0F172A;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .header .subtitle {
+            font-size: 0.875rem;
+            color: var(--muted);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-meta {
+            text-align: right;
+            font-size: 0.75rem;
+            color: var(--muted);
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--text);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background: var(--border);
+        }
+
+        /* KPI Grid */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .kpi-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            transition: all 0.2s;
+        }
+
+        .kpi-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .kpi-label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+
+        .kpi-value {
+            font-family: 'Fira Code', monospace;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .kpi-sub {
+            font-size: 0.75rem;
+            color: var(--muted);
+            margin-top: 4px;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding: 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 12px 10px 40px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.875rem;
+            background: var(--background);
+            color: var(--text);
+            transition: border-color 0.2s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .search-box svg {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--muted);
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 8px;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--background);
+            color: var(--text);
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .filter-btn:hover {
+            border-color: var(--primary);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .dark .filter-btn.active {
+            background: var(--secondary);
+            color: #0F172A;
+        }
+
+        .sort-select {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--background);
+            color: var(--text);
+            font-size: 0.875rem;
+            cursor: pointer;
+        }
+
+        .export-btn {
+            padding: 8px 16px;
+            background: var(--cta);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: opacity 0.2s;
+        }
+
+        .export-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Results Info */
+        .results-info {
+            font-size: 0.875rem;
+            color: var(--muted);
+            margin-bottom: 12px;
+        }
+
+        /* Table */
+        .table-container {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            padding: 12px 16px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background: var(--background);
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.2s;
+        }
+
+        th:hover {
+            background: var(--border);
+        }
+
+        th .sort-icon {
+            margin-left: 4px;
+            opacity: 0.5;
+        }
+
+        th.sorted .sort-icon {
+            opacity: 1;
+        }
+
+        td {
+            padding: 16px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr.data-row {
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+
+        tr.data-row:hover {
+            background: var(--background);
+        }
+
+        tr.hidden {
+            display: none;
+        }
+
+        /* Stock Cell */
+        .stock-cell {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .stock-name {
+            font-weight: 600;
+        }
+
+        .stock-code {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.75rem;
+            color: var(--muted);
+        }
+
+        .stock-industry {
+            font-size: 0.75rem;
+            color: var(--muted);
+        }
+
+        /* Score Badge */
+        .score-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: 1px solid;
+        }
+
+        .score-excellent { background: #DCFCE7; color: #166534; border-color: #86EFAC; }
+        .score-good { background: #DBEAFE; color: #1E40AF; border-color: #93C5FD; }
+        .score-neutral { background: #F1F5F9; color: #475569; border-color: #CBD5E1; }
+        .score-weak { background: #FEF3C7; color: #92400E; border-color: #FCD34D; }
+        .score-poor { background: #FEE2E2; color: #991B1B; border-color: #FCA5A5; }
+
+        .dark .score-excellent { background: #166534; color: #DCFCE7; }
+        .dark .score-good { background: #1E40AF; color: #DBEAFE; }
+        .dark .score-neutral { background: #475569; color: #F1F5F9; }
+        .dark .score-weak { background: #92400E; color: #FEF3C7; }
+        .dark .score-poor { background: #991B1B; color: #FEE2E2; }
+
+        .score-label {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* Dimension Scores */
+        .dim-scores {
+            display: flex;
+            gap: 8px;
+        }
+
+        .dim-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8px 12px;
+            background: var(--background);
+            border-radius: 6px;
+            min-width: 60px;
+        }
+
+        .dim-label {
+            font-size: 0.625rem;
+            color: var(--muted);
+            text-transform: uppercase;
+        }
+
+        .dim-value {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        /* Analysis */
+        .analysis-cell {
+            max-width: 400px;
+        }
+
+        .analysis-item {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed var(--border);
+        }
+
+        .analysis-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .analysis-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .analysis-tag {
+            font-size: 0.625rem;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .tag-bearish { background: #FEE2E2; color: #991B1B; }
+        .tag-bullish { background: #DCFCE7; color: #166534; }
+        .tag-neutral { background: #F1F5F9; color: #475569; }
+
+        .dark .tag-bearish { background: #991B1B; color: #FEE2E2; }
+        .dark .tag-bullish { background: #166534; color: #DCFCE7; }
+        .dark .tag-neutral { background: #475569; color: #F1F5F9; }
+
+        .analysis-status {
+            font-size: 0.8125rem;
+            font-weight: 500;
+        }
+
+        .analysis-detail {
+            font-size: 0.75rem;
+            color: var(--muted);
+            line-height: 1.6;
+            margin-top: 4px;
+        }
+
+        .analysis-detail .item {
+            margin-top: 4px;
+            padding-left: 12px;
+            border-left: 2px solid var(--border);
+        }
+
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            margin-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 0.75rem;
+            color: var(--muted);
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 48px;
+            color: var(--muted);
+        }
+
+        .empty-state svg {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 16px; }
+            .kpi-grid { grid-template-columns: 1fr; }
+            .header { flex-direction: column; align-items: flex-start; gap: 12px; }
+            .header-right { width: 100%; justify-content: space-between; }
+            .controls { flex-direction: column; }
+            .search-box { min-width: 100%; }
+            .table-container { overflow-x: auto; }
+            table { min-width: 800px; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { transition: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <div class="header-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1>股票基本面分析报告</h1>
+                    <p class="subtitle">综合公告 · 行业新闻 · 估值分析</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-meta">
+                    <div>分析日期: 2026年02月05日</div>
+                    <div>生成时间: 19:58:53</div>
+                </div>
+                <button class="theme-toggle" onclick="toggleTheme()" title="切换暗色模式">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-label">分析标的</div>
+                <div class="kpi-value" id="kpi-total">2</div>
+                <div class="kpi-sub">股票总数</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">平均评分</div>
+                <div class="kpi-value" id="kpi-avg">4.2</div>
+                <div class="kpi-sub" id="kpi-avg-sub">低于中性</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">优质标的</div>
+                <div class="kpi-value" style="color: var(--success)" id="kpi-good">0</div>
+                <div class="kpi-sub">评分 ≥ 7.0</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">需关注</div>
+                <div class="kpi-value" style="color: var(--danger)" id="kpi-warn">2</div>
+                <div class="kpi-sub">评分 &lt; 5.0</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="text" id="searchInput" placeholder="搜索股票名称或代码..." oninput="filterTable()">
+            </div>
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all" onclick="setFilter('all')">全部</button>
+                <button class="filter-btn" data-filter="good" onclick="setFilter('good')">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    优质
+                </button>
+                <button class="filter-btn" data-filter="warn" onclick="setFilter('warn')">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    关注
+                </button>
+            </div>
+            <select class="sort-select" id="sortSelect" onchange="sortTable()">
+                <option value="score-desc">评分: 高→低</option>
+                <option value="score-asc">评分: 低→高</option>
+                <option value="name-asc">名称: A→Z</option>
+                <option value="code-asc">代码: 小→大</option>
+            </select>
+            <button class="export-btn" onclick="exportCSV()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                导出 CSV
+            </button>
+        </div>
+
+        <div class="results-info" id="resultsInfo">显示 2 条结果</div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 180px" onclick="sortBy('name')">股票信息 <span class="sort-icon">↕</span></th>
+                        <th style="width: 100px" onclick="sortBy('score')" class="sorted">综合评分 <span class="sort-icon">↓</span></th>
+                        <th style="width: 200px">三维评分</th>
+                        <th>分析详情</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr class="data-row" data-code="300733" data-name="西菱动力" data-score="4.5">
+            <td>
+                <div class="stock-cell">
+                    <span class="stock-name">西菱动力</span>
+                    <span class="stock-code">300733</span>
+                    <span class="stock-industry">汽车/汽车零部件</span>
+                </div>
+            </td>
+            <td>
+                <div class="score-badge score-weak">
+                    <span>4.5</span>
+                    <span class="score-label">偏弱</span>
+                </div>
+            </td>
+            <td>
+                <div class="dim-scores">
+                    <div class="dim-item"><span class="dim-label">公告</span><span class="dim-value">3.7</span></div>
+                    <div class="dim-item"><span class="dim-label">行业</span><span class="dim-value">6.0</span></div>
+                    <div class="dim-item"><span class="dim-label">估值</span><span class="dim-value">3.0</span></div>
+                </div>
+            </td>
+            <td class="analysis-cell"><div class="analysis-item">
+            <div class="analysis-header">
+                <span class="analysis-tag tag-neutral">公告</span>
+                <span class="analysis-status">中性:</span>
+            </div>
+            <div class='analysis-detail'><div class="item">利空1条</div><div class="item">• 西菱动力：关于成都鑫三合机电新技术开发有限公司业绩承诺补偿的...</div><div class="item">[AI] 业绩承诺补偿说明被收购标的未达预期业绩，反映收购资产质量不佳</div></div>
+        </div><div class="analysis-item">
+            <div class="analysis-header">
+                <span class="analysis-tag tag-neutral">行业</span>
+                <span class="analysis-status">中性: 行业中性（无新闻数据）</span>
+            </div>
+            
+        </div><div class="analysis-item">
+            <div class="analysis-header">
+                <span class="analysis-tag tag-neutral">估值</span>
+                <span class="analysis-status">偏高估值: 估值偏高估值（20.31/100）</span>
+            </div>
+            
+        </div></td>
+        </tr>
+<tr class="data-row" data-code="301108" data-name="洁雅股份" data-score="4.0">
+            <td>
+                <div class="stock-cell">
+                    <span class="stock-name">洁雅股份</span>
+                    <span class="stock-code">301108</span>
+                    <span class="stock-industry">美容护理/个护用品</span>
+                </div>
+            </td>
+            <td>
+                <div class="score-badge score-weak">
+                    <span>4.0</span>
+                    <span class="score-label">偏弱</span>
+                </div>
+            </td>
+            <td>
+                <div class="dim-scores">
+                    <div class="dim-item"><span class="dim-label">公告</span><span class="dim-value">2.5</span></div>
+                    <div class="dim-item"><span class="dim-label">行业</span><span class="dim-value">6.0</span></div>
+                    <div class="dim-item"><span class="dim-label">估值</span><span class="dim-value">3.9</span></div>
+                </div>
+            </td>
+            <td class="analysis-cell"><div class="analysis-item">
+            <div class="analysis-header">
+                <span class="analysis-tag tag-bearish">公告</span>
+                <span class="analysis-status">偏利空:</span>
+            </div>
+            <div class='analysis-detail'><div class="item">利空1条</div><div class="item">• 洁雅股份：关于2025年度拟计提资产减值准备的公告</div><div class="item">[AI] 计提资产减值准备将直接减少当期利润，属于利空消息</div></div>
+        </div><div class="analysis-item">
+            <div class="analysis-header">
+                <span class="analysis-tag tag-neutral">行业</span>
+                <span class="analysis-status">中性: 行业中性（无新闻数据）</span>
+            </div>
+            
+        </div><div class="analysis-item">
+            <div class="analysis-header">
+                <span class="analysis-tag tag-neutral">估值</span>
+                <span class="analysis-status">偏高估值: 估值偏高估值（29.21/100）</span>
+            </div>
+            
+        </div></td>
+        </tr>
+                </tbody>
+            </table>
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <p>没有找到匹配的股票</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div>Stock Expert Pro · Powered by Claude Code</div>
+            <div>公告(35%) + 行业新闻(35%) + 估值(30%)</div>
+        </footer>
+    </div>
+
+    <script>
+        // Stock data for filtering/sorting
+        const stocksData = [{"code": "300733", "name": "西菱动力", "industry": "汽车/汽车零部件", "score": 4.5, "ann": 3.7, "news": 6.0, "val": 3.0}, {"code": "301108", "name": "洁雅股份", "industry": "美容护理/个护用品", "score": 4.0, "ann": 2.5, "news": 6.0, "val": 3.9}];
+
+        let currentFilter = 'all';
+        let currentSort = 'score-desc';
+
+        function toggleTheme() {
+            document.body.classList.toggle('dark');
+            localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+        }
+
+        // Load saved theme
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+        }
+
+        function setFilter(filter) {
+            currentFilter = filter;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.filter === filter);
+            });
+            filterTable();
+        }
+
+        function filterTable() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const rows = document.querySelectorAll('.data-row');
+            let visibleCount = 0;
+
+            rows.forEach(row => {
+                const name = row.dataset.name.toLowerCase();
+                const code = row.dataset.code.toLowerCase();
+                const score = parseFloat(row.dataset.score);
+
+                let matchSearch = name.includes(searchTerm) || code.includes(searchTerm);
+                let matchFilter = true;
+
+                if (currentFilter === 'good') {
+                    matchFilter = score >= 7.0;
+                } else if (currentFilter === 'warn') {
+                    matchFilter = score < 5.0;
+                }
+
+                if (matchSearch && matchFilter) {
+                    row.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    row.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('resultsInfo').textContent = `显示 ${visibleCount} 条结果`;
+            document.getElementById('emptyState').style.display = visibleCount === 0 ? 'block' : 'none';
+            updateKPIs();
+        }
+
+        function sortTable() {
+            currentSort = document.getElementById('sortSelect').value;
+            sortBy(currentSort.split('-')[0], currentSort.split('-')[1] === 'asc');
+        }
+
+        function sortBy(field, asc = false) {
+            const tbody = document.getElementById('tableBody');
+            const rows = Array.from(tbody.querySelectorAll('.data-row'));
+
+            rows.sort((a, b) => {
+                let valA, valB;
+                if (field === 'score') {
+                    valA = parseFloat(a.dataset.score);
+                    valB = parseFloat(b.dataset.score);
+                } else if (field === 'name') {
+                    valA = a.dataset.name;
+                    valB = b.dataset.name;
+                } else if (field === 'code') {
+                    valA = a.dataset.code;
+                    valB = b.dataset.code;
+                }
+
+                if (typeof valA === 'string') {
+                    return asc ? valA.localeCompare(valB) : valB.localeCompare(valA);
+                }
+                return asc ? valA - valB : valB - valA;
+            });
+
+            rows.forEach(row => tbody.appendChild(row));
+        }
+
+        function updateKPIs() {
+            const visibleRows = document.querySelectorAll('.data-row:not(.hidden)');
+            const scores = Array.from(visibleRows).map(r => parseFloat(r.dataset.score));
+
+            document.getElementById('kpi-total').textContent = scores.length;
+
+            if (scores.length > 0) {
+                const avg = (scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(1);
+                document.getElementById('kpi-avg').textContent = avg;
+                document.getElementById('kpi-avg-sub').textContent = avg >= 6 ? '高于中性' : avg < 5 ? '低于中性' : '中性水平';
+            } else {
+                document.getElementById('kpi-avg').textContent = '-';
+                document.getElementById('kpi-avg-sub').textContent = '';
+            }
+
+            document.getElementById('kpi-good').textContent = scores.filter(s => s >= 7).length;
+            document.getElementById('kpi-warn').textContent = scores.filter(s => s < 5).length;
+        }
+
+        function exportCSV() {
+            const visibleRows = document.querySelectorAll('.data-row:not(.hidden)');
+            const headers = ['股票名称', '证券代码', '综合评分', '公告评分', '行业评分', '估值评分', '行业'];
+
+            let csv = headers.join(',') + '\n';
+
+            visibleRows.forEach(row => {
+                const stock = stocksData.find(s => s.code === row.dataset.code);
+                if (stock) {
+                    csv += `"${stock.name}",${stock.code},${stock.score},${stock.ann},${stock.news},${stock.val},"${stock.industry}"\n`;
+                }
+            });
+
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `stock-report-${new Date().toISOString().split('T')[0]}.csv`;
+            link.click();
+        }
+    </script>
+</body>
+</html>
