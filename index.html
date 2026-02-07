@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
     <style>
         /* ========== Claude.ai Design System ========== */
@@ -472,48 +471,87 @@
         .market-sub-page { display: none; }
         .market-sub-page.active { display: block; }
 
-        /* Report article rendering */
-        .report-article { max-width: 100%; }
-        .report-article h2 {
-            font-family: var(--font-serif); font-size: 1.15rem; font-weight: 600;
-            color: var(--color-text); margin: 32px 0 16px; padding-bottom: 10px;
-            border-bottom: 2px solid var(--color-border);
+        /* ========== Collapsible Report Sections ========== */
+        .report-section {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); margin-bottom: 12px; overflow: hidden;
+            transition: box-shadow 0.2s ease;
         }
-        .report-article h2:first-child { margin-top: 0; }
-        .report-article h3 {
+        .report-section:hover { box-shadow: var(--shadow-sm); }
+        .report-section-header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 16px 20px; cursor: pointer; user-select: none;
+            transition: background 0.15s ease;
+        }
+        .report-section-header:hover { background: var(--color-bg); }
+        .report-section-heading {
             font-family: var(--font-serif); font-size: 1rem; font-weight: 600;
-            color: var(--color-text); margin: 24px 0 12px;
+            color: var(--color-text); margin: 0;
         }
-        .report-article p {
-            font-size: 0.9rem; line-height: 1.9; color: var(--color-text);
-            margin: 0 0 14px; text-align: justify;
+        .report-section-toggle {
+            width: 24px; height: 24px; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--color-text-tertiary); transition: transform 0.25s ease;
+            font-size: 0.8rem;
         }
-        .report-article strong { color: var(--color-accent); font-weight: 600; }
-        .report-article blockquote {
-            margin: 12px 0 16px 0; padding: 12px 20px;
-            background: var(--color-neutral-bg); border-left: 3px solid var(--color-accent);
-            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        .report-section.collapsed .report-section-toggle { transform: rotate(-90deg); }
+        .report-section-body {
+            padding: 0 20px 20px;
+            max-height: 5000px; overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease, opacity 0.25s ease;
+            opacity: 1;
         }
-        .report-article blockquote p { margin-bottom: 8px; font-size: 0.875rem; }
-        .report-article blockquote p:last-child { margin-bottom: 0; }
-        .report-article table {
-            width: 100%; border-collapse: collapse; margin: 16px 0 20px;
-            font-size: 0.85rem;
+        .report-section.collapsed .report-section-body {
+            max-height: 0; padding-top: 0; padding-bottom: 0; opacity: 0;
         }
-        .report-article th {
-            background: var(--color-neutral-bg); font-weight: 600; padding: 10px 14px;
+
+        /* Report content rendering (inside sections) */
+        .report-content h3 {
+            font-family: var(--font-serif); font-size: 0.925rem; font-weight: 600;
+            color: var(--color-accent); margin: 20px 0 10px; padding-bottom: 6px;
+            border-bottom: 1px solid var(--color-border-subtle);
+        }
+        .report-content h3:first-child { margin-top: 0; }
+        .report-content p {
+            font-size: 0.875rem; line-height: 1.85; color: var(--color-text);
+            margin: 0 0 12px; text-align: justify;
+        }
+        .report-content strong { color: var(--color-accent); font-weight: 600; }
+        .report-content ul {
+            margin: 8px 0 14px; padding-left: 20px; list-style: none;
+        }
+        .report-content li {
+            font-size: 0.875rem; line-height: 1.85; margin-bottom: 8px;
+            position: relative; padding-left: 14px;
+        }
+        .report-content li::before {
+            content: ''; position: absolute; left: 0; top: 10px;
+            width: 5px; height: 5px; border-radius: 50%;
+            background: var(--color-accent); opacity: 0.6;
+        }
+
+        /* Report tables */
+        .report-table-wrap {
+            overflow-x: auto; margin: 14px 0 16px;
+            border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-sm);
+        }
+        .report-data-table {
+            width: 100%; border-collapse: collapse; font-size: 0.8125rem;
+        }
+        .report-data-table thead th {
+            background: var(--color-bg); font-weight: 600; padding: 10px 14px;
             text-align: left; border-bottom: 2px solid var(--color-border);
+            font-size: 0.75rem; color: var(--color-text-secondary);
+            letter-spacing: 0.02em; white-space: nowrap;
         }
-        .report-article td {
-            padding: 9px 14px; border-bottom: 1px solid var(--color-border-subtle);
+        .report-data-table tbody td {
+            padding: 10px 14px; border-bottom: 1px solid var(--color-border-subtle);
+            font-family: var(--font-mono); font-size: 0.8125rem;
         }
-        .report-article tr:hover td { background: var(--color-accent-light); }
-        .report-article ul, .report-article ol {
-            margin: 10px 0 16px; padding-left: 24px;
-        }
-        .report-article li {
-            font-size: 0.9rem; line-height: 1.8; margin-bottom: 6px;
-        }
+        .report-data-table tbody td:first-child { font-family: var(--font-sans); font-weight: 500; }
+        .report-data-table tbody tr:last-child td { border-bottom: none; }
+        .report-data-table tbody tr:hover td { background: var(--color-accent-light); }
 
         /* Chart dashboard */
         .chart-dashboard { margin-bottom: 32px; }
@@ -1001,8 +1039,8 @@
     function renderMarket(data) {
         const m = data.market || {};
         const reports = data.ifind_reports || {};
-        const hasReview = reports.market_review && reports.market_review.full_markdown;
-        const hasIndustry = reports.industry_analysis && reports.industry_analysis.full_markdown;
+        const hasReview = reports.market_review && reports.market_review.sections;
+        const hasIndustry = reports.industry_analysis && reports.industry_analysis.sections;
         const hasData = m.sector_performance || m.market_breadth || m.rotation;
 
         $('market-subtitle').textContent = data.date + ' 全市场复盘 · 异动板块解读 · 数据概览';
@@ -1010,8 +1048,7 @@
         // --- Sub-tab: 全市场复盘 ---
         if (hasReview) {
             const mc = (reports.market_review.charts || {});
-            const md = reports.market_review.full_markdown;
-            const htmlContent = typeof marked !== 'undefined' ? marked.parse(md) : md.replace(/\n/g, '<br>');
+            const sections = reports.market_review.sections || [];
             let reviewHtml = '';
 
             // KPI row
@@ -1040,11 +1077,15 @@
             if (mc.limit_up_stocks) reviewHtml += '<div class="chart-card"><div class="chart-card-title">涨停个股概览</div><div id="chart-limit-table" class="chart-container" style="max-height:250px;overflow-y:auto"></div></div>';
             reviewHtml += '</div>';
 
-            reviewHtml += '<div class="report-article" style="margin-top:24px">' + htmlContent +
-                '<div class="report-disclaimer">本分析报告由 iFinD Agent 平台生成，仅供信息参考，不构成任何投资建议。</div></div>';
+            // Collapsible report sections
+            reviewHtml += '<div style="margin-top:24px">';
+            reviewHtml += renderCollapsibleSections(sections);
+            reviewHtml += '<div class="report-disclaimer">本分析报告由 iFinD Agent 平台生成，仅供信息参考，不构成任何投资建议。</div>';
+            reviewHtml += '</div>';
             $('sub-review').innerHTML = reviewHtml;
 
-            // Render ECharts after DOM is ready
+            // Bind collapse toggles + render charts
+            bindCollapseToggles();
             setTimeout(() => renderMarketCharts(mc), 50);
         } else {
             $('sub-review').innerHTML = '<div class="empty-state">该日期无全市场复盘报告</div>';
@@ -1053,16 +1094,18 @@
         // --- Sub-tab: 异动板块解读 ---
         if (hasIndustry) {
             const ic = (reports.industry_analysis.charts || {});
-            const md = reports.industry_analysis.full_markdown;
-            const htmlContent = typeof marked !== 'undefined' ? marked.parse(md) : md.replace(/\n/g, '<br>');
+            const sections = reports.industry_analysis.sections || [];
             let indHtml = '';
             if (ic.industry_indices && ic.industry_indices.length) {
                 indHtml += '<div class="chart-row chart-row-1"><div class="chart-card"><div class="chart-card-title">异动行业指数涨幅</div><div id="chart-industry" class="chart-container" style="height:260px"></div></div></div>';
             }
-            indHtml += '<div class="report-article" style="margin-top:24px">' + htmlContent +
-                '<div class="report-disclaimer">本分析报告由 iFinD Agent 平台生成，仅供信息参考，不构成任何投资建议。</div></div>';
+            indHtml += '<div style="margin-top:24px">';
+            indHtml += renderCollapsibleSections(sections);
+            indHtml += '<div class="report-disclaimer">本分析报告由 iFinD Agent 平台生成，仅供信息参考，不构成任何投资建议。</div>';
+            indHtml += '</div>';
             $('sub-industry').innerHTML = indHtml;
 
+            bindCollapseToggles();
             if (ic.industry_indices) setTimeout(() => renderIndustryChart(ic.industry_indices), 50);
         } else {
             $('sub-industry').innerHTML = '<div class="empty-state">该日期无异动板块解读报告</div>';
@@ -1232,6 +1275,32 @@
         document.querySelectorAll('.market-sub-page').forEach(p => p.classList.toggle('active', p.id === 'sub-' + name));
         // Resize charts when switching tabs (ECharts needs this)
         setTimeout(() => { window.dispatchEvent(new Event('resize')); }, 100);
+    }
+
+    // ========== Collapsible Report Sections ==========
+    function renderCollapsibleSections(sections) {
+        if (!sections || !sections.length) return '';
+        return sections.map((s, i) => {
+            const cls = s.collapsed ? ' collapsed' : '';
+            return `<div class="report-section${cls}" data-section-idx="${i}">
+                <div class="report-section-header" onclick="this.parentElement.classList.toggle('collapsed')">
+                    <h2 class="report-section-heading">${s.heading || '报告内容'}</h2>
+                    <span class="report-section-toggle">▼</span>
+                </div>
+                <div class="report-section-body">
+                    <div class="report-content">${s.html}</div>
+                </div>
+            </div>`;
+        }).join('');
+    }
+
+    function bindCollapseToggles() {
+        // Already handled via inline onclick, but ensure resize on expand
+        document.querySelectorAll('.report-section-header').forEach(header => {
+            header.addEventListener('click', () => {
+                setTimeout(() => window.dispatchEvent(new Event('resize')), 100);
+            });
+        });
     }
 
     // ========== ECharts: Market Charts ==========
