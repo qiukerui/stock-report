@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
     <style>
         /* ========== Claude.ai Design System ========== */
         :root {
@@ -514,6 +515,34 @@
             font-size: 0.9rem; line-height: 1.8; margin-bottom: 6px;
         }
 
+        /* Chart dashboard */
+        .chart-dashboard { margin-bottom: 32px; }
+        .chart-row { display: grid; gap: 16px; margin-bottom: 16px; }
+        .chart-row-2 { grid-template-columns: 1fr 1fr; }
+        .chart-row-3 { grid-template-columns: 1fr 1fr 1fr; }
+        .chart-row-1 { grid-template-columns: 1fr; }
+        .chart-card {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); padding: 16px;
+        }
+        .chart-card-title {
+            font-family: var(--font-serif); font-size: 0.8rem; font-weight: 600;
+            color: var(--color-text-tertiary); letter-spacing: 0.03em; margin-bottom: 8px;
+        }
+        .chart-container { width: 100%; }
+        .kpi-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 16px; }
+        .kpi-card {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); padding: 14px 16px; text-align: center;
+        }
+        .kpi-label { font-size: 0.7rem; color: var(--color-text-tertiary); margin-bottom: 4px; }
+        .kpi-value { font-family: var(--font-mono); font-size: 1.35rem; font-weight: 600; }
+        .kpi-sub { font-size: 0.7rem; color: var(--color-text-tertiary); margin-top: 2px; }
+        @media (max-width: 768px) {
+            .chart-row-2, .chart-row-3 { grid-template-columns: 1fr; }
+            .kpi-row { grid-template-columns: repeat(3, 1fr); }
+        }
+
         /* Report section card style */
         .report-section-card {
             background: var(--color-surface); border: 1px solid var(--color-border-subtle);
@@ -980,20 +1009,61 @@
 
         // --- Sub-tab: 全市场复盘 ---
         if (hasReview) {
+            const mc = (reports.market_review.charts || {});
             const md = reports.market_review.full_markdown;
             const htmlContent = typeof marked !== 'undefined' ? marked.parse(md) : md.replace(/\n/g, '<br>');
-            $('sub-review').innerHTML = '<div class="report-article">' + htmlContent +
+            let reviewHtml = '';
+
+            // KPI row
+            reviewHtml += '<div class="kpi-row">';
+            if (mc.turnover) reviewHtml += `<div class="kpi-card"><div class="kpi-label">成交额</div><div class="kpi-value">${esc(mc.turnover)}</div></div>`;
+            if (mc.breadth) reviewHtml += `<div class="kpi-card"><div class="kpi-label">上涨</div><div class="kpi-value" style="color:var(--color-bearish)">${mc.breadth.up}</div></div>
+                <div class="kpi-card"><div class="kpi-label">下跌</div><div class="kpi-value" style="color:var(--color-bullish)">${mc.breadth.down}</div></div>`;
+            if (mc.limit) reviewHtml += `<div class="kpi-card"><div class="kpi-label">涨停</div><div class="kpi-value" style="color:var(--color-bearish)">${mc.limit.up}</div></div>
+                <div class="kpi-card"><div class="kpi-label">跌停</div><div class="kpi-value" style="color:var(--color-bullish)">${mc.limit.down}</div></div>`;
+            reviewHtml += '</div>';
+
+            // Chart row 1: Indices + Breadth pie
+            reviewHtml += '<div class="chart-row chart-row-2">';
+            if (mc.indices) reviewHtml += '<div class="chart-card"><div class="chart-card-title">主要指数涨跌幅</div><div id="chart-indices" class="chart-container" style="height:250px"></div></div>';
+            if (mc.breadth) reviewHtml += '<div class="chart-card"><div class="chart-card-title">涨跌家数分布</div><div id="chart-breadth" class="chart-container" style="height:250px"></div></div>';
+            reviewHtml += '</div>';
+
+            // Chart row 2: Sector bar
+            if (mc.sectors && (mc.sectors.gainers.length || mc.sectors.losers.length)) {
+                reviewHtml += '<div class="chart-row chart-row-1"><div class="chart-card"><div class="chart-card-title">行业板块涨跌幅</div><div id="chart-sectors" class="chart-container" style="height:300px"></div></div></div>';
+            }
+
+            // Chart row 3: Capital flow + Limit-up stocks
+            reviewHtml += '<div class="chart-row chart-row-2">';
+            if (mc.capital_flow) reviewHtml += '<div class="chart-card"><div class="chart-card-title">主力资金净流入 TOP5（亿）</div><div id="chart-capital" class="chart-container" style="height:250px"></div></div>';
+            if (mc.limit_up_stocks) reviewHtml += '<div class="chart-card"><div class="chart-card-title">涨停个股概览</div><div id="chart-limit-table" class="chart-container" style="max-height:250px;overflow-y:auto"></div></div>';
+            reviewHtml += '</div>';
+
+            reviewHtml += '<div class="report-article" style="margin-top:24px">' + htmlContent +
                 '<div class="report-disclaimer">本分析报告由 iFinD Agent 平台生成，仅供信息参考，不构成任何投资建议。</div></div>';
+            $('sub-review').innerHTML = reviewHtml;
+
+            // Render ECharts after DOM is ready
+            setTimeout(() => renderMarketCharts(mc), 50);
         } else {
             $('sub-review').innerHTML = '<div class="empty-state">该日期无全市场复盘报告</div>';
         }
 
         // --- Sub-tab: 异动板块解读 ---
         if (hasIndustry) {
+            const ic = (reports.industry_analysis.charts || {});
             const md = reports.industry_analysis.full_markdown;
             const htmlContent = typeof marked !== 'undefined' ? marked.parse(md) : md.replace(/\n/g, '<br>');
-            $('sub-industry').innerHTML = '<div class="report-article">' + htmlContent +
+            let indHtml = '';
+            if (ic.industry_indices && ic.industry_indices.length) {
+                indHtml += '<div class="chart-row chart-row-1"><div class="chart-card"><div class="chart-card-title">异动行业指数涨幅</div><div id="chart-industry" class="chart-container" style="height:260px"></div></div></div>';
+            }
+            indHtml += '<div class="report-article" style="margin-top:24px">' + htmlContent +
                 '<div class="report-disclaimer">本分析报告由 iFinD Agent 平台生成，仅供信息参考，不构成任何投资建议。</div></div>';
+            $('sub-industry').innerHTML = indHtml;
+
+            if (ic.industry_indices) setTimeout(() => renderIndustryChart(ic.industry_indices), 50);
         } else {
             $('sub-industry').innerHTML = '<div class="empty-state">该日期无异动板块解读报告</div>';
         }
@@ -1160,6 +1230,120 @@
     function switchMarketSub(name) {
         document.querySelectorAll('.market-sub-tab').forEach(t => t.classList.toggle('active', t.dataset.sub === name));
         document.querySelectorAll('.market-sub-page').forEach(p => p.classList.toggle('active', p.id === 'sub-' + name));
+        // Resize charts when switching tabs (ECharts needs this)
+        setTimeout(() => { window.dispatchEvent(new Event('resize')); }, 100);
+    }
+
+    // ========== ECharts: Market Charts ==========
+    const ECHART_THEME = {
+        bg: '#FFFFFF', accent: '#C15F3C', up: '#B5412B', down: '#3D7A4A',
+        text: '#2C2B28', sub: '#A8A7A2', border: '#EDEBE3',
+        palette: ['#C15F3C','#E8956A','#5B9BD5','#70AD47','#FFC000','#7B7B7B','#ED7D31','#A5A5A5'],
+    };
+
+    function renderMarketCharts(mc) {
+        if (typeof echarts === 'undefined') return;
+
+        // 1. Index bar chart
+        if (mc.indices && document.getElementById('chart-indices')) {
+            const ch = echarts.init(document.getElementById('chart-indices'));
+            const names = mc.indices.map(i => i.name);
+            const vals = mc.indices.map(i => i.change_pct);
+            ch.setOption({
+                tooltip: { trigger: 'axis', formatter: p => p[0].name + ': ' + p[0].value + '%' },
+                grid: { left: 10, right: 20, top: 20, bottom: 30, containLabel: true },
+                xAxis: { type: 'category', data: names, axisLabel: { fontSize: 11 } },
+                yAxis: { type: 'value', axisLabel: { formatter: v => v + '%', fontSize: 10 } },
+                series: [{ type: 'bar', data: vals.map(v => ({
+                    value: v,
+                    itemStyle: { color: v >= 0 ? ECHART_THEME.up : ECHART_THEME.down, borderRadius: [3,3,0,0] }
+                })), barWidth: '45%', label: { show: true, position: 'top', formatter: p => p.value + '%', fontSize: 11, fontFamily: 'JetBrains Mono' } }]
+            });
+            window.addEventListener('resize', () => ch.resize());
+        }
+
+        // 2. Breadth donut
+        if (mc.breadth && document.getElementById('chart-breadth')) {
+            const ch = echarts.init(document.getElementById('chart-breadth'));
+            ch.setOption({
+                tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
+                legend: { bottom: 5, textStyle: { fontSize: 11 } },
+                series: [{ type: 'pie', radius: ['42%', '70%'], center: ['50%', '45%'],
+                    label: { show: true, formatter: '{b}\n{c}', fontSize: 12, fontFamily: 'JetBrains Mono' },
+                    data: [
+                        { value: mc.breadth.up, name: '上涨', itemStyle: { color: ECHART_THEME.up } },
+                        { value: mc.breadth.down, name: '下跌', itemStyle: { color: ECHART_THEME.down } },
+                    ],
+                    emphasis: { itemStyle: { shadowBlur: 10, shadowOffsetX: 0, shadowColor: 'rgba(0,0,0,0.2)' } }
+                }]
+            });
+            window.addEventListener('resize', () => ch.resize());
+        }
+
+        // 3. Sector horizontal bar
+        if (mc.sectors && document.getElementById('chart-sectors')) {
+            const ch = echarts.init(document.getElementById('chart-sectors'));
+            const all = [...(mc.sectors.gainers || []), ...(mc.sectors.losers || []).reverse()];
+            const names = all.map(s => s.name);
+            const vals = all.map(s => s.change_pct);
+            ch.setOption({
+                tooltip: { trigger: 'axis', formatter: p => p[0].name + ': ' + (p[0].value >= 0 ? '+' : '') + p[0].value + '%' },
+                grid: { left: 10, right: 30, top: 10, bottom: 10, containLabel: true },
+                xAxis: { type: 'value', axisLabel: { formatter: v => v + '%', fontSize: 10 } },
+                yAxis: { type: 'category', data: names, inverse: true, axisLabel: { fontSize: 11 } },
+                series: [{ type: 'bar', data: vals.map(v => ({
+                    value: v,
+                    itemStyle: { color: v >= 0 ? ECHART_THEME.up : ECHART_THEME.down, borderRadius: v >= 0 ? [0,3,3,0] : [3,0,0,3] }
+                })), barWidth: '55%', label: { show: true, position: 'right', formatter: p => (p.value >= 0 ? '+' : '') + p.value.toFixed(2) + '%', fontSize: 10, fontFamily: 'JetBrains Mono' } }]
+            });
+            window.addEventListener('resize', () => ch.resize());
+        }
+
+        // 4. Capital flow bar
+        if (mc.capital_flow && document.getElementById('chart-capital')) {
+            const ch = echarts.init(document.getElementById('chart-capital'));
+            const names = mc.capital_flow.map(c => c.name);
+            const vals = mc.capital_flow.map(c => c.amount);
+            ch.setOption({
+                tooltip: { trigger: 'axis', formatter: p => p[0].name + ': ' + p[0].value + '亿' },
+                grid: { left: 10, right: 30, top: 10, bottom: 10, containLabel: true },
+                xAxis: { type: 'value', axisLabel: { formatter: v => v + '亿', fontSize: 10 } },
+                yAxis: { type: 'category', data: names, inverse: true, axisLabel: { fontSize: 11 } },
+                series: [{ type: 'bar', data: vals.map((v,i) => ({
+                    value: v,
+                    itemStyle: { color: ECHART_THEME.palette[i], borderRadius: [0,3,3,0] }
+                })), barWidth: '55%', label: { show: true, position: 'right', formatter: p => p.value + '亿', fontSize: 10, fontFamily: 'JetBrains Mono' } }]
+            });
+            window.addEventListener('resize', () => ch.resize());
+        }
+
+        // 5. Limit-up stocks table
+        if (mc.limit_up_stocks && document.getElementById('chart-limit-table')) {
+            let tbl = '<table class="data-table" style="font-size:0.8rem"><thead><tr><th>名称</th><th>代码</th><th>行业</th><th>驱动因素</th></tr></thead><tbody>';
+            mc.limit_up_stocks.forEach(s => {
+                tbl += `<tr><td style="font-weight:600">${esc(s.name)}</td><td style="font-family:var(--font-mono)">${esc(s.code)}</td><td>${esc(s.industry)}</td><td style="font-size:0.75rem;color:var(--color-text-secondary)">${esc(s.reason)}</td></tr>`;
+            });
+            tbl += '</tbody></table>';
+            document.getElementById('chart-limit-table').innerHTML = tbl;
+        }
+    }
+
+    function renderIndustryChart(indices) {
+        if (typeof echarts === 'undefined' || !document.getElementById('chart-industry')) return;
+        const ch = echarts.init(document.getElementById('chart-industry'));
+        const names = indices.map(i => i.name);
+        const vals = indices.map(i => i.change_pct);
+        ch.setOption({
+            tooltip: { trigger: 'axis', formatter: p => p[0].name + ': +' + p[0].value + '%' },
+            grid: { left: 10, right: 30, top: 10, bottom: 10, containLabel: true },
+            xAxis: { type: 'value', axisLabel: { formatter: v => v + '%', fontSize: 10 } },
+            yAxis: { type: 'category', data: names, inverse: true, axisLabel: { fontSize: 12, fontWeight: 600 } },
+            series: [{ type: 'bar', data: vals.map((v,i) => ({
+                value: v,
+                itemStyle: { color: ECHART_THEME.palette[i % ECHART_THEME.palette.length], borderRadius: [0,4,4,0] }
+            })), barWidth: '50%', label: { show: true, position: 'right', formatter: p => '+' + p.value.toFixed(2) + '%', fontSize: 11, fontWeight: 600, fontFamily: 'JetBrains Mono' } }]
+        });
+        window.addEventListener('resize', () => ch.resize());
     }
 
     // ========== Helpers ==========
