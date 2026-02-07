@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"></script>
     <style>
         /* ========== Claude.ai Design System ========== */
         :root {
@@ -449,10 +450,93 @@
             color: var(--color-text-tertiary);
         }
 
+        /* Market sub-tabs */
+        .market-sub-tabs {
+            display: flex; gap: 4px; margin-bottom: 28px;
+            background: var(--color-neutral-bg); border-radius: var(--radius-md);
+            padding: 4px;
+        }
+        .market-sub-tab {
+            flex: 1; padding: 10px 16px; border: none; background: transparent;
+            font-family: var(--font-serif); font-size: 0.875rem; font-weight: 500;
+            color: var(--color-text-secondary); cursor: pointer;
+            border-radius: calc(var(--radius-md) - 2px); transition: all .2s;
+            text-align: center;
+        }
+        .market-sub-tab:hover { color: var(--color-text); background: rgba(255,255,255,0.5); }
+        .market-sub-tab.active {
+            background: var(--color-surface); color: var(--color-accent);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        .market-sub-page { display: none; }
+        .market-sub-page.active { display: block; }
+
+        /* Report article rendering */
+        .report-article { max-width: 100%; }
+        .report-article h2 {
+            font-family: var(--font-serif); font-size: 1.15rem; font-weight: 600;
+            color: var(--color-text); margin: 32px 0 16px; padding-bottom: 10px;
+            border-bottom: 2px solid var(--color-border);
+        }
+        .report-article h2:first-child { margin-top: 0; }
+        .report-article h3 {
+            font-family: var(--font-serif); font-size: 1rem; font-weight: 600;
+            color: var(--color-text); margin: 24px 0 12px;
+        }
+        .report-article p {
+            font-size: 0.9rem; line-height: 1.9; color: var(--color-text);
+            margin: 0 0 14px; text-align: justify;
+        }
+        .report-article strong { color: var(--color-accent); font-weight: 600; }
+        .report-article blockquote {
+            margin: 12px 0 16px 0; padding: 12px 20px;
+            background: var(--color-neutral-bg); border-left: 3px solid var(--color-accent);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        }
+        .report-article blockquote p { margin-bottom: 8px; font-size: 0.875rem; }
+        .report-article blockquote p:last-child { margin-bottom: 0; }
+        .report-article table {
+            width: 100%; border-collapse: collapse; margin: 16px 0 20px;
+            font-size: 0.85rem;
+        }
+        .report-article th {
+            background: var(--color-neutral-bg); font-weight: 600; padding: 10px 14px;
+            text-align: left; border-bottom: 2px solid var(--color-border);
+        }
+        .report-article td {
+            padding: 9px 14px; border-bottom: 1px solid var(--color-border-subtle);
+        }
+        .report-article tr:hover td { background: var(--color-accent-light); }
+        .report-article ul, .report-article ol {
+            margin: 10px 0 16px; padding-left: 24px;
+        }
+        .report-article li {
+            font-size: 0.9rem; line-height: 1.8; margin-bottom: 6px;
+        }
+
+        /* Report section card style */
+        .report-section-card {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); padding: 28px 32px; margin-bottom: 24px;
+        }
+        .report-section-title {
+            font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600;
+            color: var(--color-accent); margin-bottom: 20px; padding-bottom: 12px;
+            border-bottom: 2px solid var(--color-border);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .report-disclaimer {
+            font-size: 0.75rem; color: var(--color-text-tertiary); margin-top: 24px;
+            padding-top: 16px; border-top: 1px solid var(--color-border-subtle);
+            text-align: center; font-style: italic;
+        }
+
         @media (max-width: 768px) {
             .market-grid { grid-template-columns: 1fr; }
             .market-breadth-row { grid-template-columns: 1fr; }
             .rotation-grid { grid-template-columns: 1fr; }
+            .market-sub-tabs { flex-direction: column; }
+            .report-section-card { padding: 20px 18px; }
         }
 
         /* Footer */
@@ -554,9 +638,16 @@
     <div id="page-market" class="page">
         <div class="page-header">
             <h1 class="page-title">市场表现</h1>
-            <p id="market-subtitle" class="page-subtitle">板块涨跌 · 资金流向 · 行业轮动</p>
+            <p id="market-subtitle" class="page-subtitle">全市场复盘 · 异动板块解读 · 数据概览</p>
         </div>
-        <div id="market-content"></div>
+        <div class="market-sub-tabs" id="marketSubTabs">
+            <button class="market-sub-tab active" data-sub="review">全市场复盘</button>
+            <button class="market-sub-tab" data-sub="industry">异动板块解读</button>
+            <button class="market-sub-tab" data-sub="data">数据概览</button>
+        </div>
+        <div id="sub-review" class="market-sub-page active"></div>
+        <div id="sub-industry" class="market-sub-page"></div>
+        <div id="sub-data" class="market-sub-page"></div>
     </div>
 </div>
 
@@ -598,6 +689,10 @@
                 currentPage = tab.dataset.page;
                 showPage(currentPage);
             });
+        });
+        // Market sub-tabs
+        document.querySelectorAll('.market-sub-tab').forEach(tab => {
+            tab.addEventListener('click', () => switchMarketSub(tab.dataset.sub));
         });
     }
 
@@ -875,14 +970,43 @@
 
     // ========== Render: Market Page ==========
     function renderMarket(data) {
-        const m = data.market;
-        if (!m) {
-            $('market-subtitle').textContent = '板块涨跌 · 资金流向 · 行业轮动';
-            $('market-content').innerHTML = '<div class="empty-state">该日期无市场表现数据</div>';
+        const m = data.market || {};
+        const reports = data.ifind_reports || {};
+        const hasReview = reports.market_review && reports.market_review.full_markdown;
+        const hasIndustry = reports.industry_analysis && reports.industry_analysis.full_markdown;
+        const hasData = m.sector_performance || m.market_breadth || m.rotation;
+
+        $('market-subtitle').textContent = data.date + ' 全市场复盘 · 异动板块解读 · 数据概览';
+
+        // --- Sub-tab: 全市场复盘 ---
+        if (hasReview) {
+            const md = reports.market_review.full_markdown;
+            const htmlContent = typeof marked !== 'undefined' ? marked.parse(md) : md.replace(/\n/g, '<br>');
+            $('sub-review').innerHTML = '<div class="report-article">' + htmlContent +
+                '<div class="report-disclaimer">本分析报告由 iFinD Agent 平台生成，仅供信息参考，不构成任何投资建议。</div></div>';
+        } else {
+            $('sub-review').innerHTML = '<div class="empty-state">该日期无全市场复盘报告</div>';
+        }
+
+        // --- Sub-tab: 异动板块解读 ---
+        if (hasIndustry) {
+            const md = reports.industry_analysis.full_markdown;
+            const htmlContent = typeof marked !== 'undefined' ? marked.parse(md) : md.replace(/\n/g, '<br>');
+            $('sub-industry').innerHTML = '<div class="report-article">' + htmlContent +
+                '<div class="report-disclaimer">本分析报告由 iFinD Agent 平台生成，仅供信息参考，不构成任何投资建议。</div></div>';
+        } else {
+            $('sub-industry').innerHTML = '<div class="empty-state">该日期无异动板块解读报告</div>';
+        }
+
+        // --- Sub-tab: 数据概览 (original structured data) ---
+        if (!hasData) {
+            $('sub-data').innerHTML = '<div class="empty-state">该日期无市场数据</div>';
+            // Default to first available tab
+            if (hasReview) switchMarketSub('review');
+            else if (hasIndustry) switchMarketSub('industry');
             return;
         }
 
-        $('market-subtitle').textContent = data.date + ' 市场表现总览';
         let html = '';
 
         // --- Market Breadth ---
@@ -1025,7 +1149,17 @@
             html += '</div></div>';
         }
 
-        $('market-content').innerHTML = html;
+        $('sub-data').innerHTML = html;
+
+        // Default to review if available, else first available tab
+        if (hasReview) switchMarketSub('review');
+        else if (hasIndustry) switchMarketSub('industry');
+        else switchMarketSub('data');
+    }
+
+    function switchMarketSub(name) {
+        document.querySelectorAll('.market-sub-tab').forEach(t => t.classList.toggle('active', t.dataset.sub === name));
+        document.querySelectorAll('.market-sub-page').forEach(p => p.classList.toggle('active', p.id === 'sub-' + name));
     }
 
     // ========== Helpers ==========
