@@ -392,9 +392,81 @@
       "flat": 0
     },
     "rotation": {
-      "hot_sectors": [],
-      "cooling_sectors": [],
-      "summary": "暂无行业轮动因子数据（需配置 investoday API Key）"
+      "hot_sectors": [
+        {
+          "name": "石油石化",
+          "score": 6.8,
+          "momentum": "走强",
+          "sentiment": 0.6833,
+          "hlMomentum": 0.9333
+        },
+        {
+          "name": "煤炭",
+          "score": 6.5,
+          "momentum": "走强",
+          "sentiment": 0.65,
+          "hlMomentum": 1.0
+        },
+        {
+          "name": "纺织服饰",
+          "score": 6.4,
+          "momentum": "走强",
+          "sentiment": 0.6439,
+          "hlMomentum": 0.8
+        },
+        {
+          "name": "交通运输",
+          "score": 6.0,
+          "momentum": "走强",
+          "sentiment": 0.6,
+          "hlMomentum": 0.9
+        },
+        {
+          "name": "银行",
+          "score": 6.0,
+          "momentum": "走强",
+          "sentiment": 0.5955,
+          "hlMomentum": 0.7667
+        }
+      ],
+      "cooling_sectors": [
+        {
+          "name": "医药生物",
+          "score": 3.6,
+          "momentum": "转弱",
+          "sentiment": 0.3576,
+          "hlMomentum": 0.3333
+        },
+        {
+          "name": "电子",
+          "score": 4.0,
+          "momentum": "转弱",
+          "sentiment": 0.3955,
+          "hlMomentum": 0.0333
+        },
+        {
+          "name": "计算机",
+          "score": 4.1,
+          "momentum": "转弱",
+          "sentiment": 0.4121,
+          "hlMomentum": 0.1667
+        },
+        {
+          "name": "电力设备",
+          "score": 4.3,
+          "momentum": "转弱",
+          "sentiment": 0.4333,
+          "hlMomentum": 0.1
+        },
+        {
+          "name": "汽车",
+          "score": 4.3,
+          "momentum": "转弱",
+          "sentiment": 0.4348,
+          "hlMomentum": 0.1333
+        }
+      ],
+      "summary": "行业轮动因子显示，石油石化、煤炭、纺织服饰等板块市场情绪较高（情绪温度>0.68），处于轮动偏热阶段；医药生物、电子、计算机等板块情绪偏冷（<0.36），资金关注度下降。全市场平均情绪温度0.52，整体偏中性。"
     }
   }
 }
