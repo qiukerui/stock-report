@@ -276,5 +276,57 @@
         "pct": 5.6
       }
     ]
+  },
+  "market": {
+    "sector_performance": {
+      "top_gainers": [
+        { "name": "油气开采及服务", "change_pct": 3.38, "net_inflow": 46.00 },
+        { "name": "煤炭", "change_pct": 2.95, "net_inflow": 33.21 },
+        { "name": "石油化工", "change_pct": 2.41, "net_inflow": 28.55 },
+        { "name": "有色金属", "change_pct": 2.18, "net_inflow": 21.33 },
+        { "name": "钢铁", "change_pct": 1.87, "net_inflow": 15.72 },
+        { "name": "化工", "change_pct": 1.65, "net_inflow": 12.48 },
+        { "name": "电力", "change_pct": 1.52, "net_inflow": 9.86 },
+        { "name": "交通运输", "change_pct": 1.33, "net_inflow": 7.24 },
+        { "name": "建筑材料", "change_pct": 1.21, "net_inflow": 5.62 },
+        { "name": "环保", "change_pct": 1.08, "net_inflow": 3.15 }
+      ],
+      "top_losers": [
+        { "name": "白酒", "change_pct": -4.21, "net_outflow": 87.65 },
+        { "name": "医药生物", "change_pct": -3.15, "net_outflow": 62.30 },
+        { "name": "传媒", "change_pct": -2.87, "net_outflow": 41.52 },
+        { "name": "计算机", "change_pct": -2.56, "net_outflow": 38.74 },
+        { "name": "电子", "change_pct": -2.33, "net_outflow": 35.88 },
+        { "name": "通信", "change_pct": -1.98, "net_outflow": 22.16 },
+        { "name": "半导体", "change_pct": -1.85, "net_outflow": 19.73 },
+        { "name": "食品饮料", "change_pct": -1.62, "net_outflow": 15.41 },
+        { "name": "美容护理", "change_pct": -1.41, "net_outflow": 8.95 },
+        { "name": "社会服务", "change_pct": -1.25, "net_outflow": 6.32 }
+      ]
+    },
+    "market_summary": "三大指数集体收跌，呈现低开高走、午后回落的震荡格局。上证指数跌0.48%报3241.35点，深成指跌0.82%，创业板指跌1.15%。周期资源板块逆势走强，油气、煤炭、有色金属领涨；消费及科技板块全线回调，白酒、医药领跌。市场成交额8652亿元，较前日缩量约12%。",
+    "capital_flow_summary": "主力资金净流出185.4亿元，11个行业主力资金净流入，20个行业净流出。北向资金净流入12.8亿元，其中沪股通净买入8.5亿，深股通净买入4.3亿。资金明显偏好低估值周期板块，回避高估值成长板块。",
+    "market_breadth": {
+      "up": 1840,
+      "down": 2100,
+      "flat": 280
+    },
+    "rotation": {
+      "hot_sectors": [
+        { "name": "油气开采及服务", "score": 9.2, "momentum": "强势", "days": 5 },
+        { "name": "煤炭", "score": 8.7, "momentum": "强势", "days": 4 },
+        { "name": "有色金属", "score": 8.1, "momentum": "走强", "days": 3 },
+        { "name": "化工", "score": 7.6, "momentum": "走强", "days": 2 },
+        { "name": "钢铁", "score": 7.3, "momentum": "转强", "days": 1 }
+      ],
+      "cooling_sectors": [
+        { "name": "白酒", "score": 1.8, "momentum": "走弱", "days": 7 },
+        { "name": "医药生物", "score": 2.3, "momentum": "走弱", "days": 5 },
+        { "name": "传媒", "score": 2.9, "momentum": "转弱", "days": 3 },
+        { "name": "计算机", "score": 3.1, "momentum": "转弱", "days": 2 },
+        { "name": "半导体", "score": 3.5, "momentum": "降温", "days": 2 }
+      ],
+      "summary": "周期资源板块持续走强，油气、煤炭连续多日领涨，市场情绪温度偏高；消费及科技板块集体降温，白酒已连续7个交易日走弱，医药生物也出现明显回调。风格偏向低估值价值股，成长股短期承压。"
+    }
   }
 }

@@ -355,6 +355,106 @@
 
         .dist-pct { font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-tertiary); min-width: 40px; text-align: right; }
 
+        /* ========== Market Dashboard ========== */
+        .market-grid {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 32px;
+        }
+
+        .market-col-title {
+            font-family: var(--font-serif); font-size: 1rem; font-weight: 600;
+            margin-bottom: 12px; padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .market-col-title.up { border-bottom-color: var(--color-bearish); }
+        .market-col-title.down { border-bottom-color: var(--color-bullish); }
+
+        .market-summary-card {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); padding: 20px 24px; margin-bottom: 24px;
+        }
+
+        .market-summary-label {
+            font-size: 0.75rem; font-weight: 600; color: var(--color-text-tertiary);
+            letter-spacing: 0.03em; margin-bottom: 10px;
+        }
+
+        .market-summary-text {
+            font-size: 0.9rem; line-height: 1.85; color: var(--color-text);
+        }
+
+        .market-breadth-row {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 32px;
+        }
+
+        .breadth-item {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); padding: 16px 20px; text-align: center;
+        }
+
+        .breadth-label { font-size: 0.75rem; color: var(--color-text-tertiary); margin-bottom: 6px; }
+        .breadth-value { font-family: var(--font-mono); font-size: 1.6rem; font-weight: 600; }
+        .breadth-value.v-up { color: var(--color-bearish); }
+        .breadth-value.v-down { color: var(--color-bullish); }
+        .breadth-value.v-flat { color: var(--color-neutral); }
+
+        .rotation-section { margin-bottom: 32px; }
+
+        .rotation-overview {
+            font-size: 0.9rem; line-height: 1.8; color: var(--color-text);
+            padding: 16px 20px; background: var(--color-neutral-bg);
+            border-radius: var(--radius-md); border-left: 3px solid var(--color-accent);
+            margin-bottom: 20px;
+        }
+
+        .rotation-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+        .rotation-card {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); padding: 18px 20px;
+        }
+
+        .rotation-card-title {
+            font-size: 0.75rem; font-weight: 600; color: var(--color-text-tertiary);
+            letter-spacing: 0.03em; margin-bottom: 12px;
+        }
+
+        .rotation-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 8px 0;
+        }
+
+        .rotation-item:not(:last-child) { border-bottom: 1px solid var(--color-border-subtle); }
+
+        .rotation-name { font-size: 0.875rem; font-weight: 500; }
+        .rotation-meta { display: flex; align-items: center; gap: 10px; }
+
+        .rotation-score {
+            font-family: var(--font-mono); font-size: 0.875rem; font-weight: 600;
+        }
+
+        .rotation-score.hot { color: var(--color-bearish); }
+        .rotation-score.cool { color: var(--color-bullish); }
+
+        .rotation-badge {
+            display: inline-flex; padding: 2px 8px; border-radius: 4px;
+            font-size: 0.6875rem; font-weight: 600;
+        }
+
+        .rotation-badge.hot { background: var(--color-bearish-bg); color: var(--color-bearish); }
+        .rotation-badge.cool { background: var(--color-bullish-bg); color: var(--color-bullish); }
+
+        .rotation-days {
+            font-family: var(--font-mono); font-size: 0.6875rem;
+            color: var(--color-text-tertiary);
+        }
+
+        @media (max-width: 768px) {
+            .market-grid { grid-template-columns: 1fr; }
+            .market-breadth-row { grid-template-columns: 1fr; }
+            .rotation-grid { grid-template-columns: 1fr; }
+        }
+
         /* Footer */
         .footer {
             max-width: 1100px; margin: 0 auto; padding: 20px 24px;
@@ -412,6 +512,7 @@
             <div class="nav-tabs">
                 <button class="nav-tab active" data-page="analysis">基本面分析</button>
                 <button class="nav-tab" data-page="compare">信号对比</button>
+                <button class="nav-tab" data-page="market">市场表现</button>
             </div>
         </div>
         <div class="date-picker">
@@ -447,6 +548,15 @@
             <p id="compare-subtitle" class="page-subtitle"></p>
         </div>
         <div id="compare-content"></div>
+    </div>
+
+    <!-- Page 3: 市场表现 -->
+    <div id="page-market" class="page">
+        <div class="page-header">
+            <h1 class="page-title">市场表现</h1>
+            <p id="market-subtitle" class="page-subtitle">板块涨跌 · 资金流向 · 行业轮动</p>
+        </div>
+        <div id="market-content"></div>
     </div>
 </div>
 
@@ -515,12 +625,14 @@
         $('loading').style.display = 'flex';
         $('page-analysis').classList.remove('active');
         $('page-compare').classList.remove('active');
+        $('page-market').classList.remove('active');
 
         try {
             currentData = await fetchJSON('data/' + date + '.json');
             $('loading').style.display = 'none';
             renderAnalysis(currentData);
             renderCompare(currentData);
+            renderMarket(currentData);
             showPage(currentPage);
             $('dateSelector').value = date;
         } catch (e) {
@@ -759,6 +871,161 @@
             <span class="stat-label">${label}</span>
             <span class="stat-value" ${color ? 'style="color:' + color + '"' : ''}>${value}</span>
         </div>`;
+    }
+
+    // ========== Render: Market Page ==========
+    function renderMarket(data) {
+        const m = data.market;
+        if (!m) {
+            $('market-subtitle').textContent = '板块涨跌 · 资金流向 · 行业轮动';
+            $('market-content').innerHTML = '<div class="empty-state">该日期无市场表现数据</div>';
+            return;
+        }
+
+        $('market-subtitle').textContent = data.date + ' 市场表现总览';
+        let html = '';
+
+        // --- Market Breadth ---
+        if (m.market_breadth) {
+            const b = m.market_breadth;
+            const total = (b.up || 0) + (b.down || 0) + (b.flat || 0);
+            const upPct = total > 0 ? ((b.up / total) * 100).toFixed(1) : 0;
+            const downPct = total > 0 ? ((b.down / total) * 100).toFixed(1) : 0;
+            const flatPct = total > 0 ? ((b.flat / total) * 100).toFixed(1) : 0;
+
+            html += `<div class="market-breadth-row">
+                <div class="breadth-item">
+                    <div class="breadth-label">上涨</div>
+                    <div class="breadth-value" style="color:var(--color-bearish)">${b.up || 0}</div>
+                    <div class="breadth-pct">${upPct}%</div>
+                </div>
+                <div class="breadth-item">
+                    <div class="breadth-label">下跌</div>
+                    <div class="breadth-value" style="color:var(--color-bullish)">${b.down || 0}</div>
+                    <div class="breadth-pct">${downPct}%</div>
+                </div>
+                <div class="breadth-item">
+                    <div class="breadth-label">平盘</div>
+                    <div class="breadth-value" style="color:var(--color-neutral)">${b.flat || 0}</div>
+                    <div class="breadth-pct">${flatPct}%</div>
+                </div>
+                <div class="breadth-item">
+                    <div class="breadth-label">合计</div>
+                    <div class="breadth-value">${total}</div>
+                    <div class="breadth-pct">—</div>
+                </div>
+            </div>`;
+        }
+
+        // --- Market & Capital Flow Summary ---
+        if (m.market_summary || m.capital_flow_summary) {
+            html += '<div class="market-grid" style="margin-bottom:28px">';
+            if (m.market_summary) {
+                html += `<div class="market-summary-card">
+                    <div class="market-col-title">市场特征</div>
+                    <div style="font-size:0.875rem;line-height:1.8">${esc(m.market_summary)}</div>
+                </div>`;
+            }
+            if (m.capital_flow_summary) {
+                html += `<div class="market-summary-card">
+                    <div class="market-col-title">资金流向</div>
+                    <div style="font-size:0.875rem;line-height:1.8">${esc(m.capital_flow_summary)}</div>
+                </div>`;
+            }
+            html += '</div>';
+        }
+
+        // --- Sector Performance Tables ---
+        if (m.sector_performance) {
+            const sp = m.sector_performance;
+
+            html += '<div class="market-grid">';
+
+            // Top Gainers
+            if (sp.top_gainers && sp.top_gainers.length > 0) {
+                html += `<div>
+                    <div class="market-col-title" style="color:var(--color-bearish)">涨幅前 ${sp.top_gainers.length}</div>
+                    <div class="data-table-wrap"><table class="data-table">
+                        <thead><tr>
+                            <th>#</th><th>板块</th><th style="text-align:right">涨跌幅</th><th style="text-align:right">资金净流入(亿)</th>
+                        </tr></thead>
+                        <tbody>${sp.top_gainers.map((s, i) => `<tr>
+                            <td>${i + 1}</td>
+                            <td class="td-name">${esc(s.name)}</td>
+                            <td class="td-change-up" style="text-align:right">${s.change_pct >= 0 ? '+' : ''}${s.change_pct.toFixed(2)}%</td>
+                            <td style="text-align:right;font-family:var(--font-mono);font-size:0.8rem">${s.net_inflow != null ? s.net_inflow.toFixed(2) : '—'}</td>
+                        </tr>`).join('')}</tbody>
+                    </table></div>
+                </div>`;
+            }
+
+            // Top Losers
+            if (sp.top_losers && sp.top_losers.length > 0) {
+                html += `<div>
+                    <div class="market-col-title" style="color:var(--color-bullish)">跌幅前 ${sp.top_losers.length}</div>
+                    <div class="data-table-wrap"><table class="data-table">
+                        <thead><tr>
+                            <th>#</th><th>板块</th><th style="text-align:right">涨跌幅</th><th style="text-align:right">资金净流出(亿)</th>
+                        </tr></thead>
+                        <tbody>${sp.top_losers.map((s, i) => `<tr>
+                            <td>${i + 1}</td>
+                            <td class="td-name">${esc(s.name)}</td>
+                            <td class="td-change-down" style="text-align:right">${s.change_pct.toFixed(2)}%</td>
+                            <td style="text-align:right;font-family:var(--font-mono);font-size:0.8rem">${s.net_outflow != null ? s.net_outflow.toFixed(2) : '—'}</td>
+                        </tr>`).join('')}</tbody>
+                    </table></div>
+                </div>`;
+            }
+
+            html += '</div>';
+        }
+
+        // --- Industry Rotation ---
+        if (m.rotation) {
+            const r = m.rotation;
+            html += '<div class="rotation-section">';
+            html += '<div class="market-col-title" style="margin-bottom:16px">行业轮动因子</div>';
+
+            if (r.summary) {
+                html += `<div class="rotation-overview">${esc(r.summary)}</div>`;
+            }
+
+            html += '<div class="rotation-grid">';
+
+            // Hot sectors
+            if (r.hot_sectors && r.hot_sectors.length > 0) {
+                html += `<div class="rotation-card">
+                    <div class="rotation-card-title">热门板块</div>
+                    ${r.hot_sectors.map(s => `<div class="rotation-item">
+                        <span class="rotation-name">${esc(s.name)}</span>
+                        <div class="rotation-meta">
+                            <span class="rotation-score hot">${typeof s.score === 'number' ? s.score.toFixed(1) : s.score}</span>
+                            <span class="rotation-badge hot">${esc(s.momentum)}</span>
+                            ${s.days ? '<span class="rotation-days">' + s.days + '日</span>' : ''}
+                        </div>
+                    </div>`).join('')}
+                </div>`;
+            }
+
+            // Cooling sectors
+            if (r.cooling_sectors && r.cooling_sectors.length > 0) {
+                html += `<div class="rotation-card">
+                    <div class="rotation-card-title">降温板块</div>
+                    ${r.cooling_sectors.map(s => `<div class="rotation-item">
+                        <span class="rotation-name">${esc(s.name)}</span>
+                        <div class="rotation-meta">
+                            <span class="rotation-score cool">${typeof s.score === 'number' ? s.score.toFixed(1) : s.score}</span>
+                            <span class="rotation-badge cool">${esc(s.momentum)}</span>
+                            ${s.days ? '<span class="rotation-days">' + s.days + '日</span>' : ''}
+                        </div>
+                    </div>`).join('')}
+                </div>`;
+            }
+
+            html += '</div></div>';
+        }
+
+        $('market-content').innerHTML = html;
     }
 
     // ========== Helpers ==========
