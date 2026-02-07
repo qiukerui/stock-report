@@ -103,8 +103,8 @@
       "valuation": {
         "score": 5.0,
         "sentiment": "neutral",
-        "status": "偏高估",
-        "summary": "合理估值",
+        "status": "合理",
+        "summary": "估值评分42/100（合理估值）。PE(TTM) 40.9倍。ROE 9.9%。营收增速+55.9%。",
         "items": null
       }
     },
@@ -210,8 +210,8 @@
       "valuation": {
         "score": 5.0,
         "sentiment": "neutral",
-        "status": "合理",
-        "summary": "合理估值",
+        "status": "偏高估",
+        "summary": "估值评分39/100（合理估值）。PE(TTM) 31.9倍，处于近3年18%分位（便宜）。ROE 7.5%，毛利率13.2%。营收增速-2.2%，净利增速+11.3%。",
         "items": null
       }
     },
@@ -318,7 +318,7 @@
         "score": 6.5,
         "sentiment": "neutral",
         "status": "偏低估",
-        "summary": "偏低估值",
+        "summary": "估值评分62/100（偏低估值）。PE(TTM) 38.7倍，处于近3年61%分位。ROE 16.1%，毛利率69.8%。营收增速+75.3%，净利增速+133.9%。",
         "items": null
       }
     },
@@ -425,7 +425,7 @@
         "score": 2.5,
         "sentiment": "bearish",
         "status": "高估",
-        "summary": "极高估值",
+        "summary": "估值评分16/100（偏高估值）。ROE -8.1%。营收增速-8.5%。",
         "items": null
       }
     },
@@ -480,8 +480,8 @@
       "valuation": {
         "score": 3.0,
         "sentiment": "bearish",
-        "status": "高估",
-        "summary": "偏高估值",
+        "status": "偏高估",
+        "summary": "估值评分20/100（偏高估值）。PE(TTM) 91.3倍。ROE 3.9%。营收增速-18.6%。",
         "items": null
       }
     },
@@ -548,7 +548,7 @@
         "score": 3.5,
         "sentiment": "neutral",
         "status": "偏高估",
-        "summary": "偏高估值",
+        "summary": "估值评分23/100（偏高估值）。PE(TTM) 32.2倍，处于近3年71%分位。PB 2.65倍（89%分位）。ROE 4.9%，毛利率35.0%。营收增速-17.8%，净利增速+31.4%。股息率1.48%。",
         "items": null
       }
     },
@@ -645,7 +645,7 @@
         "score": 3.0,
         "sentiment": "bearish",
         "status": "高估",
-        "summary": "偏高估值",
+        "summary": "估值评分20/100（偏高估值）。PE(TTM) 64.0倍，处于近3年68%分位。PB 1.01倍（54%分位）。ROE 1.2%，毛利率34.5%。营收增速+8.4%，净利增速+8.9%。股息率1.42%。",
         "items": null
       }
     },
@@ -655,8 +655,8 @@
       "industry": "电子/光学光电子",
       "strategy": "BUMA",
       "price": 31.2,
-      "score": 5.0,
-      "label": "中性",
+      "score": 4.8,
+      "label": "偏弱",
       "announcement": {
         "score": 6.0,
         "sentiment": "neutral",
@@ -698,10 +698,10 @@
         ]
       },
       "valuation": {
-        "score": 5.0,
+        "score": 4.5,
         "sentiment": "neutral",
-        "status": "合理",
-        "summary": "合理估值",
+        "status": "偏高估",
+        "summary": "估值评分37/100（合理估值）。PE(TTM) 40.0倍，处于近3年83%分位（偏贵）。ROE 4.7%，毛利率31.2%。营收增速-7.0%，净利增速-50.2%。",
         "items": null
       }
     }
