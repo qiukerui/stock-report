@@ -1,0 +1,2502 @@
+{
+  "date": "2026-02-03",
+  "analysis": [
+    {
+      "code": "688582.SS",
+      "name": "芯动联科",
+      "industry": "电子/半导体",
+      "strategy": "BUMA",
+      "price": 65.54,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688076.SS",
+      "name": "ST诺泰",
+      "industry": "医药生物/化学制药",
+      "strategy": "BUMA",
+      "price": 34.18,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300539.SZ",
+      "name": "横河精密",
+      "industry": "基础化工/塑料",
+      "strategy": "BUMA",
+      "price": 33.24,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688656.SS",
+      "name": "浩欧博",
+      "industry": "医药生物/医疗器械",
+      "strategy": "BUMA",
+      "price": 143.42,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600363.SS",
+      "name": "联创光电",
+      "industry": "电子/消费电子",
+      "strategy": "BUMA",
+      "price": 63.3,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603087.SS",
+      "name": "甘李药业",
+      "industry": "医药生物/生物制品",
+      "strategy": "BUMA",
+      "price": 67.49,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300768.SZ",
+      "name": "迪普科技",
+      "industry": "计算机/软件开发",
+      "strategy": "BUMA",
+      "price": 18.56,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300733.SZ",
+      "name": "西菱动力",
+      "industry": "汽车/汽车零部件",
+      "strategy": "BUMA",
+      "price": 18.2,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002960.SZ",
+      "name": "青鸟消防",
+      "industry": "机械设备/专用设备",
+      "strategy": "BUMA",
+      "price": 11.05,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688290.SS",
+      "name": "景业智能",
+      "industry": "机械设备/自动化设备",
+      "strategy": "BUMA",
+      "price": 54.65,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300213.SZ",
+      "name": "佳讯飞鸿",
+      "industry": "通信/通信设备",
+      "strategy": "BUMA",
+      "price": 9.43,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "000801.SZ",
+      "name": "四川九洲",
+      "industry": "家用电器/黑色家电",
+      "strategy": "BUMA",
+      "price": 15.77,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002045.SZ",
+      "name": "国光电器",
+      "industry": "电子/消费电子",
+      "strategy": "BUMA",
+      "price": 13.77,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301310.SZ",
+      "name": "鑫宏业",
+      "industry": "汽车/汽车零部件",
+      "strategy": "BUMA",
+      "price": 39.28,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002599.SZ",
+      "name": "盛通股份",
+      "industry": "轻工制造/包装印刷",
+      "strategy": "BUMA,MTOP",
+      "price": 8.01,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "601888.SS",
+      "name": "中国中免",
+      "industry": "商贸零售/旅游零售Ⅱ",
+      "strategy": "BUMA,MTOP",
+      "price": 91.6,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002058.SZ",
+      "name": "*ST威尔",
+      "industry": "机械设备/",
+      "strategy": "BUMA,MTOP",
+      "price": 22.19,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603809.SS",
+      "name": "豪能股份",
+      "industry": "汽车/汽车零部件",
+      "strategy": "BUMA",
+      "price": 12.96,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688981.SS",
+      "name": "中芯国际",
+      "industry": "电子/半导体",
+      "strategy": "BUMA",
+      "price": 116.03,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "601127.SS",
+      "name": "赛力斯",
+      "industry": "汽车/乘用车",
+      "strategy": "BUMA",
+      "price": 107.4,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603886.SS",
+      "name": "元祖股份",
+      "industry": "食品饮料/休闲食品",
+      "strategy": "BUMA",
+      "price": 13.42,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002241.SZ",
+      "name": "歌尔股份",
+      "industry": "电子/消费电子",
+      "strategy": "BUMA",
+      "price": 26.36,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002418.SZ",
+      "name": "康盛股份",
+      "industry": "家用电器/家电零部件Ⅱ",
+      "strategy": "BUMA",
+      "price": 4.68,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002600.SZ",
+      "name": "领益智造",
+      "industry": "电子/消费电子",
+      "strategy": "BUMA",
+      "price": 14.95,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603099.SS",
+      "name": "长白山",
+      "industry": "社会服务/旅游及景区",
+      "strategy": "BUMA",
+      "price": 42.48,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603928.SS",
+      "name": "兴业股份",
+      "industry": "基础化工/塑料",
+      "strategy": "BUMA,REBOUND",
+      "price": 15.86,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "000559.SZ",
+      "name": "万向钱潮",
+      "industry": "汽车/汽车零部件",
+      "strategy": "BUMA",
+      "price": 17.52,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002634.SZ",
+      "name": "棒杰股份",
+      "industry": "纺织服饰/服装家纺",
+      "strategy": "BUMA",
+      "price": 5.76,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002086.SZ",
+      "name": "东方海洋",
+      "industry": "医药生物/医疗器械",
+      "strategy": "BUMA",
+      "price": 2.25,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002564.SZ",
+      "name": "天沃科技",
+      "industry": "建筑装饰/专业工程",
+      "strategy": "BUMA",
+      "price": 7.53,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603511.SS",
+      "name": "爱慕股份",
+      "industry": "纺织服饰/服装家纺",
+      "strategy": "BUMA",
+      "price": 15.49,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300946.SZ",
+      "name": "恒而达",
+      "industry": "机械设备/",
+      "strategy": "BUMA",
+      "price": 48.5,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300476.SZ",
+      "name": "胜宏科技",
+      "industry": "电子/元件",
+      "strategy": "BUMA",
+      "price": 265.25,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "605069.SS",
+      "name": "正和生态",
+      "industry": "环保/环境治理",
+      "strategy": "BUMA,REBOUND",
+      "price": 13.02,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600113.SS",
+      "name": "浙江东日",
+      "industry": "商贸零售/一般零售",
+      "strategy": "BUMA",
+      "price": 60.19,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002108.SZ",
+      "name": "沧州明珠",
+      "industry": "基础化工/塑料",
+      "strategy": "BUMA",
+      "price": 4.89,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002987.SZ",
+      "name": "京北方",
+      "industry": "计算机/软件开发",
+      "strategy": "BUMA",
+      "price": 18.96,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300366.SZ",
+      "name": "创意信息",
+      "industry": "计算机/软件开发",
+      "strategy": "BUMA,MTOP",
+      "price": 6.73,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "001282.SZ",
+      "name": "三联锻造",
+      "industry": "汽车/汽车零部件",
+      "strategy": "BUMA",
+      "price": 20.87,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002632.SZ",
+      "name": "道明光学",
+      "industry": "基础化工/塑料",
+      "strategy": "BUMA",
+      "price": 12.24,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002614.SZ",
+      "name": "奥佳华",
+      "industry": "家用电器/其他家电Ⅱ",
+      "strategy": "BUMA",
+      "price": 6.97,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300545.SZ",
+      "name": "联得装备",
+      "industry": "电子/光学光电子",
+      "strategy": "BUMA",
+      "price": 31.35,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002370.SZ",
+      "name": "亚太药业",
+      "industry": "医药生物/化学制药",
+      "strategy": "BUMA",
+      "price": 7.14,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301565.SZ",
+      "name": "中仑新材",
+      "industry": "基础化工/塑料",
+      "strategy": "BUMA",
+      "price": 24.95,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002631.SZ",
+      "name": "德尔未来",
+      "industry": "轻工制造/家居用品",
+      "strategy": "BUMA",
+      "price": 5.72,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603328.SS",
+      "name": "依顿电子",
+      "industry": "电子/元件",
+      "strategy": "BUMA",
+      "price": 11.36,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600960.SS",
+      "name": "渤海汽车",
+      "industry": "汽车/汽车零部件",
+      "strategy": "BUMA,MTOP",
+      "price": 5.13,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002164.SZ",
+      "name": "宁波东力",
+      "industry": "机械设备/",
+      "strategy": "BUMA",
+      "price": 13.9,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002363.SZ",
+      "name": "隆基机械",
+      "industry": "汽车/汽车零部件",
+      "strategy": "BUMA",
+      "price": 9.24,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002337.SZ",
+      "name": "赛象科技",
+      "industry": "机械设备/专用设备",
+      "strategy": "BUMA,REBOUND",
+      "price": 6.71,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600939.SS",
+      "name": "重庆建工",
+      "industry": "建筑装饰/房屋建设Ⅱ",
+      "strategy": "BUMA",
+      "price": 3.14,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603032.SS",
+      "name": "德新科技",
+      "industry": "电力设备/电池",
+      "strategy": "BUMA",
+      "price": 19.18,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "003029.SZ",
+      "name": "吉大正元",
+      "industry": "计算机/软件开发",
+      "strategy": "BUMA",
+      "price": 24.43,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002903.SZ",
+      "name": "宇环数控",
+      "industry": "机械设备/",
+      "strategy": "BUMA",
+      "price": 21.77,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600480.SS",
+      "name": "凌云股份",
+      "industry": "汽车/汽车零部件",
+      "strategy": "BUMA,MTOP",
+      "price": 11.67,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688678.SS",
+      "name": "福立旺",
+      "industry": "电子/消费电子",
+      "strategy": "BUMA",
+      "price": 22.97,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300469.SZ",
+      "name": "信息发展",
+      "industry": "计算机/软件开发",
+      "strategy": "MTOP",
+      "price": 62.72,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "601211.SS",
+      "name": "国泰海通",
+      "industry": "非银金融/证券Ⅱ",
+      "strategy": "MTOP",
+      "price": 19.5,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "605208.SS",
+      "name": "永茂泰",
+      "industry": "有色金属/工业金属",
+      "strategy": "MTOP",
+      "price": 13.48,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600496.SS",
+      "name": "精工钢构",
+      "industry": "建筑装饰/专业工程",
+      "strategy": "MTOP",
+      "price": 4.55,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002190.SZ",
+      "name": "成飞集成",
+      "industry": "汽车/汽车零部件",
+      "strategy": "MTOP",
+      "price": 35.79,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688502.SS",
+      "name": "茂莱光学",
+      "industry": "电子/光学光电子",
+      "strategy": "MTOP",
+      "price": 373.45,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "000565.SZ",
+      "name": "渝三峡Ａ",
+      "industry": "基础化工/化学制品",
+      "strategy": "MTOP,REBOUND",
+      "price": 8.29,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688660.SS",
+      "name": "电气风电",
+      "industry": "电力设备/风电设备",
+      "strategy": "MTOP",
+      "price": 14.39,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "605196.SS",
+      "name": "华通线缆",
+      "industry": "电力设备/电网设备",
+      "strategy": "MTOP",
+      "price": 43.12,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301009.SZ",
+      "name": "可靠股份",
+      "industry": "美容护理/个护用品",
+      "strategy": "MTOP",
+      "price": 13.2,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002759.SZ",
+      "name": "天际股份",
+      "industry": "电力设备/电池",
+      "strategy": "MTOP",
+      "price": 38.53,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300753.SZ",
+      "name": "爱朋医疗",
+      "industry": "医药生物/医疗器械",
+      "strategy": "MTOP",
+      "price": 32.94,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688208.SS",
+      "name": "道通科技",
+      "industry": "计算机/计算机设备",
+      "strategy": "MTOP",
+      "price": 35.11,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "605055.SS",
+      "name": "迎丰股份",
+      "industry": "纺织服饰/纺织制造",
+      "strategy": "MTOP",
+      "price": 9.25,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002879.SZ",
+      "name": "长缆科技",
+      "industry": "电力设备/电网设备",
+      "strategy": "MTOP",
+      "price": 21.92,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002047.SZ",
+      "name": "*ST宝鹰",
+      "industry": "建筑装饰/装修装饰Ⅱ",
+      "strategy": "MTOP",
+      "price": 4.33,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002496.SZ",
+      "name": "*ST辉丰",
+      "industry": "基础化工/农化制品",
+      "strategy": "MTOP",
+      "price": 1.76,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002580.SZ",
+      "name": "圣阳股份",
+      "industry": "电力设备/电池",
+      "strategy": "MTOP",
+      "price": 12.68,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600318.SS",
+      "name": "新力金融",
+      "industry": "非银金融/多元金融",
+      "strategy": "MTOP",
+      "price": 8.65,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688778.SS",
+      "name": "厦钨新能",
+      "industry": "电力设备/电池",
+      "strategy": "MTOP",
+      "price": 85.17,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301132.SZ",
+      "name": "满坤科技",
+      "industry": "电子/元件",
+      "strategy": "MTOP",
+      "price": 36.35,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301225.SZ",
+      "name": "恒勃股份",
+      "industry": "汽车/汽车零部件",
+      "strategy": "MTOP",
+      "price": 145.05,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688585.SS",
+      "name": "上纬新材",
+      "industry": "基础化工/塑料",
+      "strategy": "MTOP",
+      "price": 136.63,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603221.SS",
+      "name": "爱丽家居",
+      "industry": "轻工制造/家居用品",
+      "strategy": "MTOP",
+      "price": 13.16,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002993.SZ",
+      "name": "奥海科技",
+      "industry": "电子/消费电子",
+      "strategy": "MTOP",
+      "price": 48.75,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603676.SS",
+      "name": "卫信康",
+      "industry": "医药生物/化学制药",
+      "strategy": "MTOP",
+      "price": 11.43,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300126.SZ",
+      "name": "锐奇股份",
+      "industry": "机械设备/",
+      "strategy": "MTOP",
+      "price": 8.85,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301021.SZ",
+      "name": "英诺激光",
+      "industry": "机械设备/自动化设备",
+      "strategy": "MTOP",
+      "price": 59.19,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002448.SZ",
+      "name": "中原内配",
+      "industry": "汽车/汽车零部件",
+      "strategy": "MTOP",
+      "price": 13.01,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301105.SZ",
+      "name": "鸿铭股份",
+      "industry": "机械设备/专用设备",
+      "strategy": "MTOP",
+      "price": 50.44,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301287.SZ",
+      "name": "康力源",
+      "industry": "轻工制造/文娱用品",
+      "strategy": "MTOP",
+      "price": 45.62,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688288.SS",
+      "name": "鸿泉物联",
+      "industry": "计算机/计算机设备",
+      "strategy": "MTOP",
+      "price": 26.68,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301113.SZ",
+      "name": "雅艺科技",
+      "industry": "轻工制造/家居用品",
+      "strategy": "MTOP",
+      "price": 26.12,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300778.SZ",
+      "name": "新城市",
+      "industry": "建筑装饰/工程咨询服务Ⅱ",
+      "strategy": "MTOP",
+      "price": 14.24,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603112.SS",
+      "name": "华翔股份",
+      "industry": "家用电器/家电零部件Ⅱ",
+      "strategy": "MTOP",
+      "price": 17.28,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002441.SZ",
+      "name": "众业达",
+      "industry": "电力设备/电网设备",
+      "strategy": "MTOP",
+      "price": 9.97,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300157.SZ",
+      "name": "新锦动力",
+      "industry": "机械设备/",
+      "strategy": "MTOP",
+      "price": 5.45,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688531.SS",
+      "name": "日联科技",
+      "industry": "机械设备/专用设备",
+      "strategy": "MTOP",
+      "price": 72.5,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688236.SS",
+      "name": "春立医疗",
+      "industry": "医药生物/医疗器械",
+      "strategy": "MTOP",
+      "price": 23.32,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300882.SZ",
+      "name": "万胜智能",
+      "industry": "电力设备/电网设备",
+      "strategy": "MTOP",
+      "price": 22.65,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002572.SZ",
+      "name": "索菲亚",
+      "industry": "轻工制造/家居用品",
+      "strategy": "REBOUND",
+      "price": 14.35,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688553.SS",
+      "name": "汇宇制药-W",
+      "industry": "医药生物/化学制药",
+      "strategy": "REBOUND",
+      "price": 19.12,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300536.SZ",
+      "name": "农尚环境",
+      "industry": "建筑装饰/基础建设",
+      "strategy": "REBOUND",
+      "price": 9.1,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "000908.SZ",
+      "name": "ST景峰",
+      "industry": "医药生物/化学制药",
+      "strategy": "REBOUND",
+      "price": 7.02,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "001387.SZ",
+      "name": "雪祺电气",
+      "industry": "家用电器/白色家电",
+      "strategy": "REBOUND",
+      "price": 14.8,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301201.SZ",
+      "name": "诚达药业",
+      "industry": "医药生物/医疗服务",
+      "strategy": "REBOUND",
+      "price": 38.56,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603271.SS",
+      "name": "永杰新材",
+      "industry": "有色金属/工业金属",
+      "strategy": "REBOUND",
+      "price": 48.65,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600691.SS",
+      "name": "阳煤化工",
+      "industry": "基础化工/农化制品",
+      "strategy": "REBOUND",
+      "price": 3.05,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    }
+  ],
+  "compare": null
+}

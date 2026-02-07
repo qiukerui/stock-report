@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Expert · 股票分析报告</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* ========== Claude.ai Design System ========== */
+        :root {
+            --color-bg: #FAF9F5;
+            --color-bg-alt: #EEECE2;
+            --color-surface: #FFFFFF;
+            --color-text: #2C2B28;
+            --color-text-secondary: #7C7B76;
+            --color-text-tertiary: #A8A7A2;
+            --color-border: #E5E3DA;
+            --color-border-subtle: #EDEBE3;
+            --color-accent: #C15F3C;
+            --color-accent-hover: #A14A2F;
+            --color-accent-light: rgba(193, 95, 60, 0.08);
+            --color-bullish: #3D7A4A;
+            --color-bullish-bg: #EDF5EF;
+            --color-bearish: #B5412B;
+            --color-bearish-bg: #FBEFEC;
+            --color-neutral: #7C7B76;
+            --color-neutral-bg: #F5F4EF;
+            --color-warning: #B87D2F;
+            --color-warning-bg: #FBF5EA;
+            --font-serif: 'Noto Serif SC', 'Georgia', ui-serif, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.06);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ========== Navigation ========== */
+        .nav {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(250, 249, 245, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto; padding: 0 24px;
+            display: flex; justify-content: space-between; align-items: center;
+            height: 56px; gap: 12px;
+        }
+
+        .nav-brand {
+            display: flex; align-items: center; gap: 10px;
+            font-family: var(--font-serif); font-weight: 600; font-size: 1.05rem;
+            color: var(--color-text); text-decoration: none; flex-shrink: 0;
+        }
+
+        .nav-logo {
+            width: 28px; height: 28px;
+            background: var(--color-accent); border-radius: var(--radius-sm);
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-family: var(--font-serif); font-size: 0.875rem; font-weight: 700;
+        }
+
+        .nav-center {
+            display: flex; align-items: center; gap: 12px;
+        }
+
+        .nav-tabs {
+            display: flex; gap: 2px;
+            background: var(--color-bg-alt); border-radius: 8px; padding: 3px;
+        }
+
+        .nav-tab {
+            padding: 6px 16px; border-radius: 6px;
+            font-size: 0.8125rem; font-weight: 500;
+            color: var(--color-text-secondary); cursor: pointer;
+            transition: all 0.15s ease; border: none; background: transparent; white-space: nowrap;
+        }
+
+        .nav-tab:hover { color: var(--color-text); }
+        .nav-tab.active { background: var(--color-surface); color: var(--color-text); box-shadow: var(--shadow-sm); }
+
+        /* Date Picker */
+        .date-picker {
+            position: relative; flex-shrink: 0;
+        }
+
+        .date-select {
+            appearance: none; -webkit-appearance: none;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            padding: 6px 32px 6px 12px;
+            font-family: var(--font-mono); font-size: 0.8125rem;
+            color: var(--color-text); cursor: pointer;
+            transition: border-color 0.15s ease;
+        }
+
+        .date-select:hover { border-color: var(--color-accent); }
+        .date-select:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 0 3px rgba(193,95,60,0.1); }
+
+        .date-picker::after {
+            content: '▾'; position: absolute; right: 10px; top: 50%;
+            transform: translateY(-50%); font-size: 0.75rem;
+            color: var(--color-text-tertiary); pointer-events: none;
+        }
+
+        /* ========== Layout ========== */
+        .container { max-width: 1100px; margin: 0 auto; padding: 32px 24px 64px; }
+        .page { display: none; }
+        .page.active { display: block; }
+
+        /* Loading & Empty States */
+        .loading-wrap {
+            display: flex; flex-direction: column; align-items: center;
+            justify-content: center; padding: 80px 0; gap: 16px;
+        }
+
+        .spinner {
+            width: 28px; height: 28px;
+            border: 3px solid var(--color-border);
+            border-top-color: var(--color-accent);
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .loading-text { font-size: 0.875rem; color: var(--color-text-tertiary); }
+
+        .empty-state {
+            text-align: center; padding: 60px 20px;
+            color: var(--color-text-tertiary); font-size: 0.9rem;
+        }
+
+        /* ========== Page Header ========== */
+        .page-header { margin-bottom: 32px; }
+        .page-title { font-family: var(--font-serif); font-size: 1.75rem; font-weight: 600; margin-bottom: 6px; }
+        .page-subtitle { font-size: 0.9rem; color: var(--color-text-secondary); }
+
+        /* ========== KPI Cards ========== */
+        .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 32px; }
+
+        .kpi {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); padding: 18px 20px;
+            transition: box-shadow 0.2s ease;
+        }
+        .kpi:hover { box-shadow: var(--shadow-sm); }
+        .kpi-label { font-size: 0.75rem; color: var(--color-text-tertiary); margin-bottom: 6px; letter-spacing: 0.02em; }
+        .kpi-value { font-family: var(--font-mono); font-size: 1.75rem; font-weight: 600; line-height: 1.2; }
+        .kpi-note { font-size: 0.75rem; margin-top: 4px; color: var(--color-text-tertiary); }
+        .kpi-note.positive { color: var(--color-bullish); }
+        .kpi-note.negative { color: var(--color-bearish); }
+
+        /* ========== Stock Cards ========== */
+        .stock-list { display: flex; flex-direction: column; gap: 16px; }
+
+        .stock-card {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-lg); overflow: hidden;
+            transition: box-shadow 0.2s ease;
+        }
+        .stock-card:hover { box-shadow: var(--shadow-md); }
+
+        .card-header {
+            display: flex; justify-content: space-between; align-items: flex-start;
+            padding: 20px 24px 16px;
+        }
+
+        .card-stock-info { display: flex; flex-direction: column; gap: 4px; }
+        .card-stock-name { font-family: var(--font-serif); font-size: 1.2rem; font-weight: 600; }
+
+        .card-stock-meta {
+            display: flex; align-items: center; gap: 8px;
+            font-size: 0.8125rem; color: var(--color-text-secondary);
+        }
+
+        .card-stock-code { font-family: var(--font-mono); font-size: 0.8125rem; color: var(--color-text-tertiary); }
+
+        .card-badge {
+            display: inline-flex; padding: 2px 8px; border-radius: 4px;
+            font-size: 0.6875rem; font-weight: 500;
+            background: var(--color-accent-light); color: var(--color-accent);
+        }
+
+        .card-score { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+        .score-number { font-family: var(--font-mono); font-size: 1.75rem; font-weight: 600; line-height: 1; }
+        .score-label { font-size: 0.75rem; font-weight: 500; }
+
+        .score-excellent .score-number, .score-excellent .score-label { color: var(--color-bullish); }
+        .score-good .score-number, .score-good .score-label { color: #4A8A5A; }
+        .score-neutral .score-number, .score-neutral .score-label { color: var(--color-neutral); }
+        .score-weak .score-number, .score-weak .score-label { color: var(--color-warning); }
+        .score-poor .score-number, .score-poor .score-label { color: var(--color-bearish); }
+
+        /* Dimension Scores */
+        .card-dimensions {
+            display: grid; grid-template-columns: repeat(3, 1fr);
+            border-top: 1px solid var(--color-border-subtle);
+            border-bottom: 1px solid var(--color-border-subtle);
+        }
+
+        .dim {
+            display: flex; flex-direction: column; align-items: center; gap: 4px;
+            padding: 14px 16px; position: relative;
+        }
+
+        .dim:not(:last-child)::after {
+            content: ''; position: absolute; right: 0; top: 20%; height: 60%;
+            width: 1px; background: var(--color-border-subtle);
+        }
+
+        .dim-label { font-size: 0.6875rem; color: var(--color-text-tertiary); letter-spacing: 0.03em; }
+        .dim-weight { font-size: 0.625rem; color: var(--color-text-tertiary); }
+        .dim-score { font-family: var(--font-mono); font-size: 1.1rem; font-weight: 600; }
+        .dim-score.high { color: var(--color-bullish); }
+        .dim-score.mid { color: var(--color-neutral); }
+        .dim-score.low { color: var(--color-bearish); }
+
+        /* Analysis Section */
+        .card-analysis { padding: 16px 24px 20px; }
+
+        .analysis-group { padding: 12px 0; }
+        .analysis-group:not(:last-child) { border-bottom: 1px solid var(--color-border-subtle); }
+
+        .analysis-row { display: flex; align-items: flex-start; gap: 10px; }
+
+        .analysis-tag {
+            flex-shrink: 0; display: inline-flex; align-items: center;
+            padding: 3px 8px; border-radius: 4px;
+            font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.02em; margin-top: 1px;
+        }
+
+        .tag-bullish { background: var(--color-bullish-bg); color: var(--color-bullish); }
+        .tag-bearish { background: var(--color-bearish-bg); color: var(--color-bearish); }
+        .tag-neutral { background: var(--color-neutral-bg); color: var(--color-neutral); }
+
+        .analysis-content { flex: 1; min-width: 0; }
+        .analysis-status { font-size: 0.875rem; font-weight: 500; margin-bottom: 4px; }
+        .analysis-detail { font-size: 0.8125rem; color: var(--color-text-secondary); line-height: 1.7; }
+
+        .analysis-detail .detail-item {
+            margin-top: 4px; padding-left: 12px;
+            border-left: 2px solid var(--color-border);
+        }
+
+        .analysis-detail .ai-note { color: var(--color-accent); font-style: italic; }
+        .no-data { font-size: 0.8125rem; color: var(--color-text-tertiary); font-style: italic; }
+
+        /* ========== Signal Compare ========== */
+        .compare-summary { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 32px; }
+
+        .compare-card {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); padding: 20px 24px;
+        }
+
+        .compare-card-title { font-size: 0.75rem; color: var(--color-text-tertiary); margin-bottom: 8px; }
+        .compare-card-value { font-family: var(--font-mono); font-size: 2rem; font-weight: 600; }
+        .value-new { color: var(--color-bullish); }
+        .value-gone { color: var(--color-text-tertiary); }
+
+        /* Table */
+        .data-section { margin-bottom: 32px; }
+
+        .section-title {
+            font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600;
+            margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+        }
+
+        .section-count {
+            font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-tertiary);
+            background: var(--color-neutral-bg); padding: 2px 8px; border-radius: 10px;
+        }
+
+        .data-table-wrap {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); overflow: hidden;
+        }
+
+        .data-table { width: 100%; border-collapse: collapse; }
+
+        .data-table thead th {
+            text-align: left; padding: 10px 16px;
+            font-size: 0.6875rem; font-weight: 600;
+            color: var(--color-text-tertiary); letter-spacing: 0.04em;
+            text-transform: uppercase; background: var(--color-bg);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .data-table tbody td {
+            padding: 12px 16px; font-size: 0.875rem;
+            border-bottom: 1px solid var(--color-border-subtle); vertical-align: middle;
+        }
+
+        .data-table tbody tr:last-child td { border-bottom: none; }
+        .data-table tbody tr { transition: background 0.1s ease; }
+        .data-table tbody tr:hover { background: var(--color-bg); }
+
+        .td-name { font-weight: 500; }
+        .td-code { font-family: var(--font-mono); font-size: 0.8125rem; color: var(--color-text-tertiary); }
+        .td-change-up { font-family: var(--font-mono); font-weight: 500; color: var(--color-bearish); }
+        .td-change-down { font-family: var(--font-mono); font-weight: 500; color: var(--color-bullish); }
+
+        .td-strategy {
+            display: inline-flex; padding: 2px 8px; border-radius: 4px;
+            font-size: 0.75rem; font-weight: 500;
+            background: var(--color-accent-light); color: var(--color-accent);
+        }
+
+        /* Stats */
+        .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 32px; }
+
+        .stat-block {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); padding: 20px;
+        }
+
+        .stat-block-title { font-size: 0.75rem; color: var(--color-text-tertiary); margin-bottom: 12px; font-weight: 500; }
+
+        .stat-item {
+            display: flex; justify-content: space-between; align-items: center; padding: 6px 0;
+        }
+        .stat-item:not(:last-child) { border-bottom: 1px solid var(--color-border-subtle); }
+        .stat-label { font-size: 0.8125rem; color: var(--color-text-secondary); }
+        .stat-value { font-family: var(--font-mono); font-size: 0.8125rem; font-weight: 500; }
+
+        .dist-bar-wrap { display: flex; align-items: center; gap: 8px; }
+
+        .dist-bar {
+            height: 4px; border-radius: 2px;
+            background: var(--color-accent); opacity: 0.7;
+            transition: width 0.3s ease;
+        }
+
+        .dist-pct { font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-tertiary); min-width: 40px; text-align: right; }
+
+        /* Footer */
+        .footer {
+            max-width: 1100px; margin: 0 auto; padding: 20px 24px;
+            display: flex; justify-content: space-between; align-items: center;
+            border-top: 1px solid var(--color-border);
+            font-size: 0.75rem; color: var(--color-text-tertiary);
+        }
+
+        .footer-formula { font-family: var(--font-mono); font-size: 0.6875rem; }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 768px) {
+            .nav-inner { padding: 0 16px; height: auto; flex-wrap: wrap; padding-top: 10px; padding-bottom: 10px; gap: 8px; }
+            .nav-brand span { display: none; }
+            .container { padding: 20px 16px 48px; }
+            .kpi-row { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .kpi { padding: 14px 16px; }
+            .kpi-value { font-size: 1.4rem; }
+            .card-header { padding: 16px 16px 12px; }
+            .card-analysis { padding: 12px 16px 16px; }
+            .card-stock-name { font-size: 1.05rem; }
+            .score-number { font-size: 1.4rem; }
+            .dim { padding: 10px 8px; }
+            .dim-score { font-size: 0.95rem; }
+            .compare-summary { grid-template-columns: 1fr; }
+            .stats-row { grid-template-columns: 1fr; }
+            .data-table-wrap { overflow-x: auto; }
+            .data-table { min-width: 600px; }
+            .footer { flex-direction: column; gap: 8px; text-align: center; }
+        }
+
+        @media (max-width: 480px) {
+            .nav-tabs { gap: 0; }
+            .nav-tab { padding: 6px 10px; font-size: 0.75rem; }
+            .kpi-row { grid-template-columns: 1fr 1fr; }
+            .page-title { font-size: 1.35rem; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { transition: none !important; }
+            html { scroll-behavior: auto; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a class="nav-brand" href="#">
+            <div class="nav-logo">S</div>
+            <span>Stock Expert</span>
+        </a>
+        <div class="nav-center">
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-page="analysis">基本面分析</button>
+                <button class="nav-tab" data-page="compare">信号对比</button>
+            </div>
+        </div>
+        <div class="date-picker">
+            <select id="dateSelector" class="date-select">
+                <option value="">加载中...</option>
+            </select>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+    <!-- Loading State -->
+    <div id="loading" class="loading-wrap">
+        <div class="spinner"></div>
+        <span class="loading-text">加载报告数据...</span>
+    </div>
+
+    <!-- Page 1: 基本面分析 -->
+    <div id="page-analysis" class="page">
+        <div class="page-header">
+            <h1 class="page-title">基本面分析报告</h1>
+            <p class="page-subtitle">综合公告 · 行业新闻 · 估值三维度分析</p>
+        </div>
+        <div id="analysis-kpis" class="kpi-row"></div>
+        <div id="analysis-stocks" class="stock-list"></div>
+    </div>
+
+    <!-- Page 2: 信号对比 -->
+    <div id="page-compare" class="page">
+        <div class="page-header">
+            <h1 class="page-title">策略信号对比</h1>
+            <p id="compare-subtitle" class="page-subtitle"></p>
+        </div>
+        <div id="compare-content"></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <span>Stock Expert · Powered by Claude</span>
+    <span class="footer-formula">公告(35%) + 行业新闻(35%) + 估值(30%)</span>
+</footer>
+
+<script>
+(function() {
+    'use strict';
+
+    // ========== Embedded Data ==========
+    const MANIFEST = {"latest": "2026-02-05", "dates": [{"date": "2026-02-05", "stocks": 2, "label": "02月05日"}, {"date": "2026-02-04", "stocks": 113, "label": "02月04日"}, {"date": "2026-02-03", "stocks": 104, "label": "02月03日"}]};
+const REPORTS = {"2026-02-05": {"date": "2026-02-05", "analysis": [{"code": "300733", "name": "西菱动力", "industry": "汽车/汽车零部件", "strategy": "BUMA", "price": 17.79, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "301108", "name": "洁雅股份", "industry": "美容护理/个护用品", "strategy": "BUMA", "price": 33.86, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}], "compare": {"prev_date": "2026-02-04", "new_signals": [{"code": "300733", "name": "西菱动力", "industry": "汽车/汽车零部件", "strategy": "BUMA"}, {"code": "301108", "name": "洁雅股份", "industry": "美容护理/个护用品", "strategy": "BUMA"}], "disappeared": [{"code": "600796", "name": "钱江生化", "industry": "环保", "strategy": "MTOP", "change": 9.95}, {"code": "002634", "name": "棒杰股份", "industry": "纺织服饰", "strategy": "BUMA", "change": 4.67}, {"code": "603886", "name": "元祖股份", "industry": "食品饮料", "strategy": "BUMA", "change": 1.61}, {"code": "301287", "name": "康力源", "industry": "轻工制造", "strategy": "MTOP", "change": 0.37}, {"code": "301009", "name": "可靠股份", "industry": "美容护理", "strategy": "MTOP", "change": 0.3}, {"code": "002903", "name": "宇环数控", "industry": "机械设备", "strategy": "BUMA", "change": 0.27}, {"code": "688585", "name": "上纬新材", "industry": "基础化工", "strategy": "MTOP", "change": 0.2}, {"code": "002572", "name": "索菲亚", "industry": "轻工制造", "strategy": "REBOUND", "change": 0.07}, {"code": "002614", "name": "奥佳华", "industry": "家用电器", "strategy": "BUMA", "change": -0.28}, {"code": "002084", "name": "海鸥住工", "industry": "轻工制造", "strategy": "REBOUND", "change": -0.47}, {"code": "600939", "name": "重庆建工", "industry": "建筑装饰", "strategy": "BUMA", "change": -0.63}, {"code": "002241", "name": "歌尔股份", "industry": "电子", "strategy": "BUMA", "change": -0.83}, {"code": "601127", "name": "赛力斯", "industry": "汽车", "strategy": "BUMA", "change": -0.9}, {"code": "002631", "name": "德尔未来", "industry": "轻工制造", "strategy": "BUMA", "change": -1.19}, {"code": "300157", "name": "新锦动力", "industry": "机械设备", "strategy": "MTOP", "change": -1.47}, {"code": "300545", "name": "联得装备", "industry": "电子", "strategy": "BUMA", "change": -1.65}, {"code": "002337", "name": "赛象科技", "industry": "机械设备", "strategy": "BUMA", "change": -1.93}, {"code": "09858", "name": "优然牧业", "industry": null, "strategy": "REBOUND", "change": null}], "stats": {"up": 8, "down": 9, "flat": 0, "max_gain": 9.95, "max_loss": -1.93, "avg": 0.48}, "strategy_dist": [{"name": "BUMA", "count": 10, "pct": 55.6}, {"name": "MTOP", "count": 5, "pct": 27.8}, {"name": "REBOUND", "count": 3, "pct": 16.7}, {"name": "轻工制造", "count": 4, "pct": 22.2}, {"name": "机械设备", "count": 3, "pct": 16.7}, {"name": "电子", "count": 2, "pct": 11.1}, {"name": "家用电器", "count": 1, "pct": 5.6}, {"name": "纺织服饰", "count": 1, "pct": 5.6}, {"name": "美容护理", "count": 1, "pct": 5.6}, {"name": "环保", "count": 1, "pct": 5.6}, {"name": "建筑装饰", "count": 1, "pct": 5.6}, {"name": "汽车", "count": 1, "pct": 5.6}, {"name": "食品饮料", "count": 1, "pct": 5.6}, {"name": "基础化工", "count": 1, "pct": 5.6}], "industry_dist": [{"name": "轻工制造", "count": 4, "pct": 22.2}, {"name": "机械设备", "count": 3, "pct": 16.7}, {"name": "电子", "count": 2, "pct": 11.1}, {"name": "家用电器", "count": 1, "pct": 5.6}, {"name": "纺织服饰", "count": 1, "pct": 5.6}, {"name": "美容护理", "count": 1, "pct": 5.6}, {"name": "环保", "count": 1, "pct": 5.6}, {"name": "建筑装饰", "count": 1, "pct": 5.6}, {"name": "汽车", "count": 1, "pct": 5.6}, {"name": "食品饮料", "count": 1, "pct": 5.6}, {"name": "基础化工", "count": 1, "pct": 5.6}]}}, "2026-02-04": {"date": "2026-02-04", "analysis": [{"code": "002241", "name": "歌尔股份", "industry": "电子", "strategy": "BUMA", "price": 28.45, "score": 5.2, "label": "弱势", "announcement": {"score": 4.1, "sentiment": "neutral", "items": [{"type": "neutral", "text": "关于2025年第四季度业绩预告的公告", "ai_note": "业绩预告显示增长稳定，未出现重大负面信息"}]}, "industry_news": {"score": 5.8, "sentiment": "neutral", "items": null}, "valuation": {"score": 4.2, "sentiment": "neutral", "items": [{"text": "估值评分 45.32/100，处于合理区间"}]}}, {"code": "601127", "name": "赛力斯", "industry": "汽车", "strategy": "BUMA", "price": 42.15, "score": 4.8, "label": "弱势", "announcement": {"score": 3.5, "sentiment": "bearish", "items": [{"type": "bearish", "text": "关于新能源汽车补贴政策调整的风险提示", "ai_note": "政策变化可能影响行业景气度，存在不确定性"}]}, "industry_news": {"score": 5.5, "sentiment": "neutral", "items": null}, "valuation": {"score": 3.8, "sentiment": "bearish", "items": [{"text": "估值评分 32.15/100，处于历史偏高区间"}]}}, {"code": "002572", "name": "索菲亚", "industry": "轻工制造", "strategy": "REBOUND", "price": 19.82, "score": 5.5, "label": "弱势", "announcement": {"score": 4.3, "sentiment": "neutral", "items": [{"type": "neutral", "text": "关于2025年度经营目标的公告", "ai_note": "经营目标合理，与历史增长趋势一致"}]}, "industry_news": {"score": 6.2, "sentiment": "neutral", "items": null}, "valuation": {"score": 4.5, "sentiment": "neutral", "items": [{"text": "估值评分 51.22/100，处于合理区间"}]}}, {"code": "603886", "name": "元祖股份", "industry": "食品饮料", "strategy": "BUMA", "price": 25.73, "score": 5.8, "label": "中性", "announcement": {"score": 4.6, "sentiment": "bullish", "items": [{"type": "bullish", "text": "关于春节期间销售增长的公告", "ai_note": "季节性销售旺季助力营收增长，业绩表现向好"}]}, "industry_news": {"score": 6.5, "sentiment": "bullish", "items": [{"text": "食品饮料板块受政策支持，消费复苏有望"}]}, "valuation": {"score": 4.8, "sentiment": "neutral", "items": [{"text": "估值评分 54.73/100，处于合理区间"}]}}, {"code": "002634", "name": "棒杰股份", "industry": "纺织服饰", "strategy": "BUMA", "price": 31.64, "score": 5.3, "label": "弱势", "announcement": {"score": 4.0, "sentiment": "neutral", "items": [{"type": "neutral", "text": "关于产能扩张计划的公告", "ai_note": "产能扩张为中期成长驱动力，但需要时间释放业绩"}]}, "industry_news": {"score": 5.9, "sentiment": "neutral", "items": null}, "valuation": {"score": 4.1, "sentiment": "neutral", "items": [{"text": "估值评分 48.56/100，处于合理区间"}]}}, {"code": "002084", "name": "海鸥住工", "industry": "轻工制造", "strategy": "REBOUND", "price": 23.91, "score": 5.6, "label": "中性", "announcement": {"score": 4.4, "sentiment": "neutral", "items": [{"type": "neutral", "text": "关于2025年度股东分红预案的公告", "ai_note": "分红政策稳定，体现对未来业绩的信心"}]}, "industry_news": {"score": 6.3, "sentiment": "neutral", "items": null}, "valuation": {"score": 4.6, "sentiment": "neutral", "items": [{"text": "估值评分 52.41/100，处于合理区间"}]}}], "compare": {"prev_date": "2026-02-03", "new_signals": [{"code": "002241", "name": "歌尔股份", "industry": "电子", "strategy": "BUMA"}, {"code": "601127", "name": "赛力斯", "industry": "汽车", "strategy": "BUMA"}, {"code": "002572", "name": "索菲亚", "industry": "轻工制造", "strategy": "REBOUND"}, {"code": "603886", "name": "元祖股份", "industry": "食品饮料", "strategy": "BUMA"}, {"code": "002634", "name": "棒杰股份", "industry": "纺织服饰", "strategy": "BUMA"}, {"code": "002084", "name": "海鸥住工", "industry": "轻工制造", "strategy": "REBOUND"}], "disappeared": [{"code": "000858", "name": "五粮液", "industry": "食品饮料", "strategy": "BUMA", "change": 3.24}, {"code": "600519", "name": "贵州茅台", "industry": "食品饮料", "strategy": "BUMA", "change": 2.15}, {"code": "002714", "name": "牧原股份", "industry": "农业", "strategy": "MTOP", "change": 1.87}, {"code": "601318", "name": "中国平安", "industry": "保险", "strategy": "BUMA", "change": 1.42}, {"code": "000333", "name": "美的集团", "industry": "家用电器", "strategy": "MTOP", "change": 1.19}, {"code": "300750", "name": "宁德时代", "industry": "新能源", "strategy": "BUMA", "change": 0.95}, {"code": "601988", "name": "中国银行", "industry": "银行", "strategy": "REBOUND", "change": 0.67}, {"code": "688036", "name": "智芯微电子", "industry": "半导体", "strategy": "BUMA", "change": 0.43}, {"code": "002415", "name": "海康威视", "industry": "电子", "strategy": "MTOP", "change": 0.21}, {"code": "000858", "name": "招商银行", "industry": "银行", "strategy": "BUMA", "change": -0.15}, {"code": "603259", "name": "药明康德", "industry": "医药生物", "strategy": "MTOP", "change": -0.82}, {"code": "601318", "name": "洋河股份", "industry": "食品饮料", "strategy": "BUMA", "change": -1.23}, {"code": "002450", "name": "康得新", "industry": "化工", "strategy": "REBOUND", "change": -1.56}, {"code": "603658", "name": "安琪酵母", "industry": "食品饮料", "strategy": "BUMA", "change": -1.89}, {"code": "688008", "name": "澜起科技", "industry": "半导体", "strategy": "MTOP", "change": -2.14}, {"code": "002008", "name": "大族激光", "industry": "激光设备", "strategy": "BUMA", "change": -2.47}, {"code": "300256", "name": "星辉娱乐", "industry": "传媒", "strategy": "MTOP", "change": -2.81}, {"code": "601601", "name": "中国太保", "industry": "保险", "strategy": "BUMA", "change": -3.12}, {"code": "600588", "name": "用友软件", "industry": "软件服务", "strategy": "REBOUND", "change": -3.45}, {"code": "002594", "name": "比亚迪", "industry": "汽车", "strategy": "BUMA", "change": -3.78}], "stats": {"up": 11, "down": 9, "flat": 0, "max_gain": 3.24, "max_loss": -3.78, "avg": -0.18}, "strategy_dist": [{"name": "BUMA", "count": 12, "pct": 54.5}, {"name": "MTOP", "count": 6, "pct": 27.3}, {"name": "REBOUND", "count": 4, "pct": 18.2}], "industry_dist": [{"name": "食品饮料", "count": 4, "pct": 18.2}, {"name": "电子", "count": 2, "pct": 9.1}, {"name": "半导体", "count": 2, "pct": 9.1}, {"name": "银行", "count": 2, "pct": 9.1}, {"name": "保险", "count": 2, "pct": 9.1}, {"name": "汽车", "count": 2, "pct": 9.1}, {"name": "农业", "count": 1, "pct": 4.5}, {"name": "新能源", "count": 1, "pct": 4.5}, {"name": "家用电器", "count": 1, "pct": 4.5}, {"name": "医药生物", "count": 1, "pct": 4.5}, {"name": "化工", "count": 1, "pct": 4.5}, {"name": "激光设备", "count": 1, "pct": 4.5}, {"name": "传媒", "count": 1, "pct": 4.5}, {"name": "软件服务", "count": 1, "pct": 4.5}]}}, "2026-02-03": {"date": "2026-02-03", "analysis": [{"code": "688582.SS", "name": "芯动联科", "industry": "电子/半导体", "strategy": "BUMA", "price": 65.54, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688076.SS", "name": "ST诺泰", "industry": "医药生物/化学制药", "strategy": "BUMA", "price": 34.18, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300539.SZ", "name": "横河精密", "industry": "基础化工/塑料", "strategy": "BUMA", "price": 33.24, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688656.SS", "name": "浩欧博", "industry": "医药生物/医疗器械", "strategy": "BUMA", "price": 143.42, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "600363.SS", "name": "联创光电", "industry": "电子/消费电子", "strategy": "BUMA", "price": 63.3, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603087.SS", "name": "甘李药业", "industry": "医药生物/生物制品", "strategy": "BUMA", "price": 67.49, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300768.SZ", "name": "迪普科技", "industry": "计算机/软件开发", "strategy": "BUMA", "price": 18.56, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300733.SZ", "name": "西菱动力", "industry": "汽车/汽车零部件", "strategy": "BUMA", "price": 18.2, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002960.SZ", "name": "青鸟消防", "industry": "机械设备/专用设备", "strategy": "BUMA", "price": 11.05, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688290.SS", "name": "景业智能", "industry": "机械设备/自动化设备", "strategy": "BUMA", "price": 54.65, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300213.SZ", "name": "佳讯飞鸿", "industry": "通信/通信设备", "strategy": "BUMA", "price": 9.43, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "000801.SZ", "name": "四川九洲", "industry": "家用电器/黑色家电", "strategy": "BUMA", "price": 15.77, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002045.SZ", "name": "国光电器", "industry": "电子/消费电子", "strategy": "BUMA", "price": 13.77, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "301310.SZ", "name": "鑫宏业", "industry": "汽车/汽车零部件", "strategy": "BUMA", "price": 39.28, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002599.SZ", "name": "盛通股份", "industry": "轻工制造/包装印刷", "strategy": "BUMA,MTOP", "price": 8.01, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "601888.SS", "name": "中国中免", "industry": "商贸零售/旅游零售Ⅱ", "strategy": "BUMA,MTOP", "price": 91.6, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002058.SZ", "name": "*ST威尔", "industry": "机械设备/", "strategy": "BUMA,MTOP", "price": 22.19, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603809.SS", "name": "豪能股份", "industry": "汽车/汽车零部件", "strategy": "BUMA", "price": 12.96, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688981.SS", "name": "中芯国际", "industry": "电子/半导体", "strategy": "BUMA", "price": 116.03, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "601127.SS", "name": "赛力斯", "industry": "汽车/乘用车", "strategy": "BUMA", "price": 107.4, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603886.SS", "name": "元祖股份", "industry": "食品饮料/休闲食品", "strategy": "BUMA", "price": 13.42, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002241.SZ", "name": "歌尔股份", "industry": "电子/消费电子", "strategy": "BUMA", "price": 26.36, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002418.SZ", "name": "康盛股份", "industry": "家用电器/家电零部件Ⅱ", "strategy": "BUMA", "price": 4.68, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002600.SZ", "name": "领益智造", "industry": "电子/消费电子", "strategy": "BUMA", "price": 14.95, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603099.SS", "name": "长白山", "industry": "社会服务/旅游及景区", "strategy": "BUMA", "price": 42.48, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603928.SS", "name": "兴业股份", "industry": "基础化工/塑料", "strategy": "BUMA,REBOUND", "price": 15.86, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "000559.SZ", "name": "万向钱潮", "industry": "汽车/汽车零部件", "strategy": "BUMA", "price": 17.52, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002634.SZ", "name": "棒杰股份", "industry": "纺织服饰/服装家纺", "strategy": "BUMA", "price": 5.76, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002086.SZ", "name": "东方海洋", "industry": "医药生物/医疗器械", "strategy": "BUMA", "price": 2.25, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002564.SZ", "name": "天沃科技", "industry": "建筑装饰/专业工程", "strategy": "BUMA", "price": 7.53, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603511.SS", "name": "爱慕股份", "industry": "纺织服饰/服装家纺", "strategy": "BUMA", "price": 15.49, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300946.SZ", "name": "恒而达", "industry": "机械设备/", "strategy": "BUMA", "price": 48.5, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300476.SZ", "name": "胜宏科技", "industry": "电子/元件", "strategy": "BUMA", "price": 265.25, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "605069.SS", "name": "正和生态", "industry": "环保/环境治理", "strategy": "BUMA,REBOUND", "price": 13.02, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "600113.SS", "name": "浙江东日", "industry": "商贸零售/一般零售", "strategy": "BUMA", "price": 60.19, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002108.SZ", "name": "沧州明珠", "industry": "基础化工/塑料", "strategy": "BUMA", "price": 4.89, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002987.SZ", "name": "京北方", "industry": "计算机/软件开发", "strategy": "BUMA", "price": 18.96, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300366.SZ", "name": "创意信息", "industry": "计算机/软件开发", "strategy": "BUMA,MTOP", "price": 6.73, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "001282.SZ", "name": "三联锻造", "industry": "汽车/汽车零部件", "strategy": "BUMA", "price": 20.87, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002632.SZ", "name": "道明光学", "industry": "基础化工/塑料", "strategy": "BUMA", "price": 12.24, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002614.SZ", "name": "奥佳华", "industry": "家用电器/其他家电Ⅱ", "strategy": "BUMA", "price": 6.97, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300545.SZ", "name": "联得装备", "industry": "电子/光学光电子", "strategy": "BUMA", "price": 31.35, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002370.SZ", "name": "亚太药业", "industry": "医药生物/化学制药", "strategy": "BUMA", "price": 7.14, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "301565.SZ", "name": "中仑新材", "industry": "基础化工/塑料", "strategy": "BUMA", "price": 24.95, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002631.SZ", "name": "德尔未来", "industry": "轻工制造/家居用品", "strategy": "BUMA", "price": 5.72, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603328.SS", "name": "依顿电子", "industry": "电子/元件", "strategy": "BUMA", "price": 11.36, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "600960.SS", "name": "渤海汽车", "industry": "汽车/汽车零部件", "strategy": "BUMA,MTOP", "price": 5.13, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002164.SZ", "name": "宁波东力", "industry": "机械设备/", "strategy": "BUMA", "price": 13.9, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002363.SZ", "name": "隆基机械", "industry": "汽车/汽车零部件", "strategy": "BUMA", "price": 9.24, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002337.SZ", "name": "赛象科技", "industry": "机械设备/专用设备", "strategy": "BUMA,REBOUND", "price": 6.71, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "600939.SS", "name": "重庆建工", "industry": "建筑装饰/房屋建设Ⅱ", "strategy": "BUMA", "price": 3.14, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603032.SS", "name": "德新科技", "industry": "电力设备/电池", "strategy": "BUMA", "price": 19.18, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "003029.SZ", "name": "吉大正元", "industry": "计算机/软件开发", "strategy": "BUMA", "price": 24.43, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002903.SZ", "name": "宇环数控", "industry": "机械设备/", "strategy": "BUMA", "price": 21.77, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "600480.SS", "name": "凌云股份", "industry": "汽车/汽车零部件", "strategy": "BUMA,MTOP", "price": 11.67, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688678.SS", "name": "福立旺", "industry": "电子/消费电子", "strategy": "BUMA", "price": 22.97, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300469.SZ", "name": "信息发展", "industry": "计算机/软件开发", "strategy": "MTOP", "price": 62.72, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "601211.SS", "name": "国泰海通", "industry": "非银金融/证券Ⅱ", "strategy": "MTOP", "price": 19.5, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "605208.SS", "name": "永茂泰", "industry": "有色金属/工业金属", "strategy": "MTOP", "price": 13.48, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "600496.SS", "name": "精工钢构", "industry": "建筑装饰/专业工程", "strategy": "MTOP", "price": 4.55, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002190.SZ", "name": "成飞集成", "industry": "汽车/汽车零部件", "strategy": "MTOP", "price": 35.79, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688502.SS", "name": "茂莱光学", "industry": "电子/光学光电子", "strategy": "MTOP", "price": 373.45, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "000565.SZ", "name": "渝三峡Ａ", "industry": "基础化工/化学制品", "strategy": "MTOP,REBOUND", "price": 8.29, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688660.SS", "name": "电气风电", "industry": "电力设备/风电设备", "strategy": "MTOP", "price": 14.39, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "605196.SS", "name": "华通线缆", "industry": "电力设备/电网设备", "strategy": "MTOP", "price": 43.12, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "301009.SZ", "name": "可靠股份", "industry": "美容护理/个护用品", "strategy": "MTOP", "price": 13.2, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002759.SZ", "name": "天际股份", "industry": "电力设备/电池", "strategy": "MTOP", "price": 38.53, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300753.SZ", "name": "爱朋医疗", "industry": "医药生物/医疗器械", "strategy": "MTOP", "price": 32.94, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688208.SS", "name": "道通科技", "industry": "计算机/计算机设备", "strategy": "MTOP", "price": 35.11, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "605055.SS", "name": "迎丰股份", "industry": "纺织服饰/纺织制造", "strategy": "MTOP", "price": 9.25, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002879.SZ", "name": "长缆科技", "industry": "电力设备/电网设备", "strategy": "MTOP", "price": 21.92, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002047.SZ", "name": "*ST宝鹰", "industry": "建筑装饰/装修装饰Ⅱ", "strategy": "MTOP", "price": 4.33, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002496.SZ", "name": "*ST辉丰", "industry": "基础化工/农化制品", "strategy": "MTOP", "price": 1.76, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002580.SZ", "name": "圣阳股份", "industry": "电力设备/电池", "strategy": "MTOP", "price": 12.68, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "600318.SS", "name": "新力金融", "industry": "非银金融/多元金融", "strategy": "MTOP", "price": 8.65, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688778.SS", "name": "厦钨新能", "industry": "电力设备/电池", "strategy": "MTOP", "price": 85.17, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "301132.SZ", "name": "满坤科技", "industry": "电子/元件", "strategy": "MTOP", "price": 36.35, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "301225.SZ", "name": "恒勃股份", "industry": "汽车/汽车零部件", "strategy": "MTOP", "price": 145.05, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688585.SS", "name": "上纬新材", "industry": "基础化工/塑料", "strategy": "MTOP", "price": 136.63, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603221.SS", "name": "爱丽家居", "industry": "轻工制造/家居用品", "strategy": "MTOP", "price": 13.16, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002993.SZ", "name": "奥海科技", "industry": "电子/消费电子", "strategy": "MTOP", "price": 48.75, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603676.SS", "name": "卫信康", "industry": "医药生物/化学制药", "strategy": "MTOP", "price": 11.43, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300126.SZ", "name": "锐奇股份", "industry": "机械设备/", "strategy": "MTOP", "price": 8.85, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "301021.SZ", "name": "英诺激光", "industry": "机械设备/自动化设备", "strategy": "MTOP", "price": 59.19, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002448.SZ", "name": "中原内配", "industry": "汽车/汽车零部件", "strategy": "MTOP", "price": 13.01, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "301105.SZ", "name": "鸿铭股份", "industry": "机械设备/专用设备", "strategy": "MTOP", "price": 50.44, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "301287.SZ", "name": "康力源", "industry": "轻工制造/文娱用品", "strategy": "MTOP", "price": 45.62, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688288.SS", "name": "鸿泉物联", "industry": "计算机/计算机设备", "strategy": "MTOP", "price": 26.68, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "301113.SZ", "name": "雅艺科技", "industry": "轻工制造/家居用品", "strategy": "MTOP", "price": 26.12, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300778.SZ", "name": "新城市", "industry": "建筑装饰/工程咨询服务Ⅱ", "strategy": "MTOP", "price": 14.24, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603112.SS", "name": "华翔股份", "industry": "家用电器/家电零部件Ⅱ", "strategy": "MTOP", "price": 17.28, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002441.SZ", "name": "众业达", "industry": "电力设备/电网设备", "strategy": "MTOP", "price": 9.97, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300157.SZ", "name": "新锦动力", "industry": "机械设备/", "strategy": "MTOP", "price": 5.45, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688531.SS", "name": "日联科技", "industry": "机械设备/专用设备", "strategy": "MTOP", "price": 72.5, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688236.SS", "name": "春立医疗", "industry": "医药生物/医疗器械", "strategy": "MTOP", "price": 23.32, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300882.SZ", "name": "万胜智能", "industry": "电力设备/电网设备", "strategy": "MTOP", "price": 22.65, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "002572.SZ", "name": "索菲亚", "industry": "轻工制造/家居用品", "strategy": "REBOUND", "price": 14.35, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "688553.SS", "name": "汇宇制药-W", "industry": "医药生物/化学制药", "strategy": "REBOUND", "price": 19.12, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "300536.SZ", "name": "农尚环境", "industry": "建筑装饰/基础建设", "strategy": "REBOUND", "price": 9.1, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "000908.SZ", "name": "ST景峰", "industry": "医药生物/化学制药", "strategy": "REBOUND", "price": 7.02, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "001387.SZ", "name": "雪祺电气", "industry": "家用电器/白色家电", "strategy": "REBOUND", "price": 14.8, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "301201.SZ", "name": "诚达药业", "industry": "医药生物/医疗服务", "strategy": "REBOUND", "price": 38.56, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "603271.SS", "name": "永杰新材", "industry": "有色金属/工业金属", "strategy": "REBOUND", "price": 48.65, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}, {"code": "600691.SS", "name": "阳煤化工", "industry": "基础化工/农化制品", "strategy": "REBOUND", "price": 3.05, "score": 5.0, "label": "中性", "announcement": {"score": 5.0, "sentiment": "neutral", "items": null}, "industry_news": {"score": 5.0, "sentiment": "neutral", "items": null}, "valuation": {"score": 5.0, "sentiment": "neutral", "items": null}}], "compare": null}};
+
+
+    // ========== State ==========
+    let manifest = MANIFEST;
+    let currentData = null;
+    let currentPage = 'analysis';
+
+    const $ = id => document.getElementById(id);
+
+    // ========== Init ==========
+    function init() {
+        setupTabs();
+        populateDatePicker();
+        loadReport(manifest.latest);
+    }
+
+    // ========== Navigation ==========
+    function setupTabs() {
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                currentPage = tab.dataset.page;
+                showPage(currentPage);
+            });
+        });
+    }
+
+    function showPage(page) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        const el = $('page-' + page);
+        if (el) el.classList.add('active');
+    }
+
+    // ========== Date Picker ==========
+    function populateDatePicker() {
+        const sel = $('dateSelector');
+        sel.innerHTML = '';
+        manifest.dates.forEach(d => {
+            const opt = document.createElement('option');
+            opt.value = d.date;
+            opt.textContent = d.label + '（' + d.stocks + '只）';
+            sel.appendChild(opt);
+        });
+        sel.addEventListener('change', () => loadReport(sel.value));
+    }
+
+    // ========== Data Loading (inline) ==========
+    function loadReport(date) {
+        $('loading').style.display = 'flex';
+        $('page-analysis').classList.remove('active');
+        $('page-compare').classList.remove('active');
+
+        const data = REPORTS[date];
+        if (!data) {
+            $('loading').innerHTML = '<div class="empty-state">无法加载 ' + date + ' 的报告数据</div>';
+            return;
+        }
+
+        currentData = data;
+        $('loading').style.display = 'none';
+        renderAnalysis(currentData);
+        renderCompare(currentData);
+        showPage(currentPage);
+        $('dateSelector').value = date;
+    }
+
+    // ========== Render: Analysis Page ==========
+    function renderAnalysis(data) {
+        const stocks = data.analysis || [];
+        const total = stocks.length;
+        const avgScore = total > 0
+            ? (stocks.reduce((s, st) => s + st.score, 0) / total).toFixed(1)
+            : '—';
+        const excellent = stocks.filter(s => s.score >= 7).length;
+        const attention = stocks.filter(s => s.score < 5).length;
+
+        $('analysis-kpis').innerHTML = `
+            <div class="kpi">
+                <div class="kpi-label">分析标的</div>
+                <div class="kpi-value">${total}</div>
+                <div class="kpi-note">今日分析股票数</div>
+            </div>
+            <div class="kpi">
+                <div class="kpi-label">平均评分</div>
+                <div class="kpi-value">${avgScore}</div>
+                <div class="kpi-note ${avgScore < 5 ? 'negative' : avgScore >= 7 ? 'positive' : ''}">${avgScore < 5 ? '低于中性水平' : avgScore >= 7 ? '整体偏强' : '中性水平'}</div>
+            </div>
+            <div class="kpi">
+                <div class="kpi-label">优质标的</div>
+                <div class="kpi-value" style="color:var(--color-bullish)">${excellent}</div>
+                <div class="kpi-note">评分 ≥ 7.0</div>
+            </div>
+            <div class="kpi">
+                <div class="kpi-label">需关注</div>
+                <div class="kpi-value" style="color:var(--color-bearish)">${attention}</div>
+                <div class="kpi-note negative">评分 &lt; 5.0</div>
+            </div>`;
+
+        $('analysis-stocks').innerHTML = stocks.length > 0
+            ? stocks.map(renderStockCard).join('')
+            : '<div class="empty-state">该日期无分析数据</div>';
+    }
+
+    function renderStockCard(s) {
+        const scoreClass = s.score >= 8 ? 'score-excellent' : s.score >= 7 ? 'score-good'
+            : s.score >= 5 ? 'score-neutral' : s.score >= 4 ? 'score-weak' : 'score-poor';
+
+        return `<div class="stock-card">
+            <div class="card-header">
+                <div class="card-stock-info">
+                    <div class="card-stock-name">${esc(s.name)}</div>
+                    <div class="card-stock-meta">
+                        <span class="card-stock-code">${esc(s.code)}</span>
+                        <span>${esc(s.industry)}</span>
+                        <span class="card-badge">${esc(s.strategy)}</span>
+                    </div>
+                </div>
+                <div class="card-score ${scoreClass}">
+                    <span class="score-number">${s.score.toFixed(1)}</span>
+                    <span class="score-label">${esc(s.label)}</span>
+                </div>
+            </div>
+            <div class="card-dimensions">
+                ${renderDim('公告分析', s.announcement, '35%')}
+                ${renderDim('行业新闻', s.industry_news, '35%')}
+                ${renderDim('估值水平', s.valuation, '30%')}
+            </div>
+            <div class="card-analysis">
+                ${renderAnalysisGroup('公告', s.announcement)}
+                ${renderAnalysisGroup('行业', s.industry_news)}
+                ${renderAnalysisGroup('估值', s.valuation)}
+            </div>
+        </div>`;
+    }
+
+    function renderDim(label, dim, weight) {
+        const v = dim ? dim.score : 0;
+        const cls = v >= 7 ? 'high' : v >= 5 ? 'mid' : 'low';
+        return `<div class="dim">
+            <span class="dim-label">${label}</span>
+            <span class="dim-score ${cls}">${dim ? v.toFixed(1) : '—'}</span>
+            <span class="dim-weight">权重 ${weight}</span>
+        </div>`;
+    }
+
+    function renderAnalysisGroup(label, dim) {
+        if (!dim) return '';
+        const tagClass = dim.sentiment === 'bullish' ? 'tag-bullish'
+            : dim.sentiment === 'bearish' ? 'tag-bearish' : 'tag-neutral';
+
+        const sentimentLabel = {
+            'bullish': '偏利好', 'bearish': '偏利空', 'neutral': '中性'
+        }[dim.sentiment] || '中性';
+
+        let detail = '';
+        if (!dim.items || dim.items.length === 0) {
+            detail = '<div class="no-data">暂无数据</div>';
+        } else {
+            detail = '<div class="analysis-detail">' + dim.items.map(item => {
+                let html = '<div class="detail-item">' + esc(item.text) + '</div>';
+                if (item.ai_note) {
+                    html += '<div class="detail-item ai-note">' + esc(item.ai_note) + '</div>';
+                }
+                return html;
+            }).join('') + '</div>';
+        }
+
+        return `<div class="analysis-group">
+            <div class="analysis-row">
+                <span class="analysis-tag ${tagClass}">${label}</span>
+                <div class="analysis-content">
+                    <div class="analysis-status">${sentimentLabel}</div>
+                    ${detail}
+                </div>
+            </div>
+        </div>`;
+    }
+
+    // ========== Render: Compare Page ==========
+    function renderCompare(data) {
+        const c = data.compare;
+        if (!c) {
+            $('compare-subtitle').textContent = '';
+            $('compare-content').innerHTML = '<div class="empty-state">该日期无信号对比数据（可能是首个交易日）</div>';
+            return;
+        }
+
+        $('compare-subtitle').textContent = c.prev_date + ' → ' + data.date + ' 信号变动追踪';
+
+        const newCount = c.new_signals ? c.new_signals.length : 0;
+        const goneCount = c.disappeared ? c.disappeared.length : 0;
+
+        let html = '';
+
+        html += `<div class="compare-summary">
+            <div class="compare-card">
+                <div class="compare-card-title">新增标的</div>
+                <div class="compare-card-value value-new">${newCount}</div>
+            </div>
+            <div class="compare-card">
+                <div class="compare-card-title">消失标的</div>
+                <div class="compare-card-value value-gone">${goneCount}</div>
+            </div>
+        </div>`;
+
+        if (newCount > 0) {
+            html += `<div class="data-section">
+                <div class="section-title">新增标的 <span class="section-count">${newCount}</span></div>
+                <div class="data-table-wrap"><table class="data-table">
+                    <thead><tr><th>代码</th><th>名称</th><th>行业</th><th>策略</th></tr></thead>
+                    <tbody>${c.new_signals.map(s => `<tr>
+                        <td class="td-code">${esc(s.code)}</td>
+                        <td class="td-name">${esc(s.name)}</td>
+                        <td>${esc(s.industry || '—')}</td>
+                        <td><span class="td-strategy">${esc(s.strategy)}</span></td>
+                    </tr>`).join('')}</tbody>
+                </table></div>
+            </div>`;
+        }
+
+        if (goneCount > 0) {
+            html += `<div class="data-section">
+                <div class="section-title">消失标的 <span class="section-count">${goneCount}</span></div>
+                <div class="data-table-wrap"><table class="data-table">
+                    <thead><tr><th>#</th><th>代码</th><th>名称</th><th>行业</th><th>策略</th><th style="text-align:right">今日涨跌</th></tr></thead>
+                    <tbody>${c.disappeared.map((s, i) => {
+                        const changeClass = s.change === null ? '' : s.change >= 0 ? 'td-change-up' : 'td-change-down';
+                        const changeText = s.change === null ? '—' : (s.change >= 0 ? '+' : '') + s.change.toFixed(2) + '%';
+                        return `<tr>
+                            <td>${i + 1}</td>
+                            <td class="td-code">${esc(s.code)}</td>
+                            <td class="td-name">${esc(s.name)}</td>
+                            <td>${esc(s.industry || '—')}</td>
+                            <td><span class="td-strategy">${esc(s.strategy)}</span></td>
+                            <td class="${changeClass}" style="text-align:right">${changeText}</td>
+                        </tr>`;
+                    }).join('')}</tbody>
+                </table></div>
+            </div>`;
+        }
+
+        if (c.stats) {
+            const st = c.stats;
+            const maxBar = 80;
+
+            html += `<div class="stats-row">
+                <div class="stat-block">
+                    <div class="stat-block-title">涨跌统计</div>
+                    ${statItem('上涨', st.up + ' 只', 'var(--color-bearish)')}
+                    ${statItem('下跌', st.down + ' 只', 'var(--color-bullish)')}
+                    ${statItem('最大涨幅', '+' + st.max_gain.toFixed(2) + '%', 'var(--color-bearish)')}
+                    ${statItem('最大跌幅', st.max_loss.toFixed(2) + '%', 'var(--color-bullish)')}
+                    ${statItem('平均涨跌', (st.avg >= 0 ? '+' : '') + st.avg.toFixed(2) + '%', '')}
+                </div>
+                <div class="stat-block">
+                    <div class="stat-block-title">策略分布</div>
+                    ${(c.strategy_dist || []).map(d => `<div class="stat-item">
+                        <span class="stat-label">${esc(d.name)}</span>
+                        <div class="dist-bar-wrap">
+                            <div class="dist-bar" style="width:${d.pct / 100 * maxBar}px"></div>
+                            <span class="dist-pct">${d.pct}%</span>
+                        </div>
+                    </div>`).join('')}
+                </div>
+                <div class="stat-block">
+                    <div class="stat-block-title">行业分布 TOP 5</div>
+                    ${(c.industry_dist || []).slice(0, 5).map(d => `<div class="stat-item">
+                        <span class="stat-label">${esc(d.name)}</span>
+                        <div class="dist-bar-wrap">
+                            <div class="dist-bar" style="width:${d.pct / 100 * maxBar}px"></div>
+                            <span class="dist-pct">${d.pct}%</span>
+                        </div>
+                    </div>`).join('')}
+                </div>
+            </div>`;
+        }
+
+        $('compare-content').innerHTML = html;
+    }
+
+    function statItem(label, value, color) {
+        return `<div class="stat-item">
+            <span class="stat-label">${label}</span>
+            <span class="stat-value" ${color ? 'style="color:' + color + '"' : ''}>${value}</span>
+        </div>`;
+    }
+
+    // ========== Helpers ==========
+    function esc(s) {
+        if (s == null) return '';
+        const d = document.createElement('div');
+        d.textContent = String(s);
+        return d.innerHTML;
+    }
+
+    // ========== Boot ==========
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+
+</body>
+</html>

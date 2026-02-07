@@ -1,0 +1,335 @@
+{
+  "date": "2026-02-05",
+  "analysis": [
+    {
+      "code": "300733",
+      "name": "西菱动力",
+      "industry": "汽车/汽车零部件",
+      "strategy": "BUMA",
+      "price": 17.79,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301108",
+      "name": "洁雅股份",
+      "industry": "美容护理/个护用品",
+      "strategy": "BUMA",
+      "price": 33.86,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    }
+  ],
+  "compare": {
+    "prev_date": "2026-02-04",
+    "new_signals": [
+      {
+        "code": "300733",
+        "name": "西菱动力",
+        "industry": "汽车/汽车零部件",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "301108",
+        "name": "洁雅股份",
+        "industry": "美容护理/个护用品",
+        "strategy": "BUMA"
+      }
+    ],
+    "disappeared": [
+      {
+        "code": "600796",
+        "name": "钱江生化",
+        "industry": "环保",
+        "strategy": "MTOP",
+        "change": 9.95
+      },
+      {
+        "code": "002634",
+        "name": "棒杰股份",
+        "industry": "纺织服饰",
+        "strategy": "BUMA",
+        "change": 4.67
+      },
+      {
+        "code": "603886",
+        "name": "元祖股份",
+        "industry": "食品饮料",
+        "strategy": "BUMA",
+        "change": 1.61
+      },
+      {
+        "code": "301287",
+        "name": "康力源",
+        "industry": "轻工制造",
+        "strategy": "MTOP",
+        "change": 0.37
+      },
+      {
+        "code": "301009",
+        "name": "可靠股份",
+        "industry": "美容护理",
+        "strategy": "MTOP",
+        "change": 0.3
+      },
+      {
+        "code": "002903",
+        "name": "宇环数控",
+        "industry": "机械设备",
+        "strategy": "BUMA",
+        "change": 0.27
+      },
+      {
+        "code": "688585",
+        "name": "上纬新材",
+        "industry": "基础化工",
+        "strategy": "MTOP",
+        "change": 0.2
+      },
+      {
+        "code": "002572",
+        "name": "索菲亚",
+        "industry": "轻工制造",
+        "strategy": "REBOUND",
+        "change": 0.07
+      },
+      {
+        "code": "002614",
+        "name": "奥佳华",
+        "industry": "家用电器",
+        "strategy": "BUMA",
+        "change": -0.28
+      },
+      {
+        "code": "002084",
+        "name": "海鸥住工",
+        "industry": "轻工制造",
+        "strategy": "REBOUND",
+        "change": -0.47
+      },
+      {
+        "code": "600939",
+        "name": "重庆建工",
+        "industry": "建筑装饰",
+        "strategy": "BUMA",
+        "change": -0.63
+      },
+      {
+        "code": "002241",
+        "name": "歌尔股份",
+        "industry": "电子",
+        "strategy": "BUMA",
+        "change": -0.83
+      },
+      {
+        "code": "601127",
+        "name": "赛力斯",
+        "industry": "汽车",
+        "strategy": "BUMA",
+        "change": -0.9
+      },
+      {
+        "code": "002631",
+        "name": "德尔未来",
+        "industry": "轻工制造",
+        "strategy": "BUMA",
+        "change": -1.19
+      },
+      {
+        "code": "300157",
+        "name": "新锦动力",
+        "industry": "机械设备",
+        "strategy": "MTOP",
+        "change": -1.47
+      },
+      {
+        "code": "300545",
+        "name": "联得装备",
+        "industry": "电子",
+        "strategy": "BUMA",
+        "change": -1.65
+      },
+      {
+        "code": "002337",
+        "name": "赛象科技",
+        "industry": "机械设备",
+        "strategy": "BUMA",
+        "change": -1.93
+      },
+      {
+        "code": "09858",
+        "name": "优然牧业",
+        "industry": null,
+        "strategy": "REBOUND",
+        "change": null
+      }
+    ],
+    "stats": {
+      "up": 8,
+      "down": 9,
+      "flat": 0,
+      "max_gain": 9.95,
+      "max_loss": -1.93,
+      "avg": 0.48
+    },
+    "strategy_dist": [
+      {
+        "name": "BUMA",
+        "count": 10,
+        "pct": 55.6
+      },
+      {
+        "name": "MTOP",
+        "count": 5,
+        "pct": 27.8
+      },
+      {
+        "name": "REBOUND",
+        "count": 3,
+        "pct": 16.7
+      },
+      {
+        "name": "轻工制造",
+        "count": 4,
+        "pct": 22.2
+      },
+      {
+        "name": "机械设备",
+        "count": 3,
+        "pct": 16.7
+      },
+      {
+        "name": "电子",
+        "count": 2,
+        "pct": 11.1
+      },
+      {
+        "name": "家用电器",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "纺织服饰",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "美容护理",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "环保",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "建筑装饰",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "汽车",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "食品饮料",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "基础化工",
+        "count": 1,
+        "pct": 5.6
+      }
+    ],
+    "industry_dist": [
+      {
+        "name": "轻工制造",
+        "count": 4,
+        "pct": 22.2
+      },
+      {
+        "name": "机械设备",
+        "count": 3,
+        "pct": 16.7
+      },
+      {
+        "name": "电子",
+        "count": 2,
+        "pct": 11.1
+      },
+      {
+        "name": "家用电器",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "纺织服饰",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "美容护理",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "环保",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "建筑装饰",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "汽车",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "食品饮料",
+        "count": 1,
+        "pct": 5.6
+      },
+      {
+        "name": "基础化工",
+        "count": 1,
+        "pct": 5.6
+      }
+    ]
+  }
+}
