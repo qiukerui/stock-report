@@ -1,0 +1,90 @@
+{
+  "sector_performance": {
+    "top_gainers": [],
+    "top_losers": []
+  },
+  "market_summary": "三大指数集体收跌。上证指数跌0.25%报4065.58点，深成指跌0.33%，创业板指跌0.73%。行业板块0个上涨、0个下跌。",
+  "capital_flow_summary": "上涨个股2749家，下跌个股2550家。",
+  "market_breadth": {
+    "up": 2749,
+    "down": 2550,
+    "flat": 167
+  },
+  "rotation": {
+    "hot_sectors": [
+      {
+        "name": "石油石化",
+        "score": 6.6,
+        "momentum": "走强",
+        "sentiment": 0.6636,
+        "hlMomentum": 0.9333
+      },
+      {
+        "name": "纺织服饰",
+        "score": 6.2,
+        "momentum": "走强",
+        "sentiment": 0.6197,
+        "hlMomentum": 0.8
+      },
+      {
+        "name": "建筑材料",
+        "score": 6.2,
+        "momentum": "走强",
+        "sentiment": 0.6167,
+        "hlMomentum": 0.6333
+      },
+      {
+        "name": "环保",
+        "score": 6.1,
+        "momentum": "走强",
+        "sentiment": 0.6076,
+        "hlMomentum": 0.5667
+      },
+      {
+        "name": "煤炭",
+        "score": 6.0,
+        "momentum": "走强",
+        "sentiment": 0.6045,
+        "hlMomentum": 1.0
+      }
+    ],
+    "cooling_sectors": [
+      {
+        "name": "医药生物",
+        "score": 4.0,
+        "momentum": "转弱",
+        "sentiment": 0.4015,
+        "hlMomentum": 0.3333
+      },
+      {
+        "name": "计算机",
+        "score": 4.2,
+        "momentum": "转弱",
+        "sentiment": 0.4197,
+        "hlMomentum": 0.1667
+      },
+      {
+        "name": "建筑装饰",
+        "score": 4.2,
+        "momentum": "转弱",
+        "sentiment": 0.4212,
+        "hlMomentum": 0.7
+      },
+      {
+        "name": "电子",
+        "score": 4.3,
+        "momentum": "转弱",
+        "sentiment": 0.4333,
+        "hlMomentum": 0.0333
+      },
+      {
+        "name": "公用事业",
+        "score": 4.4,
+        "momentum": "转弱",
+        "sentiment": 0.4364,
+        "hlMomentum": 0.8333
+      }
+    ],
+    "summary": "行业轮动因子显示，石油石化、纺织服饰、建筑材料等板块市场情绪较高（情绪温度>0.66），处于轮动偏热阶段；医药生物、计算机、建筑装饰等板块情绪偏冷（<0.40），资金关注度下降。全市场平均情绪温度0.52，整体中性。"
+  }
+}
