@@ -2,50 +2,216 @@
   "date": "2026-02-06",
   "analysis": [
     {
+      "code": "002683",
+      "name": "广东宏大",
+      "industry": "基础化工/化学制品",
+      "strategy": "BUMA",
+      "price": 48.55,
+      "score": 7.8,
+      "label": "良好",
+      "announcement": {
+        "score": 10.0,
+        "sentiment": "bullish",
+        "status": "利好",
+        "summary": "广东宏大：关于回购注销部分限制性股票减少注册资本暨通知债权人的公告(强利好)；广东宏大：关于2023年限制性股票激励计划第一个解除限售期解除限售条件成就及回购注销部分限制性股票相关事项的法律意见(强利好)；广东宏大：关于广东宏大控股集团股份有限公司2023年限制性股票激励计划第一个解除限售期解除限售条件成就及回购注销部分限制性股票相关事项之独立财务顾问报告(强利好)",
+        "items": [
+          {
+            "title": "广东宏大：关于回购注销部分限制性股票减少注册资本暨通知债权人的公告",
+            "date": "2025-12-31",
+            "days_ago": 38,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.4156,
+            "decayed_score": 37.41,
+            "reason": "规则匹配-回购.*股票"
+          },
+          {
+            "title": "广东宏大：关于2023年限制性股票激励计划第一个解除限售期解除限售条件成就及回购注销部分限制性股票相关事项的法律意见",
+            "date": "2025-12-06",
+            "days_ago": 63,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.2333,
+            "decayed_score": 20.99,
+            "reason": "规则匹配-回购.*股票"
+          },
+          {
+            "title": "广东宏大：关于广东宏大控股集团股份有限公司2023年限制性股票激励计划第一个解除限售期解除限售条件成就及回购注销部分限制性股票相关事项之独立财务顾问报告",
+            "date": "2025-12-06",
+            "days_ago": 63,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.2333,
+            "decayed_score": 20.99,
+            "reason": "规则匹配-回购.*股票"
+          },
+          {
+            "title": "广东宏大：关于回购注销部分限制性股票的公告",
+            "date": "2025-12-06",
+            "days_ago": 63,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.2333,
+            "decayed_score": 20.99,
+            "reason": "规则匹配-回购.*股票"
+          },
+          {
+            "title": "广东宏大：关于公司股东质押部分股份的公告",
+            "date": "2026-01-29",
+            "days_ago": 9,
+            "level": "弱利空",
+            "raw_score": -25,
+            "decay_weight": 0.8123,
+            "decayed_score": -20.31,
+            "reason": "[AI] 股东质押股份通常反映资金压力，可能引发减持或平仓风险，属于轻度利空"
+          }
+        ]
+      },
+      "industry_news": {
+        "score": 8.0,
+        "sentiment": "bullish",
+        "status": "利好",
+        "summary": "广东宏大处于利好阶段。化工行业2026年迎来转折点，反内卷政策、供需格局改善、价格上升推动行业复苏。公司2025年三季报营收同比增长55.92%，归母净利润增长0.54%，业绩稳定增长。防务装备收购长之琳股权，补强高毛利业务板块。无人飞行器等新兴业务布局前瞻。近期证券简称从宏大爆破变更为广东宏大，反映业务转型升级。",
+        "items": [
+          {
+            "title": "化工行业反内卷政策深化，供需格局改善",
+            "sentiment": "positive",
+            "impact": "国家层面严控低端产能，龙头企业市场份额有望提升"
+          },
+          {
+            "title": "原料和产品价格走高，2026年行业复苏预期明确",
+            "sentiment": "positive",
+            "impact": "对硝基氯化苯、己二酸等主要产品价格上升，改善毛利率"
+          },
+          {
+            "title": "2025年三季报营收同比增长55.92%",
+            "sentiment": "positive",
+            "impact": "业务量快速增长，印证行业景气改善"
+          },
+          {
+            "title": "防务装备拟收购长之琳60%股权，高毛利业务补强",
+            "sentiment": "positive",
+            "impact": "拓展防务装备高利润板块，优化收入结构"
+          },
+          {
+            "title": "无人飞行器新业务布局，前瞻性战略布局",
+            "sentiment": "positive",
+            "impact": "进入人工智能和无人装备领域，打开长期成长空间"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "status": "偏高估",
+        "summary": "合理估值",
+        "items": null
+      }
+    },
+    {
       "code": "002241",
       "name": "歌尔股份",
       "industry": "电子/消费电子",
       "strategy": "BUMA",
       "price": 26.18,
-      "score": 6.0,
-      "label": "中性",
+      "score": 7.6,
+      "label": "良好",
       "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
+        "score": 10.0,
+        "sentiment": "bullish",
+        "status": "利好",
+        "summary": "歌尔股份：关于回购公司股份比例达到1%的进展公告(强利好)；歌尔股份：关于调整回购股份方案暨回购进展的公告(强利好)；歌尔股份：关于回购公司股份的进展公告(强利好)",
+        "items": [
+          {
+            "title": "歌尔股份：关于回购公司股份比例达到1%的进展公告",
+            "date": "2026-02-03",
+            "days_ago": 4,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.9117,
+            "decayed_score": 82.06,
+            "reason": "规则匹配-回购公司股份"
+          },
+          {
+            "title": "歌尔股份：关于调整回购股份方案暨回购进展的公告",
+            "date": "2026-02-02",
+            "days_ago": 5,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.8909,
+            "decayed_score": 80.18,
+            "reason": "规则匹配-回购股份"
+          },
+          {
+            "title": "歌尔股份：关于回购公司股份的进展公告",
+            "date": "2026-01-05",
+            "days_ago": 33,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.4665,
+            "decayed_score": 41.99,
+            "reason": "规则匹配-回购公司股份"
+          },
+          {
+            "title": "歌尔股份：关于回购公司股份的进展公告",
+            "date": "2025-12-02",
+            "days_ago": 67,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.2127,
+            "decayed_score": 19.14,
+            "reason": "规则匹配-回购公司股份"
+          },
+          {
+            "title": "歌尔股份：关于中期票据获准注册的公告",
+            "date": "2025-12-20",
+            "days_ago": 49,
+            "level": "弱利好",
+            "raw_score": 25,
+            "decay_weight": 0.3223,
+            "decayed_score": 8.06,
+            "reason": "[AI] 中期票据获准注册，拓宽融资渠道，改善财务灵活性，轻度利好"
+          }
+        ]
       },
       "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
+        "score": 7.5,
+        "sentiment": "bullish",
+        "status": "偏利好",
+        "summary": "消费电子行业迎来多重利好驱动。AI眼镜市场2026年全球出货量预计突破2368.7万台，中国市场达491.5万台，行业进入规模化普及周期。汽车电子成为新增长极，技术商业化落地加快。存储芯片涨价推动终端产品提价。公司主动发起回购计划，累计支付超11亿元，反映管理层对公司前景信心充足。",
+        "items": [
+          {
+            "title": "AI眼镜市场爆发，2026年全球出货突破2300万台",
+            "sentiment": "positive",
+            "impact": "歌尔是消费电子零部件龙头，AR/VR眼镜市场爆发将直接拉动公司精密光学和声学组件需求"
+          },
+          {
+            "title": "汽车电子成为消费电子新增长极",
+            "sentiment": "positive",
+            "impact": "智能座舱与自动驾驶技术商业化落地，涉及音频、显示等组件需求，有利于公司业务拓展"
+          },
+          {
+            "title": "存储芯片涨价推动终端产品集体提价",
+            "sentiment": "positive",
+            "impact": "行业涨价预期确立，改善上游零部件企业毛利率预期"
+          },
+          {
+            "title": "股票回购进度加快，累计支付超11亿元",
+            "sentiment": "positive",
+            "impact": "管理层积极回购表明对公司价值认可，稳定股价，增强投资者信心"
+          },
+          {
+            "title": "三星Galaxy S26系列将于2026年2月发布，搭载本地AI模型",
+            "sentiment": "positive",
+            "impact": "新品发布周期拉动手机厂商零部件采购需求"
+          }
+        ]
       },
       "valuation": {
-        "score": 6.0,
-        "sentiment": "bearish",
-        "items": null
-      }
-    },
-    {
-      "code": "002337",
-      "name": "赛象科技",
-      "industry": "机械设备/专用设备",
-      "strategy": "REBOUND",
-      "price": 6.72,
-      "score": 6.0,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
+        "score": 5.0,
         "sentiment": "neutral",
-        "items": null
-      },
-      "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
-      },
-      "valuation": {
-        "score": 6.0,
-        "sentiment": "bearish",
+        "status": "合理",
+        "summary": "合理估值",
         "items": null
       }
     },
@@ -55,117 +221,104 @@
       "industry": "传媒/游戏Ⅱ",
       "strategy": "BUMA",
       "price": 19.8,
-      "score": 6.0,
+      "score": 6.9,
       "label": "中性",
       "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
+        "score": 10.0,
+        "sentiment": "bullish",
+        "status": "利好",
+        "summary": "世纪华通：关于首次回购股份及回购实施完成暨股份变动的公告(强利好)；世纪华通：关于以集中竞价交易方式回购公司股份的回购报告书(强利好)；世纪华通：关于回购股份事项前十名股东和前十名无限售条件股东持股情况的公告(强利好)",
+        "items": [
+          {
+            "title": "世纪华通：关于首次回购股份及回购实施完成暨股份变动的公告",
+            "date": "2026-01-10",
+            "days_ago": 28,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.5236,
+            "decayed_score": 47.13,
+            "reason": "规则匹配-回购股份"
+          },
+          {
+            "title": "世纪华通：关于以集中竞价交易方式回购公司股份的回购报告书",
+            "date": "2026-01-07",
+            "days_ago": 31,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.4886,
+            "decayed_score": 43.97,
+            "reason": "规则匹配-回购公司股份"
+          },
+          {
+            "title": "世纪华通：关于回购股份事项前十名股东和前十名无限售条件股东持股情况的公告",
+            "date": "2026-01-07",
+            "days_ago": 31,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.4886,
+            "decayed_score": 43.97,
+            "reason": "规则匹配-回购股份"
+          },
+          {
+            "title": "世纪华通：关于公司董事长提议公司回购股份的公告",
+            "date": "2026-01-05",
+            "days_ago": 33,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.4665,
+            "decayed_score": 41.99,
+            "reason": "规则匹配-回购股份"
+          },
+          {
+            "title": "世纪华通：关于以集中竞价交易方式回购公司股份的预案",
+            "date": "2026-01-05",
+            "days_ago": 33,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.4665,
+            "decayed_score": 41.99,
+            "reason": "规则匹配-回购公司股份"
+          }
+        ]
       },
       "industry_news": {
-        "score": 6.0,
+        "score": 4.0,
         "sentiment": "neutral",
-        "items": null
+        "status": "偏利空",
+        "summary": "ST华通面临显著风险，2024年11月因2018-2022年年报虚假记载被ST。但公司2025年上半年营收和净利润增长强劲，分别增长85.50%和129.33%，主要驱动来自全球爆款游戏《无尽冬日》的出海业务。然而，ST帽子影响融资能力和市场情绪，近期股价振荡。游戏行业竞争激烈，单款游戏依赖风险存在，内容风险和政策风险需密切关注。",
+        "items": [
+          {
+            "title": "2024年年报虚假记载被实施ST处罚",
+            "sentiment": "negative",
+            "impact": "ST状态严重影响融资能力、融资成本、股价表现，需要经过三年年度报告审计通过才能摘帽"
+          },
+          {
+            "title": "《无尽冬日》全球爆款游戏驱动上半年业绩高增",
+            "sentiment": "positive",
+            "impact": "2025上半年营收增85.5%，净利润增129.33%，出海游戏业务强劲"
+          },
+          {
+            "title": "游戏业务高度依赖单一爆款产品",
+            "sentiment": "negative",
+            "impact": "《无尽冬日》生命周期存在不确定性，新品上线风险高"
+          },
+          {
+            "title": "游戏行业内容审查和政策风险持续存在",
+            "sentiment": "negative",
+            "impact": "国内游戏审批政策变化，海外游戏运营合规风险都需关注"
+          },
+          {
+            "title": "需完成资产重组业绩承诺补偿方案",
+            "sentiment": "negative",
+            "impact": "重大资产重组尚在推进中，存在不确定性"
+          }
+        ]
       },
       "valuation": {
-        "score": 6.0,
-        "sentiment": "bearish",
-        "items": null
-      }
-    },
-    {
-      "code": "002614",
-      "name": "奥佳华",
-      "industry": "家用电器/其他家电Ⅱ",
-      "strategy": "BUMA",
-      "price": 7.03,
-      "score": 6.0,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
+        "score": 6.5,
         "sentiment": "neutral",
-        "items": null
-      },
-      "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
-      },
-      "valuation": {
-        "score": 6.0,
-        "sentiment": "bearish",
-        "items": null
-      }
-    },
-    {
-      "code": "002683",
-      "name": "广东宏大",
-      "industry": "基础化工/化学制品",
-      "strategy": "BUMA",
-      "price": 48.55,
-      "score": 6.0,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
-      },
-      "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
-      },
-      "valuation": {
-        "score": 6.0,
-        "sentiment": "bearish",
-        "items": null
-      }
-    },
-    {
-      "code": "300545",
-      "name": "联得装备",
-      "industry": "电子/光学光电子",
-      "strategy": "BUMA",
-      "price": 31.2,
-      "score": 6.0,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
-      },
-      "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
-      },
-      "valuation": {
-        "score": 6.0,
-        "sentiment": "bearish",
-        "items": null
-      }
-    },
-    {
-      "code": "301287",
-      "name": "康力源",
-      "industry": "轻工制造/文娱用品",
-      "strategy": "MTOP",
-      "price": 46.0,
-      "score": 6.0,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
-      },
-      "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
-      },
-      "valuation": {
-        "score": 6.0,
-        "sentiment": "bearish",
+        "status": "偏低估",
+        "summary": "偏低估值",
         "items": null
       }
     },
@@ -175,21 +328,380 @@
       "industry": "建筑装饰/房屋建设Ⅱ",
       "strategy": "BUMA",
       "price": 3.17,
-      "score": 6.0,
+      "score": 6.7,
+      "label": "中性",
+      "announcement": {
+        "score": 10.0,
+        "sentiment": "bullish",
+        "status": "利好",
+        "summary": "重庆建工：重庆建工关于工程项目中标的公告(强利好)；重庆建工：重庆建工关于工程项目中标的公告(强利好)；重庆建工：重庆建工关于涉及诉讼（仲裁）案件进展的公告(强利空)",
+        "items": [
+          {
+            "title": "重庆建工：重庆建工关于工程项目中标的公告",
+            "date": "2026-02-03",
+            "days_ago": 4,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.9117,
+            "decayed_score": 82.06,
+            "reason": "规则匹配-中标"
+          },
+          {
+            "title": "重庆建工：重庆建工关于工程项目中标的公告",
+            "date": "2026-01-20",
+            "days_ago": 18,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.6598,
+            "decayed_score": 59.38,
+            "reason": "规则匹配-中标"
+          },
+          {
+            "title": "重庆建工：重庆建工关于涉及诉讼（仲裁）案件进展的公告",
+            "date": "2025-12-27",
+            "days_ago": 42,
+            "level": "强利空",
+            "raw_score": -90.0,
+            "decay_weight": 0.5,
+            "decayed_score": -45.0,
+            "reason": "规则匹配-仲裁.*公告"
+          },
+          {
+            "title": "重庆建工：中标通知书",
+            "date": "2025-12-10",
+            "days_ago": 59,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.2558,
+            "decayed_score": 23.03,
+            "reason": "规则匹配-中标"
+          },
+          {
+            "title": "重庆建工：重庆建工关于工程项目中标的公告",
+            "date": "2025-12-10",
+            "days_ago": 59,
+            "level": "强利好",
+            "raw_score": 90.0,
+            "decay_weight": 0.2558,
+            "decayed_score": 23.03,
+            "reason": "规则匹配-中标"
+          }
+        ]
+      },
+      "industry_news": {
+        "score": 7.0,
+        "sentiment": "bullish",
+        "status": "偏利好",
+        "summary": "重庆建工受益于行业政策转向。2026年房地产市场迎来政策大红包，包括增值税降低、个人所得税延期、'好房子'建设升级、供给端结构优化等利好。中央经济工作会议将稳定房地产置于重要位置，'控增量、去库存、优供给'政策框架确立。公司2025年三季报新增中标项目约6.3亿元，积极参与滨州奇沃生态循环产业园EPC项目（中标价6.73亿元）。虽然短期承压（负债率91.03%，毛利率4.43%），但政策红利有望改善行业景气。",
+        "items": [
+          {
+            "title": "2026年房地产政策大红包，购房增值税从5%降至3%",
+            "sentiment": "positive",
+            "impact": "需求端政策利好，刺激房产交易和新房建设需求"
+          },
+          {
+            "title": "'好房子'建设升级，提高住房品质要求",
+            "sentiment": "positive",
+            "impact": "提升建筑施工单价和技术要求，利好建筑企业"
+          },
+          {
+            "title": "供给端结构优化，三四线库存城市收购转为保障房",
+            "sentiment": "positive",
+            "impact": "政府采购力度加大，保障性住房建设提供新机遇"
+          },
+          {
+            "title": "2025年新增中标项目约6.3亿元，订单充足",
+            "sentiment": "positive",
+            "impact": "工程承建量稳定，现金流有保障"
+          },
+          {
+            "title": "毛利率4.43%，负债率91.03%，财务压力较大",
+            "sentiment": "negative",
+            "impact": "行业竞争激烈，融资成本高，财务杠杆高风险"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 2.5,
+        "sentiment": "bearish",
+        "status": "高估",
+        "summary": "极高估值",
+        "items": null
+      }
+    },
+    {
+      "code": "002337",
+      "name": "赛象科技",
+      "industry": "机械设备/专用设备",
+      "strategy": "REBOUND",
+      "price": 6.72,
+      "score": 5.4,
       "label": "中性",
       "announcement": {
         "score": 6.0,
         "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近90天共8条公告",
         "items": null
       },
       "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "items": null
+        "score": 7.0,
+        "sentiment": "bullish",
+        "status": "偏利好",
+        "summary": "专用设备行业面临结构性机遇。2026年机械工业预计增速5.5%左右，传统市场基本盘稳固，绿色转型和基础设施建设拉动装备需求。赛象科技2025年三季报虽然主营收入同比下降18.57%，但扣非净利润同比上升11.51%，体现公司盈利能力改善。公司加强工业互联网和智能物流整合，形成一体化解决方案竞争力。近期主力资金净流入，市场看好其后续表现。",
+        "items": [
+          {
+            "title": "2026年机械工业预计增速5.5%，预期稳定增长",
+            "sentiment": "positive",
+            "impact": "行业整体景气度稳定，赛象专用设备业务有望保持增长趋势"
+          },
+          {
+            "title": "绿色转型和基础设施建设拉动装备需求",
+            "sentiment": "positive",
+            "impact": "轮胎生产装备作为工业基础设备，需求动力充足"
+          },
+          {
+            "title": "2025年三季报扣非净利润同比上升11.51%",
+            "sentiment": "positive",
+            "impact": "虽然收入下滑，但盈利能力逆势提升，反映公司经营效率改善"
+          },
+          {
+            "title": "推出'装备+平台+物流'一体化解决方案",
+            "sentiment": "positive",
+            "impact": "提升客户粘性和产品附加值，形成差异化竞争优势"
+          },
+          {
+            "title": "2月6日主力资金净买入1130万元，占成交额10.3%",
+            "sentiment": "positive",
+            "impact": "机构资金持续看好，显示市场对公司转型信心"
+          }
+        ]
       },
       "valuation": {
-        "score": 6.0,
+        "score": 3.0,
         "sentiment": "bearish",
+        "status": "高估",
+        "summary": "偏高估值",
+        "items": null
+      }
+    },
+    {
+      "code": "301287",
+      "name": "康力源",
+      "industry": "轻工制造/文娱用品",
+      "strategy": "MTOP",
+      "price": 46.0,
+      "score": 5.4,
+      "label": "中性",
+      "announcement": {
+        "score": 5.5,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "康力源：关于高级管理人员离任的公告(弱利空)",
+        "items": [
+          {
+            "title": "康力源：关于高级管理人员离任的公告",
+            "date": "2025-11-25",
+            "days_ago": 74,
+            "level": "弱利空",
+            "raw_score": -15,
+            "decay_weight": 0.1809,
+            "decayed_score": -2.71,
+            "reason": "[AI] 高管离任属于常规人事变动，短期可能引发市场担忧，但影响有限"
+          }
+        ]
+      },
+      "industry_news": {
+        "score": 7.0,
+        "sentiment": "bullish",
+        "status": "偏利好",
+        "summary": "康力源处于稳定增长阶段。2024年营业收入6.87亿元同比增长12.74%，扣非净利润同比增长20.77%，盈利能力改善。公司主营健身器材，积累了强有力的品牌基础和市场认可度。2024年实施高分红政策（10派5元），体现强现金流和投资者回报意识。虽然2025年一季度收入同比下降15.65%，但净利润同比增长7.96%，体现经营效率提升。国际健身产业景气度回升支撑长期增长。",
+        "items": [
+          {
+            "title": "2024年营收增长12.74%，扣非净利润增长20.77%",
+            "sentiment": "positive",
+            "impact": "业绩稳步增长，盈利能力持续改善"
+          },
+          {
+            "title": "自主品牌'军霞'为中国驰名商标，市场认可度高",
+            "sentiment": "positive",
+            "impact": "品牌价值护城河，支撑产品溢价能力"
+          },
+          {
+            "title": "2024年实施10派5元高分红，现金流充足",
+            "sentiment": "positive",
+            "impact": "强现金流支撑高分红，投资者回报率良好"
+          },
+          {
+            "title": "获评2021年度中国轻工业行业十强企业",
+            "sentiment": "positive",
+            "impact": "行业地位稳固，竞争优势明显"
+          },
+          {
+            "title": "2025年一季度收入虽下降15.65%，但净利润同比增长7.96%",
+            "sentiment": "positive",
+            "impact": "虽然销量下滑，但成本控制和效率优化改善利润"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 3.5,
+        "sentiment": "neutral",
+        "status": "偏高估",
+        "summary": "偏高估值",
+        "items": null
+      }
+    },
+    {
+      "code": "002614",
+      "name": "奥佳华",
+      "industry": "家用电器/其他家电Ⅱ",
+      "strategy": "BUMA",
+      "price": 7.03,
+      "score": 5.3,
+      "label": "中性",
+      "announcement": {
+        "score": 9.5,
+        "sentiment": "bullish",
+        "status": "利好",
+        "summary": "奥佳华：关于子公司与专业投资机构共同投资的公告(弱利好)；奥佳华：关于子公司与专业投资机构共同投资的进展公告(弱利好)；奥佳华：关于奥佳转债预计触发转股价格向下修正条件的提示性公告(弱利好)",
+        "items": [
+          {
+            "title": "奥佳华：关于子公司与专业投资机构共同投资的公告",
+            "date": "2026-01-29",
+            "days_ago": 9,
+            "level": "弱利好",
+            "raw_score": 45,
+            "decay_weight": 0.8123,
+            "decayed_score": 36.55,
+            "reason": "[AI] 子公司与专业投资机构合作投资，显示战略扩张意图，有利于业务拓展和资源整合"
+          },
+          {
+            "title": "奥佳华：关于子公司与专业投资机构共同投资的进展公告",
+            "date": "2026-02-06",
+            "days_ago": 1,
+            "level": "弱利好",
+            "raw_score": 35,
+            "decay_weight": 0.9772,
+            "decayed_score": 34.2,
+            "reason": "[AI] 与专业投资机构共同投资是积极信号，显示业务拓展和资本运作能力，属于一般利好"
+          },
+          {
+            "title": "奥佳华：关于奥佳转债预计触发转股价格向下修正条件的提示性公告",
+            "date": "2026-01-17",
+            "days_ago": 21,
+            "level": "弱利好",
+            "raw_score": 45,
+            "decay_weight": 0.6156,
+            "decayed_score": 27.7,
+            "reason": "[AI] 转股价下调增强债券持有人转股意愿，有利于降低财务杠杆，减轻利息负担，对股价正面"
+          },
+          {
+            "title": "奥佳华：关于奥佳转债即将到期及停止交易的第三次提示性公告",
+            "date": "2026-01-17",
+            "days_ago": 21,
+            "level": "弱利空",
+            "raw_score": -15,
+            "decay_weight": 0.6156,
+            "decayed_score": -9.23,
+            "reason": "[AI] 可转债到期提示，市场已充分预期，对股价影响有限，略偏利空因现金流压力"
+          }
+        ]
+      },
+      "industry_news": {
+        "score": 3.0,
+        "sentiment": "bearish",
+        "status": "偏利空",
+        "summary": "奥佳华面临明显利空。2025年净利润预告同比下降76.65%-84.43%，至仅1000-1500万元，创多年新低。下滑主要原因是国际宏观经济和贸易环境恶化，公司调整产品结构但毛利率下降。按摩器械行业面临竞争加剧和消费需求疲弱。积极因素包括鸿蒙生态接入和AI按摩机器人新产品，但难以抵消业绩下滑压力。公司整体处于业绩底部和战略调整期。",
+        "items": [
+          {
+            "title": "2025年净利润同比下降76.65%-84.43%，至1000-1500万元",
+            "sentiment": "negative",
+            "impact": "利润暴跌至历史低位，公司经营陷入困境，投资风险极高"
+          },
+          {
+            "title": "国际贸易环境恶化，出口业务受严重冲击",
+            "sentiment": "negative",
+            "impact": "作为ODM出口导向企业，贸易摩擦直接伤害核心业务"
+          },
+          {
+            "title": "毛利率同比下降，产品结构调整效果有限",
+            "sentiment": "negative",
+            "impact": "调价压力下降价竞争，盈利空间进一步压缩"
+          },
+          {
+            "title": "接入鸿蒙生态，AI按摩机器人2.0支持鸿蒙智联",
+            "sentiment": "positive",
+            "impact": "融入华为生态有助于产品差异化，提升市场竞争力"
+          },
+          {
+            "title": "成立健康家居生活有限公司，布局新赛道",
+            "sentiment": "positive",
+            "impact": "寻求新的增长点，但短期难以扭转业绩颓势"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 3.0,
+        "sentiment": "bearish",
+        "status": "高估",
+        "summary": "偏高估值",
+        "items": null
+      }
+    },
+    {
+      "code": "300545",
+      "name": "联得装备",
+      "industry": "电子/光学光电子",
+      "strategy": "BUMA",
+      "price": 31.2,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近90天共46条公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 4.0,
+        "sentiment": "neutral",
+        "status": "偏利空",
+        "summary": "联得装备面临短期压力。2025年预计扣非净利润同比下降超50%至8650万-1.12亿元，主要原因是行业竞争加剧导致订单减少、收入下滑、毛利率下降。2025年三季报主营收入同比下降6.97%。但行业长期前景看好，RGB Mini LED量产元年2025年成为行业转折点，0303规格有望2026年前后批量应用，Micro LED光互连技术迎来发展机遇。公司作为半导体显示装备龙头，长期受益于行业技术升级。",
+        "items": [
+          {
+            "title": "2025年净利润同比下降50%以上，行业竞争加剧",
+            "sentiment": "negative",
+            "impact": "订单量下降，收入同比下滑6.97%，公司短期业绩承压"
+          },
+          {
+            "title": "毛利率下降，定价权削弱",
+            "sentiment": "negative",
+            "impact": "竞争激烈导致产品降价，盈利能力恶化"
+          },
+          {
+            "title": "RGB Mini LED量产元年，0303规格有望2026年批量应用",
+            "sentiment": "positive",
+            "impact": "新技术商业化将拉动新一轮设备采购需求"
+          },
+          {
+            "title": "Micro LED光互连技术成为行业焦点",
+            "sentiment": "positive",
+            "impact": "AI算力爆发推动高速互联需求，LED企业切入光通信领域"
+          },
+          {
+            "title": "光学元器件市场规模2024年达1777亿元，同比增长22.55%",
+            "sentiment": "positive",
+            "impact": "下游市场景气度改善，长期为装备企业提供增长动力"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "status": "合理",
+        "summary": "合理估值",
         "items": null
       }
     }

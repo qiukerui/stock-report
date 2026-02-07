@@ -894,21 +894,27 @@
         const tagClass = dim.sentiment === 'bullish' ? 'tag-bullish'
             : dim.sentiment === 'bearish' ? 'tag-bearish' : 'tag-neutral';
 
-        const sentimentLabel = {
+        // 优先使用后端传来的 status，否则按 sentiment 映射
+        const sentimentLabel = dim.status || ({
             'bullish': '偏利好', 'bearish': '偏利空', 'neutral': '中性'
-        }[dim.sentiment] || '中性';
+        }[dim.sentiment] || '中性');
 
         let detail = '';
-        if (!dim.items || dim.items.length === 0) {
-            detail = '<div class="no-data">暂无数据</div>';
-        } else {
+        if (dim.summary) {
+            // 有 summary 则直接展示
+            detail = '<div class="analysis-detail"><div class="detail-item">' + esc(dim.summary) + '</div></div>';
+        } else if (dim.items && dim.items.length > 0) {
             detail = '<div class="analysis-detail">' + dim.items.map(item => {
-                let html = '<div class="detail-item">' + esc(item.text) + '</div>';
-                if (item.ai_note) {
-                    html += '<div class="detail-item ai-note">' + esc(item.ai_note) + '</div>';
+                const text = item.text || item.title || item.summary || '';
+                const note = item.ai_note || item.impact || item.reason || '';
+                let html = '<div class="detail-item">' + esc(text) + '</div>';
+                if (note) {
+                    html += '<div class="detail-item ai-note">' + esc(note) + '</div>';
                 }
                 return html;
             }).join('') + '</div>';
+        } else {
+            detail = '<div class="no-data">暂无数据</div>';
         }
 
         return `<div class="analysis-group">
