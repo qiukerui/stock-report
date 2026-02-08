@@ -450,6 +450,78 @@
             color: var(--color-text-tertiary);
         }
 
+        /* Watchlist Briefing */
+        .briefing-stock {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); margin-bottom: 12px; overflow: hidden;
+            transition: box-shadow 0.2s ease;
+        }
+        .briefing-stock:hover { box-shadow: var(--shadow-sm); }
+        .briefing-stock-header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 14px 20px; cursor: pointer; user-select: none;
+            transition: background 0.15s ease;
+        }
+        .briefing-stock-header:hover { background: var(--color-bg); }
+        .briefing-stock-name {
+            font-family: var(--font-serif); font-size: 1rem; font-weight: 600;
+            color: var(--color-text); margin: 0;
+        }
+        .briefing-stock-count {
+            font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-tertiary);
+            background: var(--color-neutral-bg); padding: 2px 10px; border-radius: 10px;
+        }
+        .briefing-stock-toggle {
+            width: 24px; height: 24px; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--color-text-tertiary); transition: transform 0.25s ease;
+            font-size: 0.8rem;
+        }
+        .briefing-stock.collapsed .briefing-stock-toggle { transform: rotate(-90deg); }
+        .briefing-stock-body {
+            padding: 0 20px 16px; max-height: 5000px; overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.35s ease, opacity 0.25s ease; opacity: 1;
+        }
+        .briefing-stock.collapsed .briefing-stock-body {
+            max-height: 0; padding-top: 0; padding-bottom: 0; opacity: 0;
+        }
+        .briefing-item {
+            padding: 10px 0; border-bottom: 1px solid var(--color-border-subtle);
+        }
+        .briefing-item:last-child { border-bottom: none; }
+        .briefing-item-header {
+            display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 4px;
+        }
+        .briefing-item-time {
+            font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-tertiary);
+            white-space: nowrap;
+        }
+        .briefing-item-title {
+            font-size: 0.875rem; font-weight: 500; color: var(--color-text); flex: 1; min-width: 0;
+        }
+        .briefing-type-tag {
+            display: inline-flex; padding: 1px 8px; border-radius: 4px;
+            font-size: 0.6875rem; font-weight: 600; white-space: nowrap; flex-shrink: 0;
+        }
+        .briefing-type-tag.type-公告 { background: var(--color-accent-light); color: var(--color-accent); }
+        .briefing-type-tag.type-研报 { background: #EDE9FE; color: #7C3AED; }
+        .briefing-type-tag.type-行业新闻 { background: var(--color-bullish-bg); color: var(--color-bullish); }
+        .briefing-type-tag.type-新闻 { background: #DBEAFE; color: #2563EB; }
+        .briefing-item-source {
+            font-size: 0.75rem; color: var(--color-text-tertiary); font-style: italic;
+        }
+        .briefing-item-summary {
+            font-size: 0.8125rem; color: var(--color-text-secondary); line-height: 1.7; margin-top: 4px;
+        }
+        .briefing-summary-bar {
+            display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap;
+        }
+        .briefing-stat {
+            display: flex; align-items: baseline; gap: 6px;
+        }
+        .briefing-stat-label { font-size: 0.8125rem; color: var(--color-text-secondary); }
+        .briefing-stat-value { font-family: var(--font-mono); font-size: 1.1rem; font-weight: 600; color: var(--color-text); }
+
         /* Market sub-tabs */
         .market-sub-tabs {
             display: flex; gap: 4px; margin-bottom: 28px;
@@ -705,16 +777,16 @@
     <div id="page-market" class="page">
         <div class="page-header">
             <h1 class="page-title">市场表现</h1>
-            <p id="market-subtitle" class="page-subtitle">全市场复盘 · 异动板块解读 · 数据概览</p>
+            <p id="market-subtitle" class="page-subtitle">全市场复盘 · 异动板块解读 · 自选股资讯</p>
         </div>
         <div class="market-sub-tabs" id="marketSubTabs">
             <button class="market-sub-tab active" data-sub="review">全市场复盘</button>
             <button class="market-sub-tab" data-sub="industry">异动板块解读</button>
-            <button class="market-sub-tab" data-sub="data">数据概览</button>
+            <button class="market-sub-tab" data-sub="briefing">自选股资讯</button>
         </div>
         <div id="sub-review" class="market-sub-page active"></div>
         <div id="sub-industry" class="market-sub-page"></div>
-        <div id="sub-data" class="market-sub-page"></div>
+        <div id="sub-briefing" class="market-sub-page"></div>
     </div>
 </div>
 
@@ -1049,7 +1121,7 @@
         const hasIndustry = reports.industry_analysis && reports.industry_analysis.sections;
         const hasData = m.sector_performance || m.market_breadth || m.rotation;
 
-        $('market-subtitle').textContent = data.date + ' 全市场复盘 · 异动板块解读 · 数据概览';
+        $('market-subtitle').textContent = data.date + ' 全市场复盘 · 异动板块解读 · 自选股资讯';
 
         // --- Sub-tab: 全市场复盘 ---
         if (hasReview) {
@@ -1117,163 +1189,69 @@
             $('sub-industry').innerHTML = '<div class="empty-state">该日期无异动板块解读报告</div>';
         }
 
-        // --- Sub-tab: 数据概览 (original structured data) ---
-        if (!hasData) {
-            $('sub-data').innerHTML = '<div class="empty-state">该日期无市场数据</div>';
-            // Default to first available tab
-            if (hasReview) switchMarketSub('review');
-            else if (hasIndustry) switchMarketSub('industry');
-            return;
-        }
-
-        let html = '';
-
-        // --- Market Breadth ---
-        if (m.market_breadth) {
-            const b = m.market_breadth;
-            const total = (b.up || 0) + (b.down || 0) + (b.flat || 0);
-            const upPct = total > 0 ? ((b.up / total) * 100).toFixed(1) : 0;
-            const downPct = total > 0 ? ((b.down / total) * 100).toFixed(1) : 0;
-            const flatPct = total > 0 ? ((b.flat / total) * 100).toFixed(1) : 0;
-
-            html += `<div class="market-breadth-row">
-                <div class="breadth-item">
-                    <div class="breadth-label">上涨</div>
-                    <div class="breadth-value" style="color:var(--color-bearish)">${b.up || 0}</div>
-                    <div class="breadth-pct">${upPct}%</div>
-                </div>
-                <div class="breadth-item">
-                    <div class="breadth-label">下跌</div>
-                    <div class="breadth-value" style="color:var(--color-bullish)">${b.down || 0}</div>
-                    <div class="breadth-pct">${downPct}%</div>
-                </div>
-                <div class="breadth-item">
-                    <div class="breadth-label">平盘</div>
-                    <div class="breadth-value" style="color:var(--color-neutral)">${b.flat || 0}</div>
-                    <div class="breadth-pct">${flatPct}%</div>
-                </div>
-                <div class="breadth-item">
-                    <div class="breadth-label">合计</div>
-                    <div class="breadth-value">${total}</div>
-                    <div class="breadth-pct">—</div>
-                </div>
-            </div>`;
-        }
-
-        // --- Market & Capital Flow Summary ---
-        if (m.market_summary || m.capital_flow_summary) {
-            html += '<div class="market-grid" style="margin-bottom:28px">';
-            if (m.market_summary) {
-                html += `<div class="market-summary-card">
-                    <div class="market-col-title">市场特征</div>
-                    <div style="font-size:0.875rem;line-height:1.8">${esc(m.market_summary)}</div>
-                </div>`;
-            }
-            if (m.capital_flow_summary) {
-                html += `<div class="market-summary-card">
-                    <div class="market-col-title">资金流向</div>
-                    <div style="font-size:0.875rem;line-height:1.8">${esc(m.capital_flow_summary)}</div>
-                </div>`;
-            }
-            html += '</div>';
-        }
-
-        // --- Sector Performance Tables ---
-        if (m.sector_performance) {
-            const sp = m.sector_performance;
-
-            html += '<div class="market-grid">';
-
-            // Top Gainers
-            if (sp.top_gainers && sp.top_gainers.length > 0) {
-                html += `<div>
-                    <div class="market-col-title" style="color:var(--color-bearish)">涨幅前 ${sp.top_gainers.length}</div>
-                    <div class="data-table-wrap"><table class="data-table">
-                        <thead><tr>
-                            <th>#</th><th>板块</th><th style="text-align:right">涨跌幅</th><th style="text-align:right">资金净流入(亿)</th>
-                        </tr></thead>
-                        <tbody>${sp.top_gainers.map((s, i) => `<tr>
-                            <td>${i + 1}</td>
-                            <td class="td-name">${esc(s.name)}</td>
-                            <td class="td-change-up" style="text-align:right">${s.change_pct >= 0 ? '+' : ''}${s.change_pct.toFixed(2)}%</td>
-                            <td style="text-align:right;font-family:var(--font-mono);font-size:0.8rem">${s.net_inflow != null ? s.net_inflow.toFixed(2) : '—'}</td>
-                        </tr>`).join('')}</tbody>
-                    </table></div>
-                </div>`;
-            }
-
-            // Top Losers
-            if (sp.top_losers && sp.top_losers.length > 0) {
-                html += `<div>
-                    <div class="market-col-title" style="color:var(--color-bullish)">跌幅前 ${sp.top_losers.length}</div>
-                    <div class="data-table-wrap"><table class="data-table">
-                        <thead><tr>
-                            <th>#</th><th>板块</th><th style="text-align:right">涨跌幅</th><th style="text-align:right">资金净流出(亿)</th>
-                        </tr></thead>
-                        <tbody>${sp.top_losers.map((s, i) => `<tr>
-                            <td>${i + 1}</td>
-                            <td class="td-name">${esc(s.name)}</td>
-                            <td class="td-change-down" style="text-align:right">${s.change_pct.toFixed(2)}%</td>
-                            <td style="text-align:right;font-family:var(--font-mono);font-size:0.8rem">${s.net_outflow != null ? s.net_outflow.toFixed(2) : '—'}</td>
-                        </tr>`).join('')}</tbody>
-                    </table></div>
-                </div>`;
-            }
-
-            html += '</div>';
-        }
-
-        // --- Industry Rotation ---
-        if (m.rotation) {
-            const r = m.rotation;
-            html += '<div class="rotation-section">';
-            html += '<div class="market-col-title" style="margin-bottom:16px">行业轮动因子</div>';
-
-            if (r.summary) {
-                html += `<div class="rotation-overview">${esc(r.summary)}</div>`;
-            }
-
-            html += '<div class="rotation-grid">';
-
-            // Hot sectors
-            if (r.hot_sectors && r.hot_sectors.length > 0) {
-                html += `<div class="rotation-card">
-                    <div class="rotation-card-title">热门板块</div>
-                    ${r.hot_sectors.map(s => `<div class="rotation-item">
-                        <span class="rotation-name">${esc(s.name)}</span>
-                        <div class="rotation-meta">
-                            <span class="rotation-score hot">${typeof s.score === 'number' ? s.score.toFixed(1) : s.score}</span>
-                            <span class="rotation-badge hot">${esc(s.momentum)}</span>
-                            ${s.days ? '<span class="rotation-days">' + s.days + '日</span>' : ''}
-                        </div>
-                    </div>`).join('')}
-                </div>`;
-            }
-
-            // Cooling sectors
-            if (r.cooling_sectors && r.cooling_sectors.length > 0) {
-                html += `<div class="rotation-card">
-                    <div class="rotation-card-title">降温板块</div>
-                    ${r.cooling_sectors.map(s => `<div class="rotation-item">
-                        <span class="rotation-name">${esc(s.name)}</span>
-                        <div class="rotation-meta">
-                            <span class="rotation-score cool">${typeof s.score === 'number' ? s.score.toFixed(1) : s.score}</span>
-                            <span class="rotation-badge cool">${esc(s.momentum)}</span>
-                            ${s.days ? '<span class="rotation-days">' + s.days + '日</span>' : ''}
-                        </div>
-                    </div>`).join('')}
-                </div>`;
-            }
-
-            html += '</div></div>';
-        }
-
-        $('sub-data').innerHTML = html;
+        // --- Sub-tab: 自选股资讯简报 ---
+        renderBriefing(data.date);
 
         // Default to review if available, else first available tab
         if (hasReview) switchMarketSub('review');
         else if (hasIndustry) switchMarketSub('industry');
-        else switchMarketSub('data');
+        else switchMarketSub('briefing');
+    }
+
+    function renderBriefing(dateStr) {
+        const el = $('sub-briefing');
+        el.innerHTML = '<div class="empty-state">加载自选股资讯...</div>';
+        fetch('data/' + dateStr + '_watchlist_briefing.json')
+            .then(r => { if (!r.ok) throw new Error('not found'); return r.json(); })
+            .then(bd => {
+                if (!bd.stocks || bd.stocks.length === 0) {
+                    el.innerHTML = '<div class="empty-state">该日期无自选股资讯</div>';
+                    return;
+                }
+                const totalItems = bd.stocks.reduce((n, s) => n + s.items.length, 0);
+                const typeCount = {};
+                bd.stocks.forEach(s => s.items.forEach(it => { typeCount[it.type] = (typeCount[it.type]||0) + 1; }));
+                let html = '<div class="briefing-summary-bar">';
+                html += `<div class="briefing-stat"><span class="briefing-stat-label">关注标的</span><span class="briefing-stat-value">${bd.stocks.length}</span></div>`;
+                html += `<div class="briefing-stat"><span class="briefing-stat-label">资讯条数</span><span class="briefing-stat-value">${totalItems}</span></div>`;
+                Object.entries(typeCount).forEach(([t, c]) => {
+                    html += `<div class="briefing-stat"><span class="briefing-type-tag type-${t}">${t}</span><span class="briefing-stat-value" style="font-size:0.9rem">${c}</span></div>`;
+                });
+                html += '</div>';
+
+                bd.stocks.forEach((stock, si) => {
+                    const collapsed = si >= 3 ? ' collapsed' : '';
+                    html += `<div class="briefing-stock${collapsed}">
+                        <div class="briefing-stock-header" onclick="this.parentElement.classList.toggle('collapsed')">
+                            <div style="display:flex;align-items:center;gap:10px">
+                                <h3 class="briefing-stock-name">${esc(stock.name)}</h3>
+                                <span class="briefing-stock-count">${stock.items.length}条</span>
+                            </div>
+                            <span class="briefing-stock-toggle">▼</span>
+                        </div>
+                        <div class="briefing-stock-body">`;
+                    stock.items.forEach(item => {
+                        html += `<div class="briefing-item">
+                            <div class="briefing-item-header">
+                                <span class="briefing-item-time">${esc(item.datetime)}</span>
+                                <span class="briefing-type-tag type-${item.type}">${esc(item.type)}</span>
+                                <span class="briefing-item-title">${esc(item.title)}</span>
+                            </div>`;
+                        if (item.source) {
+                            html += `<div class="briefing-item-source">${esc(item.source)}</div>`;
+                        }
+                        if (item.summary) {
+                            html += `<div class="briefing-item-summary">${esc(item.summary)}</div>`;
+                        }
+                        html += '</div>';
+                    });
+                    html += '</div></div>';
+                });
+                el.innerHTML = html;
+            })
+            .catch(() => {
+                el.innerHTML = '<div class="empty-state">该日期无自选股资讯数据</div>';
+            });
     }
 
     function switchMarketSub(name) {

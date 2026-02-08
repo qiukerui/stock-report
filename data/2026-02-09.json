@@ -1,0 +1,1586 @@
+{
+  "date": "2026-02-09",
+  "analysis": [
+    {
+      "code": "000917",
+      "name": "电广传媒",
+      "industry": "传媒/电视广播Ⅱ",
+      "strategy": "MTOP",
+      "price": 11.01,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "001208",
+      "name": "华菱线缆",
+      "industry": "电力设备/电网设备",
+      "strategy": "MTOP",
+      "price": 24.96,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002196",
+      "name": "方正电机",
+      "industry": "电力设备/电机Ⅱ",
+      "strategy": "MTOP",
+      "price": 16.55,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002276",
+      "name": "万马股份",
+      "industry": "电力设备/电网设备",
+      "strategy": "REBOUND",
+      "price": 17.22,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002315",
+      "name": "焦点科技",
+      "industry": "商贸零售/互联网电商",
+      "strategy": "BUMA",
+      "price": 48.6,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "002809",
+      "name": "红墙股份",
+      "industry": "基础化工/化学制品",
+      "strategy": "MTOP",
+      "price": 14.26,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300077",
+      "name": "国民技术",
+      "industry": "电子/半导体",
+      "strategy": "MTOP",
+      "price": 22.06,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300128",
+      "name": "锦富技术",
+      "industry": "电力设备/电池",
+      "strategy": "MTOP",
+      "price": 7.21,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300244",
+      "name": "迪安诊断",
+      "industry": "医药生物/医疗服务",
+      "strategy": "MTOP",
+      "price": 24.95,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "industry": "电力设备/光伏设备",
+      "strategy": "BUMA",
+      "price": 153.31,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300308",
+      "name": "中际旭创",
+      "industry": "通信/通信设备",
+      "strategy": "BUMA",
+      "price": 565.99,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300380",
+      "name": "安硕信息",
+      "industry": "计算机/软件开发",
+      "strategy": "MTOP",
+      "price": 41.44,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300454",
+      "name": "深信服",
+      "industry": "计算机/软件开发",
+      "strategy": "MTOP",
+      "price": 141.45,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300502",
+      "name": "新易盛",
+      "industry": "通信/通信设备",
+      "strategy": "BUMA",
+      "price": 390.15,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300638",
+      "name": "广和通",
+      "industry": "通信/通信设备",
+      "strategy": "MTOP",
+      "price": 29.76,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300773",
+      "name": "拉卡拉",
+      "industry": "非银金融/多元金融",
+      "strategy": "MTOP",
+      "price": 27.57,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "300774",
+      "name": "倍杰特",
+      "industry": "环保/环境治理",
+      "strategy": "BUMA",
+      "price": 21.99,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301023",
+      "name": "江南奕帆",
+      "industry": "电力设备/电机Ⅱ",
+      "strategy": "MTOP",
+      "price": 47.27,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301099",
+      "name": "雅创电子",
+      "industry": "电子/其他电子Ⅱ",
+      "strategy": "BUMA",
+      "price": 46.56,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "301199",
+      "name": "迈赫股份",
+      "industry": "机械设备/自动化设备",
+      "strategy": "BUMA",
+      "price": 24.68,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600577",
+      "name": "精达股份",
+      "industry": "电力设备/电网设备",
+      "strategy": "MTOP",
+      "price": 14.08,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600620",
+      "name": "天宸股份",
+      "industry": "综合/综合Ⅱ",
+      "strategy": "MTOP",
+      "price": 7.13,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600797",
+      "name": "浙大网新",
+      "industry": "计算机/IT服务Ⅱ",
+      "strategy": "BUMA",
+      "price": 10.49,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "600879",
+      "name": "航天电子",
+      "industry": "国防军工/航天装备Ⅱ",
+      "strategy": "MTOP",
+      "price": 26.11,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "601399",
+      "name": "国机重装",
+      "industry": "机械设备/专用设备",
+      "strategy": "MTOP",
+      "price": 5.19,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603879",
+      "name": "永悦科技",
+      "industry": "基础化工/塑料",
+      "strategy": "MTOP",
+      "price": 6.41,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "603901",
+      "name": "永创智能",
+      "industry": "机械设备/专用设备",
+      "strategy": "BUMA",
+      "price": 14.48,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "605389",
+      "name": "长龄液压",
+      "industry": "机械设备/工程机械",
+      "strategy": "BUMA",
+      "price": 76.2,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688159",
+      "name": "有方科技",
+      "industry": "通信/通信设备",
+      "strategy": "BUMA",
+      "price": 48.91,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688173",
+      "name": "希荻微",
+      "industry": "电子/半导体",
+      "strategy": "BUMA",
+      "price": 16.11,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688311",
+      "name": "盟升电子",
+      "industry": "国防军工/军工电子Ⅱ",
+      "strategy": "MTOP",
+      "price": 46.42,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688433",
+      "name": "华曙高科",
+      "industry": "机械设备/",
+      "strategy": "MTOP",
+      "price": 84.03,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688661",
+      "name": "和林微纳",
+      "industry": "电子/半导体",
+      "strategy": "MTOP",
+      "price": 85.98,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688709",
+      "name": "成都华微",
+      "industry": "电子/半导体",
+      "strategy": "BUMA",
+      "price": 47.21,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    },
+    {
+      "code": "688711",
+      "name": "宏微科技",
+      "industry": "电子/半导体",
+      "strategy": "BUMA",
+      "price": 30.82,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "industry_news": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.0,
+        "sentiment": "neutral",
+        "items": null
+      }
+    }
+  ],
+  "compare": {
+    "prev_date": "2026-02-06",
+    "new_signals": [
+      {
+        "code": "000917",
+        "name": "电广传媒",
+        "industry": "传媒/电视广播Ⅱ",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "001208",
+        "name": "华菱线缆",
+        "industry": "电力设备/电网设备",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "002196",
+        "name": "方正电机",
+        "industry": "电力设备/电机Ⅱ",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "002276",
+        "name": "万马股份",
+        "industry": "电力设备/电网设备",
+        "strategy": "REBOUND"
+      },
+      {
+        "code": "002315",
+        "name": "焦点科技",
+        "industry": "商贸零售/互联网电商",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "002809",
+        "name": "红墙股份",
+        "industry": "基础化工/化学制品",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "300077",
+        "name": "国民技术",
+        "industry": "电子/半导体",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "300128",
+        "name": "锦富技术",
+        "industry": "电力设备/电池",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "300244",
+        "name": "迪安诊断",
+        "industry": "医药生物/医疗服务",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "300274",
+        "name": "阳光电源",
+        "industry": "电力设备/光伏设备",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "300308",
+        "name": "中际旭创",
+        "industry": "通信/通信设备",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "300380",
+        "name": "安硕信息",
+        "industry": "计算机/软件开发",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "300454",
+        "name": "深信服",
+        "industry": "计算机/软件开发",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "300502",
+        "name": "新易盛",
+        "industry": "通信/通信设备",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "300638",
+        "name": "广和通",
+        "industry": "通信/通信设备",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "300773",
+        "name": "拉卡拉",
+        "industry": "非银金融/多元金融",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "300774",
+        "name": "倍杰特",
+        "industry": "环保/环境治理",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "301023",
+        "name": "江南奕帆",
+        "industry": "电力设备/电机Ⅱ",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "301099",
+        "name": "雅创电子",
+        "industry": "电子/其他电子Ⅱ",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "301199",
+        "name": "迈赫股份",
+        "industry": "机械设备/自动化设备",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "600577",
+        "name": "精达股份",
+        "industry": "电力设备/电网设备",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "600620",
+        "name": "天宸股份",
+        "industry": "综合/综合Ⅱ",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "600797",
+        "name": "浙大网新",
+        "industry": "计算机/IT服务Ⅱ",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "600879",
+        "name": "航天电子",
+        "industry": "国防军工/航天装备Ⅱ",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "601399",
+        "name": "国机重装",
+        "industry": "机械设备/专用设备",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "603879",
+        "name": "永悦科技",
+        "industry": "基础化工/塑料",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "603901",
+        "name": "永创智能",
+        "industry": "机械设备/专用设备",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "605389",
+        "name": "长龄液压",
+        "industry": "机械设备/工程机械",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "688159",
+        "name": "有方科技",
+        "industry": "通信/通信设备",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "688173",
+        "name": "希荻微",
+        "industry": "电子/半导体",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "688311",
+        "name": "盟升电子",
+        "industry": "国防军工/军工电子Ⅱ",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "688433",
+        "name": "华曙高科",
+        "industry": "机械设备/",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "688661",
+        "name": "和林微纳",
+        "industry": "电子/半导体",
+        "strategy": "MTOP"
+      },
+      {
+        "code": "688709",
+        "name": "成都华微",
+        "industry": "电子/半导体",
+        "strategy": "BUMA"
+      },
+      {
+        "code": "688711",
+        "name": "宏微科技",
+        "industry": "电子/半导体",
+        "strategy": "BUMA"
+      }
+    ],
+    "disappeared": [
+      {
+        "code": "600722",
+        "name": "金牛化工",
+        "industry": "基础化工",
+        "strategy": "MTOP",
+        "change": 9.95
+      },
+      {
+        "code": "601888",
+        "name": "中国中免",
+        "industry": "商贸零售",
+        "strategy": "BUMA, MTOP",
+        "change": 5.14
+      },
+      {
+        "code": "600363",
+        "name": "联创光电",
+        "industry": "电子",
+        "strategy": "BUMA",
+        "change": 4.95
+      },
+      {
+        "code": "600846",
+        "name": "同济科技",
+        "industry": "建筑装饰",
+        "strategy": "BUMA",
+        "change": 4.71
+      },
+      {
+        "code": "002987",
+        "name": "京北方",
+        "industry": "计算机",
+        "strategy": "BUMA",
+        "change": 3.72
+      },
+      {
+        "code": "000565",
+        "name": "渝三峡Ａ",
+        "industry": "基础化工",
+        "strategy": "MTOP",
+        "change": 3.24
+      },
+      {
+        "code": "600370",
+        "name": "三房巷",
+        "industry": "基础化工",
+        "strategy": "BUMA",
+        "change": 3.12
+      },
+      {
+        "code": "300946",
+        "name": "恒而达",
+        "industry": "机械设备",
+        "strategy": "BUMA",
+        "change": 2.82
+      },
+      {
+        "code": "300545",
+        "name": "联得装备",
+        "industry": "电子",
+        "strategy": "BUMA",
+        "change": 2.69
+      },
+      {
+        "code": "002632",
+        "name": "道明光学",
+        "industry": "基础化工",
+        "strategy": "BUMA",
+        "change": 2.55
+      },
+      {
+        "code": "002759",
+        "name": "天际股份",
+        "industry": "电力设备",
+        "strategy": "MTOP",
+        "change": 2.46
+      },
+      {
+        "code": "000559",
+        "name": "万向钱潮",
+        "industry": "汽车",
+        "strategy": "BUMA",
+        "change": 1.89
+      },
+      {
+        "code": "301108",
+        "name": "洁雅股份",
+        "industry": "美容护理",
+        "strategy": "BUMA",
+        "change": 1.66
+      },
+      {
+        "code": "301201",
+        "name": "诚达药业",
+        "industry": "医药生物",
+        "strategy": "REBOUND",
+        "change": 1.6
+      },
+      {
+        "code": "688288",
+        "name": "鸿泉物联",
+        "industry": "计算机",
+        "strategy": "BUMA, MTOP",
+        "change": 1.59
+      },
+      {
+        "code": "600939",
+        "name": "重庆建工",
+        "industry": "建筑装饰",
+        "strategy": "BUMA",
+        "change": 1.58
+      },
+      {
+        "code": "688208",
+        "name": "道通科技",
+        "industry": "计算机",
+        "strategy": "MTOP",
+        "change": 1.57
+      },
+      {
+        "code": "002337",
+        "name": "赛象科技",
+        "industry": "机械设备",
+        "strategy": "REBOUND",
+        "change": 1.49
+      },
+      {
+        "code": "002086",
+        "name": "东方海洋",
+        "industry": "医药生物",
+        "strategy": "BUMA",
+        "change": 1.32
+      },
+      {
+        "code": "601211",
+        "name": "国泰海通",
+        "industry": "非银金融",
+        "strategy": "MTOP",
+        "change": 1.1
+      },
+      {
+        "code": "002241",
+        "name": "歌尔股份",
+        "industry": "电子",
+        "strategy": "BUMA",
+        "change": 1.07
+      },
+      {
+        "code": "002614",
+        "name": "奥佳华",
+        "industry": "家用电器",
+        "strategy": "BUMA",
+        "change": 1.0
+      },
+      {
+        "code": "301287",
+        "name": "康力源",
+        "industry": "轻工制造",
+        "strategy": "MTOP",
+        "change": 0.98
+      },
+      {
+        "code": "002045",
+        "name": "国光电器",
+        "industry": "电子",
+        "strategy": "BUMA",
+        "change": 0.86
+      },
+      {
+        "code": "301310",
+        "name": "鑫宏业",
+        "industry": "汽车",
+        "strategy": "BUMA",
+        "change": 0.79
+      },
+      {
+        "code": "603511",
+        "name": "爱慕股份",
+        "industry": "纺织服饰",
+        "strategy": "BUMA",
+        "change": 0.71
+      },
+      {
+        "code": "603928",
+        "name": "兴业股份",
+        "industry": "基础化工",
+        "strategy": "BUMA",
+        "change": 0.69
+      },
+      {
+        "code": "002164",
+        "name": "宁波东力",
+        "industry": "机械设备",
+        "strategy": "BUMA",
+        "change": 0.57
+      },
+      {
+        "code": "605055",
+        "name": "迎丰股份",
+        "industry": "纺织服饰",
+        "strategy": "MTOP",
+        "change": -0.31
+      },
+      {
+        "code": "300539",
+        "name": "横河精密",
+        "industry": "基础化工",
+        "strategy": "BUMA",
+        "change": -0.73
+      },
+      {
+        "code": "301225",
+        "name": "恒勃股份",
+        "industry": "汽车",
+        "strategy": "MTOP",
+        "change": -1.05
+      },
+      {
+        "code": "00981",
+        "name": "中芯国际",
+        "industry": "",
+        "strategy": "MTOP",
+        "change": null
+      }
+    ],
+    "stats": {
+      "up": 28,
+      "down": 3,
+      "flat": 0,
+      "max_gain": 9.95,
+      "max_loss": -1.05,
+      "avg": 2.06
+    },
+    "strategy_dist": [
+      {
+        "name": "BUMA",
+        "count": 21,
+        "pct": 65.6
+      },
+      {
+        "name": "MTOP",
+        "count": 11,
+        "pct": 34.4
+      },
+      {
+        "name": "REBOUND",
+        "count": 2,
+        "pct": 6.2
+      }
+    ],
+    "industry_dist": [
+      {
+        "name": "基础化工",
+        "count": 6,
+        "pct": 18.8
+      },
+      {
+        "name": "电子",
+        "count": 4,
+        "pct": 12.5
+      },
+      {
+        "name": "汽车",
+        "count": 3,
+        "pct": 9.4
+      },
+      {
+        "name": "机械设备",
+        "count": 3,
+        "pct": 9.4
+      },
+      {
+        "name": "计算机",
+        "count": 3,
+        "pct": 9.4
+      },
+      {
+        "name": "医药生物",
+        "count": 2,
+        "pct": 6.2
+      },
+      {
+        "name": "建筑装饰",
+        "count": 2,
+        "pct": 6.2
+      },
+      {
+        "name": "纺织服饰",
+        "count": 2,
+        "pct": 6.2
+      },
+      {
+        "name": "家用电器",
+        "count": 1,
+        "pct": 3.1
+      },
+      {
+        "name": "电力设备",
+        "count": 1,
+        "pct": 3.1
+      },
+      {
+        "name": "美容护理",
+        "count": 1,
+        "pct": 3.1
+      },
+      {
+        "name": "轻工制造",
+        "count": 1,
+        "pct": 3.1
+      },
+      {
+        "name": "非银金融",
+        "count": 1,
+        "pct": 3.1
+      },
+      {
+        "name": "商贸零售",
+        "count": 1,
+        "pct": 3.1
+      }
+    ]
+  },
+  "market": {
+    "sector_performance": {
+      "top_gainers": [],
+      "top_losers": []
+    },
+    "market_summary": "三大指数集体收涨。上证指数涨1.41%报4123.09点，深成指涨2.17%，创业板指涨2.98%。行业板块0个上涨、0个下跌。",
+    "capital_flow_summary": "上涨个股4612家，下跌个股759家。",
+    "market_breadth": {
+      "up": 4612,
+      "down": 759,
+      "flat": 94
+    },
+    "rotation": {
+      "hot_sectors": [],
+      "cooling_sectors": [],
+      "summary": "暂无行业轮动因子数据"
+    }
+  },
+  "ifind_reports": {
+    "market_review": {
+      "title": "A股市场复盘报告",
+      "date": "",
+      "sections": [
+        {
+          "heading": "一、市场概况总览",
+          "html": "<h3>1. 市场整体表现</h3>\n<p>2026年2月9日，A股市场迎来普涨行情，市场情绪显著回暖。沪深京市场总成交额达到2.27万亿元，显示出节前资金交投依然活跃。从市场整体走势看，主要指数全线收涨，其中创业板指表现尤为强势。市场上涨家数高达4612家，下跌家数仅为759家，涨跌比超过6:1，呈现典型的普涨格局，市场赚钱效应极佳。</p>\n<h3>2. 市场特征总结</h3>\n<p>从多维度观察，当日市场主要呈现以下特征：</p>\n<ul>\n<li><strong>• </strong><strong>指数分化明显，成长风格占优</strong>：以科技和新能源为代表的成长板块领涨，带动创业板指、科创50等指数涨幅显著超越主板指数，市场风格明显偏向成长。</li>\n<li><strong>• </strong><strong>板块轮动加速，热点多点开花</strong>：行业板块呈现普涨态势，但领涨板块集中在光伏、稀土、影视传媒、纺织化学等方向，而油气等少数板块逆市下跌，显示资金在节前积极布局多个热点。</li>\n<li><strong>• </strong><strong>资金大幅流入，市场信心恢复</strong>：主力资金呈现大幅净流入态势，尤其集中涌入通信设备、半导体、光伏设备等科技成长领域，表明机构资金对后市持乐观态度，市场风险偏好显著提升。</li>\n</ul>",
+          "collapsed": false
+        },
+        {
+          "heading": "二、重要指数表现分析",
+          "html": "<h3>1. 主要指数涨跌详情</h3>\n<div class=\"report-table-wrap\"><table class=\"report-data-table\"><thead><tr><th>指数代码</th><th>指数名称</th><th>当日收盘价</th><th>涨跌幅 (%)</th><th>成交额</th></tr></thead><tbody><tr><td>000001.SH</td><td>上证指数</td><td>4123.09</td><td>1.41</td><td>9497.26亿</td></tr><tr><td>000688.SH</td><td>科创50</td><td>1458.16</td><td>2.51</td><td>729.10亿</td></tr><tr><td>000300.SH</td><td>沪深300</td><td>4719.06</td><td>1.62</td><td>5227.57亿</td></tr><tr><td>399106.SZ</td><td>深证综指</td><td>2700.22</td><td>1.91</td><td>1.30万亿</td></tr></tbody></table></div>\n<h3>2. 指数间对比分析</h3>\n<p>各指数表现存在明显差异。<strong>科创50指数</strong>以2.51%的涨幅领跑，<strong>深证综指</strong>紧随其后上涨1.91%，<strong>创业板指</strong>（根据市场描述）表现亦强劲，而<strong>上证指数</strong>涨幅相对较小为1.41%。这种分化格局主要由以下原因驱动：</p>\n<ul>\n<li><strong>• </strong><strong>风格切换</strong>：市场风格明显偏向以科技创新、新能源为代表的成长股。科创50和创业板指成分股中半导体、光伏、AI等板块权重较高，这些板块当日集体大涨，直接推高了相关指数。</li>\n<li><strong>• </strong><strong>权重股影响</strong>：上证指数和沪深300指数中金融、消费、能源等传统行业权重较大，而这些板块当日表现相对平淡，部分油气板块甚至下跌，拖累了主板指数的整体涨幅。</li>\n</ul>\n<h3>3. 指数技术指标</h3>\n<p>从技术指标看，主要指数均收出中阳线，成功站上多条短期均线，短期技术形态得到修复。以<strong>上证指数</strong>为例，收盘价4123.09点，MACD指标值为-20.73，虽然仍处于零轴下方，但绿柱有望收窄，显示下跌动能减弱，有企稳反弹迹象。<strong>科创50</strong>指数大涨后，MACD指标为-31.24，同样显示超跌后的强劲反弹动能。整体看，各指数短期均线有拐头向上趋势，但上方仍面临前期震荡区间的压力。</p>",
+          "collapsed": false
+        },
+        {
+          "heading": "三、板块轮动与资金流向",
+          "html": "<h3>1. 行业板块表现</h3>\n<p><strong>涨幅前五行业板块</strong>：</p>\n<p><strong>1. </strong><strong>纺织化学用品</strong>：涨幅7.56%。驱动因素主要为染料等产品涨价预期，以及行业龙头业绩预增，带动板块整体走强。</p>\n<p><strong>2. </strong><strong>旅游零售</strong>：涨幅7.55%。受春节假期消费旺季预期刺激，免税等概念受到资金追捧。</p>\n<p><strong>3. </strong><strong>光伏辅材</strong>：涨幅6.98%。受“太空光伏”等前沿概念催化，以及行业基本面预期改善，银浆、靶材等辅材环节个股表现活跃。</p>\n<p><strong>4. </strong><strong>稀土</strong>：涨幅6.94%。受海外矿业收购事件及产品价格预期上涨影响，稀土永磁板块集体大涨。</p>\n<p><strong>5. </strong><strong>影视院线</strong>：涨幅6.23%。春节档临近，多部重磅影片定档，市场对影视消费复苏抱有强烈预期。</p>\n<p><strong>跌幅前五行业板块</strong>：</p>\n<p><strong>1. </strong><strong>油气开采</strong>：跌幅-1.47%。国际油价波动及市场风格切换至成长股，导致资金从传统能源板块流出。</p>\n<p><strong>2. </strong><strong>油气开采及服务</strong>：跌幅-0.94%。与油气开采板块联动下跌。</p>\n<p><strong>3. </strong><strong>宠物食品</strong>：跌幅-0.88%。属于消费板块中的细分领域，当日资金关注度较低。</p>\n<p><strong>4. </strong><strong>油服工程</strong>：跌幅-0.51%。受油气板块整体调整拖累。</p>\n<p><strong>5. </strong><strong>电信运营商</strong>：跌幅-0.28%。表现相对抗跌，但同样缺乏上涨动力。</p>\n<h3>2. 概念板块热点</h3>\n<p>当日市场概念热点纷呈，主要集中在以下几个方向：</p>\n<ul>\n<li><strong>• </strong><strong>光伏/钙钛矿/太空光伏</strong>：成为最强主线，从辅材、电池到设备全产业链爆发。涨停个股众多，如<strong>聚和材料</strong>、<strong>苏州固锝</strong>、<strong>亚玛顿</strong>、<strong>协鑫集成</strong>、<strong>拓日新能</strong>等，驱动因素包括马斯克调研传闻、技术突破预期及“太空光伏”的宏大叙事。</li>\n<li><strong>• </strong><strong>AI应用（短剧/游戏/影视）</strong>：受春节档及AI技术赋能内容创作双重刺激，<strong>中文在线</strong>、<strong>完美世界</strong>、<strong>上海电影</strong>、<strong>欢瑞世纪</strong>等多只个股涨停。</li>\n<li><strong>• </strong><strong>商业航天</strong>：我国成功发射可重复使用试验航天器，提振了整个产业链情绪，<strong>江苏神通</strong>、<strong>顶固集创</strong>、<strong>上海港湾</strong>等相关个股涨停。</li>\n<li><strong>• </strong><strong>半导体/先进封装</strong>：行业景气度回升预期叠加国产替代逻辑，<strong>亚翔集成</strong>、<strong>圣晖集成</strong>等洁净室概念，以及<strong>光力科技</strong>等封测设备股表现强势。</li>\n</ul>\n<h3>3. 资金流向深度分析</h3>\n<ul>\n<li><strong>• </strong><strong>主力资金流向</strong>：主力资金大幅净流入。流入前五的板块分别为：通信设备（458.88亿）、半导体（442.50亿）、通信网络设备及器件（352.38亿）、光伏设备（263.10亿）、数字芯片设计（221.04亿）。这清晰地表明机构资金大举加仓科技成长主线。</li>\n<li><strong>• </strong><strong>个股资金流向</strong>：</li>\n<li><strong>• </strong><strong>流入前十个股</strong>：主要集中在光通信、AI算力及新能源龙头，如<strong>中际旭创</strong>（80.87亿）、<strong>天孚通信</strong>（69.84亿）、<strong>新易盛</strong>（63.67亿）、<strong>阳光电源</strong>（46.65亿）。</li>\n<li><strong>• </strong><strong>流出前十个股</strong>：流出金额相对较小且分散，包括<strong>宁德时代</strong>（-11.92亿）、<strong>中文在线</strong>（-5.90亿）等，部分为近期涨幅较大个股的获利了结，并未形成板块性出逃。</li>\n</ul>",
+          "collapsed": true
+        },
+        {
+          "heading": "四、涨跌停个股分析",
+          "html": "<h3>1. 涨停个股统计</h3>\n<p>当日涨停个股总数异常活跃。根据数据样本，涨停个股数量众多，市场做多情绪高涨。其中包含多只连板股及大量首板股，显示新热点不断涌现，市场接力氛围良好。</p>\n<h3>2. 涨停个股列表</h3>\n<p>以下为部分热度较高的涨停股票展示：</p>\n<div class=\"report-table-wrap\"><table class=\"report-data-table\"><thead><tr><th>公司名称</th><th>证券代码</th><th>所属行业</th><th>涨停原因</th></tr></thead><tbody><tr><td>湖南白银</td><td>002716.SZ</td><td>有色金属/贵金属</td><td>银价上涨+业绩预增+湖南国资</td></tr><tr><td>中利集团</td><td>002309.SZ</td><td>电力设备/电网设备</td><td>光伏储能+钙钛矿电池+厦门国资</td></tr><tr><td>苏文电能</td><td>300982.SZ</td><td>建筑装饰/基础建设</td><td>光伏+光储充+虚拟电厂</td></tr><tr><td>奥瑞德</td><td>600666.SH</td><td>电子/电子化学品</td><td>文生视频+算力租赁+蓝宝石</td></tr><tr><td>杉杉股份</td><td>600884.SH</td><td>电子/光学光电子</td><td>安徽国资拟入主+固态电池+偏光片龙头</td></tr><tr><td>杭萧钢构</td><td>600477.SH</td><td>建筑装饰/专业工程</td><td>中标火箭基地+光伏研发+钢结构</td></tr><tr><td>辉煌科技</td><td>002296.SZ</td><td>通信/通信设备</td><td>轨交设备+卫星导航+AI巡检</td></tr><tr><td>望变电气</td><td>603191.SH</td><td>电力设备/输变电设备</td><td>500kV变压器+数据中心+取向硅钢</td></tr><tr><td>金晶科技</td><td>600586.SH</td><td>基础化工/化学原料</td><td>光伏玻璃+钙钛矿</td></tr><tr><td>海看股份</td><td>301262.SZ</td><td>传媒/电视广播</td><td>AI漫剧+短剧+算力+山东国资</td></tr></tbody></table></div>\n<h3>3. 跌停个股分析</h3>\n<p>当日跌停个股数量较少，共8只。分析其特征如下：</p>\n<ul>\n<li><strong>• </strong>ST/ST板块占主导：跌停个股中，*ST精伦*、<strong>*ST国华</strong>、<strong>*ST万方</strong>、<strong>*ST正平</strong>、<strong>*ST原尚</strong>等均属于风险警示板块，表明在普涨行情下，资金仍在规避基本面有重大不确定性或退市风险的个股。</li>\n<li><strong>• </strong><strong>个别非ST股跌停</strong>：如<strong>国发股份</strong>、<strong>郴电国际</strong>、<strong>升达林业</strong>出现跌停。这些个股多为冷门股或前期有一定涨幅的个股，可能受个股利空或资金调仓影响，未形成板块效应。</li>\n</ul>",
+          "collapsed": true
+        },
+        {
+          "heading": "五、成交量价关系分析",
+          "html": "<h3>1. 量价配合情况</h3>\n<p>当日市场呈现典型的“放量上涨”态势。沪深京市场总成交额2.27万亿元，维持在较高水平。在指数全线上涨的背景下，成交额保持活跃，表明上涨得到了增量资金的认可和支持，量价配合健康。这种节前放量上涨，往往预示着资金对节后行情抱有积极预期，持股过节意愿较强。</p>\n<h3>2. 市场活跃度评估</h3>\n<p>市场活跃度极高。从<strong>上涨家数（4612家）远超下跌家数（759家）</strong> 来看，市场参与度广泛，赚钱效应扩散。从板块角度看，多个热点板块同时爆发，涨停个股层出不穷，也印证了市场交投情绪火热。与前期市场震荡调整时相比，活跃度有显著提升。</p>\n<h3>3. 量价背离信号</h3>\n<p>当日未出现明显的量价背离信号。主要指数上涨的同时，市场总成交额维持高位，板块和个股的上涨也大多伴随成交量的放大，量价关系同步性较好。</p>",
+          "collapsed": true
+        },
+        {
+          "heading": "六、宏观信息面解读",
+          "html": "<h3>1. 最新宏观数据影响</h3>\n<p>根据最新宏观数据，2026年1月中国制造业PMI为49.3，较前值50.1回落，再次跌至荣枯线下方，显示制造业景气度有所反复，经济复苏基础仍需巩固。这一数据可能在一定程度上解释了市场为何更倾向于炒作具有想象空间的成长题材，而非与经济周期紧密相关的传统板块。同时，央行数据显示，中国1月末外汇储备规模为33991亿美元，保持稳定，且央行已连续第15个月增持黄金，这有助于稳定市场对人民币资产及宏观流动性的信心。</p>\n<h3>2. 宏观重大新闻事件</h3>\n<ul>\n<li><strong>• </strong><strong>国常会研究促进有效投资</strong>：国务院常务会议研究促进有效投资政策措施，提出深入谋划推动一批重大项目、重大工程，特别是在发展新质生产力等方面取得突破。此消息直接利好“新质生产力”相关的高端制造、科技创新板块，与当日市场领涨的半导体、光伏、商业航天等板块高度契合。</li>\n<li><strong>• </strong><strong>八部门联合发文强化虚拟货币监管</strong>：中国人民银行等八部门发布通知，进一步防范和处置虚拟货币相关风险，明确境内严禁相关业务，并对现实世界资产（RWA）代币化提出严监管要求。此举旨在防范金融风险，引导资金“脱虚向实”，从侧面可能促使部分投机资金转向合规的资本市场，对A股微观流动性环境或有间接影响。</li>\n<li><strong>• </strong><strong>工信部部署算力互联互通建设</strong>：工信部发布通知，组织开展国家算力互联互通节点建设工作，旨在优化全国算力资源布局。该政策为AI算力、数据中心、通信网络等基础设施板块提供了长期的政策支撑，是当日通信设备、算力概念走强的重要背景之一。</li>\n</ul>",
+          "collapsed": true
+        },
+        {
+          "heading": "七、重要消息面影响",
+          "html": "<h3>1. A股公司公告解读</h3>\n<ul>\n<li><strong>• </strong><strong>奥浦迈</strong>发布发行股份购买资产实施结果公告，标志着公司通过外延并购拓展业务版图完成关键步骤，对股价有积极影响。</li>\n<li><strong>• </strong><strong>电广传媒</strong>董事会审议通过为子公司贷款提供担保等议案，涉及资金运作和业务支持，需关注其后续经营动态。</li>\n<li><strong>• </strong><strong>*ST天山</strong>发布股票可能被终止上市的第二次风险提示公告，公司2025年业绩预告显示净利润为负，净资产规模较小，退市风险高企，投资者需高度警惕。</li>\n<li><strong>• </strong><strong>晨讯科技</strong>公告2026年1月主营业务收入环比下降43.8%，经营数据出现大幅波动，可能对股价造成压力。</li>\n</ul>\n<h3>2. 券商研报解读</h3>\n<ul>\n<li><strong>• </strong><strong>招银国际</strong>发布研报，关注AI制药进展及创新药个股超跌机会，认为中国药企在AI制药平台方面的价值凸显，与跨国药企的合作（如石药集团与阿斯利康的合作）验证了其竞争力，近期调整提供了抄底机遇。</li>\n<li><strong>• </strong><strong>有券商</strong>发布<strong>兴森科技</strong>业绩预告点评，指出公司扭亏为盈，并强调AI驱动IC载板（特别是ABF载板）需求爆发和涨价潮，公司稀缺产能价值凸显。</li>\n<li><strong>• </strong><strong>有券商</strong>在晨会纪要中探讨“持股过节还是持币过节”的策略问题，反映出机构对节后行情的研判是当前市场焦点之一。</li>\n<li><strong>• </strong><strong>有券商</strong>发布半导体行业周报，指出英特尔和AMD服务器CPU交期延长、英飞凌功率半导体涨价等行业动态，印证了半导体行业景气度正在提升。</li>\n<li><strong>• </strong><strong>有券商</strong>发布轻工制造&amp;纺织服饰行业周报，关注春节假期消费，认为家居板块估值修复仍可期。</li>\n</ul>",
+          "collapsed": true
+        },
+        {
+          "heading": "八、技术面分析总结",
+          "html": "<h3>1. 大盘技术分析</h3>\n<p>大盘收出中阳线，一举突破短期均线压制，技术形态得到快速修复。<strong>上证指数</strong>重新站上4100点关口，KDJ、RSI等短期指标有望形成金叉，进入反弹区域。但指数上方仍面临前期平台整理区间的压力，且MACD仍位于零轴之下，趋势性反转信号尚未完全确立，短期可视为超跌后的强势反弹。</p>\n<h3>2. 板块技术分析</h3>\n<ul>\n<li><strong>• </strong><strong>光伏/新能源板块</strong>：板块指数放量大涨，多数个股突破近期震荡平台，技术形态转为进攻态势，成为市场新主线。</li>\n<li><strong>• </strong><strong>半导体/AI板块</strong>：在连续调整后出现强力反弹，资金回流迹象明显，但整体仍处于大型震荡区间内，需观察其持续性。</li>\n<li><strong>• </strong><strong>影视传媒板块</strong>：受益于春节档事件驱动，板块指数沿短期均线稳步上行，趋势保持良好。</li>\n</ul>",
+          "collapsed": true
+        },
+        {
+          "heading": "九、后市展望与操作建议",
+          "html": "<h3>1. 短期走势预测</h3>\n<p>基于节前放量普涨的强势表现，市场情绪已显著回暖，预计节后首个交易日市场有望延续反弹惯性。但需注意，连续大涨后可能面临短期获利盘兑现的压力。<strong>支撑因素</strong>：政策面对“新质生产力”的支持明确、市场量价关系健康、外围市场AI科技热潮传导。<strong>阻力因素</strong>：1月PMI数据偏弱显示经济基本面压力、部分指数面临前期成交密集区技术压力。</p>\n<h3>2. 板块机会与风险</h3>\n<ul>\n<li><strong>• </strong><strong>重点关注板块</strong>：</li>\n</ul>\n<p><strong>1. </strong><strong>光伏/钙钛矿产业链</strong>：作为当日最强主线，兼具技术迭代（钙钛矿、BC电池）和宏大叙事（太空光伏），资金介入深，节后仍有反复活跃机会。</p>\n<p><strong>2. </strong><strong>半导体/先进封装</strong>：行业周期见底回升与国产替代逻辑共振，且受益于全球AI算力需求，景气度确定性较高。</p>\n<p><strong>3. </strong><strong>AI应用（影视、游戏、营销）</strong>：春节档是重要催化剂，AI降本增效的逻辑正在相关公司业绩中逐步体现。</p>\n<ul>\n<li><strong>• </strong><strong>需规避板块</strong>：</li>\n</ul>\n<p><strong>1. </strong> *ST/ST板块：年报披露期临近，退市风险加剧，应坚决规避。</p>\n<p><strong>2. </strong><strong>与宏观经济高度相关的传统周期板块</strong>（如油气、部分建材）：在经济数据反复的背景下，可能缺乏持续上涨动力。</p>\n<h3>3. 操作策略建议</h3>\n<ul>\n<li><strong>• </strong><strong>仓位管理</strong>：可保持中等偏高仓位持股过节，分享节后潜在的红包行情。但不宜满仓，需留有一定现金应对可能的波动。</li>\n<li><strong>• </strong><strong>个股选择</strong>：紧扣“新质生产力”主线，优先选择当日板块中领涨、成交量显著放大的龙头个股或具有核心技术/平台价值的公司。避免追高已连续涨停且脱离基本面的纯题材股。</li>\n<li><strong>• </strong><strong>止损/止盈位设置</strong>：对于介入的个股，可将止损位设置在关键支撑位（如5日或10日均线）下方。对于已有一定浮盈的持仓，可考虑将止盈位上移至重要压力位附近，或采用移动止盈法锁定利润。</li>\n</ul>\n<p>本分析报告由iFinD Agent平台生成，仅供信息参考，不构成任何投资建议，市场有风险，投资需谨慎。</p>",
+          "collapsed": true
+        }
+      ],
+      "charts": {
+        "limit_up_stocks": [
+          {
+            "name": "湖南白银",
+            "code": "002716.SZ",
+            "industry": "有色金属/贵金属",
+            "reason": "银价上涨+业绩预增+湖南国资"
+          },
+          {
+            "name": "中利集团",
+            "code": "002309.SZ",
+            "industry": "电力设备/电网设备",
+            "reason": "光伏储能+钙钛矿电池+厦门国资"
+          },
+          {
+            "name": "苏文电能",
+            "code": "300982.SZ",
+            "industry": "建筑装饰/基础建设",
+            "reason": "光伏+光储充+虚拟电厂"
+          },
+          {
+            "name": "奥瑞德",
+            "code": "600666.SH",
+            "industry": "电子/电子化学品",
+            "reason": "文生视频+算力租赁+蓝宝石"
+          },
+          {
+            "name": "杉杉股份",
+            "code": "600884.SH",
+            "industry": "电子/光学光电子",
+            "reason": "安徽国资拟入主+固态电池+偏光片龙头"
+          },
+          {
+            "name": "杭萧钢构",
+            "code": "600477.SH",
+            "industry": "建筑装饰/专业工程",
+            "reason": "中标火箭基地+光伏研发+钢结构"
+          },
+          {
+            "name": "辉煌科技",
+            "code": "002296.SZ",
+            "industry": "通信/通信设备",
+            "reason": "轨交设备+卫星导航+AI巡检"
+          },
+          {
+            "name": "望变电气",
+            "code": "603191.SH",
+            "industry": "电力设备/输变电设备",
+            "reason": "500kV变压器+数据中心+取向硅钢"
+          },
+          {
+            "name": "金晶科技",
+            "code": "600586.SH",
+            "industry": "基础化工/化学原料",
+            "reason": "光伏玻璃+钙钛矿"
+          },
+          {
+            "name": "海看股份",
+            "code": "301262.SZ",
+            "industry": "传媒/电视广播",
+            "reason": "AI漫剧+短剧+算力+山东国资"
+          }
+        ],
+        "sectors": {
+          "gainers": [
+            {
+              "name": "纺织化学用品",
+              "change_pct": 7.56
+            },
+            {
+              "name": "旅游零售",
+              "change_pct": 7.55
+            },
+            {
+              "name": "光伏辅材",
+              "change_pct": 6.98
+            },
+            {
+              "name": "稀土",
+              "change_pct": 6.94
+            },
+            {
+              "name": "影视院线",
+              "change_pct": 6.23
+            }
+          ],
+          "losers": [
+            {
+              "name": "油气开采",
+              "change_pct": -1.47
+            },
+            {
+              "name": "油气开采及服务",
+              "change_pct": -0.94
+            },
+            {
+              "name": "宠物食品",
+              "change_pct": -0.88
+            },
+            {
+              "name": "油服工程",
+              "change_pct": -0.51
+            },
+            {
+              "name": "电信运营商",
+              "change_pct": -0.28
+            }
+          ]
+        }
+      }
+    },
+    "industry_analysis": {
+      "title": "2026年2月9日行业大涨深度分析报告",
+      "date": "2026-02-09",
+      "sections": [
+        {
+          "heading": "一、行业指数表现概览",
+          "html": "<p><strong>1. </strong><strong>整体市场表现</strong>\n今日市场呈现结构性行情，部分行业指数表现极为突出。根据数据统计，涨幅前五的行业指数均录得超过5%的涨幅，其中<strong>纺织化学用品</strong>指数以<strong>7.56%</strong> 的涨幅领涨，<strong>旅游零售</strong>指数紧随其后，上涨<strong>7.55%</strong>，两者涨幅极为接近。<strong>光伏辅材</strong>、<strong>稀土</strong>和<strong>电视广播</strong>指数分别上涨<strong>6.98%</strong>、<strong>6.94%</strong><strong>和</strong>5.94%，共同构成了今日市场的领涨梯队。从成交数据看，这些板块的集体大涨吸引了市场资金的显著关注，显示出市场对特定逻辑主线的高度聚焦。</p>\n<p><strong>2. </strong><strong>涨幅排名分析</strong>\n下表详细展示了今日涨幅前五行业指数的关键行情数据：</p>\n<div class=\"report-table-wrap\"><table class=\"report-data-table\"><thead><tr><th>证券代码</th><th>证券简称</th><th>开盘价</th><th>收盘价</th><th>涨跌幅(%)</th><th>前收盘价</th></tr></thead><tbody><tr><td>884033.TI</td><td>纺织化学用品</td><td>1,324.04</td><td>1,393.62</td><td>7.56</td><td>1,295.63</td></tr><tr><td>884254.TI</td><td>旅游零售</td><td>8,731.47</td><td>9,236.19</td><td>7.55</td><td>8,587.66</td></tr><tr><td>884305.TI</td><td>光伏辅材</td><td>6,875.11</td><td>7,191.16</td><td>6.98</td><td>6,721.97</td></tr><tr><td>884215.TI</td><td>稀土</td><td>13,240.77</td><td>13,868.63</td><td>6.94</td><td>12,968.78</td></tr><tr><td>884172.TI</td><td>电视广播</td><td>1,877.86</td><td>1,917.11</td><td>5.94</td><td>1,809.59</td></tr></tbody></table></div>\n<p>数据来源：同花顺三级行业指数行情</p>\n<p><strong>3. </strong><strong>行业分化特征</strong>\n今日领涨的五个行业分属不同领域，但通过分析可以发现其背后的驱动逻辑存在一定的共性或特定的时间窗口催化。<strong>纺织化学用品</strong>与<strong>旅游零售</strong>的涨幅冠绝市场，前者可能受益于行业技术标准提升与季节性需求预期，后者则直接受到重磅消费政策的刺激。<strong>光伏辅材</strong>与<strong>稀土</strong>的上涨均与新能源产业链的景气度变化密切相关，前者受组件涨价传导，后者受产品价格强势上涨驱动。<strong>电视广播</strong>板块的走强则与行业政策支持及内容供给预期改善有关。整体来看，<strong>政策催化、产品涨价、行业基本面边际改善</strong>是今日强势板块的共同特征。</p>",
+          "collapsed": false
+        },
+        {
+          "heading": "二、板块炒作逻辑",
+          "html": "<p>最近的市场炒作的题材有<strong>纺织化学用品、旅游零售、光伏辅材、稀土、电视广播</strong>等，主要围绕以下几个核心逻辑展开：</p>\n<p><strong>1. </strong><strong>纺织化学用品板块：行业标准提升+季节性备货需求预期</strong>\n<strong>事件触发</strong>：2月9日，由山东省纺科院科技有限公司牵头制定的两项纺织行业计量校准规范正式获批发布，将于2026年5月1日起在全国实施，填补了相关技术空白。同时，分析指出每年的3月至4月期间，下游纺织企业将集中采购化纤原料以满足春夏产品生产需求，低库存的化纤品种有望展现价格弹性。此外，华峰化学公告拟投资36亿元建设年产20万吨高性能氨纶新材料项目，显示行业龙头对长期需求的信心。\n<strong>逻辑分析</strong>：</p>\n<ul>\n<li><strong>• </strong><strong>技术标准驱动行业升级</strong>：新校准规范的发布为行业提供了科学、准确的技术依据，标志着行业技术综合实力的提升，有利于规范市场、淘汰落后产能，<strong>具备技术优势的龙头企业有望受益</strong>。</li>\n<li><strong>• </strong><strong>季节性需求预期升温</strong>：市场进入传统备货旺季的时间窗口，叠加化纤原料库存处于低位，<strong>供需关系的边际改善预期</strong>为产品价格提供了上涨弹性，进而提振了板块的盈利预期。</li>\n<li><strong>• </strong><strong>龙头扩产彰显信心</strong>：行业龙头的大额资本开支计划，虽然可能加剧长期竞争，但在当前时点也被市场解读为对下游需求复苏的乐观判断，为板块情绪提供了支撑。</li>\n</ul>\n<p><strong>2. </strong><strong>旅游零售板块：重磅免税政策刺激+春运出行数据催化</strong>\n<strong>事件触发</strong>：2月5日，财政部、海关总署、税务总局明确发布海南自由贸易港岛内居民消费的进境商品“零关税”政策，对岛内居民在指定场所购买清单内商品，每人每年享有1万元免税额度，自公布之日起实施。此外，今年春运期间全社会跨区域人员流动量预计将达95亿人次，创历史新高。\n<strong>逻辑分析</strong>：</p>\n<ul>\n<li><strong>• </strong><strong>政策直接利好消费潜力释放</strong>：此次“零关税”政策直接针对海南岛内居民日常生活消费，品类涵盖食品饮料、日化用品等，<strong>显著降低了消费者的购物成本，有望直接刺激海南本地消费市场的扩容和升级</strong>，为相关旅游零售企业带来增量市场空间。</li>\n<li><strong>• </strong><strong>出行高景气度提供板块热度</strong>：创纪录的春运人员流动量数据验证了居民强烈的出行和消费意愿，为整个旅游零售产业链（包括免税、百货、餐饮等）营造了积极的宏观氛围，<strong>强化了市场对消费复苏持续性的信心</strong>。</li>\n</ul>\n<p><strong>3. </strong><strong>光伏辅材板块：组件价格回暖传导+行业供给格局优化预期</strong>\n<strong>事件触发</strong>：2026年开年以来，天合光能、晶科能源、晶澳科技等一线光伏组件企业多次上调产品报价，释放行业回暖信号。与此同时，明冠新材公告终止总投资约50亿元的太阳能背板及功能性膜生产基地项目，称因行业产能过剩、竞争加剧。\n<strong>逻辑分析</strong>：</p>\n<ul>\n<li><strong>• </strong><strong>需求与成本共振推动组件涨价</strong>：本轮组件价格上涨源于需求复苏、政策“反内卷”以及白银等关键辅材成本上升的多重推动。组件价格的企稳回升<strong>改善了整个产业链的盈利预期</strong>，涨价效应有望沿产业链向上游辅材环节传导。</li>\n<li><strong>• </strong><strong>产能扩张理性收缩改善供给预期</strong>：在行业经历普遍亏损后，像明冠新材这样终止大规模扩产项目的案例出现，<strong>被市场解读为供给侧开始理性收缩的信号</strong>。叠加政策层面遏制无序竞争，市场预期光伏辅材环节的供需关系将发生积极改善，盈利压力有望缓解。</li>\n</ul>\n<p><strong>4. </strong><strong>稀土板块：产品价格强势上涨+下游新兴需求拉动</strong>\n<strong>事件触发</strong>：近期国内轻稀土市场价格持续上涨，金属镨钕、氧化镨钕等产品价格显著上扬。截至2月6日，氧化镨钕价格达75.8万元/吨，月内涨幅达24.9%。盛和资源股价涨停，北方稀土、中国稀土等多股跟涨。\n<strong>逻辑分析</strong>：</p>\n<ul>\n<li><strong>• </strong><strong>供需紧平衡推动价格上行</strong>：供给端，国内稀土开采与冶炼分离实行总量调控，指标增速放缓。需求端，下游磁材企业由刚需采购转为备货采购。<strong>供给紧张而需求回暖，导致现货供应紧缺，持货商惜售，共同推动了稀土价格的快速上涨</strong>。</li>\n<li><strong>• </strong><strong>新兴应用打开长期成长空间</strong>：机器人、低空经济、军工等产业的快速发展，为高性能钕铁硼永磁材料带来了新的需求增长点。<strong>市场对稀土长期需求结构的优化和增长潜力抱有乐观预期</strong>，增强了价格上涨的可持续性逻辑。</li>\n<li><strong>• </strong><strong>业绩改善预期强烈</strong>：稀土价格稳步上涨且向中下游传导顺畅，磁材企业普遍预期利润将实现增厚，<strong>行业盈利预期显著改善</strong>，直接催化了板块的股价表现。相关标的包括<strong>盛和资源、北方稀土、中国稀土、金力永磁</strong>等。</li>\n</ul>\n<p><strong>5. </strong><strong>电视广播板块：行业政策扶持加码+优质内容供给预期</strong>\n<strong>事件触发</strong>：国家广播电视总局印发实施《进一步丰富电视大屏内容促进广电视听内容供给的若干举措》。同时，多部电影定档2026年春节，且各省广电工作会议聚焦精品内容创作与全媒体融合转型。\n<strong>逻辑分析</strong>：</p>\n<ul>\n<li><strong>• </strong><strong>政策引导内容提质扩容</strong>：新政旨在鼓励和指导优质视听内容创作，<strong>为内容制作方和平台方带来了明确的政策支持和发展机遇</strong>，市场预期行业将进入内容创制和发展的新阶段。</li>\n<li><strong>• </strong><strong>春节档催化内容消费热度</strong>：多部重磅电影定档春节，以及AI春节红包等活动上线，<strong>直接提升了市场对影视文娱内容消费的关注度和短期景气度的预期</strong>，利好影视制作、版权运营及广播电视台等相关板块。</li>\n<li><strong>• </strong><strong>融合转型拓展价值空间</strong>：行业积极推进“内容、传播、技术、组织”一体化，向“媒体+”多元融合方向发展，<strong>传统广电业务与新媒体业务的结合有望打开新的增长空间</strong>，提升板块估值。</li>\n</ul>",
+          "collapsed": false
+        },
+        {
+          "heading": "三、总结",
+          "html": "<p><strong>1. </strong><strong>炒作逻辑的核心原因是什么？</strong>\n今日市场多个板块的强势表现，其核心驱动力可归结为 <strong>“价格信号”</strong> 与 <strong>“政策信号”</strong> 的双重共振。<strong>稀土、光伏辅材、纺织化学用品</strong>的上涨，直接受到<strong>产品价格进入上涨通道或存在强烈上涨预期</strong>的驱动，这背后是供需关系边际改善、成本推动或季节性规律的体现。而<strong>旅游零售、电视广播</strong>板块的爆发，则主要得益于<strong>国家级或行业级重磅扶持政策的出台或深化</strong>，这些政策直接改变了相关领域的经营环境或增长预期，为行业基本面注入了确定性。此外，<strong>行业龙头企业的关键动向（如终止扩产、发布新标准）</strong> 作为重要的产业信号，进一步强化了市场对行业周期位置和未来趋势的判断，共同催化了本轮以“涨价”和“政策”为主线的结构性行情。</p>\n<p>本分析报告由iFinD Agent平台生成，仅供信息参考，不构成任何投资建议，市场有风险，投资需谨慎。</p>",
+          "collapsed": true
+        }
+      ],
+      "charts": {}
+    }
+  }
+}
