@@ -7,7 +7,7 @@
       "industry": "通信/通信设备",
       "strategy": "BUMA",
       "price": 390.15,
-      "score": 6.1,
+      "score": 6.6,
       "label": "中性",
       "announcement": {
         "score": 6.0,
@@ -17,10 +17,10 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
+        "score": 7.12,
+        "sentiment": "bullish",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "利好: 中科飞测具备高成长逻辑 2026年望成易中天标的 | 利空: CPO概念早盘震荡下挫 新易盛跌近10%",
         "items": null
       },
       "valuation": {
@@ -37,7 +37,7 @@
       "industry": "通信/通信设备",
       "strategy": "BUMA",
       "price": 565.99,
-      "score": 6.0,
+      "score": 6.3,
       "label": "中性",
       "announcement": {
         "score": 6.0,
@@ -47,10 +47,10 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 6.64,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "利好: 中科飞测具备高成长逻辑 2026年望成易中天标的 | 利空: 中际旭创成交额破200亿元 现跌5.25%",
         "items": null
       },
       "valuation": {
@@ -62,11 +62,311 @@
       }
     },
     {
+      "code": "300274",
+      "name": "阳光电源",
+      "industry": "电力设备/光伏设备",
+      "strategy": "BUMA",
+      "price": 153.31,
+      "score": 6.2,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 7.67,
+        "sentiment": "bullish",
+        "status": "利好",
+        "summary": "利好: 安踏收购彪马股份成最大股东 速卖通跻身美增速前十",
+        "items": null
+      },
+      "valuation": {
+        "score": 4.62,
+        "sentiment": "neutral",
+        "status": "合理估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 19.557385964268 倍\nPE历史分位数: 38.92617449664429%\nPB历史分位数: 42.01680672268907%\nROE（净资产收益率）: 29.0246%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "items": null
+      }
+    },
+    {
+      "code": "603879",
+      "name": "永悦科技",
+      "industry": "基础化工/塑料",
+      "strategy": "MTOP",
+      "price": 6.41,
+      "score": 6.0,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 7.12,
+        "sentiment": "bullish",
+        "status": "中性",
+        "summary": "利好: 永悦科技2月2日盘中快速上涨",
+        "items": null
+      },
+      "valuation": {
+        "score": 4.84,
+        "sentiment": "neutral",
+        "status": "合理估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: -16.315557702567 倍\nPE历史分位数: None%\nPB历史分位数: 92.91666666666669%\nROE（净资产收益率）: -3.5564%\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "items": null
+      }
+    },
+    {
       "code": "002315",
       "name": "焦点科技",
       "industry": "商贸零售/互联网电商",
       "strategy": "BUMA",
       "price": 48.6,
+      "score": 5.8,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "利好: 焦点科技2月4日盘中快速反弹 | 利空: 焦点科技2月4日盘中大跌5%",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.18,
+        "sentiment": "neutral",
+        "status": "合理估值",
+        "summary": "A股估值分析系统\n✓ 正在获取估值数据...\n✓ 成功获取 44 个估值指标\n✓ 正在计算估值得分（消费行业模型）...\nA股估值分析报告\n数据来源: iFinD自定义估值API\n【估值评级】\n评级: 合理估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 29.384544102863 倍\nPB最新: 5.7209428002368 倍\nPEG: 1.7392764908217\nROE（净资产收益率）: 16.2309%\n【历史估值分位数】\nPE_TTM分位数: 73.50877192982456%\nPB分位数: 85.16912402428447%\n【估值对比区间】\nPE_TTM区间:\nPB区间:\nPEG (权重: 17%)",
+        "items": null
+      }
+    },
+    {
+      "code": "300774",
+      "name": "倍杰特",
+      "industry": "环保/环境治理",
+      "strategy": "BUMA",
+      "price": 21.99,
+      "score": 5.8,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 7.71,
+        "sentiment": "bullish",
+        "status": "利好",
+        "summary": "利好: 倍杰特践行环保加矿产战略 布局多处铜矿资源",
+        "items": null
+      },
+      "valuation": {
+        "score": 3.32,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 104.59335057747 倍\nPE历史分位数: 86.19246861924687%\nPB历史分位数: 90.51172707889124%\nROE（净资产收益率）: 7.0819%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "items": null
+      }
+    },
+    {
+      "code": "600577",
+      "name": "精达股份",
+      "industry": "电力设备/电网设备",
+      "strategy": "MTOP",
+      "price": 14.08,
+      "score": 5.8,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 6.3,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "利好: 2月3日超导概念大涨2% 多股涨幅居前 | 利空: 精达股份2月4日融资净偿还1878.35万元 融券净卖出9.01万股",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.08,
+        "sentiment": "neutral",
+        "status": "合理估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 49.163140354388 倍\nPE历史分位数: 97.97979797979798%\nPB历史分位数: 97.5417895771878%\nROE（净资产收益率）: 7.6034%\nROE (权重: 20%)\n━ 综合判断: 合理估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "items": null
+      }
+    },
+    {
+      "code": "600797",
+      "name": "浙大网新",
+      "industry": "计算机/IT服务Ⅱ",
+      "strategy": "BUMA",
+      "price": 10.49,
+      "score": 5.8,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 7.12,
+        "sentiment": "bullish",
+        "status": "中性",
+        "summary": "利好: 移动支付板块涨2% 拉卡拉等五股领涨超4%",
+        "items": null
+      },
+      "valuation": {
+        "score": 4.01,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 608.93457309924 倍\nPEG: None\nROE（净资产收益率）: 0.9222%\n【历史估值分位数】\nPE_TTM分位数: 91.29593810444874%\nPB分位数: 84.67153284671532%\nROE (权重: 5%)\n└─ 解读: ROE较差（0.92%）\n⚠️  PE_TTM处于历史91.3%分位 - 估值历史高位\n⚠️  综合判断: 估值偏高但成长性不足\n风险: 估值与成长性不匹配",
+        "items": null
+      }
+    },
+    {
+      "code": "605389",
+      "name": "长龄液压",
+      "industry": "机械设备/工程机械",
+      "strategy": "BUMA",
+      "price": 76.2,
+      "score": 5.8,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 6.9,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "利好: 2026年2月3日沪深股市公告与交易提示",
+        "items": null
+      },
+      "valuation": {
+        "score": 4.21,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 97.212783846254 倍\nPE历史分位数: 97.86666666666667%\nPB历史分位数: 95.34467323187108%\nROE（净资产收益率）: 5.2567%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "items": null
+      }
+    },
+    {
+      "code": "600879",
+      "name": "航天电子",
+      "industry": "国防军工/航天装备Ⅱ",
+      "strategy": "MTOP",
+      "price": 26.11,
+      "score": 5.7,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 8.33,
+        "sentiment": "bullish",
+        "status": "利好",
+        "summary": "利好: 航天电子盘中急升超2%成交87亿元",
+        "items": null
+      },
+      "valuation": {
+        "score": 2.25,
+        "sentiment": "bearish",
+        "status": "极高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（军工行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPE_TTM: 432.67170099296 倍\nPE历史分位数: 97.94238683127573%\nROE（净资产收益率）: 1.0095%\nROE (权重: 10%)\n└─ 解读: ROE较差（1.01%）- 需提升盈利能力",
+        "items": null
+      }
+    },
+    {
+      "code": "688159",
+      "name": "有方科技",
+      "industry": "通信/通信设备",
+      "strategy": "BUMA",
+      "price": 48.91,
+      "score": 5.7,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 6.39,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "利好: 新易盛股价创历史新高 融资客持续加仓 | 利空: 芯片产业链盘中走弱 存储链领跌多股大跌",
+        "items": null
+      },
+      "valuation": {
+        "score": 4.44,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 50.210226013682 倍\nPEG: 0.12269444525832\nROE（净资产收益率）: 9.2455%\n【历史估值分位数】\nPE_TTM分位数: 36.3265306122449%\nPB分位数: 69.95708154506438%\nPEG (权重: 20%)\n└─ 解读: 严重低估（<0.8）- 成长性显著高于估值\nROE (权重: 5%)\n└─ 解读: ROE偏弱（9.25%）\n✓  PEG=0.12 < 0.8 - 成长性显著高于估值，严重低估\n风险: 科技股失去成长性后估值易暴跌",
+        "items": null
+      }
+    },
+    {
+      "code": "688661",
+      "name": "和林微纳",
+      "industry": "电子/半导体",
+      "strategy": "MTOP",
+      "price": 85.98,
+      "score": 5.7,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "和林微纳(电子) 近期无相关新闻",
+        "items": null
+      },
+      "valuation": {
+        "score": 5.1,
+        "sentiment": "neutral",
+        "status": "合理估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 336.55059048145 倍\nPEG: -25.58436739622\nROE（净资产收益率）: 3.0067%\n【历史估值分位数】\nPE_TTM分位数: 90.24064171122996%\nPB分位数: 77.30802415875755%\nROE (权重: 5%)\n└─ 解读: ROE较差（3.01%）\n✓  PEG=-25.58 < 0.8 - 成长性显著高于估值，严重低估\n⚠️  PE_TTM处于历史90.2%分位 - 估值历史高位\n━  综合判断: 合理估值",
+        "items": null
+      }
+    },
+    {
+      "code": "300244",
+      "name": "迪安诊断",
+      "industry": "医药生物/医疗服务",
+      "strategy": "MTOP",
+      "price": 24.95,
       "score": 5.6,
       "label": "中性",
       "announcement": {
@@ -77,17 +377,47 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 6.71,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "利好: 迪安诊断携手浙江省中医院 共建中医检验融合新生态 | 利空: 迪安诊断2月4日盘中快速回调",
         "items": null
       },
       "valuation": {
-        "score": 5.18,
+        "score": 3.7,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（医药行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPE_TTM: -34.129582254816 倍\nPE历史分位数: None%\nPB: 2.2759124849271 倍\nPB历史分位数: 62.677304964539005%\nPEG: None\nROE（净资产收益率）: 0.8701%\nROE (权重: 4%)\n└─ 解读: ROE 0.87% - 较低",
+        "items": null
+      }
+    },
+    {
+      "code": "300380",
+      "name": "安硕信息",
+      "industry": "计算机/软件开发",
+      "strategy": "MTOP",
+      "price": 41.44,
+      "score": 5.6,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "安硕信息(计算机) 近期无相关新闻",
+        "items": null
+      },
+      "valuation": {
+        "score": 4.71,
         "sentiment": "neutral",
         "status": "合理估值",
-        "summary": "A股估值分析系统\n✓ 正在获取估值数据...\n✓ 成功获取 44 个估值指标\n✓ 正在计算估值得分（消费行业模型）...\nA股估值分析报告\n数据来源: iFinD自定义估值API\n【估值评级】\n评级: 合理估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 29.384544102863 倍\nPB最新: 5.7209428002368 倍\nPEG: 1.7392764908217\nROE（净资产收益率）: 16.2309%\n【历史估值分位数】\nPE_TTM分位数: 73.50877192982456%\nPB分位数: 85.16912402428447%\n【估值对比区间】\nPE_TTM区间:\nPB区间:\nPEG (权重: 17%)",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 242.27827017807 倍\nPEG: 2.8055753575203\nROE（净资产收益率）: 3.4203%\n【历史估值分位数】\nPE_TTM分位数: 52.51479289940828%\nPB分位数: 73.19679430097952%\nPEG (权重: 20%)\n└─ 解读: 高估（>2.0）- 估值远超成长性\nROE (权重: 5%)\n└─ 解读: ROE较差（3.42%）\n🔴 PEG=2.81 > 2.0 - 估值远超成长性，高估\n⚠️  综合判断: 偏高估值",
         "items": null
       }
     },
@@ -107,10 +437,10 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 5.7,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "利好: 深信服获融资净买入2092.69万元 融券净偿还3200股 | 利空: 2月4日英伟达概念重挫2% 多股跌超4%",
         "items": null
       },
       "valuation": {
@@ -118,66 +448,6 @@
         "sentiment": "neutral",
         "status": "合理估值",
         "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 82.364846581472 倍\nPEG: -599.20842818811\nROE（净资产收益率）: -0.8768%\n【历史估值分位数】\nPE_TTM分位数: 10.246305418719212%\nPB分位数: 58.22147651006711%\nROE (权重: 5%)\n└─ 解读: 亏损（ROE=-0.88%）- 需关注盈利能力\n✓  PEG=-599.21 < 0.8 - 成长性显著高于估值，严重低估\n✓  PE_TTM处于历史10.2%分位 - 估值历史低位\n⚠️  综合判断: 偏高估值",
-        "items": null
-      }
-    },
-    {
-      "code": "301099",
-      "name": "雅创电子",
-      "industry": "电子/其他电子Ⅱ",
-      "strategy": "BUMA",
-      "price": 46.56,
-      "score": 5.6,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 4.98,
-        "sentiment": "neutral",
-        "status": "合理估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 63.212613167851 倍\nPEG: 0.40007274578648\nROE（净资产收益率）: 6.5239%\n【历史估值分位数】\nPE_TTM分位数: 87.84860557768924%\nPB分位数: 58.98477157360406%\nPEG (权重: 20%)\n└─ 解读: 严重低估（<0.8）- 成长性显著高于估值\nROE (权重: 5%)\n└─ 解读: ROE偏弱（6.52%）\n✓  PEG=0.40 < 0.8 - 成长性显著高于估值，严重低估\n⚠️  PE_TTM处于历史87.8%分位 - 估值历史高位\n风险: 科技股失去成长性后估值易暴跌",
-        "items": null
-      }
-    },
-    {
-      "code": "600577",
-      "name": "精达股份",
-      "industry": "电力设备/电网设备",
-      "strategy": "MTOP",
-      "price": 14.08,
-      "score": 5.6,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 5.08,
-        "sentiment": "neutral",
-        "status": "合理估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 49.163140354388 倍\nPE历史分位数: 97.97979797979798%\nPB历史分位数: 97.5417895771878%\nROE（净资产收益率）: 7.6034%\nROE (权重: 20%)\n━ 综合判断: 合理估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
         "items": null
       }
     },
@@ -197,10 +467,10 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 5.62,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "利空: 希荻微融资净偿还72.93万元 余额达1.60亿元",
         "items": null
       },
       "valuation": {
@@ -212,162 +482,12 @@
       }
     },
     {
-      "code": "688661",
-      "name": "和林微纳",
-      "industry": "电子/半导体",
-      "strategy": "MTOP",
-      "price": 85.98,
-      "score": 5.6,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 5.1,
-        "sentiment": "neutral",
-        "status": "合理估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 336.55059048145 倍\nPEG: -25.58436739622\nROE（净资产收益率）: 3.0067%\n【历史估值分位数】\nPE_TTM分位数: 90.24064171122996%\nPB分位数: 77.30802415875755%\nROE (权重: 5%)\n└─ 解读: ROE较差（3.01%）\n✓  PEG=-25.58 < 0.8 - 成长性显著高于估值，严重低估\n⚠️  PE_TTM处于历史90.2%分位 - 估值历史高位\n━  综合判断: 合理估值",
-        "items": null
-      }
-    },
-    {
-      "code": "300274",
-      "name": "阳光电源",
-      "industry": "电力设备/光伏设备",
-      "strategy": "BUMA",
-      "price": 153.31,
-      "score": 5.5,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 4.62,
-        "sentiment": "neutral",
-        "status": "合理估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 19.557385964268 倍\nPE历史分位数: 38.92617449664429%\nPB历史分位数: 42.01680672268907%\nROE（净资产收益率）: 29.0246%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
-        "items": null
-      }
-    },
-    {
-      "code": "300380",
-      "name": "安硕信息",
-      "industry": "计算机/软件开发",
-      "strategy": "MTOP",
-      "price": 41.44,
-      "score": 5.5,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 4.71,
-        "sentiment": "neutral",
-        "status": "合理估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 242.27827017807 倍\nPEG: 2.8055753575203\nROE（净资产收益率）: 3.4203%\n【历史估值分位数】\nPE_TTM分位数: 52.51479289940828%\nPB分位数: 73.19679430097952%\nPEG (权重: 20%)\n└─ 解读: 高估（>2.0）- 估值远超成长性\nROE (权重: 5%)\n└─ 解读: ROE较差（3.42%）\n🔴 PEG=2.81 > 2.0 - 估值远超成长性，高估\n⚠️  综合判断: 偏高估值",
-        "items": null
-      }
-    },
-    {
-      "code": "603879",
-      "name": "永悦科技",
-      "industry": "基础化工/塑料",
-      "strategy": "MTOP",
-      "price": 6.41,
-      "score": 5.5,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 4.84,
-        "sentiment": "neutral",
-        "status": "合理估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: -16.315557702567 倍\nPE历史分位数: None%\nPB历史分位数: 92.91666666666669%\nROE（净资产收益率）: -3.5564%\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
-        "items": null
-      }
-    },
-    {
-      "code": "688311",
-      "name": "盟升电子",
-      "industry": "国防军工/军工电子Ⅱ",
-      "strategy": "MTOP",
-      "price": 46.42,
-      "score": 5.5,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 4.92,
-        "sentiment": "neutral",
-        "status": "合理估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（军工行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n估值指标:\nPE_TTM: -39.432502488011 倍\nROE（净资产收益率）: -2.9502%",
-        "items": null
-      }
-    },
-    {
       "code": "002276",
       "name": "万马股份",
       "industry": "电力设备/电网设备",
       "strategy": "REBOUND",
       "price": 17.22,
-      "score": 5.4,
+      "score": 5.5,
       "label": "中性",
       "announcement": {
         "score": 6.0,
@@ -377,10 +497,10 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 6.0,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "万马股份(电力设备) 近期无相关新闻",
         "items": null
       },
       "valuation": {
@@ -392,72 +512,12 @@
       }
     },
     {
-      "code": "300077",
-      "name": "国民技术",
-      "industry": "电子/半导体",
-      "strategy": "MTOP",
-      "price": 22.06,
-      "score": 5.4,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 4.59,
-        "sentiment": "neutral",
-        "status": "合理估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n【核心估值指标（来自自定义API）】\nPE_TTM: -79.001594695238 倍\nPEG: -0.91155053886306\nROE（净资产收益率）: -7.5589%\n【历史估值分位数】\nPE_TTM分位数: None%\nPB分位数: 72.25225225225225%\nROE (权重: 5%)\n└─ 解读: 亏损（ROE=-7.56%）- 需关注盈利能力\n✓  PEG=-0.91 < 0.8 - 成长性显著高于估值，严重低估\n⚠️  综合判断: 偏高估值",
-        "items": null
-      }
-    },
-    {
-      "code": "688159",
-      "name": "有方科技",
-      "industry": "通信/通信设备",
-      "strategy": "BUMA",
-      "price": 48.91,
-      "score": 5.4,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 4.44,
-        "sentiment": "neutral",
-        "status": "偏高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 50.210226013682 倍\nPEG: 0.12269444525832\nROE（净资产收益率）: 9.2455%\n【历史估值分位数】\nPE_TTM分位数: 36.3265306122449%\nPB分位数: 69.95708154506438%\nPEG (权重: 20%)\n└─ 解读: 严重低估（<0.8）- 成长性显著高于估值\nROE (权重: 5%)\n└─ 解读: ROE偏弱（9.25%）\n✓  PEG=0.12 < 0.8 - 成长性显著高于估值，严重低估\n风险: 科技股失去成长性后估值易暴跌",
-        "items": null
-      }
-    },
-    {
       "code": "688709",
       "name": "成都华微",
       "industry": "电子/半导体",
       "strategy": "BUMA",
       "price": 47.21,
-      "score": 5.4,
+      "score": 5.5,
       "label": "中性",
       "announcement": {
         "score": 6.0,
@@ -467,10 +527,10 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 6.0,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "成都华微 近期新闻情绪中性",
         "items": null
       },
       "valuation": {
@@ -482,12 +542,12 @@
       }
     },
     {
-      "code": "600797",
-      "name": "浙大网新",
-      "industry": "计算机/IT服务Ⅱ",
-      "strategy": "BUMA",
-      "price": 10.49,
-      "score": 5.3,
+      "code": "001208",
+      "name": "华菱线缆",
+      "industry": "电力设备/电网设备",
+      "strategy": "MTOP",
+      "price": 24.96,
+      "score": 5.4,
       "label": "中性",
       "announcement": {
         "score": 6.0,
@@ -497,27 +557,27 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 6.0,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "华菱线缆(电力设备) 近期无相关新闻",
         "items": null
       },
       "valuation": {
-        "score": 4.01,
+        "score": 3.84,
         "sentiment": "neutral",
         "status": "偏高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 608.93457309924 倍\nPEG: None\nROE（净资产收益率）: 0.9222%\n【历史估值分位数】\nPE_TTM分位数: 91.29593810444874%\nPB分位数: 84.67153284671532%\nROE (权重: 5%)\n└─ 解读: ROE较差（0.92%）\n⚠️  PE_TTM处于历史91.3%分位 - 估值历史高位\n⚠️  综合判断: 估值偏高但成长性不足\n风险: 估值与成长性不匹配",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 130.65192169351 倍\nPE历史分位数: 98.4504132231405%\nPB历史分位数: 83.31562167906482%\nROE（净资产收益率）: 4.0865%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
         "items": null
       }
     },
     {
-      "code": "605389",
-      "name": "长龄液压",
-      "industry": "机械设备/工程机械",
+      "code": "301099",
+      "name": "雅创电子",
+      "industry": "电子/其他电子Ⅱ",
       "strategy": "BUMA",
-      "price": 76.2,
-      "score": 5.3,
+      "price": 46.56,
+      "score": 5.4,
       "label": "中性",
       "announcement": {
         "score": 6.0,
@@ -527,17 +587,47 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 5.1,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "利空: 雅创电子融资净偿还687.34万元 融券净卖出100股",
         "items": null
       },
       "valuation": {
-        "score": 4.21,
+        "score": 4.98,
         "sentiment": "neutral",
-        "status": "偏高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 97.212783846254 倍\nPE历史分位数: 97.86666666666667%\nPB历史分位数: 95.34467323187108%\nROE（净资产收益率）: 5.2567%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "status": "合理估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 63.212613167851 倍\nPEG: 0.40007274578648\nROE（净资产收益率）: 6.5239%\n【历史估值分位数】\nPE_TTM分位数: 87.84860557768924%\nPB分位数: 58.98477157360406%\nPEG (权重: 20%)\n└─ 解读: 严重低估（<0.8）- 成长性显著高于估值\nROE (权重: 5%)\n└─ 解读: ROE偏弱（6.52%）\n✓  PEG=0.40 < 0.8 - 成长性显著高于估值，严重低估\n⚠️  PE_TTM处于历史87.8%分位 - 估值历史高位\n风险: 科技股失去成长性后估值易暴跌",
+        "items": null
+      }
+    },
+    {
+      "code": "688433",
+      "name": "华曙高科",
+      "industry": "机械设备/",
+      "strategy": "MTOP",
+      "price": 84.03,
+      "score": 5.4,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 7.22,
+        "sentiment": "bullish",
+        "status": "中性",
+        "summary": "利好: 科创100ETF及指数上涨 半导体与太空光伏受需求催化领涨",
+        "items": null
+      },
+      "valuation": {
+        "score": 2.59,
+        "sentiment": "bearish",
+        "status": "极高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 883.61846440817 倍\nPE历史分位数: 97.59036144578312%\nPB历史分位数: 92.80359820089956%\nROE（净资产收益率）: 0.7424%\nROE (权重: 20%)\n🔴 综合判断: 极高估值\n└─ 风险提示: 周期股高估值时风险极大，注意避险\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
         "items": null
       }
     },
@@ -547,7 +637,7 @@
       "industry": "传媒/电视广播Ⅱ",
       "strategy": "MTOP",
       "price": 11.01,
-      "score": 5.2,
+      "score": 5.3,
       "label": "中性",
       "announcement": {
         "score": 6.0,
@@ -557,10 +647,10 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 6.0,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "电广传媒(传媒) 近期无相关新闻",
         "items": null
       },
       "valuation": {
@@ -572,11 +662,101 @@
       }
     },
     {
-      "code": "001208",
-      "name": "华菱线缆",
-      "industry": "电力设备/电网设备",
+      "code": "300638",
+      "name": "广和通",
+      "industry": "通信/通信设备",
       "strategy": "MTOP",
-      "price": 24.96,
+      "price": 29.76,
+      "score": 5.3,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 6.11,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "利好: 移动支付板块涨2% 拉卡拉等五股领涨超4% | 利空: 广和通2月3日融资净偿还3115.06万元 融券净偿还1400股",
+        "items": null
+      },
+      "valuation": {
+        "score": 3.62,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 77.388685142578 倍\nPEG: 2.0775249757742\nROE（净资产收益率）: 8.692%\n【历史估值分位数】\nPE_TTM分位数: 96.98275862068964%\nPB分位数: 63.706896551724135%\nPEG (权重: 20%)\n└─ 解读: 高估（>2.0）- 估值远超成长性\nROE (权重: 5%)\n└─ 解读: ROE偏弱（8.69%）\n🔴 PEG=2.08 > 2.0 - 估值远超成长性，高估\n⚠️  PE_TTM处于历史97.0%分位 - 估值历史高位\n风险: 科技股失去成长性后估值易暴跌",
+        "items": null
+      }
+    },
+    {
+      "code": "301023",
+      "name": "江南奕帆",
+      "industry": "电力设备/电机Ⅱ",
+      "strategy": "MTOP",
+      "price": 47.27,
+      "score": 5.3,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "江南奕帆(电力设备) 近期无相关新闻",
+        "items": null
+      },
+      "valuation": {
+        "score": 3.72,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 45.041275220205 倍\nPE历史分位数: 93.25323475046213%\nPB历史分位数: 87.01298701298701%\nROE（净资产收益率）: 6.9929%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "items": null
+      }
+    },
+    {
+      "code": "688711",
+      "name": "宏微科技",
+      "industry": "电子/半导体",
+      "strategy": "BUMA",
+      "price": 30.82,
+      "score": 5.3,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "宏微科技(电子) 近期无相关新闻",
+        "items": null
+      },
+      "valuation": {
+        "score": 3.76,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n【核心估值指标（来自自定义API）】\nPE_TTM: -485.27680839968 倍\nPEG: None\nROE（净资产收益率）: 0.499%\n【历史估值分位数】\nPE_TTM分位数: None%\nPB分位数: 45.79710144927536%\nROE (权重: 5%)\n└─ 解读: ROE较差（0.50%）\n⚠️  综合判断: 偏高估值",
+        "items": null
+      }
+    },
+    {
+      "code": "002196",
+      "name": "方正电机",
+      "industry": "电力设备/电机Ⅱ",
+      "strategy": "MTOP",
+      "price": 16.55,
       "score": 5.2,
       "label": "中性",
       "announcement": {
@@ -587,17 +767,17 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 6.0,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "方正电机(电力设备) 近期无相关新闻",
         "items": null
       },
       "valuation": {
-        "score": 3.84,
+        "score": 3.26,
         "sentiment": "neutral",
         "status": "偏高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 130.65192169351 倍\nPE历史分位数: 98.4504132231405%\nPB历史分位数: 83.31562167906482%\nROE（净资产收益率）: 4.0865%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: -563.91742450716 倍\nPE历史分位数: None%\nPB历史分位数: 98.91838741396263%\nROE（净资产收益率）: 0.9759%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
         "items": null
       }
     },
@@ -617,10 +797,10 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 5.81,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "利好: 红墙股份2月2日盘中快速反弹 5分钟涨幅超2% | 利空: 2月2日环氧丙烷板块大跌2% 多股领跌",
         "items": null
       },
       "valuation": {
@@ -632,101 +812,11 @@
       }
     },
     {
-      "code": "300244",
-      "name": "迪安诊断",
-      "industry": "医药生物/医疗服务",
-      "strategy": "MTOP",
-      "price": 24.95,
-      "score": 5.2,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 3.7,
-        "sentiment": "neutral",
-        "status": "偏高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（医药行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPE_TTM: -34.129582254816 倍\nPE历史分位数: None%\nPB: 2.2759124849271 倍\nPB历史分位数: 62.677304964539005%\nPEG: None\nROE（净资产收益率）: 0.8701%\nROE (权重: 4%)\n└─ 解读: ROE 0.87% - 较低",
-        "items": null
-      }
-    },
-    {
-      "code": "300638",
-      "name": "广和通",
-      "industry": "通信/通信设备",
-      "strategy": "MTOP",
-      "price": 29.76,
-      "score": 5.2,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 3.62,
-        "sentiment": "neutral",
-        "status": "偏高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n【核心估值指标（来自自定义API）】\nPE_TTM: 77.388685142578 倍\nPEG: 2.0775249757742\nROE（净资产收益率）: 8.692%\n【历史估值分位数】\nPE_TTM分位数: 96.98275862068964%\nPB分位数: 63.706896551724135%\nPEG (权重: 20%)\n└─ 解读: 高估（>2.0）- 估值远超成长性\nROE (权重: 5%)\n└─ 解读: ROE偏弱（8.69%）\n🔴 PEG=2.08 > 2.0 - 估值远超成长性，高估\n⚠️  PE_TTM处于历史97.0%分位 - 估值历史高位\n风险: 科技股失去成长性后估值易暴跌",
-        "items": null
-      }
-    },
-    {
-      "code": "301023",
-      "name": "江南奕帆",
-      "industry": "电力设备/电机Ⅱ",
-      "strategy": "MTOP",
-      "price": 47.27,
-      "score": 5.2,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 3.72,
-        "sentiment": "neutral",
-        "status": "偏高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 45.041275220205 倍\nPE历史分位数: 93.25323475046213%\nPB历史分位数: 87.01298701298701%\nROE（净资产收益率）: 6.9929%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
-        "items": null
-      }
-    },
-    {
-      "code": "688711",
-      "name": "宏微科技",
+      "code": "300077",
+      "name": "国民技术",
       "industry": "电子/半导体",
-      "strategy": "BUMA",
-      "price": 30.82,
+      "strategy": "MTOP",
+      "price": 22.06,
       "score": 5.2,
       "label": "中性",
       "announcement": {
@@ -737,26 +827,26 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 4.88,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "利空: 国民技术2月2日盘中加速下跌",
         "items": null
       },
       "valuation": {
-        "score": 3.76,
+        "score": 4.59,
         "sentiment": "neutral",
-        "status": "偏高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n【核心估值指标（来自自定义API）】\nPE_TTM: -485.27680839968 倍\nPEG: None\nROE（净资产收益率）: 0.499%\n【历史估值分位数】\nPE_TTM分位数: None%\nPB分位数: 45.79710144927536%\nROE (权重: 5%)\n└─ 解读: ROE较差（0.50%）\n⚠️  综合判断: 偏高估值",
+        "status": "合理估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（科技行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n【核心估值指标（来自自定义API）】\nPE_TTM: -79.001594695238 倍\nPEG: -0.91155053886306\nROE（净资产收益率）: -7.5589%\n【历史估值分位数】\nPE_TTM分位数: None%\nPB分位数: 72.25225225225225%\nROE (权重: 5%)\n└─ 解读: 亏损（ROE=-7.56%）- 需关注盈利能力\n✓  PEG=-0.91 < 0.8 - 成长性显著高于估值，严重低估\n⚠️  综合判断: 偏高估值",
         "items": null
       }
     },
     {
-      "code": "300774",
-      "name": "倍杰特",
-      "industry": "环保/环境治理",
-      "strategy": "BUMA",
-      "price": 21.99,
+      "code": "601399",
+      "name": "国机重装",
+      "industry": "机械设备/专用设备",
+      "strategy": "MTOP",
+      "price": 5.19,
       "score": 5.1,
       "label": "中性",
       "announcement": {
@@ -767,26 +857,26 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 6.5,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "利好: 国机重装获融资净买入超千万 两融余额更新",
         "items": null
       },
       "valuation": {
-        "score": 3.32,
-        "sentiment": "neutral",
-        "status": "偏高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 104.59335057747 倍\nPE历史分位数: 86.19246861924687%\nPB历史分位数: 90.51172707889124%\nROE（净资产收益率）: 7.0819%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "score": 2.3,
+        "sentiment": "bearish",
+        "status": "极高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 81.383120630609 倍\nPE历史分位数: 93.87442572741196%\nPB历史分位数: 96.3375796178344%\nROE（净资产收益率）: 2.9896%\nROE (权重: 20%)\n🔴 综合判断: 极高估值\n└─ 风险提示: 周期股高估值时风险极大，注意避险\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
         "items": null
       }
     },
     {
-      "code": "002196",
-      "name": "方正电机",
-      "industry": "电力设备/电机Ⅱ",
+      "code": "300773",
+      "name": "拉卡拉",
+      "industry": "非银金融/多元金融",
       "strategy": "MTOP",
-      "price": 16.55,
+      "price": 27.57,
       "score": 5.0,
       "label": "中性",
       "announcement": {
@@ -797,17 +887,17 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
+        "score": 7.31,
+        "sentiment": "bullish",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "利好: 数字货币板块指数涨2% 芯原股份国芯科技领涨",
         "items": null
       },
       "valuation": {
-        "score": 3.26,
-        "sentiment": "neutral",
-        "status": "偏高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 偏高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: -563.91742450716 倍\nPE历史分位数: None%\nPB历史分位数: 98.91838741396263%\nROE（净资产收益率）: 0.9759%\nROE (权重: 20%)\n⚠️  综合判断: 偏高估值\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "score": 1.0,
+        "sentiment": "bearish",
+        "status": "极高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（保险模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n【核心估值指标（来自自定义API）】\nPEV（市值/内含价值）: N/A\nPE_TTM: 119.76737104361 倍\nPE历史分位数: 91.6%\nROE（母公司）: N/A\n⚠️  综合判断: 估值偏高\n建议: 当前估值处于历史较高位置，建议观望或减持\n风险: 存在估值回归压力\n├─ PEV估值法: PEV（市值/内含价值）是保险核心估值指标\n└─ 利率敏感: 长期利率下行压制保险估值",
         "items": null
       }
     },
@@ -817,6 +907,36 @@
       "industry": "机械设备/自动化设备",
       "strategy": "BUMA",
       "price": 24.68,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "迈赫股份(机械设备) 近期无相关新闻",
+        "items": null
+      },
+      "valuation": {
+        "score": 2.72,
+        "sentiment": "bearish",
+        "status": "极高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 38.640015442465 倍\nPE历史分位数: 4.37956204379562%\nPB历史分位数: 67.58474576271186%\nROE（净资产收益率）: 5.2269%\nROE (权重: 20%)\n🔴 综合判断: 极高估值\n└─ 风险提示: 周期股高估值时风险极大，注意避险\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "items": null
+      }
+    },
+    {
+      "code": "603901",
+      "name": "永创智能",
+      "industry": "机械设备/专用设备",
+      "strategy": "BUMA",
+      "price": 14.48,
       "score": 4.9,
       "label": "偏弱",
       "announcement": {
@@ -827,17 +947,47 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 6.0,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "永创智能(机械设备) 近期无相关新闻",
         "items": null
       },
       "valuation": {
-        "score": 2.72,
+        "score": 2.23,
         "sentiment": "bearish",
         "status": "极高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 38.640015442465 倍\nPE历史分位数: 4.37956204379562%\nPB历史分位数: 67.58474576271186%\nROE（净资产收益率）: 5.2269%\nROE (权重: 20%)\n🔴 综合判断: 极高估值\n└─ 风险提示: 周期股高估值时风险极大，注意避险\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 118.91184425457 倍\nPE历史分位数: 76.66354264292409%\nPB历史分位数: 70.93333333333334%\nROE（净资产收益率）: 4.9895%\nROE (权重: 20%)\n🔴 综合判断: 极高估值\n└─ 风险提示: 周期股高估值时风险极大，注意避险\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
+        "items": null
+      }
+    },
+    {
+      "code": "300128",
+      "name": "锦富技术",
+      "industry": "电力设备/电池",
+      "strategy": "MTOP",
+      "price": 7.21,
+      "score": 4.8,
+      "label": "偏弱",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近期无重大公告",
+        "items": null
+      },
+      "industry_news": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "锦富技术(电力设备) 近期无相关新闻",
+        "items": null
+      },
+      "valuation": {
+        "score": 2.05,
+        "sentiment": "bearish",
+        "status": "极高估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: -33.190687037994 倍\nPE历史分位数: None%\nPB历史分位数: 92.6791277258567%\nROE（净资产收益率）: -22.7825%\n🔴 综合判断: 极高估值\n└─ 风险提示: 周期股高估值时风险极大，注意避险\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
         "items": null
       }
     },
@@ -857,10 +1007,10 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 5.62,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "summary": "利空: 天宸股份2月2日融资净偿还46.38万元 余额2.76亿元",
         "items": null
       },
       "valuation": {
@@ -872,71 +1022,11 @@
       }
     },
     {
-      "code": "601399",
-      "name": "国机重装",
-      "industry": "机械设备/专用设备",
+      "code": "688311",
+      "name": "盟升电子",
+      "industry": "国防军工/军工电子Ⅱ",
       "strategy": "MTOP",
-      "price": 5.19,
-      "score": 4.8,
-      "label": "偏弱",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 2.3,
-        "sentiment": "bearish",
-        "status": "极高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 81.383120630609 倍\nPE历史分位数: 93.87442572741196%\nPB历史分位数: 96.3375796178344%\nROE（净资产收益率）: 2.9896%\nROE (权重: 20%)\n🔴 综合判断: 极高估值\n└─ 风险提示: 周期股高估值时风险极大，注意避险\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
-        "items": null
-      }
-    },
-    {
-      "code": "688433",
-      "name": "华曙高科",
-      "industry": "机械设备/",
-      "strategy": "MTOP",
-      "price": 84.03,
-      "score": 4.8,
-      "label": "偏弱",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 2.59,
-        "sentiment": "bearish",
-        "status": "极高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 883.61846440817 倍\nPE历史分位数: 97.59036144578312%\nPB历史分位数: 92.80359820089956%\nROE（净资产收益率）: 0.7424%\nROE (权重: 20%)\n🔴 综合判断: 极高估值\n└─ 风险提示: 周期股高估值时风险极大，注意避险\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
-        "items": null
-      }
-    },
-    {
-      "code": "300128",
-      "name": "锦富技术",
-      "industry": "电力设备/电池",
-      "strategy": "MTOP",
-      "price": 7.21,
+      "price": 46.42,
       "score": 4.7,
       "label": "偏弱",
       "announcement": {
@@ -947,107 +1037,17 @@
         "items": null
       },
       "industry_news": {
-        "score": 5.625,
+        "score": 3.33,
         "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
+        "status": "利空",
+        "summary": "利空: 盟升电子披露2025年业绩预告 营收5.26亿净利预亏",
         "items": null
       },
       "valuation": {
-        "score": 2.05,
-        "sentiment": "bearish",
-        "status": "极高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: -33.190687037994 倍\nPE历史分位数: None%\nPB历史分位数: 92.6791277258567%\nROE（净资产收益率）: -22.7825%\n🔴 综合判断: 极高估值\n└─ 风险提示: 周期股高估值时风险极大，注意避险\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
-        "items": null
-      }
-    },
-    {
-      "code": "600879",
-      "name": "航天电子",
-      "industry": "国防军工/航天装备Ⅱ",
-      "strategy": "MTOP",
-      "price": 26.11,
-      "score": 4.7,
-      "label": "偏弱",
-      "announcement": {
-        "score": 6.0,
+        "score": 4.92,
         "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 2.25,
-        "sentiment": "bearish",
-        "status": "极高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（军工行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPE_TTM: 432.67170099296 倍\nPE历史分位数: 97.94238683127573%\nROE（净资产收益率）: 1.0095%\nROE (权重: 10%)\n└─ 解读: ROE较差（1.01%）- 需提升盈利能力",
-        "items": null
-      }
-    },
-    {
-      "code": "603901",
-      "name": "永创智能",
-      "industry": "机械设备/专用设备",
-      "strategy": "BUMA",
-      "price": 14.48,
-      "score": 4.7,
-      "label": "偏弱",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 2.23,
-        "sentiment": "bearish",
-        "status": "极高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（周期行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n估值指标:\nPB（市净率）: None 倍\nPE_TTM: 118.91184425457 倍\nPE历史分位数: 76.66354264292409%\nPB历史分位数: 70.93333333333334%\nROE（净资产收益率）: 4.9895%\nROE (权重: 20%)\n🔴 综合判断: 极高估值\n└─ 风险提示: 周期股高估值时风险极大，注意避险\n├─ 估值判断: 周期底部看PB，周期顶部PE可能失效",
-        "items": null
-      }
-    },
-    {
-      "code": "300773",
-      "name": "拉卡拉",
-      "industry": "非银金融/多元金融",
-      "strategy": "MTOP",
-      "price": 27.57,
-      "score": 4.4,
-      "label": "偏弱",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "近期无重大公告",
-        "items": null
-      },
-      "industry_news": {
-        "score": 5.625,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "'光伏行业产能过剩加剧' -> 行业下行",
-        "items": null
-      },
-      "valuation": {
-        "score": 1.0,
-        "sentiment": "bearish",
-        "status": "极高估值",
-        "summary": "A股估值分析系统\n✓ 正在计算估值得分（保险模型）...\nA股估值分析报告\n【估值评级】\n评级: 极高估值\n【核心估值指标（来自自定义API）】\nPEV（市值/内含价值）: N/A\nPE_TTM: 119.76737104361 倍\nPE历史分位数: 91.6%\nROE（母公司）: N/A\n⚠️  综合判断: 估值偏高\n建议: 当前估值处于历史较高位置，建议观望或减持\n风险: 存在估值回归压力\n├─ PEV估值法: PEV（市值/内含价值）是保险核心估值指标\n└─ 利率敏感: 长期利率下行压制保险估值",
+        "status": "合理估值",
+        "summary": "A股估值分析系统\n✓ 正在计算估值得分（军工行业模型）...\nA股估值分析报告\n【估值评级】\n评级: 合理估值\n估值指标:\nPE_TTM: -39.432502488011 倍\nROE（净资产收益率）: -2.9502%",
         "items": null
       }
     }
