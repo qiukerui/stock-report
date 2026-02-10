@@ -14,8 +14,8 @@
         "score": 6.0,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "公告中性（+0.0）",
-        "items": null
+        "summary": "公告中性",
+        "items": []
       },
       "industry_news": {
         "score": 6.0,
@@ -45,8 +45,8 @@
         "score": 6.0,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "公告中性（+0.0）",
-        "items": null
+        "summary": "公告中性",
+        "items": []
       },
       "industry_news": {
         "score": 6.0,
@@ -76,20 +76,30 @@
       ],
       "strategy": "BUMA",
       "price": 9.38,
-      "score": 4.4,
+      "score": 4.7,
       "label": "偏弱",
       "announcement": {
         "score": 3.5425,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "公告中性（-16.1）",
-        "items": null
+        "summary": "利空1条\n  - 康芝药业：关于公司控股股东部分股份质押展期的公告\n    [AI] 控股股东股份质押展期，反映资金压力，增加股权风险",
+        "items": [
+          {
+            "level": "弱利空",
+            "date": "2026-01-22",
+            "days_ago": 19,
+            "title": "康芝药业：关于公司控股股东部分股份质押展期的公告",
+            "reason": "[AI] 控股股东股份质押展期，反映资金压力，增加股权风险",
+            "raw_score": -25,
+            "decayed_score": -16.1
+          }
+        ]
       },
       "industry_news": {
-        "score": 6.0,
+        "score": 6.86875,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "行业中性（无新闻数据）",
+        "summary": "康芝药业产品中选京津冀赣化学药集采(利好); 京津冀赣化药集采结果公布 三代抗组胺药需求与政策共振(利好); 印度尼帕病毒疫情引发A股相关板块拉升(利好)",
         "items": null
       },
       "valuation": {
@@ -113,20 +123,30 @@
       ],
       "strategy": "BUMA",
       "price": 33.18,
-      "score": 4.2,
+      "score": 4.0,
       "label": "偏弱",
       "announcement": {
         "score": 2.7175,
         "sentiment": "bearish",
         "status": "偏利空",
-        "summary": "公告偏利空（-27.1）",
-        "items": null
+        "summary": "利空1条\n  - 洁雅股份：关于2025年度拟计提资产减值准备的公告\n    [AI] 计提资产减值准备将直接减少当期利润，反映资产质量下降",
+        "items": [
+          {
+            "level": "中等利空",
+            "date": "2026-01-30",
+            "days_ago": 11,
+            "title": "洁雅股份：关于2025年度拟计提资产减值准备的公告",
+            "reason": "[AI] 计提资产减值准备将直接减少当期利润，反映资产质量下降",
+            "raw_score": -35,
+            "decayed_score": -27.1
+          }
+        ]
       },
       "industry_news": {
-        "score": 6.0,
+        "score": 5.6875,
         "sentiment": "neutral",
         "status": "中性",
-        "summary": "行业中性（无新闻数据）",
+        "summary": "洁雅股份融资净偿还254.28万元(利空); 洁雅股份融资净偿还122.09万元(利空); 洁雅股份1月27日盘中跌幅达5%(利空)",
         "items": null
       },
       "valuation": {
