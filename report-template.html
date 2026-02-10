@@ -204,6 +204,17 @@
             background: var(--color-accent-light); color: var(--color-accent);
         }
 
+        .card-concepts {
+            display: flex; flex-wrap: wrap; gap: 4px;
+            padding: 0 24px 12px;
+        }
+
+        .concept-tag {
+            display: inline-flex; padding: 2px 8px; border-radius: 4px;
+            font-size: 0.6875rem; font-weight: 500;
+            background: #EDE9FE; color: #7C3AED;
+        }
+
         .card-score { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
         .score-number { font-family: var(--font-mono); font-size: 1.75rem; font-weight: 600; line-height: 1; }
         .score-label { font-size: 0.75rem; font-weight: 500; }
@@ -923,6 +934,10 @@
         const scoreClass = s.score >= 8 ? 'score-excellent' : s.score >= 7 ? 'score-good'
             : s.score >= 5 ? 'score-neutral' : s.score >= 4 ? 'score-weak' : 'score-poor';
 
+        const conceptsHtml = s.concepts && s.concepts.length > 0
+            ? '<div class="card-concepts">' + s.concepts.map(c => '<span class="concept-tag">' + esc(c) + '</span>').join('') + '</div>'
+            : '';
+
         return `<div class="stock-card">
             <div class="card-header">
                 <div class="card-stock-info">
@@ -938,6 +953,7 @@
                     <span class="score-label">${esc(s.label)}</span>
                 </div>
             </div>
+            ${conceptsHtml}
             <div class="card-dimensions">
                 ${renderDim('公告分析', s.announcement, '35%')}
                 ${renderDim('行业新闻', s.industry_news, '35%')}
