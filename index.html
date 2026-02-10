@@ -667,9 +667,41 @@
         .kpi-label { font-size: 0.7rem; color: var(--color-text-tertiary); margin-bottom: 4px; }
         .kpi-value { font-family: var(--font-mono); font-size: 1.35rem; font-weight: 600; }
         .kpi-sub { font-size: 0.7rem; color: var(--color-text-tertiary); margin-top: 2px; }
+
+        /* Breadth bar */
+        .breadth-bar-card {
+            background: var(--color-surface); border: 1px solid var(--color-border-subtle);
+            border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 16px;
+        }
+        .breadth-header {
+            display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;
+        }
+        .breadth-title {
+            font-family: var(--font-serif); font-size: 0.8rem; font-weight: 600;
+            color: var(--color-text-tertiary); letter-spacing: 0.03em;
+        }
+        .breadth-total { font-size: 0.75rem; color: var(--color-text-tertiary); }
+        .breadth-bar {
+            display: flex; height: 24px; border-radius: 6px; overflow: hidden; gap: 2px;
+        }
+        .breadth-seg { transition: width 0.4s ease; }
+        .breadth-up { background: var(--color-bearish); border-radius: 6px 0 0 6px; }
+        .breadth-flat { background: #D1D5DB; }
+        .breadth-down { background: var(--color-bullish); border-radius: 0 6px 6px 0; }
+        .breadth-legend {
+            display: flex; gap: 20px; margin-top: 10px; font-size: 0.8rem; color: var(--color-text-secondary);
+        }
+        .breadth-dot {
+            display: inline-block; width: 10px; height: 10px; border-radius: 2px;
+            margin-right: 4px; vertical-align: middle;
+        }
+        .breadth-item b { font-family: var(--font-mono); font-weight: 600; }
+        .breadth-pct { color: var(--color-text-tertiary); font-size: 0.75rem; margin-left: 2px; }
+
         @media (max-width: 768px) {
             .chart-row-2, .chart-row-3 { grid-template-columns: 1fr; }
             .kpi-row { grid-template-columns: repeat(3, 1fr); }
+            .breadth-legend { gap: 12px; font-size: 0.75rem; }
         }
 
         /* Report section card style */
@@ -1169,20 +1201,48 @@
             const sections = reports.market_review.sections || [];
             let reviewHtml = '';
 
-            // KPI row
-            reviewHtml += '<div class="kpi-row">';
-            if (mc.turnover) reviewHtml += `<div class="kpi-card"><div class="kpi-label">成交额</div><div class="kpi-value">${esc(mc.turnover)}</div></div>`;
-            if (mc.breadth) reviewHtml += `<div class="kpi-card"><div class="kpi-label">上涨</div><div class="kpi-value" style="color:var(--color-bearish)">${mc.breadth.up}</div></div>
-                <div class="kpi-card"><div class="kpi-label">下跌</div><div class="kpi-value" style="color:var(--color-bullish)">${mc.breadth.down}</div></div>`;
-            if (mc.limit) reviewHtml += `<div class="kpi-card"><div class="kpi-label">涨停</div><div class="kpi-value" style="color:var(--color-bearish)">${mc.limit.up}</div></div>
-                <div class="kpi-card"><div class="kpi-label">跌停</div><div class="kpi-value" style="color:var(--color-bullish)">${mc.limit.down}</div></div>`;
-            reviewHtml += '</div>';
+            // 涨跌家数比例条（合并 market.market_breadth 的 flat 数据）
+            if (mc.breadth) {
+                const mb = (data.market || {}).market_breadth || {};
+                const up = mc.breadth.up || 0;
+                const down = mc.breadth.down || 0;
+                const flat = mb.flat || 0;
+                const total = up + down + flat || 1;
+                const upPct = (up / total * 100).toFixed(1);
+                const downPct = (down / total * 100).toFixed(1);
+                const flatPct = (flat / total * 100).toFixed(1);
+                reviewHtml += `<div class="breadth-bar-card">
+                    <div class="breadth-header">
+                        <span class="breadth-title">涨跌分布</span>
+                        <span class="breadth-total">共 ${total} 家</span>
+                    </div>
+                    <div class="breadth-bar">
+                        <div class="breadth-seg breadth-up" style="width:${upPct}%"></div>
+                        ${flat ? '<div class="breadth-seg breadth-flat" style="width:' + flatPct + '%"></div>' : ''}
+                        <div class="breadth-seg breadth-down" style="width:${downPct}%"></div>
+                    </div>
+                    <div class="breadth-legend">
+                        <span class="breadth-item"><span class="breadth-dot" style="background:var(--color-bearish)"></span>上涨 <b>${up}</b> <span class="breadth-pct">${upPct}%</span></span>
+                        ${flat ? '<span class="breadth-item"><span class="breadth-dot" style="background:#9CA3AF"></span>平盘 <b>' + flat + '</b> <span class="breadth-pct">' + flatPct + '%</span></span>' : ''}
+                        <span class="breadth-item"><span class="breadth-dot" style="background:var(--color-bullish)"></span>下跌 <b>${down}</b> <span class="breadth-pct">${downPct}%</span></span>
+                    </div>
+                </div>`;
+            }
 
-            // Chart row 1: Indices + Breadth pie
-            reviewHtml += '<div class="chart-row chart-row-2">';
-            if (mc.indices) reviewHtml += '<div class="chart-card"><div class="chart-card-title">主要指数涨跌幅</div><div id="chart-indices" class="chart-container" style="height:250px"></div></div>';
-            if (mc.breadth) reviewHtml += '<div class="chart-card"><div class="chart-card-title">涨跌家数分布</div><div id="chart-breadth" class="chart-container" style="height:250px"></div></div>';
-            reviewHtml += '</div>';
+            // KPI row (turnover + limit, if available)
+            const hasKpi = mc.turnover || mc.limit;
+            if (hasKpi) {
+                reviewHtml += '<div class="kpi-row">';
+                if (mc.turnover) reviewHtml += `<div class="kpi-card"><div class="kpi-label">成交额</div><div class="kpi-value">${esc(mc.turnover)}</div></div>`;
+                if (mc.limit) reviewHtml += `<div class="kpi-card"><div class="kpi-label">涨停</div><div class="kpi-value" style="color:var(--color-bearish)">${mc.limit.up}</div></div>
+                    <div class="kpi-card"><div class="kpi-label">跌停</div><div class="kpi-value" style="color:var(--color-bullish)">${mc.limit.down}</div></div>`;
+                reviewHtml += '</div>';
+            }
+
+            // Chart row 1: Indices (if available)
+            if (mc.indices) {
+                reviewHtml += '<div class="chart-row chart-row-1"><div class="chart-card"><div class="chart-card-title">主要指数涨跌幅</div><div id="chart-indices" class="chart-container" style="height:250px"></div></div></div>';
+            }
 
             // Chart row 2: Sector bar
             if (mc.sectors && (mc.sectors.gainers.length || mc.sectors.losers.length)) {
@@ -1355,23 +1415,7 @@
             window.addEventListener('resize', () => ch.resize());
         }
 
-        // 2. Breadth donut
-        if (mc.breadth && document.getElementById('chart-breadth')) {
-            const ch = echarts.init(document.getElementById('chart-breadth'));
-            ch.setOption({
-                tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
-                legend: { bottom: 5, textStyle: { fontSize: 11 } },
-                series: [{ type: 'pie', radius: ['42%', '70%'], center: ['50%', '45%'],
-                    label: { show: true, formatter: '{b}\n{c}', fontSize: 12, fontFamily: 'JetBrains Mono' },
-                    data: [
-                        { value: mc.breadth.up, name: '上涨', itemStyle: { color: ECHART_THEME.up } },
-                        { value: mc.breadth.down, name: '下跌', itemStyle: { color: ECHART_THEME.down } },
-                    ],
-                    emphasis: { itemStyle: { shadowBlur: 10, shadowOffsetX: 0, shadowColor: 'rgba(0,0,0,0.2)' } }
-                }]
-            });
-            window.addEventListener('resize', () => ch.resize());
-        }
+        // 2. Breadth donut removed — replaced by inline bar
 
         // 3. Sector horizontal bar
         if (mc.sectors && document.getElementById('chart-sectors')) {
