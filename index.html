@@ -214,6 +214,14 @@
             font-size: 0.6875rem; font-weight: 500;
             background: #EDE9FE; color: #7C3AED;
         }
+        .core-indicators {
+            display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px;
+        }
+        .indicator-chip {
+            display: inline-flex; padding: 2px 8px; border-radius: 4px;
+            font-size: 0.6875rem; font-weight: 500;
+            background: #F0F9FF; color: #0369A1; white-space: nowrap;
+        }
 
         .card-score { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
         .score-number { font-family: var(--font-mono); font-size: 1.75rem; font-weight: 600; line-height: 1; }
@@ -988,11 +996,11 @@
         }[dim.sentiment] || '中性');
 
         let detail = '';
-        if (dim.summary) {
-            // 有 summary 则直接展示
-            detail = '<div class="analysis-detail"><div class="detail-item">' + esc(dim.summary) + '</div></div>';
-        } else if (dim.items && dim.items.length > 0) {
+        if (dim.items && dim.items.length > 0) {
             detail = '<div class="analysis-detail">' + dim.items.map(item => {
+                if (typeof item === 'string') {
+                    return '<div class="detail-item">' + esc(item) + '</div>';
+                }
                 const text = item.text || item.title || item.summary || '';
                 const note = item.ai_note || item.impact || item.reason || '';
                 let html = '<div class="detail-item">' + esc(text) + '</div>';
@@ -1001,8 +1009,23 @@
                 }
                 return html;
             }).join('') + '</div>';
+        } else if (dim.summary) {
+            detail = '<div class="analysis-detail"><div class="detail-item">' + esc(dim.summary) + '</div></div>';
         } else {
             detail = '<div class="no-data">暂无数据</div>';
+        }
+
+        // 核心指标（估值模块）
+        let indicatorsHtml = '';
+        if (dim.core_indicators && Object.keys(dim.core_indicators).length > 0) {
+            const fmtVal = (k, v) => {
+                if (['毛利率','净利率','资产负债率','营收同比增速','ROE'].includes(k)) return v.toFixed(2) + '%';
+                return v.toFixed(2);
+            };
+            indicatorsHtml = '<div class="core-indicators">' +
+                Object.entries(dim.core_indicators).map(([k, v]) =>
+                    '<span class="indicator-chip">' + esc(k) + ' ' + fmtVal(k, v) + '</span>'
+                ).join('') + '</div>';
         }
 
         return `<div class="analysis-group">
@@ -1010,6 +1033,7 @@
                 <span class="analysis-tag ${tagClass}">${label}</span>
                 <div class="analysis-content">
                     <div class="analysis-status">${sentimentLabel}</div>
+                    ${indicatorsHtml}
                     ${detail}
                 </div>
             </div>
