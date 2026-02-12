@@ -1022,10 +1022,16 @@
         const tagClass = dim.sentiment === 'bullish' ? 'tag-bullish'
             : dim.sentiment === 'bearish' ? 'tag-bearish' : 'tag-neutral';
 
-        // 优先使用后端传来的 status，否则按 sentiment 映射
-        const sentimentLabel = dim.status || ({
+        // 英文 status 映射为中文
+        const statusMap = {
+            'neutral': '中性', 'bullish': '偏利好', 'bearish': '偏利空',
+            'positive': '偏利好', 'negative': '偏利空',
+            'success': '正常', 'neutral_default': '中性（默认）'
+        };
+        const rawStatus = dim.status || '';
+        const sentimentLabel = statusMap[rawStatus] || (rawStatus && !/^[a-zA-Z_]+$/.test(rawStatus) ? rawStatus : ({
             'bullish': '偏利好', 'bearish': '偏利空', 'neutral': '中性'
-        }[dim.sentiment] || '中性');
+        }[dim.sentiment] || '中性'));
 
         let detail = '';
         if (dim.summary) {
