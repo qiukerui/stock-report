@@ -1051,11 +1051,13 @@
         let indicatorsHtml = '';
         if (dim.core_indicators && Object.keys(dim.core_indicators).length > 0) {
             const fmtVal = (k, v) => {
+                if (v == null) return '—';
+                if (typeof v !== 'number') return String(v);
                 if (['毛利率','净利率','资产负债率','营收同比增速','ROE'].includes(k)) return v.toFixed(2) + '%';
                 return v.toFixed(2);
             };
             indicatorsHtml = '<div class="core-indicators">' +
-                Object.entries(dim.core_indicators).map(([k, v]) =>
+                Object.entries(dim.core_indicators).filter(([k, v]) => typeof v === 'number' || typeof v === 'string').map(([k, v]) =>
                     '<span class="indicator-chip">' + esc(k) + ' ' + fmtVal(k, v) + '</span>'
                 ).join('') + '</div>';
         }
