@@ -1198,12 +1198,13 @@
             const sections = reports.market_review.sections || [];
             let reviewHtml = '';
 
-            // 涨跌家数比例条（合并 market.market_breadth 的 flat 数据）
-            if (mc.breadth) {
-                const mb = (data.market || {}).market_breadth || {};
-                const up = mc.breadth.up || 0;
-                const down = mc.breadth.down || 0;
-                const flat = mb.flat || 0;
+            // 涨跌家数比例条（优先 charts.breadth，回退 market.market_breadth）
+            const breadthSrc = mc.breadth || m.market_breadth;
+            if (breadthSrc) {
+                const mb = m.market_breadth || {};
+                const up = breadthSrc.up || 0;
+                const down = breadthSrc.down || 0;
+                const flat = breadthSrc.flat || mb.flat || 0;
                 const total = up + down + flat || 1;
                 const upPct = (up / total * 100).toFixed(1);
                 const downPct = (down / total * 100).toFixed(1);
@@ -1236,13 +1237,15 @@
                 reviewHtml += '</div>';
             }
 
-            // Chart row 1: Indices (if available)
-            if (mc.indices) {
+            // Chart row 1: Indices (charts.indices or market.indices)
+            const indicesSrc = mc.indices || m.indices;
+            if (indicesSrc) {
                 reviewHtml += '<div class="chart-row chart-row-1"><div class="chart-card"><div class="chart-card-title">主要指数涨跌幅</div><div id="chart-indices" class="chart-container" style="height:250px"></div></div></div>';
             }
 
-            // Chart row 2: Sector bar
-            if (mc.sectors && (mc.sectors.gainers.length || mc.sectors.losers.length)) {
+            // Chart row 2: Sector bar (charts.sectors or market.sector_performance)
+            const sectorsSrc = mc.sectors || (m.sector_performance ? { gainers: m.sector_performance.top_gainers || [], losers: m.sector_performance.top_losers || [] } : null);
+            if (sectorsSrc && ((sectorsSrc.gainers && sectorsSrc.gainers.length) || (sectorsSrc.losers && sectorsSrc.losers.length))) {
                 reviewHtml += '<div class="chart-row chart-row-1"><div class="chart-card"><div class="chart-card-title">行业板块涨跌幅</div><div id="chart-sectors" class="chart-container" style="height:300px"></div></div></div>';
             }
 
@@ -1261,7 +1264,10 @@
 
             // Bind collapse toggles + render charts
             bindCollapseToggles();
-            setTimeout(() => renderMarketCharts(mc), 50);
+            const mergedMc = Object.assign({}, mc);
+            if (!mergedMc.indices && indicesSrc) mergedMc.indices = indicesSrc;
+            if (!mergedMc.sectors && sectorsSrc) mergedMc.sectors = sectorsSrc;
+            setTimeout(() => renderMarketCharts(mergedMc), 50);
         } else {
             $('sub-review').innerHTML = '<div class="empty-state">该日期无全市场复盘报告</div>';
         }
