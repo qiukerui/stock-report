@@ -1028,21 +1028,16 @@
         }[dim.sentiment] || '中性');
 
         let detail = '';
-        if (dim.items && dim.items.length > 0) {
+        if (dim.summary) {
+            detail = '<div class="analysis-detail"><div class="detail-item">' + esc(dim.summary) + '</div></div>';
+        } else if (dim.items && dim.items.length > 0) {
             detail = '<div class="analysis-detail">' + dim.items.map(item => {
                 if (typeof item === 'string') {
                     return '<div class="detail-item">' + esc(item) + '</div>';
                 }
                 const text = item.text || item.title || item.summary || '';
-                const note = item.ai_note || item.impact || item.reason || '';
-                let html = '<div class="detail-item">' + esc(text) + '</div>';
-                if (note) {
-                    html += '<div class="detail-item ai-note">' + esc(note) + '</div>';
-                }
-                return html;
+                return '<div class="detail-item">' + esc(text) + '</div>';
             }).join('') + '</div>';
-        } else if (dim.summary) {
-            detail = '<div class="analysis-detail"><div class="detail-item">' + esc(dim.summary) + '</div></div>';
         } else {
             detail = '<div class="no-data">暂无数据</div>';
         }
