@@ -1,0 +1,120 @@
+{
+  "sector_performance": {
+    "top_gainers": [
+      {
+        "name": "电源设备",
+        "change_pct": 3.31,
+        "net_inflow": null
+      },
+      {
+        "name": "小金属",
+        "change_pct": 2.81,
+        "net_inflow": null
+      },
+      {
+        "name": "半导体",
+        "change_pct": 2.33,
+        "net_inflow": null
+      },
+      {
+        "name": "能源金属",
+        "change_pct": 2.18,
+        "net_inflow": null
+      },
+      {
+        "name": "电网设备",
+        "change_pct": 2.13,
+        "net_inflow": null
+      },
+      {
+        "name": "消费电子",
+        "change_pct": 1.43,
+        "net_inflow": null
+      },
+      {
+        "name": "通信设备",
+        "change_pct": 1.3,
+        "net_inflow": null
+      },
+      {
+        "name": "互联网服务",
+        "change_pct": 1.27,
+        "net_inflow": null
+      },
+      {
+        "name": "通用设备",
+        "change_pct": 1.05,
+        "net_inflow": null
+      },
+      {
+        "name": "电子元件",
+        "change_pct": 1.0,
+        "net_inflow": null
+      }
+    ],
+    "top_losers": [
+      {
+        "name": "文化传媒",
+        "change_pct": -2.49,
+        "net_outflow": null
+      },
+      {
+        "name": "旅游酒店",
+        "change_pct": -1.93,
+        "net_outflow": null
+      },
+      {
+        "name": "商业百货",
+        "change_pct": -1.75,
+        "net_outflow": null
+      },
+      {
+        "name": "酿酒行业",
+        "change_pct": -1.73,
+        "net_outflow": null
+      },
+      {
+        "name": "美容护理",
+        "change_pct": -1.63,
+        "net_outflow": null
+      },
+      {
+        "name": "食品饮料",
+        "change_pct": -1.63,
+        "net_outflow": null
+      },
+      {
+        "name": "纺织服装",
+        "change_pct": -1.51,
+        "net_outflow": null
+      },
+      {
+        "name": "农牧饲渔",
+        "change_pct": -1.51,
+        "net_outflow": null
+      },
+      {
+        "name": "银行",
+        "change_pct": -1.51,
+        "net_outflow": null
+      },
+      {
+        "name": "贵金属",
+        "change_pct": -1.5,
+        "net_outflow": null
+      }
+    ]
+  },
+  "market_summary": "三大指数集体收涨。上证指数涨0.05%报4134.02点，深成指涨0.86%，创业板指涨1.32%。行业板块30个上涨、56个下跌。电源设备领涨；文化传媒跌幅居前。",
+  "capital_flow_summary": "上涨个股2108家，下跌个股3280家。",
+  "market_breadth": {
+    "up": 2108,
+    "down": 3280,
+    "flat": 88
+  },
+  "rotation": {
+    "hot_sectors": [],
+    "cooling_sectors": [],
+    "summary": "暂无行业轮动因子数据"
+  }
+}
