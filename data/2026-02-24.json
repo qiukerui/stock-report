@@ -2,206 +2,6 @@
   "date": "2026-02-24",
   "analysis": [
     {
-      "code": "600796",
-      "name": "钱江生化",
-      "industry": "环保/环境治理",
-      "concepts": [
-        "合成生物",
-        "净水概念",
-        "国企改革",
-        "绿色电力",
-        "乡村振兴"
-      ],
-      "strategy": "MTOP",
-      "price": 6.9,
-      "score": 15.0,
-      "label": "极佳",
-      "announcement": {
-        "score": 0,
-        "sentiment": "bearish",
-        "status": "中性",
-        "summary": "近90天共13条公告，全部为董事会换届选举及配套程序性公告，包括十届十五次董事会决议、独立董事候选人/提名人声明与承诺、第五次临时股东会通知及决议、法律意见书等。换届已于2025年12月18日顺利完成，十一届一次董事会已召开。无任何实质性利好或利空，纯属公司治理层面的正常换届流程。",
-        "items": []
-      },
-      "industry_news": {
-        "score": 0,
-        "sentiment": "bearish",
-        "status": "中性",
-        "summary": "近两周仅1条个股相关新闻，为披露2月10日股东户数29127户的常规信息，情绪评分为0（中性）。环保/环境治理行业近期无重大政策催化或利空事件，行业面基本中性。",
-        "items": null
-      },
-      "valuation": {
-        "score": 50,
-        "sentiment": "bullish",
-        "status": "合理估值",
-        "summary": "估值数据获取受限（API权限不足），基于行业属性和当前价格5.39元进行中性评估。钱江生化属于环保/环境治理行业，适用周期模型（环保归入other/周期类）。公司主营生化制品和环保业务，低价股特征明显。在缺乏完整估值数据的情况下，给予合理估值的中性评分。",
-        "items": null,
-        "core_indicators": {
-          "pe_ttm": null,
-          "pb": null,
-          "ps_ttm": null,
-          "roe": null,
-          "dividend_yield": null,
-          "pe_percentile": null,
-          "pb_percentile": null
-        }
-      }
-    },
-    {
-      "code": "600592",
-      "name": "龙溪股份",
-      "industry": "机械设备/",
-      "concepts": [
-        "参股券商",
-        "国企改革",
-        "海峡两岸",
-        "新能源汽车",
-        "海工装备"
-      ],
-      "strategy": "REBOUND",
-      "price": 24.0,
-      "score": 12.0,
-      "label": "极佳",
-      "announcement": {
-        "score": -8.5,
-        "sentiment": "bearish",
-        "status": "中性偏利空",
-        "summary": "近90天共3条公告，主要为会计差错更正（因证监局责令改正，涉及2021-2024年收入确认调整，不影响净利润）、证券事务代表人事变更和年审会计师质量控制复核人变更。会计差错更正属于监管层面的弱利空，反映公司此前在收入确认方面存在不规范之处，但影响有限，无重大利好或利空事件。",
-        "items": [
-          {
-            "date": "2025-12-25",
-            "title": "龙溪股份关于前期会计差错更正的公告",
-            "level": "弱利空",
-            "raw_score": -20,
-            "days_ago": 61,
-            "decay_weight": 0.25,
-            "decayed_score": -5.0,
-            "reason": "因证监局责令改正，对2021-2024年部分钢材贸易业务收入确认进行追溯调整。仅影响营收和营业成本科目，不影响净利润。"
-          },
-          {
-            "date": "2026-02-13",
-            "title": "关于年审会计师事务所变更质量控制复核人的公告",
-            "level": "中性偏弱利空",
-            "raw_score": -5,
-            "days_ago": 11,
-            "decay_weight": 0.78,
-            "decayed_score": -3.5,
-            "reason": "年审会计师事务所更换质量控制复核人，结合前期会计差错更正背景，需关注审计风险。"
-          }
-        ]
-      },
-      "industry_news": {
-        "score": 0,
-        "sentiment": "bearish",
-        "status": "中性",
-        "summary": "近两周个股相关新闻为空，无行业催化因素或利空信号。机械设备行业整体处于平稳运行状态，缺乏明显催化剂。评估为中性。",
-        "items": null
-      },
-      "valuation": {
-        "score": 50,
-        "sentiment": "bullish",
-        "status": "合理估值",
-        "summary": "估值数据获取受限（API权限不足），基于行业属性和当前价格12.16元进行中性评估。龙溪股份属于机械设备（周期行业），适用周期模型。作为关节轴承细分龙头，公司在军工和工程机械领域有较强竞争力。在缺乏完整估值数据的情况下，给予合理估值的中性评分。",
-        "items": null,
-        "core_indicators": {
-          "pe_ttm": null,
-          "pb": null,
-          "ps_ttm": null,
-          "roe": null,
-          "dividend_yield": null,
-          "pe_percentile": null,
-          "pb_percentile": null
-        }
-      }
-    },
-    {
-      "code": "600807",
-      "name": "济高发展",
-      "industry": "医药生物/医疗器械",
-      "concepts": [
-        "猴痘概念",
-        "医疗器械概念",
-        "基因测序",
-        "国企改革",
-        "生态农业"
-      ],
-      "strategy": "MTOP",
-      "price": 3.46,
-      "score": 9.8,
-      "label": "极佳",
-      "announcement": {
-        "score": -15.0,
-        "sentiment": "bearish",
-        "status": "偏利空",
-        "summary": "近90天共11条公告，包含业绩预亏、诉讼进展和债务豁免等重大事项。(1)业绩预告：2025年净利润约-1.95亿元（亏损），受存量资产减值、商誉减值和诉讼影响，但同比大幅减亏约6亿元；(2)诉讼进展：房屋合同纠纷二审判决需支付约4851万元及违约金，已进入执行阶段；(3)利好方面：控股股东及关联方豁免债务合计3.78亿元，增厚净资产。综合来看，虽有债务豁免利好对冲，但持续亏损和诉讼压力仍是主要风险。",
-        "items": [
-          {
-            "date": "2026-01-20",
-            "title": "济高发展2025年度业绩预告",
-            "level": "强利空",
-            "raw_score": -70,
-            "days_ago": 35,
-            "decay_weight": 0.45,
-            "decayed_score": -31.5,
-            "reason": "2025年预计净利润约-1.95亿元，扣非净利润约-1.45亿元，连续亏损。但同比减亏约6亿元，改善趋势明显。"
-          },
-          {
-            "date": "2026-01-20",
-            "title": "济高发展诉讼进展公告",
-            "level": "弱利空",
-            "raw_score": -25,
-            "days_ago": 35,
-            "decay_weight": 0.45,
-            "decayed_score": -11.3,
-            "reason": "房屋合同纠纷二审判决需支付4850.86万元及违约金，已进入执行阶段，部分子公司股权等资产被冻结。"
-          },
-          {
-            "date": "2025-12-29",
-            "title": "关于获得控股股东及关联方债务豁免的公告",
-            "level": "强利好",
-            "raw_score": 80,
-            "days_ago": 57,
-            "decay_weight": 0.27,
-            "decayed_score": 21.6,
-            "reason": "获得控股股东及关联方无偿豁免债务合计3.78亿元（高新城建豁免2.80亿、舜正投资豁免0.97亿），将增加资本公积，增厚净资产。"
-          },
-          {
-            "date": "2025-12-17",
-            "title": "关于公司及子公司向关联方借款展期暨关联交易的公告",
-            "level": "弱利空",
-            "raw_score": -15,
-            "days_ago": 69,
-            "decay_weight": 0.2,
-            "decayed_score": -3.0,
-            "reason": "借款展期表明公司资金链偏紧。"
-          }
-        ]
-      },
-      "industry_news": {
-        "score": 0,
-        "sentiment": "bearish",
-        "status": "中性",
-        "summary": "近两周个股相关新闻为空，无行业催化因素或利空信号。医药生物/医疗器械行业近期无特别重大的政策变化或市场事件。需注意该公司实际业务以房地产和产业投资为主，与医药生物行业关联度有限。评估为中性。",
-        "items": null
-      },
-      "valuation": {
-        "score": 50,
-        "sentiment": "bullish",
-        "status": "合理估值",
-        "summary": "估值数据获取受限（API权限不足），基于行业属性和当前价格9.26元进行中性评估。济高发展虽归类于医药生物/医疗器械，但实际业务以房地产开发和产业投资为主。2025年业绩预亏1.95亿元，公司仍处于亏损状态，传统估值模型（PE/PB）适用性有限。在缺乏完整估值数据的情况下，给予合理估值的中性评分。",
-        "items": null,
-        "core_indicators": {
-          "pe_ttm": null,
-          "pb": null,
-          "ps_ttm": null,
-          "roe": null,
-          "dividend_yield": null,
-          "pe_percentile": null,
-          "pb_percentile": null
-        }
-      }
-    },
-    {
       "code": "601919",
       "name": "中远海控",
       "industry": "交通运输/航运港口",
@@ -731,6 +531,52 @@
       }
     },
     {
+      "code": "600796",
+      "name": "钱江生化",
+      "industry": "环保/环境治理",
+      "concepts": [
+        "合成生物",
+        "净水概念",
+        "国企改革",
+        "绿色电力",
+        "乡村振兴"
+      ],
+      "strategy": "MTOP",
+      "price": 6.9,
+      "score": 6.0,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近90天共13条公告，全部为董事会换届选举及配套程序性公告，包括十届十五次董事会决议、独立董事候选人/提名人声明与承诺、第五次临时股东会通知及决议、法律意见书等。换届已于2025年12月18日顺利完成，十一届一次董事会已召开。无任何实质性利好或利空，纯属公司治理层面的正常换届流程。",
+        "items": []
+      },
+      "industry_news": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近两周仅1条个股相关新闻，为披露2月10日股东户数29127户的常规信息，情绪评分为0（中性）。环保/环境治理行业近期无重大政策催化或利空事件，行业面基本中性。",
+        "items": null
+      },
+      "valuation": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "合理估值",
+        "summary": "估值数据获取受限（API权限不足），基于行业属性和当前价格5.39元进行中性评估。钱江生化属于环保/环境治理行业，适用周期模型（环保归入other/周期类）。公司主营生化制品和环保业务，低价股特征明显。在缺乏完整估值数据的情况下，给予合理估值的中性评分。",
+        "items": null,
+        "core_indicators": {
+          "pe_ttm": null,
+          "pb": null,
+          "ps_ttm": null,
+          "roe": null,
+          "dividend_yield": null,
+          "pe_percentile": null,
+          "pb_percentile": null
+        }
+      }
+    },
+    {
       "code": "002263",
       "name": "大东南",
       "industry": "基础化工/塑料",
@@ -766,6 +612,73 @@
         "summary": "估值分析工具(get_stock_finance_valuation等)在当前subagent环境中被auto-denied，无法获取PE/PB/ROE等核心指标，默认按合理估值(50/100)评估。",
         "items": [],
         "core_indicators": null
+      }
+    },
+    {
+      "code": "600592",
+      "name": "龙溪股份",
+      "industry": "机械设备/",
+      "concepts": [
+        "参股券商",
+        "国企改革",
+        "海峡两岸",
+        "新能源汽车",
+        "海工装备"
+      ],
+      "strategy": "REBOUND",
+      "price": 24.0,
+      "score": 5.9,
+      "label": "中性",
+      "announcement": {
+        "score": 5.66,
+        "sentiment": "neutral",
+        "status": "中性偏利空",
+        "summary": "近90天共3条公告，主要为会计差错更正（因证监局责令改正，涉及2021-2024年收入确认调整，不影响净利润）、证券事务代表人事变更和年审会计师质量控制复核人变更。会计差错更正属于监管层面的弱利空，反映公司此前在收入确认方面存在不规范之处，但影响有限，无重大利好或利空事件。",
+        "items": [
+          {
+            "date": "2025-12-25",
+            "title": "龙溪股份关于前期会计差错更正的公告",
+            "level": "弱利空",
+            "raw_score": -20,
+            "days_ago": 61,
+            "decay_weight": 0.25,
+            "decayed_score": -5.0,
+            "reason": "因证监局责令改正，对2021-2024年部分钢材贸易业务收入确认进行追溯调整。仅影响营收和营业成本科目，不影响净利润。"
+          },
+          {
+            "date": "2026-02-13",
+            "title": "关于年审会计师事务所变更质量控制复核人的公告",
+            "level": "中性偏弱利空",
+            "raw_score": -5,
+            "days_ago": 11,
+            "decay_weight": 0.78,
+            "decayed_score": -3.5,
+            "reason": "年审会计师事务所更换质量控制复核人，结合前期会计差错更正背景，需关注审计风险。"
+          }
+        ]
+      },
+      "industry_news": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近两周个股相关新闻为空，无行业催化因素或利空信号。机械设备行业整体处于平稳运行状态，缺乏明显催化剂。评估为中性。",
+        "items": null
+      },
+      "valuation": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "合理估值",
+        "summary": "估值数据获取受限（API权限不足），基于行业属性和当前价格12.16元进行中性评估。龙溪股份属于机械设备（周期行业），适用周期模型。作为关节轴承细分龙头，公司在军工和工程机械领域有较强竞争力。在缺乏完整估值数据的情况下，给予合理估值的中性评分。",
+        "items": null,
+        "core_indicators": {
+          "pe_ttm": null,
+          "pb": null,
+          "ps_ttm": null,
+          "roe": null,
+          "dividend_yield": null,
+          "pe_percentile": null,
+          "pb_percentile": null
+        }
       }
     },
     {
@@ -905,6 +818,93 @@
         "summary": "估值分析工具(get_stock_finance_valuation等)在当前subagent环境中被auto-denied，无法获取PE/PB/ROE等核心指标，默认按合理估值(50/100)评估。",
         "items": [],
         "core_indicators": null
+      }
+    },
+    {
+      "code": "600807",
+      "name": "济高发展",
+      "industry": "医药生物/医疗器械",
+      "concepts": [
+        "猴痘概念",
+        "医疗器械概念",
+        "基因测序",
+        "国企改革",
+        "生态农业"
+      ],
+      "strategy": "MTOP",
+      "price": 3.46,
+      "score": 5.8,
+      "label": "中性",
+      "announcement": {
+        "score": 5.4,
+        "sentiment": "neutral",
+        "status": "偏利空",
+        "summary": "近90天共11条公告，包含业绩预亏、诉讼进展和债务豁免等重大事项。(1)业绩预告：2025年净利润约-1.95亿元（亏损），受存量资产减值、商誉减值和诉讼影响，但同比大幅减亏约6亿元；(2)诉讼进展：房屋合同纠纷二审判决需支付约4851万元及违约金，已进入执行阶段；(3)利好方面：控股股东及关联方豁免债务合计3.78亿元，增厚净资产。综合来看，虽有债务豁免利好对冲，但持续亏损和诉讼压力仍是主要风险。",
+        "items": [
+          {
+            "date": "2026-01-20",
+            "title": "济高发展2025年度业绩预告",
+            "level": "强利空",
+            "raw_score": -70,
+            "days_ago": 35,
+            "decay_weight": 0.45,
+            "decayed_score": -31.5,
+            "reason": "2025年预计净利润约-1.95亿元，扣非净利润约-1.45亿元，连续亏损。但同比减亏约6亿元，改善趋势明显。"
+          },
+          {
+            "date": "2026-01-20",
+            "title": "济高发展诉讼进展公告",
+            "level": "弱利空",
+            "raw_score": -25,
+            "days_ago": 35,
+            "decay_weight": 0.45,
+            "decayed_score": -11.3,
+            "reason": "房屋合同纠纷二审判决需支付4850.86万元及违约金，已进入执行阶段，部分子公司股权等资产被冻结。"
+          },
+          {
+            "date": "2025-12-29",
+            "title": "关于获得控股股东及关联方债务豁免的公告",
+            "level": "强利好",
+            "raw_score": 80,
+            "days_ago": 57,
+            "decay_weight": 0.27,
+            "decayed_score": 21.6,
+            "reason": "获得控股股东及关联方无偿豁免债务合计3.78亿元（高新城建豁免2.80亿、舜正投资豁免0.97亿），将增加资本公积，增厚净资产。"
+          },
+          {
+            "date": "2025-12-17",
+            "title": "关于公司及子公司向关联方借款展期暨关联交易的公告",
+            "level": "弱利空",
+            "raw_score": -15,
+            "days_ago": 69,
+            "decay_weight": 0.2,
+            "decayed_score": -3.0,
+            "reason": "借款展期表明公司资金链偏紧。"
+          }
+        ]
+      },
+      "industry_news": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "近两周个股相关新闻为空，无行业催化因素或利空信号。医药生物/医疗器械行业近期无特别重大的政策变化或市场事件。需注意该公司实际业务以房地产和产业投资为主，与医药生物行业关联度有限。评估为中性。",
+        "items": null
+      },
+      "valuation": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "合理估值",
+        "summary": "估值数据获取受限（API权限不足），基于行业属性和当前价格9.26元进行中性评估。济高发展虽归类于医药生物/医疗器械，但实际业务以房地产开发和产业投资为主。2025年业绩预亏1.95亿元，公司仍处于亏损状态，传统估值模型（PE/PB）适用性有限。在缺乏完整估值数据的情况下，给予合理估值的中性评分。",
+        "items": null,
+        "core_indicators": {
+          "pe_ttm": null,
+          "pb": null,
+          "ps_ttm": null,
+          "roe": null,
+          "dividend_yield": null,
+          "pe_percentile": null,
+          "pb_percentile": null
+        }
       }
     },
     {
