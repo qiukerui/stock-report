@@ -1,0 +1,120 @@
+{
+  "sector_performance": {
+    "top_gainers": [
+      {
+        "name": "油气及炼化工程",
+        "change_pct": 13.17,
+        "net_inflow": null
+      },
+      {
+        "name": "油服工程",
+        "change_pct": 12.08,
+        "net_inflow": null
+      },
+      {
+        "name": "油田服务",
+        "change_pct": 11.26,
+        "net_inflow": null
+      },
+      {
+        "name": "磷肥及磷化工",
+        "change_pct": 10.06,
+        "net_inflow": null
+      },
+      {
+        "name": "玻纤制造",
+        "change_pct": 9.84,
+        "net_inflow": null
+      },
+      {
+        "name": "白银",
+        "change_pct": 8.79,
+        "net_inflow": null
+      },
+      {
+        "name": "油气开采Ⅲ",
+        "change_pct": 7.53,
+        "net_inflow": null
+      },
+      {
+        "name": "油气开采Ⅱ",
+        "change_pct": 7.53,
+        "net_inflow": null
+      },
+      {
+        "name": "贵金属",
+        "change_pct": 7.01,
+        "net_inflow": null
+      },
+      {
+        "name": "磨具磨料",
+        "change_pct": 6.91,
+        "net_inflow": null
+      }
+    ],
+    "top_losers": [
+      {
+        "name": "航运港口",
+        "change_pct": 2.62,
+        "net_outflow": null
+      },
+      {
+        "name": "钢铁",
+        "change_pct": 2.63,
+        "net_outflow": null
+      },
+      {
+        "name": "其他养殖",
+        "change_pct": 2.63,
+        "net_outflow": null
+      },
+      {
+        "name": "化学纤维",
+        "change_pct": 2.64,
+        "net_outflow": null
+      },
+      {
+        "name": "其他小金属",
+        "change_pct": 2.65,
+        "net_outflow": null
+      },
+      {
+        "name": "其他能源发电",
+        "change_pct": 2.67,
+        "net_outflow": null
+      },
+      {
+        "name": "动力煤",
+        "change_pct": 2.68,
+        "net_outflow": null
+      },
+      {
+        "name": "种子",
+        "change_pct": 2.69,
+        "net_outflow": null
+      },
+      {
+        "name": "工程机械整机",
+        "change_pct": 2.74,
+        "net_outflow": null
+      },
+      {
+        "name": "煤炭开采",
+        "change_pct": 2.76,
+        "net_outflow": null
+      }
+    ]
+  },
+  "market_summary": "三大指数集体收涨。上证指数涨0.87%报4117.41点，深成指涨1.36%，创业板指涨0.99%。行业板块100个上涨、0个下跌。油气及炼化工程领涨；航运港口跌幅居前。",
+  "capital_flow_summary": "上涨个股4006家，下跌个股1392家。",
+  "market_breadth": {
+    "up": 4006,
+    "down": 1392,
+    "flat": 76
+  },
+  "rotation": {
+    "hot_sectors": [],
+    "cooling_sectors": [],
+    "summary": "暂无行业轮动因子数据"
+  }
+}
