@@ -12,7 +12,9 @@
         "智能电网",
         "机器人概念"
       ],
-      "strategy": "REBOUND",
+      "strategies": [
+        "REBOUND"
+      ],
       "price": 292.58,
       "score": 7.1,
       "label": "良好",
@@ -133,7 +135,9 @@
         "风电",
         "高端装备"
       ],
-      "strategy": "REBOUND",
+      "strategies": [
+        "REBOUND"
+      ],
       "price": 57.77,
       "score": 6.4,
       "label": "中性",
@@ -237,7 +241,9 @@
         "华为概念",
         "安防"
       ],
-      "strategy": "REBOUND",
+      "strategies": [
+        "REBOUND"
+      ],
       "price": 27.78,
       "score": 6.2,
       "label": "中性",
@@ -335,7 +341,9 @@
         "国企改革",
         "雅下水电概念"
       ],
-      "strategy": "REBOUND",
+      "strategies": [
+        "REBOUND"
+      ],
       "price": 36.78,
       "score": 6.2,
       "label": "中性",
@@ -414,7 +422,9 @@
         "风电",
         "大飞机"
       ],
-      "strategy": "REBOUND",
+      "strategies": [
+        "REBOUND"
+      ],
       "price": 16.29,
       "score": 6.1,
       "label": "中性",
@@ -483,7 +493,9 @@
         "可降解塑料",
         "机器人概念"
       ],
-      "strategy": "REBOUND",
+      "strategies": [
+        "REBOUND"
+      ],
       "price": 18.68,
       "score": 5.9,
       "label": "中性",
@@ -577,7 +589,9 @@
         "无人机",
         "家用电器"
       ],
-      "strategy": "BUMA",
+      "strategies": [
+        "BUMA"
+      ],
       "price": 34.13,
       "score": 5.4,
       "label": "中性",
@@ -686,7 +700,9 @@
         "机器人概念",
         "新型工业化"
       ],
-      "strategy": "BUMA",
+      "strategies": [
+        "BUMA"
+      ],
       "price": 14.5,
       "score": 5.4,
       "label": "中性",
@@ -789,7 +805,9 @@
         "家用电器",
         "小米概念"
       ],
-      "strategy": "REBOUND",
+      "strategies": [
+        "REBOUND"
+      ],
       "price": 29.67,
       "score": 5.1,
       "label": "中性",
@@ -883,7 +901,9 @@
         "奢侈品",
         "股权转让(并购重组)"
       ],
-      "strategy": "REBOUND",
+      "strategies": [
+        "REBOUND"
+      ],
       "price": 8.85,
       "score": 4.6,
       "label": "偏弱",
@@ -997,7 +1017,9 @@
         "PTA",
         "沪股通"
       ],
-      "strategy": "BUMA",
+      "strategies": [
+        "BUMA"
+      ],
       "price": 2.61,
       "score": 4.3,
       "label": "偏弱",
@@ -1101,7 +1123,9 @@
         "创投",
         "智能家居"
       ],
-      "strategy": "REBOUND",
+      "strategies": [
+        "REBOUND"
+      ],
       "price": 17.67,
       "score": 4.1,
       "label": "偏弱",
@@ -1205,7 +1229,9 @@
         "深股通",
         "融资融券"
       ],
-      "strategy": "REBOUND",
+      "strategies": [
+        "REBOUND"
+      ],
       "price": 6.29,
       "score": 4.0,
       "label": "偏弱",
@@ -1281,79 +1307,105 @@
         "code": "002245",
         "name": "蔚蓝锂芯",
         "industry": "电力设备/电池",
-        "strategy": "REBOUND"
+        "strategies": [
+          "REBOUND"
+        ]
       },
       {
         "code": "002273",
         "name": "水晶光电",
         "industry": "电子/光学光电子",
-        "strategy": "REBOUND"
+        "strategies": [
+          "REBOUND"
+        ]
       },
       {
         "code": "002453",
         "name": "华软科技",
         "industry": "基础化工/化学制品",
-        "strategy": "REBOUND"
+        "strategies": [
+          "REBOUND"
+        ]
       },
       {
         "code": "002827",
         "name": "高争民爆",
         "industry": "基础化工/化学制品",
-        "strategy": "REBOUND"
+        "strategies": [
+          "REBOUND"
+        ]
       },
       {
         "code": "300384",
         "name": "三联虹普",
         "industry": "建筑装饰/专业工程",
-        "strategy": "REBOUND"
+        "strategies": [
+          "REBOUND"
+        ]
       },
       {
         "code": "300476",
         "name": "胜宏科技",
         "industry": "电子/元件",
-        "strategy": "REBOUND"
+        "strategies": [
+          "REBOUND"
+        ]
       },
       {
         "code": "300539",
         "name": "横河精密",
         "industry": "基础化工/塑料",
-        "strategy": "BUMA"
+        "strategies": [
+          "BUMA"
+        ]
       },
       {
         "code": "600370",
         "name": "三房巷",
         "industry": "基础化工/化学纤维",
-        "strategy": "BUMA"
+        "strategies": [
+          "BUMA"
+        ]
       },
       {
         "code": "603606",
         "name": "东方电缆",
         "industry": "电力设备/电网设备",
-        "strategy": "REBOUND"
+        "strategies": [
+          "REBOUND"
+        ]
       },
       {
         "code": "603657",
         "name": "春光科技",
         "industry": "家用电器/家电零部件Ⅱ",
-        "strategy": "REBOUND"
+        "strategies": [
+          "REBOUND"
+        ]
       },
       {
         "code": "603900",
         "name": "莱绅通灵",
         "industry": "纺织服饰/饰品",
-        "strategy": "REBOUND"
+        "strategies": [
+          "REBOUND"
+        ]
       },
       {
         "code": "603901",
         "name": "永创智能",
         "industry": "机械设备/专用设备",
-        "strategy": "BUMA"
+        "strategies": [
+          "BUMA"
+        ]
       },
       {
         "code": "603928",
         "name": "兴业股份",
         "industry": "基础化工/塑料",
-        "strategy": "REBOUND"
+        "strategies": [
+          "REBOUND"
+        ]
       }
     ],
     "disappeared": [

@@ -346,6 +346,7 @@
             display: inline-flex; padding: 2px 8px; border-radius: 4px;
             font-size: 0.75rem; font-weight: 500;
             background: var(--color-accent-light); color: var(--color-accent);
+            margin-right: 4px;
         }
 
         /* Stats */
@@ -1025,7 +1026,7 @@
                     <div class="card-stock-meta">
                         <span class="card-stock-code">${esc(s.code)}</span>
                         <span>${esc(s.industry)}</span>
-                        <span class="card-badge">${esc(s.strategy)}</span>
+                        ${renderStrategies(s)}
                     </div>
                 </div>
                 <div class="card-score ${scoreClass}">
@@ -1281,7 +1282,7 @@
                         <td class="td-code">${esc(s.code)}</td>
                         <td class="td-name">${esc(s.name)}</td>
                         <td>${esc(s.industry || '—')}</td>
-                        <td><span class="td-strategy">${esc(s.strategy)}</span></td>
+                        <td>${renderStrategies(s)}</td>
                     </tr>`).join('')}</tbody>
                 </table></div>
             </div>`;
@@ -1301,7 +1302,7 @@
                             <td class="td-code">${esc(s.code)}</td>
                             <td class="td-name">${esc(s.name)}</td>
                             <td>${esc(s.industry || '—')}</td>
-                            <td><span class="td-strategy">${esc(s.strategy)}</span></td>
+                            <td>${renderStrategies(s)}</td>
                             <td class="${changeClass}" style="text-align:right">${changeText}</td>
                         </tr>`;
                     }).join('')}</tbody>
@@ -1666,6 +1667,12 @@
         const d = document.createElement('div');
         d.textContent = String(s);
         return d.innerHTML;
+    }
+
+    // 渲染策略标签（兼容旧 strategy 字符串和新 strategies 数组）
+    function renderStrategies(s) {
+        const list = s.strategies || (s.strategy ? s.strategy.split(',') : []);
+        return list.map(t => `<span class="td-strategy">${esc(t.trim())}</span>`).join(' ');
     }
 
     // ========== Boot ==========
