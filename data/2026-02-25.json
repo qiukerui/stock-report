@@ -2,6 +2,73 @@
   "date": "2026-02-25",
   "analysis": [
     {
+      "code": "300476",
+      "name": "胜宏科技",
+      "industry": "电子/元件",
+      "concepts": [
+        "乡村振兴",
+        "粤港澳大湾区",
+        "物联网",
+        "智能电网",
+        "机器人概念"
+      ],
+      "strategy": "REBOUND",
+      "price": 292.58,
+      "score": 6.3,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "公告中性",
+        "items": []
+      },
+      "industry_news": {
+        "score": 7.5,
+        "sentiment": "bullish",
+        "status": "",
+        "summary": "多重利好叠加：PCB概念异动拉升涨超10%，二次递表港交所主板（全球AI算力PCB龙头），获主力资金净买入超20亿元，行业面强势偏多。",
+        "items": [
+          {
+            "title": "胜宏科技二次递表港交所 为全球AI及算力PCB龙头",
+            "sentiment": "positive",
+            "impact": "拓宽融资渠道，助力AI算力PCB业务扩张"
+          },
+          {
+            "title": "PCB概念异动拉升 明阳电路20cm涨停",
+            "sentiment": "positive",
+            "impact": "PCB板块集体走强，胜宏科技涨超10%"
+          },
+          {
+            "title": "主力资金净流入 胜宏科技获20.11亿元净买入",
+            "sentiment": "positive",
+            "impact": "大额资金流入对个股形成强支撑"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 5.171,
+        "sentiment": "neutral",
+        "status": "合理估值",
+        "summary": "🔴 PEG=3.07 > 2.0 - 估值远超成长性，高估; ⚠️  研发费用率4.24% < 5% - 研发投入偏低; ✓  营收同比增速83.40% - 快速增长; ✓  利润同比增速324.38% - 快速增长",
+        "items": [
+          "🔴 PEG=3.07 > 2.0 - 估值远超成长性，高估",
+          "⚠️  研发费用率4.24% < 5% - 研发投入偏低",
+          "✓  营收同比增速83.40% - 快速增长",
+          "✓  利润同比增速324.38% - 快速增长",
+          "⚠️  PE_TTM处于历史95.3%分位 - 估值历史高位"
+        ],
+        "core_indicators": {
+          "PE_TTM": 70.238714295139,
+          "ROE": 26.9289,
+          "毛利率": 35.8519,
+          "净利率": 22.9848,
+          "资产负债率": 50.4409,
+          "营收同比增速": 83.3953
+        }
+      }
+    },
+    {
       "code": "002273",
       "name": "水晶光电",
       "industry": "电子/光学光电子",
@@ -26,9 +93,20 @@
       "industry_news": {
         "score": 6.0,
         "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
+        "status": "",
+        "summary": "近期大宗交易活跃，2月25日折价1.55%成交1.49亿元偏空，但2月24日机构净买入1.49亿元偏多，多空交织整体中性。",
+        "items": [
+          {
+            "title": "水晶光电大宗交易折价成交 涉额1.49亿元",
+            "sentiment": "negative",
+            "impact": "大宗交易折价1.55%成交，占当日总成交额11.62%，短期存在抛压"
+          },
+          {
+            "title": "水晶光电现两笔大宗交易 机构净买入1.49亿元",
+            "sentiment": "positive",
+            "impact": "机构专用席位净买入1.49亿元，当日股价涨幅5.77%"
+          }
+        ]
       },
       "valuation": {
         "score": 5.70425,
@@ -73,9 +151,9 @@
       "industry_news": {
         "score": 6.0,
         "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
+        "status": "",
+        "summary": "近一周无直接相关新闻报道，行业面消息平淡，整体中性。",
+        "items": []
       },
       "valuation": {
         "score": 5.80025,
@@ -88,57 +166,6 @@
           "ROE": 12.9923,
           "资产负债率": 57.2292,
           "营收同比增速": 7.531
-        }
-      }
-    },
-    {
-      "code": "300476",
-      "name": "胜宏科技",
-      "industry": "电子/元件",
-      "concepts": [
-        "乡村振兴",
-        "粤港澳大湾区",
-        "物联网",
-        "智能电网",
-        "机器人概念"
-      ],
-      "strategy": "REBOUND",
-      "price": 292.58,
-      "score": 5.8,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "公告中性",
-        "items": []
-      },
-      "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
-      },
-      "valuation": {
-        "score": 5.171,
-        "sentiment": "neutral",
-        "status": "合理估值",
-        "summary": "🔴 PEG=3.07 > 2.0 - 估值远超成长性，高估; ⚠️  研发费用率4.24% < 5% - 研发投入偏低; ✓  营收同比增速83.40% - 快速增长; ✓  利润同比增速324.38% - 快速增长",
-        "items": [
-          "🔴 PEG=3.07 > 2.0 - 估值远超成长性，高估",
-          "⚠️  研发费用率4.24% < 5% - 研发投入偏低",
-          "✓  营收同比增速83.40% - 快速增长",
-          "✓  利润同比增速324.38% - 快速增长",
-          "⚠️  PE_TTM处于历史95.3%分位 - 估值历史高位"
-        ],
-        "core_indicators": {
-          "PE_TTM": 70.238714295139,
-          "ROE": 26.9289,
-          "毛利率": 35.8519,
-          "净利率": 22.9848,
-          "资产负债率": 50.4409,
-          "营收同比增速": 83.3953
         }
       }
     },
@@ -167,9 +194,9 @@
       "industry_news": {
         "score": 6.0,
         "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
+        "status": "",
+        "summary": "近一周无直接相关新闻报道，行业面消息平淡，整体中性。",
+        "items": []
       },
       "valuation": {
         "score": 4.933,
@@ -186,18 +213,15 @@
       }
     },
     {
-      "code": "603606",
-      "name": "东方电缆",
-      "industry": "电力设备/电网设备",
+      "code": "600370",
+      "name": "三房巷",
+      "industry": "基础化工/化学纤维",
       "concepts": [
-        "参股券商",
-        "工业互联网",
-        "柔性直流输电",
-        "风电",
-        "高端装备"
+        "PTA",
+        "沪股通"
       ],
-      "strategy": "REBOUND",
-      "price": 57.77,
+      "strategy": "BUMA",
+      "price": 2.61,
       "score": 5.6,
       "label": "中性",
       "announcement": {
@@ -208,23 +232,39 @@
         "items": []
       },
       "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
+        "score": 7.0,
+        "sentiment": "bullish",
+        "status": "",
+        "summary": "化学纤维板块连续两日大涨（24日涨3%、25日涨2%），三房巷连续盘中快速拉升，板块热度提升，行业面偏多。",
+        "items": [
+          {
+            "title": "化学纤维板块涨2% 多股领涨",
+            "sentiment": "positive",
+            "impact": "板块整体走强，南京化纤涨停，三房巷获板块联动"
+          },
+          {
+            "title": "三房巷2月25日盘中快速反弹",
+            "sentiment": "positive",
+            "impact": "5分钟涨幅超2%，短期交易情绪升温"
+          },
+          {
+            "title": "化学纤维板块大涨3%",
+            "sentiment": "positive",
+            "impact": "2月24日板块涨3%，成交31.99亿元，热度持续"
+          }
+        ]
       },
       "valuation": {
-        "score": 4.634,
+        "score": 3.457,
         "sentiment": "neutral",
-        "status": "合理估值",
-        "summary": "偏高估值; 谨慎追高，关注周期下行风险; 资产负债率: 45.1346%",
+        "status": "偏高估值",
+        "summary": "偏高估值; 谨慎追高，关注周期下行风险; 资产负债率: 73.1404%",
         "items": [],
         "core_indicators": {
-          "PE_TTM": 40.13012274076,
-          "ROE": 12.5817,
-          "资产负债率": 45.1346,
-          "营收同比增速": 11.9348
+          "PE_TTM": -15.342797546147,
+          "ROE": -8.4755,
+          "资产负债率": 73.1404,
+          "营收同比增速": -12.4866
         }
       }
     },
@@ -253,9 +293,9 @@
       "industry_news": {
         "score": 6.0,
         "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
+        "status": "",
+        "summary": "近一周无直接相关新闻报道，行业面消息平淡，整体中性。",
+        "items": []
       },
       "valuation": {
         "score": 4.177,
@@ -268,6 +308,104 @@
           "ROE": 7.569,
           "资产负债率": 20.5524,
           "营收同比增速": -25.7807
+        }
+      }
+    },
+    {
+      "code": "300539",
+      "name": "横河精密",
+      "industry": "基础化工/塑料",
+      "concepts": [
+        "华为概念",
+        "智能家居",
+        "专精特新",
+        "无人机",
+        "家用电器"
+      ],
+      "strategy": "BUMA",
+      "price": 34.13,
+      "score": 5.4,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "公告中性",
+        "items": []
+      },
+      "industry_news": {
+        "score": 6.5,
+        "sentiment": "neutral",
+        "status": "",
+        "summary": "2月25日盘中快速拉升，5分钟内涨幅超2%，成交6709万元，短期交易情绪升温但缺乏基本面支撑。",
+        "items": [
+          {
+            "title": "横河精密2月25日盘中快速拉升",
+            "sentiment": "positive",
+            "impact": "5分钟内涨幅超2%，成交活跃，换手率1.02%"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 3.379,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "偏高估值; 谨慎追高，关注周期下行风险; 资产负债率: 34.63%",
+        "items": [],
+        "core_indicators": {
+          "PE_TTM": 178.53483287868,
+          "ROE": 4.3398,
+          "资产负债率": 34.63,
+          "营收同比增速": 28.4331
+        }
+      }
+    },
+    {
+      "code": "603606",
+      "name": "东方电缆",
+      "industry": "电力设备/电网设备",
+      "concepts": [
+        "参股券商",
+        "工业互联网",
+        "柔性直流输电",
+        "风电",
+        "高端装备"
+      ],
+      "strategy": "REBOUND",
+      "price": 57.77,
+      "score": 5.4,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "公告中性",
+        "items": []
+      },
+      "industry_news": {
+        "score": 5.5,
+        "sentiment": "neutral",
+        "status": "",
+        "summary": "2月24日融资净偿还904万元，融券净卖出800股，两融数据偏空，部分资金持谨慎态度。",
+        "items": [
+          {
+            "title": "东方电缆融资净偿还904.24万元",
+            "sentiment": "negative",
+            "impact": "融资净偿还叠加融券净卖出，短期资金面承压"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 4.634,
+        "sentiment": "neutral",
+        "status": "合理估值",
+        "summary": "偏高估值; 谨慎追高，关注周期下行风险; 资产负债率: 45.1346%",
+        "items": [],
+        "core_indicators": {
+          "PE_TTM": 40.13012274076,
+          "ROE": 12.5817,
+          "资产负债率": 45.1346,
+          "营收同比增速": 11.9348
         }
       }
     },
@@ -296,9 +434,9 @@
       "industry_news": {
         "score": 6.0,
         "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
+        "status": "",
+        "summary": "近一周无直接相关新闻报道，行业面消息平淡，整体中性。",
+        "items": []
       },
       "valuation": {
         "score": 3.459,
@@ -315,89 +453,6 @@
       }
     },
     {
-      "code": "300539",
-      "name": "横河精密",
-      "industry": "基础化工/塑料",
-      "concepts": [
-        "华为概念",
-        "智能家居",
-        "专精特新",
-        "无人机",
-        "家用电器"
-      ],
-      "strategy": "BUMA",
-      "price": 34.13,
-      "score": 5.2,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "公告中性",
-        "items": []
-      },
-      "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
-      },
-      "valuation": {
-        "score": 3.379,
-        "sentiment": "neutral",
-        "status": "偏高估值",
-        "summary": "偏高估值; 谨慎追高，关注周期下行风险; 资产负债率: 34.63%",
-        "items": [],
-        "core_indicators": {
-          "PE_TTM": 178.53483287868,
-          "ROE": 4.3398,
-          "资产负债率": 34.63,
-          "营收同比增速": 28.4331
-        }
-      }
-    },
-    {
-      "code": "600370",
-      "name": "三房巷",
-      "industry": "基础化工/化学纤维",
-      "concepts": [
-        "PTA",
-        "沪股通"
-      ],
-      "strategy": "BUMA",
-      "price": 2.61,
-      "score": 5.2,
-      "label": "中性",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "公告中性",
-        "items": []
-      },
-      "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
-      },
-      "valuation": {
-        "score": 3.457,
-        "sentiment": "neutral",
-        "status": "偏高估值",
-        "summary": "偏高估值; 谨慎追高，关注周期下行风险; 资产负债率: 73.1404%",
-        "items": [],
-        "core_indicators": {
-          "PE_TTM": -15.342797546147,
-          "ROE": -8.4755,
-          "资产负债率": 73.1404,
-          "营收同比增速": -12.4866
-        }
-      }
-    },
-    {
       "code": "002453",
       "name": "华软科技",
       "industry": "基础化工/化学制品",
@@ -410,8 +465,8 @@
       ],
       "strategy": "REBOUND",
       "price": 6.29,
-      "score": 4.9,
-      "label": "偏弱",
+      "score": 5.1,
+      "label": "中性",
       "announcement": {
         "score": 6.0,
         "sentiment": "neutral",
@@ -420,11 +475,17 @@
         "items": []
       },
       "industry_news": {
-        "score": 6.0,
+        "score": 6.5,
         "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
+        "status": "",
+        "summary": "2月25日盘中出现快速拉升异动，5分钟内涨幅超2%，短期交易情绪升温，但缺乏明确基本面利好支撑。",
+        "items": [
+          {
+            "title": "华软科技2月25日盘中快速上涨",
+            "sentiment": "positive",
+            "impact": "盘中5分钟涨幅超2%，成交2956万元，短期情绪升温"
+          }
+        ]
       },
       "valuation": {
         "score": 2.467,
@@ -437,6 +498,55 @@
           "ROE": -12.7217,
           "资产负债率": 41.0358,
           "营收同比增速": -38.9348
+        }
+      }
+    },
+    {
+      "code": "603901",
+      "name": "永创智能",
+      "industry": "机械设备/专用设备",
+      "concepts": [
+        "2025年报预增",
+        "机器视觉",
+        "人形机器人",
+        "机器人概念",
+        "新型工业化"
+      ],
+      "strategy": "BUMA",
+      "price": 14.5,
+      "score": 5.0,
+      "label": "中性",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "公告中性",
+        "items": []
+      },
+      "industry_news": {
+        "score": 6.5,
+        "sentiment": "neutral",
+        "status": "",
+        "summary": "机器人赛道升温，19只概念股业绩望翻倍，葛卫东布局机器人赛道，永创智能作为专用设备企业间接受益，但相关度有限。",
+        "items": [
+          {
+            "title": "葛卫东布局机器人赛道 19只概念股业绩望翻倍",
+            "sentiment": "positive",
+            "impact": "机器人量产元年预期，相关概念股受关注但直接关联度有限"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 2.135,
+        "sentiment": "bearish",
+        "status": "极高估值",
+        "summary": "极高估值; 建议回避，可能处于周期顶部; 资产负债率: 68.0348%",
+        "items": [],
+        "core_indicators": {
+          "PE_TTM": 119.32330392327,
+          "ROE": 4.9895,
+          "资产负债率": 68.0348,
+          "营收同比增速": 19.0483
         }
       }
     },
@@ -464,9 +574,9 @@
       "industry_news": {
         "score": 6.0,
         "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
+        "status": "",
+        "summary": "近一周无直接相关新闻报道，行业面消息平淡，整体中性。",
+        "items": []
       },
       "valuation": {
         "score": 1.9289999999999998,
@@ -485,49 +595,6 @@
           "毛利率": 10.1715,
           "净利率": -0.0682,
           "营收同比增速": 25.6642
-        }
-      }
-    },
-    {
-      "code": "603901",
-      "name": "永创智能",
-      "industry": "机械设备/专用设备",
-      "concepts": [
-        "2025年报预增",
-        "机器视觉",
-        "人形机器人",
-        "机器人概念",
-        "新型工业化"
-      ],
-      "strategy": "BUMA",
-      "price": 14.5,
-      "score": 4.8,
-      "label": "偏弱",
-      "announcement": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "公告中性",
-        "items": []
-      },
-      "industry_news": {
-        "score": 6.0,
-        "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
-      },
-      "valuation": {
-        "score": 2.135,
-        "sentiment": "bearish",
-        "status": "极高估值",
-        "summary": "极高估值; 建议回避，可能处于周期顶部; 资产负债率: 68.0348%",
-        "items": [],
-        "core_indicators": {
-          "PE_TTM": 119.32330392327,
-          "ROE": 4.9895,
-          "资产负债率": 68.0348,
-          "营收同比增速": 19.0483
         }
       }
     },
@@ -565,9 +632,9 @@
       "industry_news": {
         "score": 6.0,
         "sentiment": "neutral",
-        "status": "中性",
-        "summary": "行业中性（无新闻数据）",
-        "items": null
+        "status": "",
+        "summary": "近一周无直接相关新闻报道，行业面消息平淡，整体中性。",
+        "items": []
       },
       "valuation": {
         "score": 4.047,
