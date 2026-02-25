@@ -1,0 +1,18 @@
+{
+  "sector_performance": {
+    "top_gainers": [],
+    "top_losers": []
+  },
+  "market_summary": "三大指数集体收涨。上证指数涨0.72%报4147.23点，深成指涨1.29%，创业板指涨1.41%。行业板块0个上涨、0个下跌。",
+  "capital_flow_summary": "上涨个股3748家，下跌个股1609家。",
+  "market_breadth": {
+    "up": 3748,
+    "down": 1609,
+    "flat": 114
+  },
+  "rotation": {
+    "hot_sectors": [],
+    "cooling_sectors": [],
+    "summary": "暂无行业轮动因子数据"
+  }
+}

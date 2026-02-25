@@ -1,0 +1,8313 @@
+{
+  "date": "2026-02-25",
+  "total": 143,
+  "failed": 1,
+  "stats": {
+    "avg_score": 55.1,
+    "strong_count": 29,
+    "weak_count": 2,
+    "signal_count": 27
+  },
+  "stocks": [
+    {
+      "code": "601877",
+      "name": "正泰电器",
+      "raw_score": 65.8,
+      "status": "偏多",
+      "summary": "技术面偏多（65.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 61，动量中性"
+        },
+        "volume": {
+          "score": 4.4,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度10%，20日换手29%"
+        },
+        "custom_signal": {
+          "score": 8.0,
+          "detail": "v4加仓信号(3天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "加仓",
+        "signal_date": "2026-02-12",
+        "is_strong": false,
+        "message": "△ 均线汇聚加仓信号（v4，2026-02-12触发）"
+      },
+      "core_indicators": {
+        "MA5": 31.52,
+        "MA10": 30.98,
+        "MA20": 30.85,
+        "MA60": 29.39,
+        "RSI": 61.06,
+        "KDJ_K": 80.49,
+        "KDJ_D": 71.57,
+        "MACD_DIF": 0.46,
+        "MACD_DEA": 0.35,
+        "BOLL_MID": 30.85,
+        "BOLL_BW": 10.79,
+        "VOL_RATIO": 1.0,
+        "TURNOVER_20D": 29.17,
+        "MFI": 66.09,
+        "MFMA": 52.09,
+        "chip_concentration": 9.839
+      }
+    },
+    {
+      "code": "600722",
+      "name": "金牛化工",
+      "raw_score": 65.3,
+      "status": "偏多",
+      "summary": "技术面偏多（65.3/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 65，动量中性"
+        },
+        "volume": {
+          "score": 5.6,
+          "detail": "量比1.3，MFI中性"
+        },
+        "volatility": {
+          "score": 5.5,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度16%，20日换手255%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 9.64,
+        "MA10": 9.17,
+        "MA20": 8.41,
+        "MA60": 6.95,
+        "RSI": 65.3,
+        "KDJ_K": 74.33,
+        "KDJ_D": 71.72,
+        "MACD_DIF": 0.78,
+        "MACD_DEA": 0.67,
+        "BOLL_MID": 8.41,
+        "BOLL_BW": 48.75,
+        "VOL_RATIO": 1.28,
+        "TURNOVER_20D": 255.05,
+        "MFI": 71.65,
+        "MFMA": 75.92,
+        "chip_concentration": 16.096
+      }
+    },
+    {
+      "code": "002255",
+      "name": "海陆重工",
+      "raw_score": 65.2,
+      "status": "偏多",
+      "summary": "技术面偏多（65.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.2,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 52回升"
+        },
+        "volume": {
+          "score": 7.8,
+          "detail": "量比1.3，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度9%，20日换手87%"
+        },
+        "custom_signal": {
+          "score": 8.0,
+          "detail": "v4加仓信号(1天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "加仓",
+        "signal_date": "2026-02-24",
+        "is_strong": false,
+        "message": "△ 均线汇聚加仓信号（v4，2026-02-24触发）"
+      },
+      "core_indicators": {
+        "MA5": 12.34,
+        "MA10": 12.29,
+        "MA20": 12.46,
+        "MA60": 12.68,
+        "RSI": 51.78,
+        "KDJ_K": 67.42,
+        "KDJ_D": 53.35,
+        "MACD_DIF": -0.15,
+        "MACD_DEA": -0.18,
+        "BOLL_MID": 12.46,
+        "BOLL_BW": 13.28,
+        "VOL_RATIO": 1.33,
+        "TURNOVER_20D": 87.26,
+        "MFI": 54.72,
+        "MFMA": 37.51,
+        "chip_concentration": 9.499
+      }
+    },
+    {
+      "code": "300956",
+      "name": "英力股份",
+      "raw_score": 64.7,
+      "status": "偏多",
+      "summary": "技术面偏多（64.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 59回升"
+        },
+        "volume": {
+          "score": 4.4,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度8%，20日换手50%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(加仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 18.13,
+        "MA10": 17.98,
+        "MA20": 17.88,
+        "MA60": 17.35,
+        "RSI": 59.09,
+        "KDJ_K": 74.0,
+        "KDJ_D": 70.39,
+        "MACD_DIF": 0.21,
+        "MACD_DEA": 0.17,
+        "BOLL_MID": 17.88,
+        "BOLL_BW": 8.37,
+        "VOL_RATIO": 0.94,
+        "TURNOVER_20D": 50.12,
+        "MFI": 66.51,
+        "MFMA": 52.83,
+        "chip_concentration": 7.744
+      }
+    },
+    {
+      "code": "688132",
+      "name": "邦彦技术",
+      "raw_score": 64.6,
+      "status": "偏多",
+      "summary": "技术面偏多（64.6/100）",
+      "dimensions": {
+        "trend": {
+          "score": 7.6,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 61，动量中性"
+        },
+        "volume": {
+          "score": 8.4,
+          "detail": "量比1.8，MFI金叉"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度7%，20日换手39%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 19.84,
+        "MA10": 19.48,
+        "MA20": 19.62,
+        "MA60": 19.26,
+        "RSI": 60.81,
+        "KDJ_K": 77.51,
+        "KDJ_D": 64.04,
+        "MACD_DIF": 0.09,
+        "MACD_DEA": 0.02,
+        "BOLL_MID": 19.62,
+        "BOLL_BW": 10.89,
+        "VOL_RATIO": 1.8,
+        "TURNOVER_20D": 38.77,
+        "MFI": 45.26,
+        "MFMA": 34.46,
+        "chip_concentration": 6.718
+      }
+    },
+    {
+      "code": "000519",
+      "name": "中兵红箭",
+      "raw_score": 64.4,
+      "status": "偏多",
+      "summary": "技术面偏多（64.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.0,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 60，动量中性"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.3，MFI中性"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度6%，20日换手63%"
+        },
+        "custom_signal": {
+          "score": 8.0,
+          "detail": "v4加仓信号(1天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "加仓",
+        "signal_date": "2026-02-24",
+        "is_strong": false,
+        "message": "△ 均线汇聚加仓信号（v4，2026-02-24触发）"
+      },
+      "core_indicators": {
+        "MA5": 19.03,
+        "MA10": 18.87,
+        "MA20": 19.02,
+        "MA60": 18.54,
+        "RSI": 60.47,
+        "KDJ_K": 66.59,
+        "KDJ_D": 47.02,
+        "MACD_DIF": 0.12,
+        "MACD_DEA": 0.07,
+        "BOLL_MID": 19.02,
+        "BOLL_BW": 9.85,
+        "VOL_RATIO": 1.32,
+        "TURNOVER_20D": 62.9,
+        "MFI": 44.95,
+        "MFMA": 50.67,
+        "chip_concentration": 5.938
+      }
+    },
+    {
+      "code": "688282",
+      "name": "理工导航",
+      "raw_score": 64.4,
+      "status": "偏多",
+      "summary": "技术面偏多（64.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.4,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 56回升"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度28%，20日换手34%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 75.03,
+        "MA10": 73.82,
+        "MA20": 73.18,
+        "MA60": 65.6,
+        "RSI": 56.3,
+        "KDJ_K": 67.02,
+        "KDJ_D": 60.32,
+        "MACD_DIF": 1.47,
+        "MACD_DEA": 1.47,
+        "BOLL_MID": 73.18,
+        "BOLL_BW": 14.72,
+        "VOL_RATIO": 0.95,
+        "TURNOVER_20D": 34.35,
+        "MFI": 49.94,
+        "MFMA": 48.13,
+        "chip_concentration": 27.632
+      }
+    },
+    {
+      "code": "002960",
+      "name": "青鸟消防",
+      "raw_score": 64.3,
+      "status": "偏多",
+      "summary": "技术面偏多（64.3/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 61，动量中性"
+        },
+        "volume": {
+          "score": 5.6,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 5.5,
+          "detail": "布林带边缘，带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度10%，20日换手34%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 11.69,
+        "MA10": 11.51,
+        "MA20": 11.39,
+        "MA60": 11.05,
+        "RSI": 60.81,
+        "KDJ_K": 83.6,
+        "KDJ_D": 75.56,
+        "MACD_DIF": 0.16,
+        "MACD_DEA": 0.11,
+        "BOLL_MID": 11.39,
+        "BOLL_BW": 9.4,
+        "VOL_RATIO": 1.08,
+        "TURNOVER_20D": 33.66,
+        "MFI": 62.1,
+        "MFMA": 50.36,
+        "chip_concentration": 9.543
+      }
+    },
+    {
+      "code": "002897",
+      "name": "意华股份",
+      "raw_score": 64.0,
+      "status": "偏多",
+      "summary": "技术面偏多（64.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 64，动量中性"
+        },
+        "volume": {
+          "score": 5.6,
+          "detail": "量比1.3，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度8%，20日换手137%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 58.12,
+        "MA10": 56.77,
+        "MA20": 55.14,
+        "MA60": 51.12,
+        "RSI": 63.77,
+        "KDJ_K": 78.74,
+        "KDJ_D": 73.43,
+        "MACD_DIF": 1.79,
+        "MACD_DEA": 1.37,
+        "BOLL_MID": 55.14,
+        "BOLL_BW": 17.93,
+        "VOL_RATIO": 1.31,
+        "TURNOVER_20D": 136.53,
+        "MFI": 69.45,
+        "MFMA": 71.84,
+        "chip_concentration": 8.061
+      }
+    },
+    {
+      "code": "399006",
+      "name": "创业板指",
+      "raw_score": 63.8,
+      "status": "偏多",
+      "summary": "技术面偏多（63.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.2,
+          "detail": "多头排列"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 55回升"
+        },
+        "volume": {
+          "score": 6.9,
+          "detail": "量比1.0，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度14%，20日换手93%"
+        },
+        "custom_signal": {
+          "score": 10.0,
+          "detail": "v4买入信号(2天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "买入",
+        "signal_date": "2026-02-13",
+        "is_strong": false,
+        "message": "★ 均线汇聚买入信号（v4，2026-02-13触发）"
+      },
+      "core_indicators": {
+        "MA5": 3310.37,
+        "MA10": 3301.34,
+        "MA20": 3310.61,
+        "MA60": 3232.76,
+        "RSI": 55.5,
+        "KDJ_K": 71.66,
+        "KDJ_D": 59.36,
+        "MACD_DIF": 10.39,
+        "MACD_DEA": 11.65,
+        "BOLL_MID": 3310.61,
+        "BOLL_BW": 3.8,
+        "VOL_RATIO": 1.05,
+        "TURNOVER_20D": 92.52,
+        "MFI": 43.63,
+        "MFMA": 33.74,
+        "chip_concentration": 14.286
+      }
+    },
+    {
+      "code": "002837",
+      "name": "英维克",
+      "raw_score": 63.4,
+      "status": "偏多",
+      "summary": "技术面偏多（63.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 57回升"
+        },
+        "volume": {
+          "score": 2.9,
+          "detail": "量比0.6，MFI死叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度8%，20日换手118%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(买入)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 108.18,
+        "MA10": 105.38,
+        "MA20": 103.47,
+        "MA60": 94.96,
+        "RSI": 57.22,
+        "KDJ_K": 64.72,
+        "KDJ_D": 60.5,
+        "MACD_DIF": 2.82,
+        "MACD_DEA": 2.32,
+        "BOLL_MID": 103.47,
+        "BOLL_BW": 18.62,
+        "VOL_RATIO": 0.58,
+        "TURNOVER_20D": 117.82,
+        "MFI": 70.55,
+        "MFMA": 70.99,
+        "chip_concentration": 7.561
+      }
+    },
+    {
+      "code": "002058",
+      "name": "*ST威尔",
+      "raw_score": 63.2,
+      "status": "偏多",
+      "summary": "技术面偏多（63.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 55回升"
+        },
+        "volume": {
+          "score": 4.1,
+          "detail": "量比0.5，MFI中性"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度15%，20日换手31%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 23.51,
+        "MA10": 23.1,
+        "MA20": 22.93,
+        "MA60": 22.61,
+        "RSI": 55.42,
+        "KDJ_K": 70.86,
+        "KDJ_D": 67.23,
+        "MACD_DIF": 0.12,
+        "MACD_DEA": -0.02,
+        "BOLL_MID": 22.93,
+        "BOLL_BW": 14.97,
+        "VOL_RATIO": 0.51,
+        "TURNOVER_20D": 31.27,
+        "MFI": 54.64,
+        "MFMA": 43.53,
+        "chip_concentration": 15.04
+      }
+    },
+    {
+      "code": "513310",
+      "name": "中韩半导体ETF",
+      "raw_score": 63.1,
+      "status": "偏多",
+      "summary": "技术面偏多（63.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 69，动量中性"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比1.2，MFI死叉"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度4%，20日换手1590%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 3.67,
+        "MA10": 3.58,
+        "MA20": 3.5,
+        "MA60": 2.93,
+        "RSI": 69.31,
+        "KDJ_K": 68.4,
+        "KDJ_D": 54.35,
+        "MACD_DIF": 0.2,
+        "MACD_DEA": 0.18,
+        "BOLL_MID": 3.5,
+        "BOLL_BW": 23.62,
+        "VOL_RATIO": 1.18,
+        "TURNOVER_20D": 1589.91,
+        "MFI": 68.71,
+        "MFMA": 67.83,
+        "chip_concentration": 4.386
+      }
+    },
+    {
+      "code": "605376",
+      "name": "博迁新材",
+      "raw_score": 62.4,
+      "status": "偏多",
+      "summary": "技术面偏多（62.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 76偏弱，KDJ金叉"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比1.2，MFI中性"
+        },
+        "volatility": {
+          "score": 4.8,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 5.4,
+          "detail": "筹码集中度38%，20日换手111%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 113.11,
+        "MA10": 107.86,
+        "MA20": 95.94,
+        "MA60": 71.36,
+        "RSI": 76.33,
+        "KDJ_K": 87.83,
+        "KDJ_D": 84.99,
+        "MACD_DIF": 11.98,
+        "MACD_DEA": 10.53,
+        "BOLL_MID": 95.94,
+        "BOLL_BW": 56.99,
+        "VOL_RATIO": 1.22,
+        "TURNOVER_20D": 111.08,
+        "MFI": 74.33,
+        "MFMA": 76.35,
+        "chip_concentration": 37.5
+      }
+    },
+    {
+      "code": "300710",
+      "name": "万隆光电",
+      "raw_score": 62.1,
+      "status": "偏多",
+      "summary": "技术面偏多（62.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.4,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 59，动量中性"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比0.8，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度6%，20日换手108%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 32.23,
+        "MA10": 31.7,
+        "MA20": 31.3,
+        "MA60": 30.01,
+        "RSI": 59.05,
+        "KDJ_K": 63.41,
+        "KDJ_D": 55.19,
+        "MACD_DIF": 0.44,
+        "MACD_DEA": 0.29,
+        "BOLL_MID": 31.3,
+        "BOLL_BW": 13.7,
+        "VOL_RATIO": 0.84,
+        "TURNOVER_20D": 107.75,
+        "MFI": 57.8,
+        "MFMA": 49.19,
+        "chip_concentration": 5.652
+      }
+    },
+    {
+      "code": "002920",
+      "name": "德赛西威",
+      "raw_score": 62.0,
+      "status": "偏多",
+      "summary": "技术面偏多（62.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 7.6,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 51回升"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度12%，20日换手33%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 122.39,
+        "MA10": 121.55,
+        "MA20": 124.16,
+        "MA60": 122.01,
+        "RSI": 51.42,
+        "KDJ_K": 63.25,
+        "KDJ_D": 46.66,
+        "MACD_DIF": -1.23,
+        "MACD_DEA": -1.27,
+        "BOLL_MID": 124.16,
+        "BOLL_BW": 13.86,
+        "VOL_RATIO": 0.89,
+        "TURNOVER_20D": 32.79,
+        "MFI": 56.4,
+        "MFMA": 45.25,
+        "chip_concentration": 11.643
+      }
+    },
+    {
+      "code": "688511",
+      "name": "*ST天微",
+      "raw_score": 61.7,
+      "status": "偏多",
+      "summary": "技术面偏多（61.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 7.7,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 54，动量中性"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.3，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度17%，20日换手24%"
+        },
+        "custom_signal": {
+          "score": 8.0,
+          "detail": "v4加仓信号(3天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "加仓",
+        "signal_date": "2026-02-12",
+        "is_strong": false,
+        "message": "△ 均线汇聚加仓信号（v4，2026-02-12触发）"
+      },
+      "core_indicators": {
+        "MA5": 29.23,
+        "MA10": 28.48,
+        "MA20": 28.37,
+        "MA60": 26.92,
+        "RSI": 53.94,
+        "KDJ_K": 75.98,
+        "KDJ_D": 70.88,
+        "MACD_DIF": 0.28,
+        "MACD_DEA": 0.2,
+        "BOLL_MID": 28.37,
+        "BOLL_BW": 10.46,
+        "VOL_RATIO": 1.26,
+        "TURNOVER_20D": 24.1,
+        "MFI": 48.77,
+        "MFMA": 41.85,
+        "chip_concentration": 17.383
+      }
+    },
+    {
+      "code": "300733",
+      "name": "西菱动力",
+      "raw_score": 61.7,
+      "status": "偏多",
+      "summary": "技术面偏多（61.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 7.6,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 51，动量中性"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度7%，20日换手41%"
+        },
+        "custom_signal": {
+          "score": 8.0,
+          "detail": "v4加仓信号(0天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "加仓",
+        "signal_date": "2026-02-25",
+        "is_strong": false,
+        "message": "△ 均线汇聚加仓信号（v4，2026-02-25触发）"
+      },
+      "core_indicators": {
+        "MA5": 18.39,
+        "MA10": 18.13,
+        "MA20": 18.31,
+        "MA60": 18.29,
+        "RSI": 51.0,
+        "KDJ_K": 69.47,
+        "KDJ_D": 56.7,
+        "MACD_DIF": -0.09,
+        "MACD_DEA": -0.14,
+        "BOLL_MID": 18.31,
+        "BOLL_BW": 11.94,
+        "VOL_RATIO": 1.0,
+        "TURNOVER_20D": 40.59,
+        "MFI": 61.06,
+        "MFMA": 47.64,
+        "chip_concentration": 6.762
+      }
+    },
+    {
+      "code": "600363",
+      "name": "联创光电",
+      "raw_score": 61.5,
+      "status": "偏多",
+      "summary": "技术面偏多（61.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.5,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 51回升"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.4，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度13%，20日换手51%"
+        },
+        "custom_signal": {
+          "score": 10.0,
+          "detail": "v4买入信号(1天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "买入",
+        "signal_date": "2026-02-24",
+        "is_strong": false,
+        "message": "★ 均线汇聚买入信号（v4，2026-02-24触发）"
+      },
+      "core_indicators": {
+        "MA5": 65.23,
+        "MA10": 64.87,
+        "MA20": 65.41,
+        "MA60": 62.15,
+        "RSI": 51.1,
+        "KDJ_K": 54.42,
+        "KDJ_D": 50.61,
+        "MACD_DIF": 0.03,
+        "MACD_DEA": 0.15,
+        "BOLL_MID": 65.41,
+        "BOLL_BW": 12.74,
+        "VOL_RATIO": 1.43,
+        "TURNOVER_20D": 51.43,
+        "MFI": 55.17,
+        "MFMA": 45.64,
+        "chip_concentration": 12.605
+      }
+    },
+    {
+      "code": "002254",
+      "name": "泰和新材",
+      "raw_score": 61.4,
+      "status": "偏多",
+      "summary": "技术面偏多（61.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.0,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 64，动量中性"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度17%，20日换手67%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 13.48,
+        "MA10": 12.88,
+        "MA20": 12.98,
+        "MA60": 11.22,
+        "RSI": 63.52,
+        "KDJ_K": 72.22,
+        "KDJ_D": 59.72,
+        "MACD_DIF": 0.45,
+        "MACD_DEA": 0.43,
+        "BOLL_MID": 12.98,
+        "BOLL_BW": 17.27,
+        "VOL_RATIO": 0.85,
+        "TURNOVER_20D": 66.72,
+        "MFI": 65.69,
+        "MFMA": 59.42,
+        "chip_concentration": 16.724
+      }
+    },
+    {
+      "code": "000875",
+      "name": "电投绿能",
+      "raw_score": 61.3,
+      "status": "偏多",
+      "summary": "技术面偏多（61.3/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 66，动量中性"
+        },
+        "volume": {
+          "score": 4.1,
+          "detail": "量比1.3，MFI中性"
+        },
+        "volatility": {
+          "score": 4.5,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度14%，20日换手68%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 7.05,
+        "MA10": 6.99,
+        "MA20": 6.9,
+        "MA60": 6.13,
+        "RSI": 66.14,
+        "KDJ_K": 65.2,
+        "KDJ_D": 52.16,
+        "MACD_DIF": 0.24,
+        "MACD_DEA": 0.23,
+        "BOLL_MID": 6.9,
+        "BOLL_BW": 15.01,
+        "VOL_RATIO": 1.28,
+        "TURNOVER_20D": 68.01,
+        "MFI": 64.27,
+        "MFMA": 53.68,
+        "chip_concentration": 13.756
+      }
+    },
+    {
+      "code": "603268",
+      "name": "*ST松发",
+      "raw_score": 61.2,
+      "status": "偏多",
+      "summary": "技术面偏多（61.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 67，动量中性"
+        },
+        "volume": {
+          "score": 5.6,
+          "detail": "量比2.8，MFI死叉"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度23%，20日换手65%"
+        },
+        "custom_signal": {
+          "score": 3.0,
+          "detail": "减仓信号(3天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "减仓",
+        "signal_date": "2026-02-12",
+        "is_strong": false,
+        "message": "▽ 均线汇聚减仓信号（v4，2026-02-12触发）"
+      },
+      "core_indicators": {
+        "MA5": 96.24,
+        "MA10": 90.92,
+        "MA20": 87.63,
+        "MA60": 83.53,
+        "RSI": 66.72,
+        "KDJ_K": 87.46,
+        "KDJ_D": 79.72,
+        "MACD_DIF": 3.37,
+        "MACD_DEA": 1.91,
+        "BOLL_MID": 87.63,
+        "BOLL_BW": 25.71,
+        "VOL_RATIO": 2.8,
+        "TURNOVER_20D": 65.1,
+        "MFI": 86.48,
+        "MFMA": 71.0,
+        "chip_concentration": 23.077
+      }
+    },
+    {
+      "code": "301125",
+      "name": "腾亚精工",
+      "raw_score": 61.0,
+      "status": "偏多",
+      "summary": "技术面偏多（61.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 70，动量中性"
+        },
+        "volume": {
+          "score": 4.1,
+          "detail": "量比0.8，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度15%，20日换手79%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 22.67,
+        "MA10": 22.0,
+        "MA20": 21.5,
+        "MA60": 19.34,
+        "RSI": 69.67,
+        "KDJ_K": 72.79,
+        "KDJ_D": 62.03,
+        "MACD_DIF": 0.89,
+        "MACD_DEA": 0.71,
+        "BOLL_MID": 21.5,
+        "BOLL_BW": 17.89,
+        "VOL_RATIO": 0.78,
+        "TURNOVER_20D": 79.07,
+        "MFI": 75.82,
+        "MFMA": 62.3,
+        "chip_concentration": 15.116
+      }
+    },
+    {
+      "code": "300037",
+      "name": "新宙邦",
+      "raw_score": 60.8,
+      "status": "偏多",
+      "summary": "技术面偏多（60.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.0,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 65，动量中性"
+        },
+        "volume": {
+          "score": 5.6,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度9%，20日换手68%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 56.72,
+        "MA10": 53.37,
+        "MA20": 53.43,
+        "MA60": 52.3,
+        "RSI": 65.41,
+        "KDJ_K": 80.05,
+        "KDJ_D": 67.47,
+        "MACD_DIF": 0.85,
+        "MACD_DEA": 0.05,
+        "BOLL_MID": 53.43,
+        "BOLL_BW": 24.94,
+        "VOL_RATIO": 1.12,
+        "TURNOVER_20D": 68.36,
+        "MFI": 65.78,
+        "MFMA": 50.6,
+        "chip_concentration": 9.365
+      }
+    },
+    {
+      "code": "688711",
+      "name": "宏微科技",
+      "raw_score": 60.8,
+      "status": "偏多",
+      "summary": "技术面偏多（60.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.0,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 64，动量中性"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比1.2，MFI中性"
+        },
+        "volatility": {
+          "score": 5.5,
+          "detail": "布林带边缘，带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度10%，20日换手93%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 33.15,
+        "MA10": 31.79,
+        "MA20": 32.08,
+        "MA60": 29.45,
+        "RSI": 63.81,
+        "KDJ_K": 68.55,
+        "KDJ_D": 57.78,
+        "MACD_DIF": 0.67,
+        "MACD_DEA": 0.4,
+        "BOLL_MID": 32.08,
+        "BOLL_BW": 20.31,
+        "VOL_RATIO": 1.23,
+        "TURNOVER_20D": 92.74,
+        "MFI": 67.71,
+        "MFMA": 54.07,
+        "chip_concentration": 9.779
+      }
+    },
+    {
+      "code": "600490",
+      "name": "鹏欣资源",
+      "raw_score": 60.6,
+      "status": "偏多",
+      "summary": "技术面偏多（60.6/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.0,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 60，动量中性"
+        },
+        "volume": {
+          "score": 4.4,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度19%，20日换手141%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 9.6,
+        "MA10": 9.18,
+        "MA20": 9.48,
+        "MA60": 8.28,
+        "RSI": 60.35,
+        "KDJ_K": 74.6,
+        "KDJ_D": 57.73,
+        "MACD_DIF": 0.28,
+        "MACD_DEA": 0.27,
+        "BOLL_MID": 9.48,
+        "BOLL_BW": 33.01,
+        "VOL_RATIO": 1.0,
+        "TURNOVER_20D": 141.27,
+        "MFI": 61.66,
+        "MFMA": 66.6,
+        "chip_concentration": 18.737
+      }
+    },
+    {
+      "code": "300221",
+      "name": "银禧科技",
+      "raw_score": 60.4,
+      "status": "偏多",
+      "summary": "技术面偏多（60.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.8,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 57回升"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.3，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度7%，20日换手157%"
+        },
+        "custom_signal": {
+          "score": 8.0,
+          "detail": "v4加仓信号(0天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "加仓",
+        "signal_date": "2026-02-25",
+        "is_strong": false,
+        "message": "△ 均线汇聚加仓信号（v4，2026-02-25触发）"
+      },
+      "core_indicators": {
+        "MA5": 11.57,
+        "MA10": 11.52,
+        "MA20": 11.62,
+        "MA60": 10.51,
+        "RSI": 57.13,
+        "KDJ_K": 63.75,
+        "KDJ_D": 51.0,
+        "MACD_DIF": 0.21,
+        "MACD_DEA": 0.27,
+        "BOLL_MID": 11.62,
+        "BOLL_BW": 13.32,
+        "VOL_RATIO": 1.26,
+        "TURNOVER_20D": 156.55,
+        "MFI": 59.06,
+        "MFMA": 50.74,
+        "chip_concentration": 7.093
+      }
+    },
+    {
+      "code": "300648",
+      "name": "星云股份",
+      "raw_score": 60.4,
+      "status": "偏多",
+      "summary": "技术面偏多（60.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 64，动量中性"
+        },
+        "volume": {
+          "score": 3.5,
+          "detail": "量比0.8，MFI中性"
+        },
+        "volatility": {
+          "score": 4.5,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度9%，20日换手84%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 60.45,
+        "MA10": 59.88,
+        "MA20": 57.93,
+        "MA60": 54.66,
+        "RSI": 63.74,
+        "KDJ_K": 84.25,
+        "KDJ_D": 75.53,
+        "MACD_DIF": 1.54,
+        "MACD_DEA": 1.13,
+        "BOLL_MID": 57.93,
+        "BOLL_BW": 17.22,
+        "VOL_RATIO": 0.8,
+        "TURNOVER_20D": 84.44,
+        "MFI": 77.88,
+        "MFMA": 65.11,
+        "chip_concentration": 8.989
+      }
+    },
+    {
+      "code": "600967",
+      "name": "内蒙一机",
+      "raw_score": 60.1,
+      "status": "偏多",
+      "summary": "技术面偏多（60.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.8,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 50，动量中性"
+        },
+        "volume": {
+          "score": 7.5,
+          "detail": "量比1.3，MFI金叉"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 2.5,
+          "detail": "筹码集中度11%，20日换手30%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 17.05,
+        "MA10": 16.93,
+        "MA20": 17.25,
+        "MA60": 17.25,
+        "RSI": 50.47,
+        "KDJ_K": 63.26,
+        "KDJ_D": 50.63,
+        "MACD_DIF": -0.19,
+        "MACD_DEA": -0.21,
+        "BOLL_MID": 17.25,
+        "BOLL_BW": 14.31,
+        "VOL_RATIO": 1.3,
+        "TURNOVER_20D": 29.82,
+        "MFI": 49.73,
+        "MFMA": 29.51,
+        "chip_concentration": 10.685
+      }
+    },
+    {
+      "code": "000576",
+      "name": "甘化科工",
+      "raw_score": 59.9,
+      "status": "中性",
+      "summary": "技术面中性（59.9/100）",
+      "dimensions": {
+        "trend": {
+          "score": 7.6,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 56，动量中性"
+        },
+        "volume": {
+          "score": 5.9,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度7%，20日换手59%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 10.94,
+        "MA10": 10.83,
+        "MA20": 11.0,
+        "MA60": 10.68,
+        "RSI": 55.91,
+        "KDJ_K": 78.46,
+        "KDJ_D": 65.61,
+        "MACD_DIF": 0.02,
+        "MACD_DEA": 0.0,
+        "BOLL_MID": 11.0,
+        "BOLL_BW": 15.02,
+        "VOL_RATIO": 1.02,
+        "TURNOVER_20D": 59.36,
+        "MFI": 49.51,
+        "MFMA": 40.93,
+        "chip_concentration": 6.667
+      }
+    },
+    {
+      "code": "600388",
+      "name": "龙净环保",
+      "raw_score": 59.9,
+      "status": "中性",
+      "summary": "技术面中性（59.9/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 75偏弱"
+        },
+        "volume": {
+          "score": 6.8,
+          "detail": "量比1.7，MFI中性"
+        },
+        "volatility": {
+          "score": 4.8,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度19%，20日换手33%"
+        },
+        "custom_signal": {
+          "score": 3.0,
+          "detail": "减仓信号(0天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "减仓",
+        "signal_date": "2026-02-25",
+        "is_strong": false,
+        "message": "▽ 均线汇聚减仓信号（v4，2026-02-25触发）"
+      },
+      "core_indicators": {
+        "MA5": 19.15,
+        "MA10": 18.74,
+        "MA20": 18.14,
+        "MA60": 16.68,
+        "RSI": 75.1,
+        "KDJ_K": 81.12,
+        "KDJ_D": 77.25,
+        "MACD_DIF": 0.74,
+        "MACD_DEA": 0.62,
+        "BOLL_MID": 18.14,
+        "BOLL_BW": 20.41,
+        "VOL_RATIO": 1.73,
+        "TURNOVER_20D": 33.24,
+        "MFI": 50.41,
+        "MFMA": 54.01,
+        "chip_concentration": 19.245
+      }
+    },
+    {
+      "code": "600990",
+      "name": "四创电子",
+      "raw_score": 59.9,
+      "status": "中性",
+      "summary": "技术面中性（59.9/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.6,
+          "detail": "空头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 45回升"
+        },
+        "volume": {
+          "score": 5.6,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度14%，20日换手52%"
+        },
+        "custom_signal": {
+          "score": 10.0,
+          "detail": "v4买入信号(3天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "买入",
+        "signal_date": "2026-02-12",
+        "is_strong": false,
+        "message": "★ 均线汇聚买入信号（v4，2026-02-12触发）"
+      },
+      "core_indicators": {
+        "MA5": 27.32,
+        "MA10": 27.4,
+        "MA20": 27.57,
+        "MA60": 29.05,
+        "RSI": 44.55,
+        "KDJ_K": 39.23,
+        "KDJ_D": 42.27,
+        "MACD_DIF": -0.65,
+        "MACD_DEA": -0.72,
+        "BOLL_MID": 27.57,
+        "BOLL_BW": 8.26,
+        "VOL_RATIO": 0.92,
+        "TURNOVER_20D": 52.07,
+        "MFI": 38.52,
+        "MFMA": 38.96,
+        "chip_concentration": 13.694
+      }
+    },
+    {
+      "code": "300752",
+      "name": "隆利科技",
+      "raw_score": 59.8,
+      "status": "中性",
+      "summary": "技术面中性（59.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 60回升"
+        },
+        "volume": {
+          "score": 4.4,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度5%，20日换手61%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 19.49,
+        "MA10": 19.13,
+        "MA20": 19.0,
+        "MA60": 18.65,
+        "RSI": 59.61,
+        "KDJ_K": 80.34,
+        "KDJ_D": 74.55,
+        "MACD_DIF": 0.18,
+        "MACD_DEA": 0.09,
+        "BOLL_MID": 19.0,
+        "BOLL_BW": 11.2,
+        "VOL_RATIO": 0.85,
+        "TURNOVER_20D": 61.06,
+        "MFI": 63.14,
+        "MFMA": 51.77,
+        "chip_concentration": 5.285
+      }
+    },
+    {
+      "code": "301356",
+      "name": "天振股份",
+      "raw_score": 59.8,
+      "status": "中性",
+      "summary": "技术面中性（59.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 69，动量中性"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度9%，20日换手114%"
+        },
+        "custom_signal": {
+          "score": 3.0,
+          "detail": "减仓信号(1天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "减仓",
+        "signal_date": "2026-02-24",
+        "is_strong": false,
+        "message": "▽ 均线汇聚减仓信号（v4，2026-02-24触发）"
+      },
+      "core_indicators": {
+        "MA5": 24.26,
+        "MA10": 23.42,
+        "MA20": 23.32,
+        "MA60": 22.2,
+        "RSI": 68.83,
+        "KDJ_K": 69.59,
+        "KDJ_D": 55.71,
+        "MACD_DIF": 0.54,
+        "MACD_DEA": 0.28,
+        "BOLL_MID": 23.32,
+        "BOLL_BW": 17.14,
+        "VOL_RATIO": 1.12,
+        "TURNOVER_20D": 114.36,
+        "MFI": 68.3,
+        "MFMA": 58.78,
+        "chip_concentration": 9.438
+      }
+    },
+    {
+      "code": "002977",
+      "name": "天箭科技",
+      "raw_score": 59.8,
+      "status": "中性",
+      "summary": "技术面中性（59.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.8,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 44回升"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度11%，20日换手133%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 31.53,
+        "MA10": 31.43,
+        "MA20": 31.33,
+        "MA60": 36.64,
+        "RSI": 43.85,
+        "KDJ_K": 49.36,
+        "KDJ_D": 50.62,
+        "MACD_DIF": -1.12,
+        "MACD_DEA": -1.45,
+        "BOLL_MID": 31.33,
+        "BOLL_BW": 8.9,
+        "VOL_RATIO": 0.92,
+        "TURNOVER_20D": 133.17,
+        "MFI": 52.51,
+        "MFMA": 46.46,
+        "chip_concentration": 11.257
+      }
+    },
+    {
+      "code": "300629",
+      "name": "新劲刚",
+      "raw_score": 59.7,
+      "status": "中性",
+      "summary": "技术面中性（59.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.7,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.7,
+          "detail": "RSI 53回升，KDJ金叉"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度11%，20日换手145%"
+        },
+        "custom_signal": {
+          "score": 10.0,
+          "detail": "v4买入信号(2天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "买入",
+        "signal_date": "2026-02-13",
+        "is_strong": false,
+        "message": "★ 均线汇聚买入信号（v4，2026-02-13触发）"
+      },
+      "core_indicators": {
+        "MA5": 25.32,
+        "MA10": 25.47,
+        "MA20": 25.52,
+        "MA60": 23.22,
+        "RSI": 52.97,
+        "KDJ_K": 42.03,
+        "KDJ_D": 38.12,
+        "MACD_DIF": 0.17,
+        "MACD_DEA": 0.33,
+        "BOLL_MID": 25.52,
+        "BOLL_BW": 8.28,
+        "VOL_RATIO": 1.02,
+        "TURNOVER_20D": 145.0,
+        "MFI": 46.7,
+        "MFMA": 41.25,
+        "chip_concentration": 10.68
+      }
+    },
+    {
+      "code": "000001",
+      "name": "上证指数",
+      "raw_score": 59.6,
+      "status": "中性",
+      "summary": "技术面中性（59.6/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.6,
+          "detail": "多头排列"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 58回升"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比1.3，MFI死叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度8%，20日换手28%"
+        },
+        "custom_signal": {
+          "score": 8.0,
+          "detail": "v4加仓信号(2天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "加仓",
+        "signal_date": "2026-02-13",
+        "is_strong": false,
+        "message": "△ 均线汇聚加仓信号（v4，2026-02-13触发）"
+      },
+      "core_indicators": {
+        "MA5": 4122.54,
+        "MA10": 4110.79,
+        "MA20": 4113.34,
+        "MA60": 4012.76,
+        "RSI": 58.06,
+        "KDJ_K": 76.89,
+        "KDJ_D": 71.33,
+        "MACD_DIF": 17.94,
+        "MACD_DEA": 20.29,
+        "BOLL_MID": 4113.34,
+        "BOLL_BW": 3.35,
+        "VOL_RATIO": 1.28,
+        "TURNOVER_20D": 28.36,
+        "MFI": 64.08,
+        "MFMA": 63.32,
+        "chip_concentration": 7.588
+      }
+    },
+    {
+      "code": "300638",
+      "name": "广和通",
+      "raw_score": 59.5,
+      "status": "中性",
+      "summary": "技术面中性（59.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.9,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 50回升"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比0.7，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度9%，20日换手97%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 30.25,
+        "MA10": 29.73,
+        "MA20": 29.9,
+        "MA60": 29.51,
+        "RSI": 49.87,
+        "KDJ_K": 55.84,
+        "KDJ_D": 54.12,
+        "MACD_DIF": -0.02,
+        "MACD_DEA": -0.04,
+        "BOLL_MID": 29.9,
+        "BOLL_BW": 12.45,
+        "VOL_RATIO": 0.71,
+        "TURNOVER_20D": 97.48,
+        "MFI": 34.26,
+        "MFMA": 41.03,
+        "chip_concentration": 8.557
+      }
+    },
+    {
+      "code": "601899",
+      "name": "紫金矿业",
+      "raw_score": 59.4,
+      "status": "中性",
+      "summary": "技术面中性（59.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.8,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 56回升"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度26%，20日换手41%"
+        },
+        "custom_signal": {
+          "score": 8.0,
+          "detail": "v4加仓信号(1天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "加仓",
+        "signal_date": "2026-02-24",
+        "is_strong": false,
+        "message": "△ 均线汇聚加仓信号（v4，2026-02-24触发）"
+      },
+      "core_indicators": {
+        "MA5": 39.19,
+        "MA10": 38.72,
+        "MA20": 39.1,
+        "MA60": 34.94,
+        "RSI": 55.53,
+        "KDJ_K": 68.34,
+        "KDJ_D": 56.31,
+        "MACD_DIF": 0.75,
+        "MACD_DEA": 0.95,
+        "BOLL_MID": 39.1,
+        "BOLL_BW": 16.76,
+        "VOL_RATIO": 1.09,
+        "TURNOVER_20D": 41.44,
+        "MFI": 56.92,
+        "MFMA": 64.52,
+        "chip_concentration": 25.749
+      }
+    },
+    {
+      "code": "600331",
+      "name": "宏达股份",
+      "raw_score": 59.4,
+      "status": "中性",
+      "summary": "技术面中性（59.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 75偏弱"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比1.4，MFI死叉"
+        },
+        "volatility": {
+          "score": 4.8,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度27%，20日换手88%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 18.01,
+        "MA10": 17.41,
+        "MA20": 16.14,
+        "MA60": 13.32,
+        "RSI": 75.38,
+        "KDJ_K": 86.29,
+        "KDJ_D": 82.67,
+        "MACD_DIF": 1.36,
+        "MACD_DEA": 1.15,
+        "BOLL_MID": 16.14,
+        "BOLL_BW": 38.14,
+        "VOL_RATIO": 1.44,
+        "TURNOVER_20D": 87.97,
+        "MFI": 79.15,
+        "MFMA": 78.78,
+        "chip_concentration": 26.882
+      }
+    },
+    {
+      "code": "300274",
+      "name": "阳光电源",
+      "raw_score": 59.3,
+      "status": "中性",
+      "summary": "技术面中性（59.3/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.2,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 48回升"
+        },
+        "volume": {
+          "score": 5.9,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度11%，20日换手74%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 152.52,
+        "MA10": 151.42,
+        "MA20": 153.33,
+        "MA60": 166.21,
+        "RSI": 47.58,
+        "KDJ_K": 61.11,
+        "KDJ_D": 56.03,
+        "MACD_DIF": -3.54,
+        "MACD_DEA": -4.36,
+        "BOLL_MID": 153.33,
+        "BOLL_BW": 13.62,
+        "VOL_RATIO": 0.99,
+        "TURNOVER_20D": 73.83,
+        "MFI": 54.75,
+        "MFMA": 46.81,
+        "chip_concentration": 10.998
+      }
+    },
+    {
+      "code": "301307",
+      "name": "美利信",
+      "raw_score": 59.1,
+      "status": "中性",
+      "summary": "技术面中性（59.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 7.2,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 61，动量中性"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比1.4，MFI中性"
+        },
+        "volatility": {
+          "score": 5.5,
+          "detail": "布林带边缘，带宽收窄"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度5%，20日换手117%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 36.16,
+        "MA10": 35.52,
+        "MA20": 35.2,
+        "MA60": 36.45,
+        "RSI": 60.56,
+        "KDJ_K": 83.48,
+        "KDJ_D": 76.64,
+        "MACD_DIF": 0.19,
+        "MACD_DEA": -0.15,
+        "BOLL_MID": 35.2,
+        "BOLL_BW": 13.05,
+        "VOL_RATIO": 1.37,
+        "TURNOVER_20D": 117.48,
+        "MFI": 70.97,
+        "MFMA": 58.58,
+        "chip_concentration": 5.495
+      }
+    },
+    {
+      "code": "001270",
+      "name": "*ST铖昌",
+      "raw_score": 58.8,
+      "status": "中性",
+      "summary": "技术面中性（58.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 7.4,
+          "detail": "RSI 54回升，KDJ金叉"
+        },
+        "volume": {
+          "score": 6.9,
+          "detail": "量比1.2，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 5.8,
+          "detail": "筹码集中度55%，20日换手96%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 127.95,
+        "MA10": 134.36,
+        "MA20": 140.46,
+        "MA60": 99.05,
+        "RSI": 54.4,
+        "KDJ_K": 26.8,
+        "KDJ_D": 22.69,
+        "MACD_DIF": 4.65,
+        "MACD_DEA": 9.0,
+        "BOLL_MID": 140.46,
+        "BOLL_BW": 34.53,
+        "VOL_RATIO": 1.24,
+        "TURNOVER_20D": 95.54,
+        "MFI": 24.71,
+        "MFMA": 23.18,
+        "chip_concentration": 55.33
+      }
+    },
+    {
+      "code": "600893",
+      "name": "航发动力",
+      "raw_score": 58.8,
+      "status": "中性",
+      "summary": "技术面中性（58.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.2,
+          "detail": "RSI 72偏弱"
+        },
+        "volume": {
+          "score": 4.1,
+          "detail": "量比0.8，MFI死叉"
+        },
+        "volatility": {
+          "score": 4.8,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度22%，20日换手47%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 54.9,
+        "MA10": 52.16,
+        "MA20": 49.97,
+        "MA60": 42.87,
+        "RSI": 71.84,
+        "KDJ_K": 83.23,
+        "KDJ_D": 77.92,
+        "MACD_DIF": 3.36,
+        "MACD_DEA": 2.55,
+        "BOLL_MID": 49.97,
+        "BOLL_BW": 29.29,
+        "VOL_RATIO": 0.79,
+        "TURNOVER_20D": 46.81,
+        "MFI": 73.66,
+        "MFMA": 67.72,
+        "chip_concentration": 21.6
+      }
+    },
+    {
+      "code": "603669",
+      "name": "灵康药业",
+      "raw_score": 58.6,
+      "status": "中性",
+      "summary": "技术面中性（58.6/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.4,
+          "detail": "空头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 7.5,
+          "detail": "RSI 52回升，KDJ金叉"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.5，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度15%，20日换手21%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 4.67,
+        "MA10": 4.68,
+        "MA20": 4.68,
+        "MA60": 4.79,
+        "RSI": 51.83,
+        "KDJ_K": 53.52,
+        "KDJ_D": 52.14,
+        "MACD_DIF": -0.02,
+        "MACD_DEA": -0.04,
+        "BOLL_MID": 4.68,
+        "BOLL_BW": 8.14,
+        "VOL_RATIO": 1.46,
+        "TURNOVER_20D": 20.86,
+        "MFI": 52.69,
+        "MFMA": 40.98,
+        "chip_concentration": 14.525
+      }
+    },
+    {
+      "code": "688582",
+      "name": "芯动联科",
+      "raw_score": 58.5,
+      "status": "中性",
+      "summary": "技术面中性（58.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.2,
+          "detail": "多头排列"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 51回升"
+        },
+        "volume": {
+          "score": 6.8,
+          "detail": "量比1.2，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度13%，20日换手45%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 65.74,
+        "MA10": 65.16,
+        "MA20": 67.07,
+        "MA60": 65.68,
+        "RSI": 51.01,
+        "KDJ_K": 66.06,
+        "KDJ_D": 48.16,
+        "MACD_DIF": -0.7,
+        "MACD_DEA": -0.65,
+        "BOLL_MID": 67.07,
+        "BOLL_BW": 16.71,
+        "VOL_RATIO": 1.19,
+        "TURNOVER_20D": 44.97,
+        "MFI": 39.85,
+        "MFMA": 36.41,
+        "chip_concentration": 12.785
+      }
+    },
+    {
+      "code": "600730",
+      "name": "中国高科",
+      "raw_score": 58.3,
+      "status": "中性",
+      "summary": "技术面中性（58.3/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.6,
+          "detail": "空头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 43回升"
+        },
+        "volume": {
+          "score": 4.4,
+          "detail": "量比0.8，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度13%，20日换手70%"
+        },
+        "custom_signal": {
+          "score": 10.0,
+          "detail": "v4买入信号(0天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "买入",
+        "signal_date": "2026-02-25",
+        "is_strong": false,
+        "message": "★ 均线汇聚买入信号（v4，2026-02-25触发）"
+      },
+      "core_indicators": {
+        "MA5": 10.32,
+        "MA10": 10.4,
+        "MA20": 10.51,
+        "MA60": 11.99,
+        "RSI": 43.21,
+        "KDJ_K": 49.42,
+        "KDJ_D": 53.81,
+        "MACD_DIF": -0.36,
+        "MACD_DEA": -0.42,
+        "BOLL_MID": 10.51,
+        "BOLL_BW": 12.63,
+        "VOL_RATIO": 0.82,
+        "TURNOVER_20D": 70.25,
+        "MFI": 54.15,
+        "MFMA": 50.04,
+        "chip_concentration": 12.798
+      }
+    },
+    {
+      "code": "688600",
+      "name": "皖仪科技",
+      "raw_score": 58.1,
+      "status": "中性",
+      "summary": "技术面中性（58.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.5,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 53回升"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.3，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度15%，20日换手31%"
+        },
+        "custom_signal": {
+          "score": 8.0,
+          "detail": "v4加仓信号(1天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "加仓",
+        "signal_date": "2026-02-24",
+        "is_strong": false,
+        "message": "△ 均线汇聚加仓信号（v4，2026-02-24触发）"
+      },
+      "core_indicators": {
+        "MA5": 27.18,
+        "MA10": 27.08,
+        "MA20": 27.35,
+        "MA60": 25.62,
+        "RSI": 53.38,
+        "KDJ_K": 72.75,
+        "KDJ_D": 62.29,
+        "MACD_DIF": 0.12,
+        "MACD_DEA": 0.2,
+        "BOLL_MID": 27.35,
+        "BOLL_BW": 12.11,
+        "VOL_RATIO": 1.26,
+        "TURNOVER_20D": 31.19,
+        "MFI": 41.96,
+        "MFMA": 36.67,
+        "chip_concentration": 14.907
+      }
+    },
+    {
+      "code": "603606",
+      "name": "东方电缆",
+      "raw_score": 58.0,
+      "status": "中性",
+      "summary": "技术面中性（58.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.2,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 50回升"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度10%，20日换手31%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 57.09,
+        "MA10": 56.8,
+        "MA20": 57.26,
+        "MA60": 58.76,
+        "RSI": 50.35,
+        "KDJ_K": 76.12,
+        "KDJ_D": 64.42,
+        "MACD_DIF": -0.55,
+        "MACD_DEA": -0.76,
+        "BOLL_MID": 57.26,
+        "BOLL_BW": 11.46,
+        "VOL_RATIO": 1.04,
+        "TURNOVER_20D": 30.71,
+        "MFI": 45.04,
+        "MFMA": 42.76,
+        "chip_concentration": 10.355
+      }
+    },
+    {
+      "code": "300651",
+      "name": "金陵体育",
+      "raw_score": 58.0,
+      "status": "中性",
+      "summary": "技术面中性（58.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 80偏弱"
+        },
+        "volume": {
+          "score": 3.5,
+          "detail": "量比1.3，MFI死叉"
+        },
+        "volatility": {
+          "score": 4.8,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度15%，20日换手289%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 27.94,
+        "MA10": 26.86,
+        "MA20": 25.77,
+        "MA60": 22.91,
+        "RSI": 79.88,
+        "KDJ_K": 84.22,
+        "KDJ_D": 80.39,
+        "MACD_DIF": 1.55,
+        "MACD_DEA": 1.11,
+        "BOLL_MID": 25.77,
+        "BOLL_BW": 29.69,
+        "VOL_RATIO": 1.35,
+        "TURNOVER_20D": 288.58,
+        "MFI": 91.1,
+        "MFMA": 80.14,
+        "chip_concentration": 14.716
+      }
+    },
+    {
+      "code": "300567",
+      "name": "精测电子",
+      "raw_score": 57.9,
+      "status": "中性",
+      "summary": "技术面中性（57.9/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.8,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 69，动量中性"
+        },
+        "volume": {
+          "score": 7.8,
+          "detail": "量比1.3，MFI金叉"
+        },
+        "volatility": {
+          "score": 5.5,
+          "detail": "布林带边缘，带宽收窄"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度22%，20日换手133%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 139.24,
+        "MA10": 134.8,
+        "MA20": 137.65,
+        "MA60": 104.26,
+        "RSI": 69.42,
+        "KDJ_K": 64.67,
+        "KDJ_D": 51.81,
+        "MACD_DIF": 7.15,
+        "MACD_DEA": 7.49,
+        "BOLL_MID": 137.65,
+        "BOLL_BW": 25.05,
+        "VOL_RATIO": 1.34,
+        "TURNOVER_20D": 132.76,
+        "MFI": 43.92,
+        "MFMA": 34.41,
+        "chip_concentration": 21.591
+      }
+    },
+    {
+      "code": "002262",
+      "name": "恩华药业",
+      "raw_score": 57.8,
+      "status": "中性",
+      "summary": "技术面中性（57.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.2,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 52回升"
+        },
+        "volume": {
+          "score": 5.9,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度9%，20日换手21%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 23.79,
+        "MA10": 23.62,
+        "MA20": 23.66,
+        "MA60": 24.27,
+        "RSI": 51.61,
+        "KDJ_K": 75.67,
+        "KDJ_D": 69.94,
+        "MACD_DIF": -0.15,
+        "MACD_DEA": -0.23,
+        "BOLL_MID": 23.66,
+        "BOLL_BW": 6.83,
+        "VOL_RATIO": 0.99,
+        "TURNOVER_20D": 21.03,
+        "MFI": 54.83,
+        "MFMA": 45.71,
+        "chip_concentration": 9.25
+      }
+    },
+    {
+      "code": "301468",
+      "name": "博盈特焊",
+      "raw_score": 57.5,
+      "status": "中性",
+      "summary": "技术面中性（57.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 7.3,
+          "detail": "多头排列"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 59，动量中性"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比0.7，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度8%，20日换手247%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 72.64,
+        "MA10": 71.03,
+        "MA20": 69.61,
+        "MA60": 57.72,
+        "RSI": 58.66,
+        "KDJ_K": 66.06,
+        "KDJ_D": 61.61,
+        "MACD_DIF": 3.54,
+        "MACD_DEA": 3.56,
+        "BOLL_MID": 69.61,
+        "BOLL_BW": 18.74,
+        "VOL_RATIO": 0.74,
+        "TURNOVER_20D": 247.13,
+        "MFI": 59.96,
+        "MFMA": 56.38,
+        "chip_concentration": 7.761
+      }
+    },
+    {
+      "code": "600879",
+      "name": "航天电子",
+      "raw_score": 57.5,
+      "status": "中性",
+      "summary": "技术面中性（57.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 7.4,
+          "detail": "RSI 52回升，KDJ金叉"
+        },
+        "volume": {
+          "score": 6.8,
+          "detail": "量比1.6，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度10%，20日换手208%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 24.54,
+        "MA10": 25.21,
+        "MA20": 26.41,
+        "MA60": 21.05,
+        "RSI": 52.21,
+        "KDJ_K": 21.2,
+        "KDJ_D": 13.82,
+        "MACD_DIF": 0.21,
+        "MACD_DEA": 0.74,
+        "BOLL_MID": 26.41,
+        "BOLL_BW": 27.35,
+        "VOL_RATIO": 1.56,
+        "TURNOVER_20D": 208.38,
+        "MFI": 43.32,
+        "MFMA": 36.32,
+        "chip_concentration": 10.184
+      }
+    },
+    {
+      "code": "601231",
+      "name": "环旭电子",
+      "raw_score": 57.4,
+      "status": "中性",
+      "summary": "技术面中性（57.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 73偏弱"
+        },
+        "volume": {
+          "score": 3.2,
+          "detail": "量比0.9，MFI死叉"
+        },
+        "volatility": {
+          "score": 4.8,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 4.4,
+          "detail": "筹码集中度37%，20日换手47%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 41.74,
+        "MA10": 39.02,
+        "MA20": 35.6,
+        "MA60": 29.66,
+        "RSI": 72.99,
+        "KDJ_K": 90.14,
+        "KDJ_D": 85.66,
+        "MACD_DIF": 3.45,
+        "MACD_DEA": 2.6,
+        "BOLL_MID": 35.6,
+        "BOLL_BW": 48.49,
+        "VOL_RATIO": 0.95,
+        "TURNOVER_20D": 47.17,
+        "MFI": 69.3,
+        "MFMA": 66.59,
+        "chip_concentration": 36.882
+      }
+    },
+    {
+      "code": "300263",
+      "name": "隆华科技",
+      "raw_score": 57.3,
+      "status": "中性",
+      "summary": "技术面中性（57.3/100）",
+      "dimensions": {
+        "trend": {
+          "score": 7.3,
+          "detail": "多头排列"
+        },
+        "momentum": {
+          "score": 5.0,
+          "detail": "RSI 65，动量中性"
+        },
+        "volume": {
+          "score": 5.6,
+          "detail": "量比1.2，MFI中性"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度14%，20日换手161%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 11.74,
+        "MA10": 11.7,
+        "MA20": 11.04,
+        "MA60": 9.46,
+        "RSI": 64.62,
+        "KDJ_K": 58.49,
+        "KDJ_D": 63.53,
+        "MACD_DIF": 0.61,
+        "MACD_DEA": 0.61,
+        "BOLL_MID": 11.04,
+        "BOLL_BW": 27.88,
+        "VOL_RATIO": 1.23,
+        "TURNOVER_20D": 161.1,
+        "MFI": 62.46,
+        "MFMA": 66.34,
+        "chip_concentration": 14.085
+      }
+    },
+    {
+      "code": "002957",
+      "name": "科瑞技术",
+      "raw_score": 57.1,
+      "status": "中性",
+      "summary": "技术面中性（57.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.3,
+          "detail": "RSI 59，动量中性"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比0.6，MFI中性"
+        },
+        "volatility": {
+          "score": 5.5,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度18%，20日换手133%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 29.39,
+        "MA10": 28.74,
+        "MA20": 26.18,
+        "MA60": 22.78,
+        "RSI": 59.31,
+        "KDJ_K": 59.47,
+        "KDJ_D": 71.23,
+        "MACD_DIF": 1.77,
+        "MACD_DEA": 1.6,
+        "BOLL_MID": 26.18,
+        "BOLL_BW": 44.07,
+        "VOL_RATIO": 0.64,
+        "TURNOVER_20D": 133.47,
+        "MFI": 76.39,
+        "MFMA": 83.85,
+        "chip_concentration": 17.895
+      }
+    },
+    {
+      "code": "300636",
+      "name": "同和药业",
+      "raw_score": 57.0,
+      "status": "中性",
+      "summary": "技术面中性（57.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 60，动量中性"
+        },
+        "volume": {
+          "score": 3.5,
+          "detail": "量比0.6，MFI中性"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度8%，20日换手52%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 8.49,
+        "MA10": 8.4,
+        "MA20": 8.3,
+        "MA60": 7.99,
+        "RSI": 60.31,
+        "KDJ_K": 47.9,
+        "KDJ_D": 51.37,
+        "MACD_DIF": 0.15,
+        "MACD_DEA": 0.13,
+        "BOLL_MID": 8.3,
+        "BOLL_BW": 9.04,
+        "VOL_RATIO": 0.61,
+        "TURNOVER_20D": 52.06,
+        "MFI": 61.7,
+        "MFMA": 59.09,
+        "chip_concentration": 8.228
+      }
+    },
+    {
+      "code": "000534",
+      "name": "万泽股份",
+      "raw_score": 57.0,
+      "status": "中性",
+      "summary": "技术面中性（57.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 66，动量中性"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比0.7，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度24%，20日换手104%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 34.29,
+        "MA10": 32.64,
+        "MA20": 30.81,
+        "MA60": 25.02,
+        "RSI": 66.16,
+        "KDJ_K": 80.87,
+        "KDJ_D": 75.3,
+        "MACD_DIF": 2.69,
+        "MACD_DEA": 2.34,
+        "BOLL_MID": 30.81,
+        "BOLL_BW": 34.8,
+        "VOL_RATIO": 0.68,
+        "TURNOVER_20D": 104.28,
+        "MFI": 65.44,
+        "MFMA": 70.87,
+        "chip_concentration": 24.378
+      }
+    },
+    {
+      "code": "600203",
+      "name": "福日电子",
+      "raw_score": 56.9,
+      "status": "中性",
+      "summary": "技术面中性（56.9/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.2,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 50，动量中性"
+        },
+        "volume": {
+          "score": 6.6,
+          "detail": "量比1.0，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度9%，20日换手53%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 12.59,
+        "MA10": 12.44,
+        "MA20": 12.53,
+        "MA60": 13.28,
+        "RSI": 49.85,
+        "KDJ_K": 82.33,
+        "KDJ_D": 68.18,
+        "MACD_DIF": -0.16,
+        "MACD_DEA": -0.25,
+        "BOLL_MID": 12.53,
+        "BOLL_BW": 10.19,
+        "VOL_RATIO": 0.99,
+        "TURNOVER_20D": 53.38,
+        "MFI": 54.93,
+        "MFMA": 36.69,
+        "chip_concentration": 9.294
+      }
+    },
+    {
+      "code": "300469",
+      "name": "信息发展",
+      "raw_score": 56.9,
+      "status": "中性",
+      "summary": "技术面中性（56.9/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.2,
+          "detail": "RSI 60，动量中性"
+        },
+        "volume": {
+          "score": 2.9,
+          "detail": "量比0.7，MFI死叉"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度8%，20日换手58%"
+        },
+        "custom_signal": {
+          "score": 3.0,
+          "detail": "减仓信号(4天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "减仓",
+        "signal_date": "2026-02-11",
+        "is_strong": false,
+        "message": "▽ 均线汇聚减仓信号（v4，2026-02-11触发）"
+      },
+      "core_indicators": {
+        "MA5": 69.99,
+        "MA10": 67.26,
+        "MA20": 65.64,
+        "MA60": 64.81,
+        "RSI": 60.15,
+        "KDJ_K": 78.09,
+        "KDJ_D": 71.85,
+        "MACD_DIF": 1.3,
+        "MACD_DEA": 0.52,
+        "BOLL_MID": 65.64,
+        "BOLL_BW": 18.04,
+        "VOL_RATIO": 0.74,
+        "TURNOVER_20D": 57.73,
+        "MFI": 64.67,
+        "MFMA": 61.13,
+        "chip_concentration": 8.411
+      }
+    },
+    {
+      "code": "300353",
+      "name": "东土科技",
+      "raw_score": 56.9,
+      "status": "中性",
+      "summary": "技术面中性（56.9/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 61，动量中性"
+        },
+        "volume": {
+          "score": 3.8,
+          "detail": "量比1.0，MFI死叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度12%，20日换手75%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 24.09,
+        "MA10": 23.84,
+        "MA20": 23.17,
+        "MA60": 21.77,
+        "RSI": 61.02,
+        "KDJ_K": 80.8,
+        "KDJ_D": 77.77,
+        "MACD_DIF": 0.54,
+        "MACD_DEA": 0.45,
+        "BOLL_MID": 23.17,
+        "BOLL_BW": 13.91,
+        "VOL_RATIO": 0.96,
+        "TURNOVER_20D": 74.71,
+        "MFI": 83.29,
+        "MFMA": 70.47,
+        "chip_concentration": 11.719
+      }
+    },
+    {
+      "code": "688239",
+      "name": "航宇科技",
+      "raw_score": 56.8,
+      "status": "中性",
+      "summary": "技术面中性（56.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 58，动量中性"
+        },
+        "volume": {
+          "score": 4.4,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度12%，20日换手79%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(加仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 74.25,
+        "MA10": 71.38,
+        "MA20": 69.37,
+        "MA60": 63.79,
+        "RSI": 57.58,
+        "KDJ_K": 71.66,
+        "KDJ_D": 70.12,
+        "MACD_DIF": 2.5,
+        "MACD_DEA": 1.8,
+        "BOLL_MID": 69.37,
+        "BOLL_BW": 22.33,
+        "VOL_RATIO": 0.88,
+        "TURNOVER_20D": 78.79,
+        "MFI": 64.77,
+        "MFMA": 62.86,
+        "chip_concentration": 12.43
+      }
+    },
+    {
+      "code": "688510",
+      "name": "航亚科技",
+      "raw_score": 56.6,
+      "status": "中性",
+      "summary": "技术面中性（56.6/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 71偏弱"
+        },
+        "volume": {
+          "score": 3.5,
+          "detail": "量比0.7，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度28%，20日换手96%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 43.16,
+        "MA10": 41.49,
+        "MA20": 39.64,
+        "MA60": 30.8,
+        "RSI": 70.98,
+        "KDJ_K": 92.48,
+        "KDJ_D": 83.74,
+        "MACD_DIF": 3.25,
+        "MACD_DEA": 2.91,
+        "BOLL_MID": 39.64,
+        "BOLL_BW": 28.16,
+        "VOL_RATIO": 0.74,
+        "TURNOVER_20D": 95.53,
+        "MFI": 70.44,
+        "MFMA": 63.83,
+        "chip_concentration": 28.134
+      }
+    },
+    {
+      "code": "520550",
+      "name": "港股红利低波ETF",
+      "raw_score": 56.6,
+      "status": "中性",
+      "summary": "技术面中性（56.6/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.3,
+          "detail": "RSI 61，动量中性"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比1.0，MFI死叉"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度4%，20日换手111%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 1.27,
+        "MA10": 1.26,
+        "MA20": 1.24,
+        "MA60": 1.22,
+        "RSI": 60.9,
+        "KDJ_K": 78.79,
+        "KDJ_D": 81.89,
+        "MACD_DIF": 0.02,
+        "MACD_DEA": 0.01,
+        "BOLL_MID": 1.24,
+        "BOLL_BW": 7.27,
+        "VOL_RATIO": 1.03,
+        "TURNOVER_20D": 110.72,
+        "MFI": 74.37,
+        "MFMA": 80.9,
+        "chip_concentration": 4.386
+      }
+    },
+    {
+      "code": "301028",
+      "name": "鼎熔岩",
+      "raw_score": 56.5,
+      "status": "中性",
+      "summary": "技术面中性（56.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.1,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 51回升"
+        },
+        "volume": {
+          "score": 7.8,
+          "detail": "量比1.1，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度8%，20日换手45%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 15.1,
+        "MA10": 15.04,
+        "MA20": 15.43,
+        "MA60": 15.05,
+        "RSI": 50.89,
+        "KDJ_K": 59.41,
+        "KDJ_D": 40.68,
+        "MACD_DIF": -0.08,
+        "MACD_DEA": -0.04,
+        "BOLL_MID": 15.43,
+        "BOLL_BW": 14.4,
+        "VOL_RATIO": 1.14,
+        "TURNOVER_20D": 45.43,
+        "MFI": 32.18,
+        "MFMA": 25.99,
+        "chip_concentration": 7.662
+      }
+    },
+    {
+      "code": "688535",
+      "name": "华海诚科",
+      "raw_score": 56.5,
+      "status": "中性",
+      "summary": "技术面中性（56.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.8,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 59回升"
+        },
+        "volume": {
+          "score": 5.6,
+          "detail": "量比1.4，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度8%，20日换手167%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 125.51,
+        "MA10": 123.19,
+        "MA20": 127.37,
+        "MA60": 114.55,
+        "RSI": 58.9,
+        "KDJ_K": 67.52,
+        "KDJ_D": 49.53,
+        "MACD_DIF": 1.74,
+        "MACD_DEA": 1.95,
+        "BOLL_MID": 127.37,
+        "BOLL_BW": 18.98,
+        "VOL_RATIO": 1.4,
+        "TURNOVER_20D": 166.82,
+        "MFI": 61.09,
+        "MFMA": 55.26,
+        "chip_concentration": 7.828
+      }
+    },
+    {
+      "code": "002572",
+      "name": "索菲亚",
+      "raw_score": 56.2,
+      "status": "中性",
+      "summary": "技术面中性（56.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.8,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 54回升"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.3，MFI中性"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度8%，20日换手45%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 14.51,
+        "MA10": 14.72,
+        "MA20": 14.56,
+        "MA60": 14.09,
+        "RSI": 53.63,
+        "KDJ_K": 29.23,
+        "KDJ_D": 38.19,
+        "MACD_DIF": 0.15,
+        "MACD_DEA": 0.21,
+        "BOLL_MID": 14.56,
+        "BOLL_BW": 9.33,
+        "VOL_RATIO": 1.33,
+        "TURNOVER_20D": 44.6,
+        "MFI": 56.05,
+        "MFMA": 57.77,
+        "chip_concentration": 7.659
+      }
+    },
+    {
+      "code": "002312",
+      "name": "川发龙蟒",
+      "raw_score": 56.2,
+      "status": "中性",
+      "summary": "技术面中性（56.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.0,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 72偏弱"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比2.9，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度11%，20日换手78%"
+        },
+        "custom_signal": {
+          "score": 3.0,
+          "detail": "减仓信号(0天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "减仓",
+        "signal_date": "2026-02-25",
+        "is_strong": false,
+        "message": "▽ 均线汇聚减仓信号（v4，2026-02-25触发）"
+      },
+      "core_indicators": {
+        "MA5": 12.34,
+        "MA10": 12.03,
+        "MA20": 12.13,
+        "MA60": 11.58,
+        "RSI": 71.69,
+        "KDJ_K": 70.12,
+        "KDJ_D": 52.29,
+        "MACD_DIF": 0.24,
+        "MACD_DEA": 0.12,
+        "BOLL_MID": 12.13,
+        "BOLL_BW": 18.45,
+        "VOL_RATIO": 2.93,
+        "TURNOVER_20D": 77.6,
+        "MFI": 65.35,
+        "MFMA": 48.31,
+        "chip_concentration": 10.976
+      }
+    },
+    {
+      "code": "600487",
+      "name": "亨通光电",
+      "raw_score": 56.2,
+      "status": "中性",
+      "summary": "技术面中性（56.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.3,
+          "detail": "RSI 64，动量中性"
+        },
+        "volume": {
+          "score": 4.1,
+          "detail": "量比1.0，MFI死叉"
+        },
+        "volatility": {
+          "score": 5.5,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度26%，20日换手139%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 40.8,
+        "MA10": 39.3,
+        "MA20": 35.54,
+        "MA60": 27.12,
+        "RSI": 64.14,
+        "KDJ_K": 72.77,
+        "KDJ_D": 77.07,
+        "MACD_DIF": 3.84,
+        "MACD_DEA": 3.6,
+        "BOLL_MID": 35.54,
+        "BOLL_BW": 52.3,
+        "VOL_RATIO": 1.05,
+        "TURNOVER_20D": 139.08,
+        "MFI": 70.28,
+        "MFMA": 80.56,
+        "chip_concentration": 26.284
+      }
+    },
+    {
+      "code": "688081",
+      "name": "兴图新科",
+      "raw_score": 56.2,
+      "status": "中性",
+      "summary": "技术面中性（56.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.3,
+          "detail": "KDJ死叉"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比1.3，MFI死叉"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度18%，20日换手62%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 43.3,
+        "MA10": 41.59,
+        "MA20": 38.65,
+        "MA60": 34.76,
+        "RSI": 66.7,
+        "KDJ_K": 79.47,
+        "KDJ_D": 79.89,
+        "MACD_DIF": 2.23,
+        "MACD_DEA": 1.73,
+        "BOLL_MID": 38.65,
+        "BOLL_BW": 36.32,
+        "VOL_RATIO": 1.29,
+        "TURNOVER_20D": 62.01,
+        "MFI": 81.94,
+        "MFMA": 73.93,
+        "chip_concentration": 17.749
+      }
+    },
+    {
+      "code": "300539",
+      "name": "横河精密",
+      "raw_score": 56.2,
+      "status": "中性",
+      "summary": "技术面中性（56.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.2,
+          "detail": "空头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 7.5,
+          "detail": "RSI 47回升，KDJ金叉"
+        },
+        "volume": {
+          "score": 6.8,
+          "detail": "量比2.1，MFI中性"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度18%，20日换手81%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 32.55,
+        "MA10": 33.04,
+        "MA20": 34.37,
+        "MA60": 38.5,
+        "RSI": 46.66,
+        "KDJ_K": 44.27,
+        "KDJ_D": 32.97,
+        "MACD_DIF": -1.66,
+        "MACD_DEA": -1.72,
+        "BOLL_MID": 34.37,
+        "BOLL_BW": 27.54,
+        "VOL_RATIO": 2.14,
+        "TURNOVER_20D": 80.53,
+        "MFI": 46.45,
+        "MFMA": 31.42,
+        "chip_concentration": 18.203
+      }
+    },
+    {
+      "code": "688775",
+      "name": "影石创新",
+      "raw_score": 56.1,
+      "status": "中性",
+      "summary": "技术面中性（56.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.0,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 7.3,
+          "detail": "RSI 41回升"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比0.6，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度8%，20日换手77%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 222.19,
+        "MA10": 221.71,
+        "MA20": 226.2,
+        "MA60": 243.34,
+        "RSI": 40.51,
+        "KDJ_K": 43.88,
+        "KDJ_D": 40.49,
+        "MACD_DIF": -5.5,
+        "MACD_DEA": -6.26,
+        "BOLL_MID": 226.2,
+        "BOLL_BW": 13.38,
+        "VOL_RATIO": 0.62,
+        "TURNOVER_20D": 76.75,
+        "MFI": 34.62,
+        "MFMA": 32.97,
+        "chip_concentration": 7.983
+      }
+    },
+    {
+      "code": "002935",
+      "name": "天奥电子",
+      "raw_score": 56.1,
+      "status": "中性",
+      "summary": "技术面中性（56.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 49回升"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度15%，20日换手56%"
+        },
+        "custom_signal": {
+          "score": 10.0,
+          "detail": "v4买入信号(2天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "买入",
+        "signal_date": "2026-02-13",
+        "is_strong": false,
+        "message": "★ 均线汇聚买入信号（v4，2026-02-13触发）"
+      },
+      "core_indicators": {
+        "MA5": 21.45,
+        "MA10": 21.69,
+        "MA20": 21.88,
+        "MA60": 21.07,
+        "RSI": 48.86,
+        "KDJ_K": 25.17,
+        "KDJ_D": 29.17,
+        "MACD_DIF": -0.12,
+        "MACD_DEA": -0.01,
+        "BOLL_MID": 21.88,
+        "BOLL_BW": 9.29,
+        "VOL_RATIO": 0.95,
+        "TURNOVER_20D": 55.72,
+        "MFI": 51.92,
+        "MFMA": 50.94,
+        "chip_concentration": 15.398
+      }
+    },
+    {
+      "code": "688709",
+      "name": "成都华微",
+      "raw_score": 56.0,
+      "status": "中性",
+      "summary": "技术面中性（56.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.6,
+          "detail": "RSI 47回升"
+        },
+        "volume": {
+          "score": 7.8,
+          "detail": "量比1.0，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度11%，20日换手90%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 46.52,
+        "MA10": 46.78,
+        "MA20": 48.8,
+        "MA60": 45.23,
+        "RSI": 47.37,
+        "KDJ_K": 24.03,
+        "KDJ_D": 18.03,
+        "MACD_DIF": -0.41,
+        "MACD_DEA": 0.03,
+        "BOLL_MID": 48.8,
+        "BOLL_BW": 19.94,
+        "VOL_RATIO": 1.05,
+        "TURNOVER_20D": 90.01,
+        "MFI": 31.43,
+        "MFMA": 33.35,
+        "chip_concentration": 10.731
+      }
+    },
+    {
+      "code": "300957",
+      "name": "贝泰妮",
+      "raw_score": 56.0,
+      "status": "中性",
+      "summary": "技术面中性（56.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.0,
+          "detail": "RSI 65，动量中性"
+        },
+        "volume": {
+          "score": 3.5,
+          "detail": "量比0.8，MFI中性"
+        },
+        "volatility": {
+          "score": 5.5,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度10%，20日换手43%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 47.53,
+        "MA10": 47.5,
+        "MA20": 45.06,
+        "MA60": 42.32,
+        "RSI": 65.22,
+        "KDJ_K": 60.53,
+        "KDJ_D": 68.26,
+        "MACD_DIF": 1.61,
+        "MACD_DEA": 1.46,
+        "BOLL_MID": 45.06,
+        "BOLL_BW": 23.14,
+        "VOL_RATIO": 0.79,
+        "TURNOVER_20D": 43.14,
+        "MFI": 73.82,
+        "MFMA": 76.0,
+        "chip_concentration": 9.721
+      }
+    },
+    {
+      "code": "301571",
+      "name": "国科天成",
+      "raw_score": 55.8,
+      "status": "中性",
+      "summary": "技术面中性（55.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.1,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.6,
+          "detail": "RSI 51回升"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度14%，20日换手47%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 55.21,
+        "MA10": 55.16,
+        "MA20": 56.34,
+        "MA60": 54.23,
+        "RSI": 50.93,
+        "KDJ_K": 36.56,
+        "KDJ_D": 27.38,
+        "MACD_DIF": -0.32,
+        "MACD_DEA": -0.08,
+        "BOLL_MID": 56.34,
+        "BOLL_BW": 10.64,
+        "VOL_RATIO": 1.06,
+        "TURNOVER_20D": 47.23,
+        "MFI": 47.95,
+        "MFMA": 44.01,
+        "chip_concentration": 13.612
+      }
+    },
+    {
+      "code": "605090",
+      "name": "九丰能源",
+      "raw_score": 55.8,
+      "status": "中性",
+      "summary": "技术面中性（55.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.6,
+          "detail": "RSI 51回升"
+        },
+        "volume": {
+          "score": 7.8,
+          "detail": "量比1.4，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度22%，20日换手57%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 43.98,
+        "MA10": 44.67,
+        "MA20": 46.65,
+        "MA60": 41.68,
+        "RSI": 51.15,
+        "KDJ_K": 28.16,
+        "KDJ_D": 18.43,
+        "MACD_DIF": -0.12,
+        "MACD_DEA": 0.4,
+        "BOLL_MID": 46.65,
+        "BOLL_BW": 22.9,
+        "VOL_RATIO": 1.43,
+        "TURNOVER_20D": 56.95,
+        "MFI": 30.94,
+        "MFMA": 24.34,
+        "chip_concentration": 22.493
+      }
+    },
+    {
+      "code": "600105",
+      "name": "永鼎股份",
+      "raw_score": 55.7,
+      "status": "中性",
+      "summary": "技术面中性（55.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.7,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 56回升"
+        },
+        "volume": {
+          "score": 4.1,
+          "detail": "量比0.8，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度6%，20日换手202%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 27.54,
+        "MA10": 27.34,
+        "MA20": 27.03,
+        "MA60": 23.77,
+        "RSI": 56.01,
+        "KDJ_K": 52.73,
+        "KDJ_D": 53.57,
+        "MACD_DIF": 0.64,
+        "MACD_DEA": 0.73,
+        "BOLL_MID": 27.03,
+        "BOLL_BW": 12.87,
+        "VOL_RATIO": 0.78,
+        "TURNOVER_20D": 202.0,
+        "MFI": 59.3,
+        "MFMA": 56.08,
+        "chip_concentration": 5.985
+      }
+    },
+    {
+      "code": "002202",
+      "name": "金风科技",
+      "raw_score": 55.7,
+      "status": "中性",
+      "summary": "技术面中性（55.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.7,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.6,
+          "detail": "RSI 56回升"
+        },
+        "volume": {
+          "score": 6.8,
+          "detail": "量比1.5，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度14%，20日换手164%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 25.77,
+        "MA10": 25.83,
+        "MA20": 26.54,
+        "MA60": 22.44,
+        "RSI": 55.62,
+        "KDJ_K": 48.29,
+        "KDJ_D": 32.69,
+        "MACD_DIF": 0.26,
+        "MACD_DEA": 0.53,
+        "BOLL_MID": 26.54,
+        "BOLL_BW": 19.4,
+        "VOL_RATIO": 1.53,
+        "TURNOVER_20D": 163.78,
+        "MFI": 50.32,
+        "MFMA": 46.03,
+        "chip_concentration": 14.286
+      }
+    },
+    {
+      "code": "688290",
+      "name": "景业智能",
+      "raw_score": 55.6,
+      "status": "中性",
+      "summary": "技术面中性（55.6/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.2,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 53，动量中性"
+        },
+        "volume": {
+          "score": 7.2,
+          "detail": "量比1.0，MFI金叉"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 2.5,
+          "detail": "筹码集中度11%，20日换手25%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 55.29,
+        "MA10": 54.43,
+        "MA20": 55.67,
+        "MA60": 58.62,
+        "RSI": 53.03,
+        "KDJ_K": 70.02,
+        "KDJ_D": 53.75,
+        "MACD_DIF": -1.08,
+        "MACD_DEA": -1.53,
+        "BOLL_MID": 55.67,
+        "BOLL_BW": 18.09,
+        "VOL_RATIO": 1.0,
+        "TURNOVER_20D": 25.37,
+        "MFI": 59.47,
+        "MFMA": 35.86,
+        "chip_concentration": 10.891
+      }
+    },
+    {
+      "code": "300774",
+      "name": "倍杰特",
+      "raw_score": 55.4,
+      "status": "中性",
+      "summary": "技术面中性（55.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.5,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 60回升"
+        },
+        "volume": {
+          "score": 6.8,
+          "detail": "量比1.6，MFI中性"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度12%，20日换手152%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 22.87,
+        "MA10": 22.39,
+        "MA20": 24.02,
+        "MA60": 21.69,
+        "RSI": 59.66,
+        "KDJ_K": 55.67,
+        "KDJ_D": 34.92,
+        "MACD_DIF": -0.07,
+        "MACD_DEA": 0.02,
+        "BOLL_MID": 24.02,
+        "BOLL_BW": 38.35,
+        "VOL_RATIO": 1.64,
+        "TURNOVER_20D": 152.18,
+        "MFI": 44.0,
+        "MFMA": 38.0,
+        "chip_concentration": 12.059
+      }
+    },
+    {
+      "code": "600262",
+      "name": "北方股份",
+      "raw_score": 54.8,
+      "status": "中性",
+      "summary": "技术面中性（54.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.6,
+          "detail": "多头排列"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 58，动量中性"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度14%，20日换手77%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 31.5,
+        "MA10": 30.76,
+        "MA20": 30.85,
+        "MA60": 27.69,
+        "RSI": 57.99,
+        "KDJ_K": 72.51,
+        "KDJ_D": 58.32,
+        "MACD_DIF": 0.87,
+        "MACD_DEA": 0.88,
+        "BOLL_MID": 30.85,
+        "BOLL_BW": 20.29,
+        "VOL_RATIO": 1.0,
+        "TURNOVER_20D": 76.98,
+        "MFI": 38.09,
+        "MFMA": 47.02,
+        "chip_concentration": 14.373
+      }
+    },
+    {
+      "code": "600346",
+      "name": "恒力石化",
+      "raw_score": 54.8,
+      "status": "中性",
+      "summary": "技术面中性（54.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.8,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 56回升"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比1.2，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度22%，20日换手14%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 25.28,
+        "MA10": 24.96,
+        "MA20": 25.35,
+        "MA60": 22.31,
+        "RSI": 56.25,
+        "KDJ_K": 59.36,
+        "KDJ_D": 52.73,
+        "MACD_DIF": 0.49,
+        "MACD_DEA": 0.64,
+        "BOLL_MID": 25.35,
+        "BOLL_BW": 11.49,
+        "VOL_RATIO": 1.2,
+        "TURNOVER_20D": 13.59,
+        "MFI": 60.88,
+        "MFMA": 58.31,
+        "chip_concentration": 22.338
+      }
+    },
+    {
+      "code": "000801",
+      "name": "四川九洲",
+      "raw_score": 54.7,
+      "status": "中性",
+      "summary": "技术面中性（54.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 7.6,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 59，动量中性"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度7%，20日换手43%"
+        },
+        "custom_signal": {
+          "score": 3.0,
+          "detail": "减仓信号(0天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "减仓",
+        "signal_date": "2026-02-25",
+        "is_strong": false,
+        "message": "▽ 均线汇聚减仓信号（v4，2026-02-25触发）"
+      },
+      "core_indicators": {
+        "MA5": 16.78,
+        "MA10": 16.3,
+        "MA20": 16.13,
+        "MA60": 16.6,
+        "RSI": 59.15,
+        "KDJ_K": 76.03,
+        "KDJ_D": 68.05,
+        "MACD_DIF": 0.03,
+        "MACD_DEA": -0.15,
+        "BOLL_MID": 16.13,
+        "BOLL_BW": 12.68,
+        "VOL_RATIO": 0.98,
+        "TURNOVER_20D": 42.83,
+        "MFI": 69.91,
+        "MFMA": 54.76,
+        "chip_concentration": 6.849
+      }
+    },
+    {
+      "code": "002149",
+      "name": "西部材料",
+      "raw_score": 54.6,
+      "status": "中性",
+      "summary": "技术面中性（54.6/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.3,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 5.1,
+          "detail": "RSI 53回升"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度8%，20日换手378%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 48.87,
+        "MA10": 51.29,
+        "MA20": 48.91,
+        "MA60": 39.07,
+        "RSI": 52.88,
+        "KDJ_K": 24.46,
+        "KDJ_D": 35.65,
+        "MACD_DIF": 2.01,
+        "MACD_DEA": 2.9,
+        "BOLL_MID": 48.91,
+        "BOLL_BW": 42.56,
+        "VOL_RATIO": 1.0,
+        "TURNOVER_20D": 378.0,
+        "MFI": 48.01,
+        "MFMA": 56.03,
+        "chip_concentration": 8.07
+      }
+    },
+    {
+      "code": "002064",
+      "name": "华峰化学",
+      "raw_score": 54.5,
+      "status": "中性",
+      "summary": "技术面中性（54.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.8,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 56回升"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.2，MFI中性"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度25%，20日换手22%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 12.36,
+        "MA10": 12.16,
+        "MA20": 12.51,
+        "MA60": 11.13,
+        "RSI": 55.82,
+        "KDJ_K": 66.75,
+        "KDJ_D": 55.64,
+        "MACD_DIF": 0.17,
+        "MACD_DEA": 0.23,
+        "BOLL_MID": 12.51,
+        "BOLL_BW": 22.34,
+        "VOL_RATIO": 1.17,
+        "TURNOVER_20D": 22.09,
+        "MFI": 54.97,
+        "MFMA": 54.02,
+        "chip_concentration": 24.59
+      }
+    },
+    {
+      "code": "002414",
+      "name": "高德红外",
+      "raw_score": 54.4,
+      "status": "中性",
+      "summary": "技术面中性（54.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.1,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.6,
+          "detail": "RSI 54回升"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.2，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度20%，20日换手45%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 16.72,
+        "MA10": 16.69,
+        "MA20": 17.06,
+        "MA60": 15.17,
+        "RSI": 53.79,
+        "KDJ_K": 43.77,
+        "KDJ_D": 39.2,
+        "MACD_DIF": 0.17,
+        "MACD_DEA": 0.3,
+        "BOLL_MID": 17.06,
+        "BOLL_BW": 15.54,
+        "VOL_RATIO": 1.24,
+        "TURNOVER_20D": 44.91,
+        "MFI": 28.22,
+        "MFMA": 34.51,
+        "chip_concentration": 19.604
+      }
+    },
+    {
+      "code": "002126",
+      "name": "银轮股份",
+      "raw_score": 54.3,
+      "status": "中性",
+      "summary": "技术面中性（54.3/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.3,
+          "detail": "RSI 62，动量中性"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比0.7，MFI中性"
+        },
+        "volatility": {
+          "score": 5.5,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度17%，20日换手78%"
+        },
+        "custom_signal": {
+          "score": 3.0,
+          "detail": "减仓信号(3天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "减仓",
+        "signal_date": "2026-02-12",
+        "is_strong": false,
+        "message": "▽ 均线汇聚减仓信号（v4，2026-02-12触发）"
+      },
+      "core_indicators": {
+        "MA5": 46.82,
+        "MA10": 45.77,
+        "MA20": 42.28,
+        "MA60": 38.35,
+        "RSI": 61.71,
+        "KDJ_K": 68.72,
+        "KDJ_D": 75.2,
+        "MACD_DIF": 2.31,
+        "MACD_DEA": 1.86,
+        "BOLL_MID": 42.28,
+        "BOLL_BW": 36.27,
+        "VOL_RATIO": 0.73,
+        "TURNOVER_20D": 78.12,
+        "MFI": 64.5,
+        "MFMA": 59.91,
+        "chip_concentration": 16.544
+      }
+    },
+    {
+      "code": "001277",
+      "name": "速达股份",
+      "raw_score": 54.2,
+      "status": "中性",
+      "summary": "技术面中性（54.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.6,
+          "detail": "多头排列"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 55，动量中性"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度10%，20日换手96%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(加仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 41.82,
+        "MA10": 41.72,
+        "MA20": 41.79,
+        "MA60": 40.28,
+        "RSI": 54.52,
+        "KDJ_K": 54.31,
+        "KDJ_D": 50.78,
+        "MACD_DIF": 0.28,
+        "MACD_DEA": 0.3,
+        "BOLL_MID": 41.79,
+        "BOLL_BW": 11.83,
+        "VOL_RATIO": 0.88,
+        "TURNOVER_20D": 96.05,
+        "MFI": 58.79,
+        "MFMA": 58.76,
+        "chip_concentration": 10.209
+      }
+    },
+    {
+      "code": "000630",
+      "name": "铜陵有色",
+      "raw_score": 54.0,
+      "status": "中性",
+      "summary": "技术面中性（54.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.8,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 60回升"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比1.3，MFI中性"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度22%，20日换手136%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 7.34,
+        "MA10": 7.3,
+        "MA20": 7.43,
+        "MA60": 6.21,
+        "RSI": 59.7,
+        "KDJ_K": 52.33,
+        "KDJ_D": 37.42,
+        "MACD_DIF": 0.28,
+        "MACD_DEA": 0.35,
+        "BOLL_MID": 7.43,
+        "BOLL_BW": 35.73,
+        "VOL_RATIO": 1.28,
+        "TURNOVER_20D": 136.42,
+        "MFI": 68.26,
+        "MFMA": 73.15,
+        "chip_concentration": 22.432
+      }
+    },
+    {
+      "code": "688651",
+      "name": "盛邦安全",
+      "raw_score": 53.8,
+      "status": "中性",
+      "summary": "技术面中性（53.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.6,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 5.1,
+          "detail": "RSI 49回升"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度9%，20日换手132%"
+        },
+        "custom_signal": {
+          "score": 8.0,
+          "detail": "v4加仓信号(1天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "加仓",
+        "signal_date": "2026-02-24",
+        "is_strong": false,
+        "message": "△ 均线汇聚加仓信号（v4，2026-02-24触发）"
+      },
+      "core_indicators": {
+        "MA5": 49.34,
+        "MA10": 49.23,
+        "MA20": 49.58,
+        "MA60": 46.27,
+        "RSI": 48.63,
+        "KDJ_K": 43.05,
+        "KDJ_D": 48.37,
+        "MACD_DIF": 0.1,
+        "MACD_DEA": 0.39,
+        "BOLL_MID": 49.58,
+        "BOLL_BW": 16.04,
+        "VOL_RATIO": 1.1,
+        "TURNOVER_20D": 132.33,
+        "MFI": 42.71,
+        "MFMA": 39.89,
+        "chip_concentration": 9.068
+      }
+    },
+    {
+      "code": "300213",
+      "name": "佳讯飞鸿",
+      "raw_score": 53.8,
+      "status": "中性",
+      "summary": "技术面中性（53.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 3.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.7,
+          "detail": "RSI 48回升，KDJ金叉"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度7%，20日换手67%"
+        },
+        "custom_signal": {
+          "score": 8.0,
+          "detail": "v4加仓信号(1天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "加仓",
+        "signal_date": "2026-02-24",
+        "is_strong": false,
+        "message": "△ 均线汇聚加仓信号（v4，2026-02-24触发）"
+      },
+      "core_indicators": {
+        "MA5": 9.29,
+        "MA10": 9.3,
+        "MA20": 9.44,
+        "MA60": 9.37,
+        "RSI": 47.79,
+        "KDJ_K": 40.04,
+        "KDJ_D": 39.66,
+        "MACD_DIF": -0.08,
+        "MACD_DEA": -0.07,
+        "BOLL_MID": 9.44,
+        "BOLL_BW": 10.11,
+        "VOL_RATIO": 1.11,
+        "TURNOVER_20D": 67.4,
+        "MFI": 40.72,
+        "MFMA": 42.14,
+        "chip_concentration": 6.776
+      }
+    },
+    {
+      "code": "600257",
+      "name": "大湖股份",
+      "raw_score": 53.8,
+      "status": "中性",
+      "summary": "技术面中性（53.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.5,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 59回升"
+        },
+        "volume": {
+          "score": 4.4,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度10%，20日换手102%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 7.27,
+        "MA10": 7.23,
+        "MA20": 7.32,
+        "MA60": 6.79,
+        "RSI": 59.36,
+        "KDJ_K": 53.29,
+        "KDJ_D": 40.91,
+        "MACD_DIF": 0.08,
+        "MACD_DEA": 0.1,
+        "BOLL_MID": 7.32,
+        "BOLL_BW": 11.47,
+        "VOL_RATIO": 0.85,
+        "TURNOVER_20D": 101.52,
+        "MFI": 66.07,
+        "MFMA": 53.32,
+        "chip_concentration": 9.837
+      }
+    },
+    {
+      "code": "001309",
+      "name": "德明利",
+      "raw_score": 53.8,
+      "status": "中性",
+      "summary": "技术面中性（53.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.1,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 51，动量中性"
+        },
+        "volume": {
+          "score": 7.2,
+          "detail": "量比0.9，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度10%，20日换手132%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 246.37,
+        "MA10": 242.63,
+        "MA20": 257.59,
+        "MA60": 236.46,
+        "RSI": 50.73,
+        "KDJ_K": 60.5,
+        "KDJ_D": 42.52,
+        "MACD_DIF": -0.93,
+        "MACD_DEA": 0.48,
+        "BOLL_MID": 257.59,
+        "BOLL_BW": 27.86,
+        "VOL_RATIO": 0.87,
+        "TURNOVER_20D": 132.09,
+        "MFI": 27.91,
+        "MFMA": 25.86,
+        "chip_concentration": 10.136
+      }
+    },
+    {
+      "code": "603088",
+      "name": "宁波精达",
+      "raw_score": 53.6,
+      "status": "中性",
+      "summary": "技术面中性（53.6/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.8,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 73偏弱"
+        },
+        "volume": {
+          "score": 2.9,
+          "detail": "量比0.8，MFI死叉"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度13%，20日换手89%"
+        },
+        "custom_signal": {
+          "score": 3.0,
+          "detail": "减仓信号(3天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "减仓",
+        "signal_date": "2026-02-12",
+        "is_strong": false,
+        "message": "▽ 均线汇聚减仓信号（v4，2026-02-12触发）"
+      },
+      "core_indicators": {
+        "MA5": 12.71,
+        "MA10": 12.1,
+        "MA20": 11.76,
+        "MA60": 10.87,
+        "RSI": 73.0,
+        "KDJ_K": 79.76,
+        "KDJ_D": 74.85,
+        "MACD_DIF": 0.48,
+        "MACD_DEA": 0.3,
+        "BOLL_MID": 11.76,
+        "BOLL_BW": 23.57,
+        "VOL_RATIO": 0.77,
+        "TURNOVER_20D": 89.16,
+        "MFI": 80.99,
+        "MFMA": 60.88,
+        "chip_concentration": 13.144
+      }
+    },
+    {
+      "code": "300926",
+      "name": "博俊科技",
+      "raw_score": 53.1,
+      "status": "中性",
+      "summary": "技术面中性（53.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.0,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 43，动量中性"
+        },
+        "volume": {
+          "score": 6.6,
+          "detail": "量比1.0，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度7%，20日换手37%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(买入)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 30.06,
+        "MA10": 29.86,
+        "MA20": 30.48,
+        "MA60": 30.87,
+        "RSI": 42.52,
+        "KDJ_K": 63.02,
+        "KDJ_D": 53.92,
+        "MACD_DIF": -0.44,
+        "MACD_DEA": -0.47,
+        "BOLL_MID": 30.48,
+        "BOLL_BW": 13.33,
+        "VOL_RATIO": 0.99,
+        "TURNOVER_20D": 36.66,
+        "MFI": 47.61,
+        "MFMA": 37.68,
+        "chip_concentration": 7.111
+      }
+    },
+    {
+      "code": "002465",
+      "name": "海格通信",
+      "raw_score": 53.0,
+      "status": "中性",
+      "summary": "技术面中性（53.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.7,
+          "detail": "RSI 49回升，KDJ金叉"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度11%，20日换手168%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 17.14,
+        "MA10": 17.38,
+        "MA20": 17.6,
+        "MA60": 16.17,
+        "RSI": 49.25,
+        "KDJ_K": 31.82,
+        "KDJ_D": 29.38,
+        "MACD_DIF": -0.14,
+        "MACD_DEA": 0.03,
+        "BOLL_MID": 17.6,
+        "BOLL_BW": 13.03,
+        "VOL_RATIO": 0.96,
+        "TURNOVER_20D": 168.05,
+        "MFI": 55.2,
+        "MFMA": 45.97,
+        "chip_concentration": 11.25
+      }
+    },
+    {
+      "code": "603617",
+      "name": "君禾股份",
+      "raw_score": 52.8,
+      "status": "中性",
+      "summary": "技术面中性（52.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.4,
+          "detail": "均线缠绕"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 54，动量中性"
+        },
+        "volume": {
+          "score": 6.6,
+          "detail": "量比0.9，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度5%，20日换手42%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(买入)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 7.78,
+        "MA10": 7.79,
+        "MA20": 7.79,
+        "MA60": 7.58,
+        "RSI": 54.31,
+        "KDJ_K": 67.56,
+        "KDJ_D": 62.33,
+        "MACD_DIF": 0.03,
+        "MACD_DEA": 0.03,
+        "BOLL_MID": 7.79,
+        "BOLL_BW": 5.98,
+        "VOL_RATIO": 0.93,
+        "TURNOVER_20D": 41.67,
+        "MFI": 43.73,
+        "MFMA": 32.03,
+        "chip_concentration": 5.195
+      }
+    },
+    {
+      "code": "688776",
+      "name": "国光电气",
+      "raw_score": 52.6,
+      "status": "中性",
+      "summary": "技术面中性（52.6/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.1,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 46回升"
+        },
+        "volume": {
+          "score": 4.4,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度20%，20日换手56%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 107.36,
+        "MA10": 110.7,
+        "MA20": 109.82,
+        "MA60": 103.42,
+        "RSI": 46.15,
+        "KDJ_K": 24.51,
+        "KDJ_D": 37.34,
+        "MACD_DIF": -0.28,
+        "MACD_DEA": 0.76,
+        "BOLL_MID": 109.82,
+        "BOLL_BW": 16.02,
+        "VOL_RATIO": 0.89,
+        "TURNOVER_20D": 56.49,
+        "MFI": 55.17,
+        "MFMA": 53.74,
+        "chip_concentration": 19.613
+      }
+    },
+    {
+      "code": "301505",
+      "name": "苏州规划",
+      "raw_score": 52.1,
+      "status": "中性",
+      "summary": "技术面中性（52.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.6,
+          "detail": "RSI 53回升"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比0.8，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度12%，20日换手115%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(加仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 25.08,
+        "MA10": 25.09,
+        "MA20": 25.64,
+        "MA60": 23.47,
+        "RSI": 53.1,
+        "KDJ_K": 35.49,
+        "KDJ_D": 23.41,
+        "MACD_DIF": 0.24,
+        "MACD_DEA": 0.42,
+        "BOLL_MID": 25.64,
+        "BOLL_BW": 11.19,
+        "VOL_RATIO": 0.79,
+        "TURNOVER_20D": 114.65,
+        "MFI": 50.17,
+        "MFMA": 47.35,
+        "chip_concentration": 11.95
+      }
+    },
+    {
+      "code": "688226",
+      "name": "威腾电气",
+      "raw_score": 51.7,
+      "status": "中性",
+      "summary": "技术面中性（51.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.6,
+          "detail": "RSI 51回升"
+        },
+        "volume": {
+          "score": 4.4,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度15%，20日换手34%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 38.62,
+        "MA10": 38.68,
+        "MA20": 39.31,
+        "MA60": 38.04,
+        "RSI": 51.04,
+        "KDJ_K": 43.18,
+        "KDJ_D": 37.16,
+        "MACD_DIF": -0.18,
+        "MACD_DEA": -0.11,
+        "BOLL_MID": 39.31,
+        "BOLL_BW": 13.07,
+        "VOL_RATIO": 0.98,
+        "TURNOVER_20D": 33.73,
+        "MFI": 53.81,
+        "MFMA": 40.98,
+        "chip_concentration": 14.642
+      }
+    },
+    {
+      "code": "300768",
+      "name": "迪普科技",
+      "raw_score": 51.4,
+      "status": "中性",
+      "summary": "技术面中性（51.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.9,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 48回升"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比0.6，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度12%，20日换手34%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 19.2,
+        "MA10": 18.82,
+        "MA20": 18.98,
+        "MA60": 19.15,
+        "RSI": 47.8,
+        "KDJ_K": 53.69,
+        "KDJ_D": 52.79,
+        "MACD_DIF": -0.09,
+        "MACD_DEA": -0.15,
+        "BOLL_MID": 18.98,
+        "BOLL_BW": 11.45,
+        "VOL_RATIO": 0.64,
+        "TURNOVER_20D": 33.88,
+        "MFI": 47.93,
+        "MFMA": 48.52,
+        "chip_concentration": 12.251
+      }
+    },
+    {
+      "code": "600446",
+      "name": "金证股份",
+      "raw_score": 51.2,
+      "status": "中性",
+      "summary": "技术面中性（51.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 2.1,
+          "detail": "空头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 7.4,
+          "detail": "RSI 43回升，KDJ金叉"
+        },
+        "volume": {
+          "score": 7.8,
+          "detail": "量比1.1，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度13%，20日换手34%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 15.17,
+        "MA10": 15.24,
+        "MA20": 15.58,
+        "MA60": 15.84,
+        "RSI": 42.92,
+        "KDJ_K": 29.64,
+        "KDJ_D": 19.69,
+        "MACD_DIF": -0.29,
+        "MACD_DEA": -0.26,
+        "BOLL_MID": 15.58,
+        "BOLL_BW": 11.52,
+        "VOL_RATIO": 1.12,
+        "TURNOVER_20D": 34.35,
+        "MFI": 33.48,
+        "MFMA": 26.64,
+        "chip_concentration": 12.608
+      }
+    },
+    {
+      "code": "603859",
+      "name": "能科科技",
+      "raw_score": 51.1,
+      "status": "中性",
+      "summary": "技术面中性（51.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.1,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 51，动量中性"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比0.6，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度17%，20日换手81%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 47.63,
+        "MA10": 46.81,
+        "MA20": 47.74,
+        "MA60": 44.4,
+        "RSI": 51.17,
+        "KDJ_K": 65.27,
+        "KDJ_D": 54.56,
+        "MACD_DIF": 0.21,
+        "MACD_DEA": 0.36,
+        "BOLL_MID": 47.74,
+        "BOLL_BW": 13.06,
+        "VOL_RATIO": 0.64,
+        "TURNOVER_20D": 81.1,
+        "MFI": 43.29,
+        "MFMA": 34.39,
+        "chip_concentration": 16.667
+      }
+    },
+    {
+      "code": "300553",
+      "name": "集智股份",
+      "raw_score": 50.9,
+      "status": "中性",
+      "summary": "技术面中性（50.9/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 5.3,
+          "detail": "RSI 47回升，KDJ死叉"
+        },
+        "volume": {
+          "score": 5.9,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度14%，20日换手82%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 42.77,
+        "MA10": 42.78,
+        "MA20": 43.68,
+        "MA60": 40.99,
+        "RSI": 47.19,
+        "KDJ_K": 35.85,
+        "KDJ_D": 36.84,
+        "MACD_DIF": -0.14,
+        "MACD_DEA": 0.15,
+        "BOLL_MID": 43.68,
+        "BOLL_BW": 14.57,
+        "VOL_RATIO": 1.05,
+        "TURNOVER_20D": 81.91,
+        "MFI": 32.02,
+        "MFMA": 32.35,
+        "chip_concentration": 13.71
+      }
+    },
+    {
+      "code": "600988",
+      "name": "赤峰黄金",
+      "raw_score": 50.8,
+      "status": "中性",
+      "summary": "技术面中性（50.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.1,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 55，动量中性"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度22%，20日换手123%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 38.46,
+        "MA10": 37.86,
+        "MA20": 39.76,
+        "MA60": 34.35,
+        "RSI": 55.07,
+        "KDJ_K": 62.98,
+        "KDJ_D": 45.94,
+        "MACD_DIF": 0.86,
+        "MACD_DEA": 1.24,
+        "BOLL_MID": 39.76,
+        "BOLL_BW": 31.89,
+        "VOL_RATIO": 1.07,
+        "TURNOVER_20D": 122.53,
+        "MFI": 49.28,
+        "MFMA": 60.19,
+        "chip_concentration": 21.55
+      }
+    },
+    {
+      "code": "688137",
+      "name": "近岸蛋白",
+      "raw_score": 50.8,
+      "status": "中性",
+      "summary": "技术面中性（50.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 5.3,
+          "detail": "RSI 47，动量中性"
+        },
+        "volume": {
+          "score": 6.6,
+          "detail": "量比1.0，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度11%，20日换手89%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 43.65,
+        "MA10": 43.77,
+        "MA20": 45.55,
+        "MA60": 43.07,
+        "RSI": 46.91,
+        "KDJ_K": 45.02,
+        "KDJ_D": 38.72,
+        "MACD_DIF": -0.29,
+        "MACD_DEA": 0.01,
+        "BOLL_MID": 45.55,
+        "BOLL_BW": 25.33,
+        "VOL_RATIO": 0.96,
+        "TURNOVER_20D": 89.18,
+        "MFI": 34.43,
+        "MFMA": 34.26,
+        "chip_concentration": 11.173
+      }
+    },
+    {
+      "code": "600570",
+      "name": "恒生电子",
+      "raw_score": 50.7,
+      "status": "中性",
+      "summary": "技术面中性（50.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 3.9,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.6,
+          "detail": "RSI 43回升"
+        },
+        "volume": {
+          "score": 6.0,
+          "detail": "量比0.9，MFI金叉"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度10%，20日换手37%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(加仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 30.41,
+        "MA10": 30.37,
+        "MA20": 31.11,
+        "MA60": 30.59,
+        "RSI": 42.72,
+        "KDJ_K": 40.55,
+        "KDJ_D": 38.9,
+        "MACD_DIF": -0.33,
+        "MACD_DEA": -0.19,
+        "BOLL_MID": 31.11,
+        "BOLL_BW": 12.56,
+        "VOL_RATIO": 0.89,
+        "TURNOVER_20D": 37.38,
+        "MFI": 17.82,
+        "MFMA": 26.91,
+        "chip_concentration": 10.046
+      }
+    },
+    {
+      "code": "300212",
+      "name": "易华录",
+      "raw_score": 50.5,
+      "status": "中性",
+      "summary": "技术面中性（50.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.0,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "KDJ死叉"
+        },
+        "volume": {
+          "score": 4.1,
+          "detail": "量比0.6，MFI中性"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 4.6,
+          "detail": "筹码集中度30%，20日换手106%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 13.05,
+        "MA10": 12.84,
+        "MA20": 14.01,
+        "MA60": 16.68,
+        "RSI": 37.08,
+        "KDJ_K": 43.92,
+        "KDJ_D": 45.66,
+        "MACD_DIF": -1.21,
+        "MACD_DEA": -1.23,
+        "BOLL_MID": 14.01,
+        "BOLL_BW": 46.86,
+        "VOL_RATIO": 0.64,
+        "TURNOVER_20D": 105.79,
+        "MFI": 48.8,
+        "MFMA": 52.91,
+        "chip_concentration": 30.435
+      }
+    },
+    {
+      "code": "600941",
+      "name": "中国移动",
+      "raw_score": 50.5,
+      "status": "中性",
+      "summary": "技术面中性（50.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.2,
+          "detail": "空头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.1,
+          "detail": "RSI 43，动量中性"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度8%，20日换手32%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 93.79,
+        "MA10": 94.24,
+        "MA20": 94.65,
+        "MA60": 99.98,
+        "RSI": 43.25,
+        "KDJ_K": 46.92,
+        "KDJ_D": 44.09,
+        "MACD_DIF": -1.36,
+        "MACD_DEA": -1.58,
+        "BOLL_MID": 94.65,
+        "BOLL_BW": 5.48,
+        "VOL_RATIO": 1.03,
+        "TURNOVER_20D": 31.54,
+        "MFI": 49.33,
+        "MFMA": 46.47,
+        "chip_concentration": 7.623
+      }
+    },
+    {
+      "code": "688053",
+      "name": "ST思科瑞",
+      "raw_score": 50.5,
+      "status": "中性",
+      "summary": "技术面中性（50.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.4,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 4.6,
+          "detail": "RSI 51回升"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度28%，20日换手33%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 45.25,
+        "MA10": 45.07,
+        "MA20": 45.07,
+        "MA60": 39.94,
+        "RSI": 51.01,
+        "KDJ_K": 50.02,
+        "KDJ_D": 58.99,
+        "MACD_DIF": 0.67,
+        "MACD_DEA": 1.04,
+        "BOLL_MID": 45.07,
+        "BOLL_BW": 11.59,
+        "VOL_RATIO": 1.08,
+        "TURNOVER_20D": 33.16,
+        "MFI": 58.23,
+        "MFMA": 56.57,
+        "chip_concentration": 28.045
+      }
+    },
+    {
+      "code": "300984",
+      "name": "金沃股份",
+      "raw_score": 50.5,
+      "status": "中性",
+      "summary": "技术面中性（50.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 3.9,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 41回升"
+        },
+        "volume": {
+          "score": 5.9,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 6.5,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度15%，20日换手56%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 72.4,
+        "MA10": 73.68,
+        "MA20": 75.48,
+        "MA60": 72.17,
+        "RSI": 41.32,
+        "KDJ_K": 17.93,
+        "KDJ_D": 20.31,
+        "MACD_DIF": -1.14,
+        "MACD_DEA": -0.42,
+        "BOLL_MID": 75.48,
+        "BOLL_BW": 15.88,
+        "VOL_RATIO": 1.06,
+        "TURNOVER_20D": 55.99,
+        "MFI": 33.56,
+        "MFMA": 37.62,
+        "chip_concentration": 15.483
+      }
+    },
+    {
+      "code": "300836",
+      "name": "佰奥智能",
+      "raw_score": 50.0,
+      "status": "中性",
+      "summary": "技术面中性（50.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.1,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 51，动量中性"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.2，MFI中性"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度15%，20日换手65%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 60.39,
+        "MA10": 59.72,
+        "MA20": 62.01,
+        "MA60": 57.14,
+        "RSI": 50.69,
+        "KDJ_K": 66.45,
+        "KDJ_D": 57.08,
+        "MACD_DIF": 0.23,
+        "MACD_DEA": 0.55,
+        "BOLL_MID": 62.01,
+        "BOLL_BW": 24.46,
+        "VOL_RATIO": 1.24,
+        "TURNOVER_20D": 64.85,
+        "MFI": 42.83,
+        "MFMA": 43.12,
+        "chip_concentration": 14.968
+      }
+    },
+    {
+      "code": "603087",
+      "name": "甘李药业",
+      "raw_score": 49.9,
+      "status": "中性",
+      "summary": "技术面中性（49.9/100）",
+      "dimensions": {
+        "trend": {
+          "score": 3.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.6,
+          "detail": "RSI 48回升"
+        },
+        "volume": {
+          "score": 6.3,
+          "detail": "量比1.2，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度10%，20日换手25%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 66.03,
+        "MA10": 66.3,
+        "MA20": 67.99,
+        "MA60": 67.16,
+        "RSI": 47.79,
+        "KDJ_K": 42.39,
+        "KDJ_D": 30.66,
+        "MACD_DIF": -0.81,
+        "MACD_DEA": -0.61,
+        "BOLL_MID": 67.99,
+        "BOLL_BW": 13.93,
+        "VOL_RATIO": 1.17,
+        "TURNOVER_20D": 24.92,
+        "MFI": 43.1,
+        "MFMA": 33.68,
+        "chip_concentration": 10.0
+      }
+    },
+    {
+      "code": "002003",
+      "name": "伟星股份",
+      "raw_score": 49.5,
+      "status": "中性",
+      "summary": "技术面中性（49.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.8,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 47，动量中性"
+        },
+        "volume": {
+          "score": 4.0,
+          "detail": "量比1.4，MFI中性"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度5%，20日换手21%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 10.57,
+        "MA10": 10.63,
+        "MA20": 10.45,
+        "MA60": 10.6,
+        "RSI": 47.48,
+        "KDJ_K": 44.45,
+        "KDJ_D": 60.18,
+        "MACD_DIF": 0.03,
+        "MACD_DEA": 0.02,
+        "BOLL_MID": 10.45,
+        "BOLL_BW": 8.1,
+        "VOL_RATIO": 1.38,
+        "TURNOVER_20D": 20.73,
+        "MFI": 71.28,
+        "MFMA": 72.89,
+        "chip_concentration": 5.376
+      }
+    },
+    {
+      "code": "002029",
+      "name": "七匹狼",
+      "raw_score": 49.3,
+      "status": "中性",
+      "summary": "技术面中性（49.3/100）",
+      "dimensions": {
+        "trend": {
+          "score": 3.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 43回升"
+        },
+        "volume": {
+          "score": 6.3,
+          "detail": "量比0.7，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.5,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度12%，20日换手56%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 11.38,
+        "MA10": 11.76,
+        "MA20": 11.98,
+        "MA60": 11.72,
+        "RSI": 42.52,
+        "KDJ_K": 18.59,
+        "KDJ_D": 21.66,
+        "MACD_DIF": -0.19,
+        "MACD_DEA": -0.07,
+        "BOLL_MID": 11.98,
+        "BOLL_BW": 15.77,
+        "VOL_RATIO": 0.67,
+        "TURNOVER_20D": 55.96,
+        "MFI": 31.29,
+        "MFMA": 27.06,
+        "chip_concentration": 11.981
+      }
+    },
+    {
+      "code": "688656",
+      "name": "浩欧博",
+      "raw_score": 49.3,
+      "status": "中性",
+      "summary": "技术面中性（49.3/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 36，动量中性"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比0.7，MFI中性"
+        },
+        "volatility": {
+          "score": 7.5,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度23%，20日换手19%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 142.42,
+        "MA10": 142.13,
+        "MA20": 143.91,
+        "MA60": 169.25,
+        "RSI": 35.76,
+        "KDJ_K": 29.4,
+        "KDJ_D": 33.9,
+        "MACD_DIF": -5.35,
+        "MACD_DEA": -6.29,
+        "BOLL_MID": 143.91,
+        "BOLL_BW": 9.18,
+        "VOL_RATIO": 0.74,
+        "TURNOVER_20D": 18.98,
+        "MFI": 47.58,
+        "MFMA": 45.39,
+        "chip_concentration": 22.693
+      }
+    },
+    {
+      "code": "603305",
+      "name": "旭升集团",
+      "raw_score": 49.3,
+      "status": "中性",
+      "summary": "技术面中性（49.3/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 45回升"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度14%，20日换手84%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 17.37,
+        "MA10": 17.68,
+        "MA20": 18.36,
+        "MA60": 16.5,
+        "RSI": 44.65,
+        "KDJ_K": 11.33,
+        "KDJ_D": 14.15,
+        "MACD_DIF": -0.11,
+        "MACD_DEA": 0.14,
+        "BOLL_MID": 18.36,
+        "BOLL_BW": 23.05,
+        "VOL_RATIO": 0.87,
+        "TURNOVER_20D": 84.04,
+        "MFI": 27.93,
+        "MFMA": 29.97,
+        "chip_concentration": 13.534
+      }
+    },
+    {
+      "code": "300339",
+      "name": "润和软件",
+      "raw_score": 49.2,
+      "status": "中性",
+      "summary": "技术面中性（49.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 3.0,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.6,
+          "detail": "RSI 42回升"
+        },
+        "volume": {
+          "score": 6.0,
+          "detail": "量比0.9，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度9%，20日换手56%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 49.33,
+        "MA10": 49.33,
+        "MA20": 50.78,
+        "MA60": 51.14,
+        "RSI": 42.49,
+        "KDJ_K": 45.87,
+        "KDJ_D": 39.37,
+        "MACD_DIF": -0.96,
+        "MACD_DEA": -0.82,
+        "BOLL_MID": 50.78,
+        "BOLL_BW": 15.95,
+        "VOL_RATIO": 0.92,
+        "TURNOVER_20D": 55.77,
+        "MFI": 26.53,
+        "MFMA": 24.22,
+        "chip_concentration": 9.209
+      }
+    },
+    {
+      "code": "002045",
+      "name": "国光电器",
+      "raw_score": 49.0,
+      "status": "中性",
+      "summary": "技术面中性（49.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.2,
+          "detail": "空头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 45，动量中性"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.2，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度7%，20日换手40%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 13.85,
+        "MA10": 13.89,
+        "MA20": 14.03,
+        "MA60": 14.34,
+        "RSI": 44.7,
+        "KDJ_K": 50.87,
+        "KDJ_D": 48.32,
+        "MACD_DIF": -0.17,
+        "MACD_DEA": -0.18,
+        "BOLL_MID": 14.03,
+        "BOLL_BW": 9.69,
+        "VOL_RATIO": 1.21,
+        "TURNOVER_20D": 39.6,
+        "MFI": 49.78,
+        "MFMA": 34.2,
+        "chip_concentration": 6.991
+      }
+    },
+    {
+      "code": "600846",
+      "name": "同济科技",
+      "raw_score": 49.0,
+      "status": "中性",
+      "summary": "技术面中性（49.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.2,
+          "detail": "空头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 43，动量中性"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.7，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 2.5,
+          "detail": "筹码集中度23%，20日换手16%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 12.98,
+        "MA10": 13.06,
+        "MA20": 13.21,
+        "MA60": 14.43,
+        "RSI": 42.76,
+        "KDJ_K": 53.14,
+        "KDJ_D": 51.55,
+        "MACD_DIF": -0.28,
+        "MACD_DEA": -0.32,
+        "BOLL_MID": 13.21,
+        "BOLL_BW": 12.83,
+        "VOL_RATIO": 1.72,
+        "TURNOVER_20D": 15.96,
+        "MFI": 60.85,
+        "MFMA": 48.97,
+        "chip_concentration": 23.077
+      }
+    },
+    {
+      "code": "600741",
+      "name": "华域汽车",
+      "raw_score": 48.9,
+      "status": "中性",
+      "summary": "技术面中性（48.9/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.0,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.5,
+          "detail": "RSI 48，动量中性"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比1.3，MFI中性"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "布林中轨附近，带宽急扩"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度5%，20日换手10%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 19.29,
+        "MA10": 19.19,
+        "MA20": 19.42,
+        "MA60": 19.78,
+        "RSI": 47.77,
+        "KDJ_K": 74.33,
+        "KDJ_D": 66.75,
+        "MACD_DIF": -0.2,
+        "MACD_DEA": -0.24,
+        "BOLL_MID": 19.42,
+        "BOLL_BW": 12.67,
+        "VOL_RATIO": 1.26,
+        "TURNOVER_20D": 10.26,
+        "MFI": 60.97,
+        "MFMA": 45.52,
+        "chip_concentration": 5.433
+      }
+    },
+    {
+      "code": "688663",
+      "name": "新风光",
+      "raw_score": 48.4,
+      "status": "中性",
+      "summary": "技术面中性（48.4/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.6,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 3.2,
+          "detail": "KDJ死叉"
+        },
+        "volume": {
+          "score": 4.5,
+          "detail": "量比1.2，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度19%，20日换手60%"
+        },
+        "custom_signal": {
+          "score": 10.0,
+          "detail": "v4买入信号(1天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "买入",
+        "signal_date": "2026-02-24",
+        "is_strong": false,
+        "message": "★ 均线汇聚买入信号（v4，2026-02-24触发）"
+      },
+      "core_indicators": {
+        "MA5": 56.0,
+        "MA10": 55.85,
+        "MA20": 56.12,
+        "MA60": 46.95,
+        "RSI": 55.54,
+        "KDJ_K": 47.68,
+        "KDJ_D": 49.8,
+        "MACD_DIF": 2.04,
+        "MACD_DEA": 2.65,
+        "BOLL_MID": 56.12,
+        "BOLL_BW": 7.48,
+        "VOL_RATIO": 1.18,
+        "TURNOVER_20D": 60.48,
+        "MFI": 53.13,
+        "MFMA": 49.19,
+        "chip_concentration": 18.908
+      }
+    },
+    {
+      "code": "603833",
+      "name": "欧派家居",
+      "raw_score": 48.1,
+      "status": "中性",
+      "summary": "技术面中性（48.1/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.6,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 5.1,
+          "detail": "RSI 54回升"
+        },
+        "volume": {
+          "score": 5.0,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度10%，20日换手11%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 58.97,
+        "MA10": 60.04,
+        "MA20": 59.43,
+        "MA60": 54.57,
+        "RSI": 53.51,
+        "KDJ_K": 21.93,
+        "KDJ_D": 32.48,
+        "MACD_DIF": 1.11,
+        "MACD_DEA": 1.59,
+        "BOLL_MID": 59.43,
+        "BOLL_BW": 10.69,
+        "VOL_RATIO": 0.88,
+        "TURNOVER_20D": 10.59,
+        "MFI": 52.41,
+        "MFMA": 61.84,
+        "chip_concentration": 9.74
+      }
+    },
+    {
+      "code": "300033",
+      "name": "同花顺",
+      "raw_score": 47.8,
+      "status": "中性",
+      "summary": "技术面中性（47.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 3.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 44回升"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.2，MFI中性"
+        },
+        "volatility": {
+          "score": 6.5,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度12%，20日换手58%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 337.88,
+        "MA10": 344.68,
+        "MA20": 349.66,
+        "MA60": 339.67,
+        "RSI": 43.52,
+        "KDJ_K": 15.65,
+        "KDJ_D": 17.99,
+        "MACD_DIF": -3.86,
+        "MACD_DEA": -0.89,
+        "BOLL_MID": 349.66,
+        "BOLL_BW": 10.27,
+        "VOL_RATIO": 1.18,
+        "TURNOVER_20D": 58.43,
+        "MFI": 44.35,
+        "MFMA": 45.1,
+        "chip_concentration": 11.539
+      }
+    },
+    {
+      "code": "600933",
+      "name": "爱柯迪",
+      "raw_score": 47.5,
+      "status": "中性",
+      "summary": "技术面中性（47.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 2.1,
+          "detail": "空头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.7,
+          "detail": "RSI 44回升，KDJ金叉"
+        },
+        "volume": {
+          "score": 6.6,
+          "detail": "量比0.8，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度11%，20日换手31%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 18.49,
+        "MA10": 18.79,
+        "MA20": 19.12,
+        "MA60": 19.34,
+        "RSI": 43.52,
+        "KDJ_K": 30.64,
+        "KDJ_D": 28.17,
+        "MACD_DIF": -0.31,
+        "MACD_DEA": -0.26,
+        "BOLL_MID": 19.12,
+        "BOLL_BW": 12.9,
+        "VOL_RATIO": 0.84,
+        "TURNOVER_20D": 30.9,
+        "MFI": 39.65,
+        "MFMA": 31.17,
+        "chip_concentration": 10.628
+      }
+    },
+    {
+      "code": "600343",
+      "name": "航天动力",
+      "raw_score": 47.2,
+      "status": "中性",
+      "summary": "技术面中性（47.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 2.5,
+          "detail": "空头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 43回升"
+        },
+        "volume": {
+          "score": 5.9,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度19%，20日换手202%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 32.52,
+        "MA10": 34.11,
+        "MA20": 34.36,
+        "MA60": 36.1,
+        "RSI": 43.27,
+        "KDJ_K": 16.53,
+        "KDJ_D": 22.99,
+        "MACD_DIF": -1.47,
+        "MACD_DEA": -1.12,
+        "BOLL_MID": 34.36,
+        "BOLL_BW": 22.83,
+        "VOL_RATIO": 0.86,
+        "TURNOVER_20D": 201.67,
+        "MFI": 42.41,
+        "MFMA": 43.51,
+        "chip_concentration": 18.519
+      }
+    },
+    {
+      "code": "300321",
+      "name": "同大股份",
+      "raw_score": 46.8,
+      "status": "中性",
+      "summary": "技术面中性（46.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 45，动量中性"
+        },
+        "volume": {
+          "score": 4.4,
+          "detail": "量比1.0，MFI死叉"
+        },
+        "volatility": {
+          "score": 7.2,
+          "detail": "布林中轨附近，带宽收窄"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度10%，20日换手29%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 42.35,
+        "MA10": 42.66,
+        "MA20": 42.05,
+        "MA60": 44.1,
+        "RSI": 45.48,
+        "KDJ_K": 36.46,
+        "KDJ_D": 52.53,
+        "MACD_DIF": -0.2,
+        "MACD_DEA": -0.31,
+        "BOLL_MID": 42.05,
+        "BOLL_BW": 8.33,
+        "VOL_RATIO": 0.96,
+        "TURNOVER_20D": 28.67,
+        "MFI": 61.34,
+        "MFMA": 61.1,
+        "chip_concentration": 10.42
+      }
+    },
+    {
+      "code": "001323",
+      "name": "慕思股份",
+      "raw_score": 46.7,
+      "status": "中性",
+      "summary": "技术面中性（46.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.6,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 5.1,
+          "detail": "RSI 47回升"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比0.7，MFI中性"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "布林中轨附近，带宽急扩"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度6%，20日换手13%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 27.17,
+        "MA10": 27.89,
+        "MA20": 27.33,
+        "MA60": 26.69,
+        "RSI": 47.45,
+        "KDJ_K": 19.33,
+        "KDJ_D": 33.51,
+        "MACD_DIF": 0.21,
+        "MACD_DEA": 0.35,
+        "BOLL_MID": 27.33,
+        "BOLL_BW": 13.07,
+        "VOL_RATIO": 0.7,
+        "TURNOVER_20D": 13.28,
+        "MFI": 54.8,
+        "MFMA": 54.19,
+        "chip_concentration": 6.287
+      }
+    },
+    {
+      "code": "688351",
+      "name": "微电生理",
+      "raw_score": 46.0,
+      "status": "中性",
+      "summary": "技术面中性（46.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 2.5,
+          "detail": "空头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 5.3,
+          "detail": "RSI 43回升，KDJ死叉"
+        },
+        "volume": {
+          "score": 6.9,
+          "detail": "量比1.0，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度8%，20日换手64%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 23.39,
+        "MA10": 23.46,
+        "MA20": 23.95,
+        "MA60": 23.97,
+        "RSI": 43.08,
+        "KDJ_K": 36.65,
+        "KDJ_D": 38.04,
+        "MACD_DIF": -0.36,
+        "MACD_DEA": -0.29,
+        "BOLL_MID": 23.95,
+        "BOLL_BW": 13.01,
+        "VOL_RATIO": 1.04,
+        "TURNOVER_20D": 63.52,
+        "MFI": 35.84,
+        "MFMA": 28.57,
+        "chip_concentration": 7.661
+      }
+    },
+    {
+      "code": "605116",
+      "name": "奥锐特",
+      "raw_score": 45.8,
+      "status": "中性",
+      "summary": "技术面中性（45.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 40，动量中性"
+        },
+        "volume": {
+          "score": 5.6,
+          "detail": "量比0.9，MFI中性"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 2.5,
+          "detail": "筹码集中度20%，20日换手18%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 26.73,
+        "MA10": 27.03,
+        "MA20": 28.26,
+        "MA60": 26.07,
+        "RSI": 40.39,
+        "KDJ_K": 14.13,
+        "KDJ_D": 15.36,
+        "MACD_DIF": -0.38,
+        "MACD_DEA": -0.03,
+        "BOLL_MID": 28.26,
+        "BOLL_BW": 23.75,
+        "VOL_RATIO": 0.85,
+        "TURNOVER_20D": 17.95,
+        "MFI": 27.01,
+        "MFMA": 20.22,
+        "chip_concentration": 19.522
+      }
+    },
+    {
+      "code": "002929",
+      "name": "润建股份",
+      "raw_score": 45.5,
+      "status": "中性",
+      "summary": "技术面中性（45.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 5.4,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 3.4,
+          "detail": "RSI 49，动量中性"
+        },
+        "volume": {
+          "score": 4.7,
+          "detail": "量比0.7，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度8%，20日换手117%"
+        },
+        "custom_signal": {
+          "score": 3.0,
+          "detail": "减仓信号(3天前)"
+        }
+      },
+      "resonance": {
+        "has_signal": true,
+        "signal_type": "减仓",
+        "signal_date": "2026-02-12",
+        "is_strong": false,
+        "message": "▽ 均线汇聚减仓信号（v4，2026-02-12触发）"
+      },
+      "core_indicators": {
+        "MA5": 48.48,
+        "MA10": 47.43,
+        "MA20": 46.76,
+        "MA60": 43.43,
+        "RSI": 49.41,
+        "KDJ_K": 53.64,
+        "KDJ_D": 63.86,
+        "MACD_DIF": 1.04,
+        "MACD_DEA": 1.13,
+        "BOLL_MID": 46.76,
+        "BOLL_BW": 13.9,
+        "VOL_RATIO": 0.69,
+        "TURNOVER_20D": 116.64,
+        "MFI": 62.15,
+        "MFMA": 71.86,
+        "chip_concentration": 7.873
+      }
+    },
+    {
+      "code": "603011",
+      "name": "合锻智能",
+      "raw_score": 45.0,
+      "status": "中性",
+      "summary": "技术面中性（45.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.6,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 3.9,
+          "detail": "RSI 48，动量中性"
+        },
+        "volume": {
+          "score": 4.4,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度13%，20日换手133%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 25.73,
+        "MA10": 26.09,
+        "MA20": 25.53,
+        "MA60": 24.35,
+        "RSI": 48.31,
+        "KDJ_K": 39.53,
+        "KDJ_D": 56.02,
+        "MACD_DIF": 0.09,
+        "MACD_DEA": 0.17,
+        "BOLL_MID": 25.53,
+        "BOLL_BW": 18.56,
+        "VOL_RATIO": 0.95,
+        "TURNOVER_20D": 132.51,
+        "MFI": 62.17,
+        "MFMA": 57.73,
+        "chip_concentration": 12.555
+      }
+    },
+    {
+      "code": "688719",
+      "name": "爱科赛博",
+      "raw_score": 44.8,
+      "status": "中性",
+      "summary": "技术面中性（44.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 2.5,
+          "detail": "空头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 5.3,
+          "detail": "RSI 45，动量中性"
+        },
+        "volume": {
+          "score": 6.2,
+          "detail": "量比1.3，MFI金叉"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "带宽收窄"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度10%，20日换手47%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 46.24,
+        "MA10": 46.48,
+        "MA20": 47.75,
+        "MA60": 47.75,
+        "RSI": 44.87,
+        "KDJ_K": 28.6,
+        "KDJ_D": 24.17,
+        "MACD_DIF": -0.69,
+        "MACD_DEA": -0.48,
+        "BOLL_MID": 47.75,
+        "BOLL_BW": 15.46,
+        "VOL_RATIO": 1.27,
+        "TURNOVER_20D": 47.48,
+        "MFI": 42.33,
+        "MFMA": 38.09,
+        "chip_concentration": 10.075
+      }
+    },
+    {
+      "code": "000880",
+      "name": "潍柴重机",
+      "raw_score": 44.2,
+      "status": "中性",
+      "summary": "技术面中性（44.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.6,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 3.2,
+          "detail": "KDJ死叉"
+        },
+        "volume": {
+          "score": 4.5,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 6.2,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 4.5,
+          "detail": "筹码集中度7%，20日换手301%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 35.84,
+        "MA10": 35.01,
+        "MA20": 35.35,
+        "MA60": 30.48,
+        "RSI": 51.95,
+        "KDJ_K": 59.21,
+        "KDJ_D": 59.53,
+        "MACD_DIF": 1.09,
+        "MACD_DEA": 1.29,
+        "BOLL_MID": 35.35,
+        "BOLL_BW": 17.83,
+        "VOL_RATIO": 1.08,
+        "TURNOVER_20D": 301.4,
+        "MFI": 59.02,
+        "MFMA": 61.2,
+        "chip_concentration": 7.143
+      }
+    },
+    {
+      "code": "002683",
+      "name": "广东宏大",
+      "raw_score": 43.9,
+      "status": "中性",
+      "summary": "技术面中性（43.9/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.6,
+          "detail": "多头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 3.2,
+          "detail": "KDJ死叉"
+        },
+        "volume": {
+          "score": 5.6,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度16%，20日换手41%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 49.45,
+        "MA10": 49.06,
+        "MA20": 49.6,
+        "MA60": 45.65,
+        "RSI": 47.59,
+        "KDJ_K": 45.64,
+        "KDJ_D": 51.99,
+        "MACD_DIF": 0.37,
+        "MACD_DEA": 0.66,
+        "BOLL_MID": 49.6,
+        "BOLL_BW": 13.53,
+        "VOL_RATIO": 0.95,
+        "TURNOVER_20D": 41.04,
+        "MFI": 43.17,
+        "MFMA": 47.16,
+        "chip_concentration": 16.04
+      }
+    },
+    {
+      "code": "513750",
+      "name": "港股通非银ETF",
+      "raw_score": 43.5,
+      "status": "中性",
+      "summary": "技术面中性（43.5/100）",
+      "dimensions": {
+        "trend": {
+          "score": 3.4,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 3.9,
+          "detail": "RSI 44，动量中性"
+        },
+        "volume": {
+          "score": 5.9,
+          "detail": "量比1.4，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 5.5,
+          "detail": "20日换手91%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 1.77,
+        "MA10": 1.8,
+        "MA20": 1.81,
+        "MA60": 1.76,
+        "RSI": 43.77,
+        "KDJ_K": 16.87,
+        "KDJ_D": 24.58,
+        "MACD_DIF": -0.0,
+        "MACD_DEA": 0.01,
+        "BOLL_MID": 1.81,
+        "BOLL_BW": 8.77,
+        "VOL_RATIO": 1.4,
+        "TURNOVER_20D": 91.12,
+        "MFI": 36.28,
+        "MFMA": 48.58
+      }
+    },
+    {
+      "code": "002602",
+      "name": "世纪华通",
+      "raw_score": 42.7,
+      "status": "中性",
+      "summary": "技术面中性（42.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 3.8,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 3.9,
+          "detail": "RSI 46，动量中性"
+        },
+        "volume": {
+          "score": 5.9,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度10%，20日换手47%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(买入)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 19.06,
+        "MA10": 19.24,
+        "MA20": 19.38,
+        "MA60": 18.41,
+        "RSI": 45.6,
+        "KDJ_K": 32.34,
+        "KDJ_D": 42.94,
+        "MACD_DIF": 0.05,
+        "MACD_DEA": 0.19,
+        "BOLL_MID": 19.38,
+        "BOLL_BW": 9.8,
+        "VOL_RATIO": 1.07,
+        "TURNOVER_20D": 47.5,
+        "MFI": 52.45,
+        "MFMA": 49.37,
+        "chip_concentration": 9.677
+      }
+    },
+    {
+      "code": "002543",
+      "name": "万和电气",
+      "raw_score": 42.2,
+      "status": "中性",
+      "summary": "技术面中性（42.2/100）",
+      "dimensions": {
+        "trend": {
+          "score": 2.1,
+          "detail": "空头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 37，动量中性"
+        },
+        "volume": {
+          "score": 5.6,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 5.0,
+          "detail": "布林中轨附近，带宽急扩"
+        },
+        "chip": {
+          "score": 2.5,
+          "detail": "筹码集中度15%，20日换手22%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 9.27,
+        "MA10": 9.31,
+        "MA20": 9.68,
+        "MA60": 10.08,
+        "RSI": 37.02,
+        "KDJ_K": 34.4,
+        "KDJ_D": 28.99,
+        "MACD_DIF": -0.26,
+        "MACD_DEA": -0.24,
+        "BOLL_MID": 9.68,
+        "BOLL_BW": 21.16,
+        "VOL_RATIO": 0.95,
+        "TURNOVER_20D": 22.19,
+        "MFI": 31.65,
+        "MFMA": 31.9,
+        "chip_concentration": 14.841
+      }
+    },
+    {
+      "code": "688076",
+      "name": "ST诺泰",
+      "raw_score": 41.6,
+      "status": "中性",
+      "summary": "技术面中性（41.6/100）",
+      "dimensions": {
+        "trend": {
+          "score": 2.1,
+          "detail": "空头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 5.8,
+          "detail": "RSI 26回升"
+        },
+        "volume": {
+          "score": 5.4,
+          "detail": "量比0.9，MFI金叉"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "布林中轨附近，带宽急扩"
+        },
+        "chip": {
+          "score": 2.5,
+          "detail": "筹码集中度12%，20日换手19%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(加仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 33.66,
+        "MA10": 34.17,
+        "MA20": 35.48,
+        "MA60": 37.34,
+        "RSI": 25.8,
+        "KDJ_K": 7.55,
+        "KDJ_D": 10.27,
+        "MACD_DIF": -1.2,
+        "MACD_DEA": -1.0,
+        "BOLL_MID": 35.48,
+        "BOLL_BW": 18.89,
+        "VOL_RATIO": 0.93,
+        "TURNOVER_20D": 19.36,
+        "MFI": 9.69,
+        "MFMA": 16.82,
+        "chip_concentration": 11.864
+      }
+    },
+    {
+      "code": "688578",
+      "name": "艾力斯",
+      "raw_score": 34.7,
+      "status": "偏空",
+      "summary": "技术面偏空（34.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 1.6,
+          "detail": "空头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 3.9,
+          "detail": "RSI 36，动量中性"
+        },
+        "volume": {
+          "score": 5.2,
+          "detail": "量比1.3，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度10%，20日换手15%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 95.75,
+        "MA10": 96.39,
+        "MA20": 97.77,
+        "MA60": 100.25,
+        "RSI": 36.19,
+        "KDJ_K": 10.2,
+        "KDJ_D": 14.1,
+        "MACD_DIF": -1.71,
+        "MACD_DEA": -1.49,
+        "BOLL_MID": 97.77,
+        "BOLL_BW": 8.27,
+        "VOL_RATIO": 1.32,
+        "TURNOVER_20D": 15.11,
+        "MFI": 34.76,
+        "MFMA": 44.67,
+        "chip_concentration": 9.719
+      }
+    },
+    {
+      "code": "600012",
+      "name": "皖通高速",
+      "raw_score": 34.7,
+      "status": "偏空",
+      "summary": "技术面偏空（34.7/100）",
+      "dimensions": {
+        "trend": {
+          "score": 1.6,
+          "detail": "空头排列，MACD死叉"
+        },
+        "momentum": {
+          "score": 3.9,
+          "detail": "RSI 35，动量中性"
+        },
+        "volume": {
+          "score": 5.2,
+          "detail": "量比1.4，MFI中性"
+        },
+        "volatility": {
+          "score": 4.2,
+          "detail": "布林带边缘"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度9%，20日换手9%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(加仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 14.1,
+        "MA10": 14.21,
+        "MA20": 14.21,
+        "MA60": 14.59,
+        "RSI": 35.4,
+        "KDJ_K": 11.74,
+        "KDJ_D": 22.94,
+        "MACD_DIF": -0.12,
+        "MACD_DEA": -0.09,
+        "BOLL_MID": 14.21,
+        "BOLL_BW": 4.71,
+        "VOL_RATIO": 1.41,
+        "TURNOVER_20D": 9.44,
+        "MFI": 39.5,
+        "MFMA": 49.95,
+        "chip_concentration": 8.595
+      }
+    }
+  ],
+  "failed_stocks": [
+    {
+      "code": "159206",
+      "name": "PR国2A1",
+      "error": "行情数据为空: 159206.SH"
+    }
+  ]
+}
