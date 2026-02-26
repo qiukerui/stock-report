@@ -768,38 +768,6 @@
             .page-title { font-size: 1.35rem; }
         }
 
-        /* Technical analysis cards */
-        .tech-card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 16px 20px; margin-bottom: 10px; }
-        .tech-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-        .tech-card-left { display: flex; align-items: baseline; gap: 8px; }
-        .tech-stock-name { font-weight: 600; font-size: 0.95rem; }
-        .tech-stock-code { font-family: var(--font-mono); font-size: 0.78rem; color: var(--color-text-secondary); }
-        .tech-score { display: flex; align-items: baseline; gap: 4px; }
-        .tech-score-number { font-family: var(--font-mono); font-size: 1.2rem; font-weight: 700; }
-        .tech-score-label { font-size: 0.72rem; color: var(--color-text-secondary); }
-        .tech-score.strong .tech-score-number { color: #B5412B; }
-        .tech-score.bullish .tech-score-number { color: #C87941; }
-        .tech-score.neutral .tech-score-number { color: var(--color-text-secondary); }
-        .tech-score.bearish .tech-score-number { color: #3D7A4A; }
-        .tech-score.weak .tech-score-number { color: #2F6B3A; }
-        /* Stacked bar */
-        .tech-stacked { position: relative; height: 20px; border-radius: 4px; overflow: hidden; display: flex; background: var(--color-border); }
-        .tech-seg { height: 100%; position: relative; transition: flex 0.3s; min-width: 0; }
-        .tech-seg-label { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 600; color: #fff; white-space: nowrap; opacity: 0; transition: opacity 0.15s; pointer-events: none; }
-        .tech-stacked:hover .tech-seg-label { opacity: 1; }
-        .tech-seg:hover { filter: brightness(1.1); }
-        /* Legend */
-        .tech-legend { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; font-size: 0.72rem; color: var(--color-text-secondary); }
-        .tech-legend-dot { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 3px; vertical-align: middle; }
-        .tech-resonance { margin-top: 8px; padding: 6px 10px; border-radius: 0 6px 6px 0; font-size: 0.8rem; }
-        .tech-resonance.buy { background: #FFF8F0; border-left: 3px solid #C15F3C; color: #8B4513; }
-        .tech-resonance.sell { background: #F0F8F2; border-left: 3px solid #3D7A4A; color: #2F6B3A; }
-        /* Signal filter */
-        .tech-filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
-        .tech-filter { padding: 6px 14px; border-radius: 20px; border: 1px solid var(--color-border); background: var(--color-surface); font-size: 0.8rem; cursor: pointer; transition: all 0.15s; color: var(--color-text-secondary); }
-        .tech-filter:hover { border-color: var(--color-text-secondary); }
-        .tech-filter.active { background: var(--color-text); color: var(--color-surface); border-color: var(--color-text); }
-        .tech-filter .filter-count { font-family: var(--font-mono); margin-left: 4px; opacity: 0.7; }
 
         @media (prefers-reduced-motion: reduce) {
             * { transition: none !important; }
@@ -862,22 +830,16 @@
     <div id="page-market" class="page">
         <div class="page-header">
             <h1 class="page-title">市场表现</h1>
-            <p id="market-subtitle" class="page-subtitle">全市场复盘 · 异动板块解读 · 自选股资讯 · 技术面分析</p>
+            <p id="market-subtitle" class="page-subtitle">全市场复盘 · 异动板块解读 · 自选股资讯</p>
         </div>
         <div class="market-sub-tabs" id="marketSubTabs">
             <button class="market-sub-tab active" data-sub="review">全市场复盘</button>
             <button class="market-sub-tab" data-sub="industry">异动板块解读</button>
             <button class="market-sub-tab" data-sub="briefing">自选股资讯</button>
-            <button class="market-sub-tab" data-sub="technical">技术面分析</button>
         </div>
         <div id="sub-review" class="market-sub-page active"></div>
         <div id="sub-industry" class="market-sub-page"></div>
         <div id="sub-briefing" class="market-sub-page"></div>
-        <div id="sub-technical" class="market-sub-page">
-            <div id="technical-kpis" class="kpi-row"></div>
-            <div id="technical-filters" class="tech-filters"></div>
-            <div id="technical-stocks" class="stock-list"></div>
-        </div>
     </div>
 </div>
 
@@ -956,7 +918,6 @@
             currentData = await fetchJSON('data/' + date + '.json');
             $('loading').style.display = 'none';
             renderAnalysis(currentData);
-            renderTechnical(currentData);
             renderCompare(currentData);
             renderMarket(currentData);
             showPage(currentPage);
@@ -1048,143 +1009,6 @@
         </div>`;
     }
 
-    // ========== Render: Technical Analysis Page ==========
-    let _techStocks = [];
-    let _techFilter = 'all';
-
-    function renderTechnical(data) {
-        const wt = data.watchlist_technical;
-        if (!wt || !wt.stocks || wt.stocks.length === 0) {
-            $('technical-kpis').innerHTML = '';
-            $('technical-filters').innerHTML = '';
-            $('technical-stocks').innerHTML = '<div class="empty-state">该日期无自选股技术面数据（可运行 batch_technical_analysis.py 生成）</div>';
-            return;
-        }
-
-        _techStocks = wt.stocks;
-        const stats = wt.stats || {};
-        const total = _techStocks.length;
-
-        // Count signal types
-        let buyCount = 0, sellCount = 0;
-        _techStocks.forEach(s => {
-            const st = (s.resonance || {}).signal_type;
-            if (st === '买入' || st === '加仓') buyCount++;
-            else if (st === '减仓' || st === '清仓') sellCount++;
-        });
-
-        // KPIs
-        $('technical-kpis').innerHTML = `
-            <div class="kpi">
-                <div class="kpi-label">分析标的</div>
-                <div class="kpi-value">${total}</div>
-                <div class="kpi-note">自选股A股</div>
-            </div>
-            <div class="kpi">
-                <div class="kpi-label">平均分</div>
-                <div class="kpi-value">${stats.avg_score || '—'}</div>
-                <div class="kpi-note ${(stats.avg_score||50) < 40 ? 'negative' : (stats.avg_score||50) >= 60 ? 'positive' : ''}">满分100</div>
-            </div>
-            <div class="kpi">
-                <div class="kpi-label">买入/加仓</div>
-                <div class="kpi-value" style="color:#C15F3C">${buyCount}</div>
-                <div class="kpi-note">均线汇聚看多</div>
-            </div>
-            <div class="kpi">
-                <div class="kpi-label">减仓/清仓</div>
-                <div class="kpi-value" style="color:#3D7A4A">${sellCount}</div>
-                <div class="kpi-note">均线汇聚看空</div>
-            </div>`;
-
-        // Filters
-        $('technical-filters').innerHTML = `
-            <button class="tech-filter active" data-tf="all">全部<span class="filter-count">${total}</span></button>
-            <button class="tech-filter" data-tf="buy">买入/加仓<span class="filter-count">${buyCount}</span></button>
-            <button class="tech-filter" data-tf="sell">减仓/清仓<span class="filter-count">${sellCount}</span></button>
-            <button class="tech-filter" data-tf="strong">偏多(≥60)<span class="filter-count">${stats.strong_count||0}</span></button>`;
-        document.querySelectorAll('.tech-filter').forEach(btn => {
-            btn.addEventListener('click', () => {
-                _techFilter = btn.dataset.tf;
-                document.querySelectorAll('.tech-filter').forEach(b => b.classList.toggle('active', b.dataset.tf === _techFilter));
-                applyTechFilter();
-            });
-        });
-
-        _techFilter = 'all';
-        applyTechFilter();
-    }
-
-    function applyTechFilter() {
-        const filtered = _techStocks.filter(s => {
-            if (_techFilter === 'all') return true;
-            const st = (s.resonance || {}).signal_type;
-            if (_techFilter === 'buy') return st === '买入' || st === '加仓';
-            if (_techFilter === 'sell') return st === '减仓' || st === '清仓';
-            if (_techFilter === 'strong') return (s.raw_score || 0) >= 60;
-            return true;
-        });
-        $('technical-stocks').innerHTML = filtered.length
-            ? filtered.map(renderTechCard).join('')
-            : '<div class="empty-state">无匹配标的</div>';
-    }
-
-    const DIM_KEYS = ['trend','momentum','volume','volatility','chip','custom_signal'];
-    const DIM_NAMES = { trend: '趋势', momentum: '动量', volume: '量能', volatility: '波动', chip: '筹码', custom_signal: '信号' };
-    const DIM_COLORS = { trend: '#B5412B', momentum: '#C87941', volume: '#D4A253', volatility: '#8B9E78', chip: '#5E8B9A', custom_signal: '#7B6B8D' };
-    const DIM_WEIGHTS = { trend: 30, momentum: 25, volume: 15, volatility: 10, chip: 10, custom_signal: 10 };
-
-    function renderTechCard(s) {
-        const sc = s.raw_score || 0;
-        const cls = sc >= 80 ? 'strong' : sc >= 60 ? 'bullish' : sc >= 40 ? 'neutral' : sc >= 20 ? 'bearish' : 'weak';
-
-        let segsHtml = '';
-        let legendHtml = '';
-        if (s.dimensions) {
-            DIM_KEYS.forEach(k => {
-                const d = s.dimensions[k];
-                if (!d) return;
-                const v = d.score || 0;
-                const w = DIM_WEIGHTS[k];
-                const weighted = v * w / 10;
-                segsHtml += `<div class="tech-seg" style="flex:${weighted};background:${DIM_COLORS[k]}" title="${DIM_NAMES[k]} ${v.toFixed(1)}/10（权重${w}%）">` +
-                    `<span class="tech-seg-label">${DIM_NAMES[k]} ${v.toFixed(1)}</span></div>`;
-                legendHtml += `<span><span class="tech-legend-dot" style="background:${DIM_COLORS[k]}"></span>${DIM_NAMES[k]} ${v.toFixed(1)}</span>`;
-            });
-        }
-
-        let resonanceHtml = '';
-        if (s.resonance && s.resonance.has_signal && s.resonance.message) {
-            const st = s.resonance.signal_type;
-            const rCls = (st === '减仓' || st === '清仓') ? 'sell' : 'buy';
-            resonanceHtml = `<div class="tech-resonance ${rCls}">${esc(s.resonance.message)}</div>`;
-        }
-
-        return `<div class="tech-card">
-            <div class="tech-card-header">
-                <div class="tech-card-left">
-                    <span class="tech-stock-name">${esc(s.name)}</span>
-                    <span class="tech-stock-code">${esc(s.code)}</span>
-                </div>
-                <div class="tech-score ${cls}">
-                    <span class="tech-score-number">${sc.toFixed(0)}</span>
-                    <span class="tech-score-label">${esc(s.status)}</span>
-                </div>
-            </div>
-            <div class="tech-stacked">${segsHtml}</div>
-            <div class="tech-legend">${legendHtml}</div>
-            ${resonanceHtml}
-        </div>`;
-    }
-
-    function renderDim(label, dim, weight) {
-        const v = dim ? dim.score : 0;
-        const cls = v >= 7 ? 'high' : v >= 5 ? 'mid' : 'low';
-        return `<div class="dim">
-            <span class="dim-label">${label}</span>
-            <span class="dim-score ${cls}">${dim ? v.toFixed(1) : '—'}</span>
-            <span class="dim-weight">权重 ${weight}</span>
-        </div>`;
-    }
 
     function renderAnalysisGroup(label, dim) {
         if (!dim) return '';
@@ -1365,7 +1189,7 @@
         const hasIndustry = reports.industry_analysis && reports.industry_analysis.sections;
         const hasData = m.sector_performance || m.market_breadth || m.rotation;
 
-        $('market-subtitle').textContent = data.date + ' 全市场复盘 · 异动板块解读 · 自选股资讯 · 技术面分析';
+        $('market-subtitle').textContent = data.date + ' 全市场复盘 · 异动板块解读 · 自选股资讯';
 
         // --- Sub-tab: 全市场复盘 ---
         if (hasReview) {

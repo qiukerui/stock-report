@@ -3,10 +3,10 @@
   "total": 143,
   "failed": 1,
   "stats": {
-    "avg_score": 55.1,
+    "avg_score": 55.0,
     "strong_count": 29,
     "weak_count": 2,
-    "signal_count": 27
+    "signal_count": 26
   },
   "stocks": [
     {
@@ -227,7 +227,7 @@
         "MA10": 17.98,
         "MA20": 17.88,
         "MA60": 17.35,
-        "RSI": 59.09,
+        "RSI": 59.1,
         "KDJ_K": 74.0,
         "KDJ_D": 70.39,
         "MACD_DIF": 0.21,
@@ -285,7 +285,7 @@
         "MA10": 19.48,
         "MA20": 19.62,
         "MA60": 19.26,
-        "RSI": 60.81,
+        "RSI": 60.83,
         "KDJ_K": 77.51,
         "KDJ_D": 64.04,
         "MACD_DIF": 0.09,
@@ -343,7 +343,7 @@
         "MA10": 18.87,
         "MA20": 19.02,
         "MA60": 18.54,
-        "RSI": 60.47,
+        "RSI": 60.49,
         "KDJ_K": 66.59,
         "KDJ_D": 47.02,
         "MACD_DIF": 0.12,
@@ -517,7 +517,7 @@
         "MA10": 56.77,
         "MA20": 55.14,
         "MA60": 51.12,
-        "RSI": 63.77,
+        "RSI": 63.76,
         "KDJ_K": 78.74,
         "KDJ_D": 73.43,
         "MACD_DIF": 1.79,
@@ -636,7 +636,7 @@
         "RSI": 57.22,
         "KDJ_K": 64.72,
         "KDJ_D": 60.5,
-        "MACD_DIF": 2.82,
+        "MACD_DIF": 2.81,
         "MACD_DEA": 2.32,
         "BOLL_MID": 103.47,
         "BOLL_BW": 18.62,
@@ -691,7 +691,7 @@
         "MA10": 23.1,
         "MA20": 22.93,
         "MA60": 22.61,
-        "RSI": 55.42,
+        "RSI": 55.39,
         "KDJ_K": 70.86,
         "KDJ_D": 67.23,
         "MACD_DIF": 0.12,
@@ -757,7 +757,7 @@
         "BOLL_MID": 3.5,
         "BOLL_BW": 23.62,
         "VOL_RATIO": 1.18,
-        "TURNOVER_20D": 1589.91,
+        "TURNOVER_20D": 1589.55,
         "MFI": 68.71,
         "MFMA": 67.83,
         "chip_concentration": 4.386
@@ -810,8 +810,8 @@
         "RSI": 76.33,
         "KDJ_K": 87.83,
         "KDJ_D": 84.99,
-        "MACD_DIF": 11.98,
-        "MACD_DEA": 10.53,
+        "MACD_DIF": 11.97,
+        "MACD_DEA": 10.52,
         "BOLL_MID": 95.94,
         "BOLL_BW": 56.99,
         "VOL_RATIO": 1.22,
@@ -923,11 +923,11 @@
         "MA10": 121.55,
         "MA20": 124.16,
         "MA60": 122.01,
-        "RSI": 51.42,
+        "RSI": 51.4,
         "KDJ_K": 63.25,
         "KDJ_D": 46.66,
-        "MACD_DIF": -1.23,
-        "MACD_DEA": -1.27,
+        "MACD_DIF": -1.24,
+        "MACD_DEA": -1.28,
         "BOLL_MID": 124.16,
         "BOLL_BW": 13.86,
         "VOL_RATIO": 0.89,
@@ -981,7 +981,7 @@
         "MA10": 28.48,
         "MA20": 28.37,
         "MA60": 26.92,
-        "RSI": 53.94,
+        "RSI": 53.95,
         "KDJ_K": 75.98,
         "KDJ_D": 70.88,
         "MACD_DIF": 0.28,
@@ -1097,7 +1097,7 @@
         "MA10": 64.87,
         "MA20": 65.41,
         "MA60": 62.15,
-        "RSI": 51.1,
+        "RSI": 51.11,
         "KDJ_K": 54.42,
         "KDJ_D": 50.61,
         "MACD_DIF": 0.03,
@@ -1155,7 +1155,7 @@
         "MA10": 12.88,
         "MA20": 12.98,
         "MA60": 11.22,
-        "RSI": 63.52,
+        "RSI": 63.53,
         "KDJ_K": 72.22,
         "KDJ_D": 59.72,
         "MACD_DIF": 0.45,
@@ -1271,7 +1271,7 @@
         "MA10": 90.92,
         "MA20": 87.63,
         "MA60": 83.53,
-        "RSI": 66.72,
+        "RSI": 66.73,
         "KDJ_K": 87.46,
         "KDJ_D": 79.72,
         "MACD_DIF": 3.37,
@@ -1329,7 +1329,7 @@
         "MA10": 22.0,
         "MA20": 21.5,
         "MA60": 19.34,
-        "RSI": 69.67,
+        "RSI": 69.68,
         "KDJ_K": 72.79,
         "KDJ_D": 62.03,
         "MACD_DIF": 0.89,
@@ -1445,7 +1445,7 @@
         "MA10": 31.79,
         "MA20": 32.08,
         "MA60": 29.45,
-        "RSI": 63.81,
+        "RSI": 63.82,
         "KDJ_K": 68.55,
         "KDJ_D": 57.78,
         "MACD_DIF": 0.67,
@@ -1619,11 +1619,11 @@
         "MA10": 59.88,
         "MA20": 57.93,
         "MA60": 54.66,
-        "RSI": 63.74,
+        "RSI": 63.75,
         "KDJ_K": 84.25,
         "KDJ_D": 75.53,
         "MACD_DIF": 1.54,
-        "MACD_DEA": 1.13,
+        "MACD_DEA": 1.14,
         "BOLL_MID": 57.93,
         "BOLL_BW": 17.22,
         "VOL_RATIO": 0.8,
@@ -1677,7 +1677,7 @@
         "MA10": 16.93,
         "MA20": 17.25,
         "MA60": 17.25,
-        "RSI": 50.47,
+        "RSI": 50.49,
         "KDJ_K": 63.26,
         "KDJ_D": 50.63,
         "MACD_DIF": -0.19,
@@ -1735,7 +1735,7 @@
         "MA10": 10.83,
         "MA20": 11.0,
         "MA60": 10.68,
-        "RSI": 55.91,
+        "RSI": 55.92,
         "KDJ_K": 78.46,
         "KDJ_D": 65.61,
         "MACD_DIF": 0.02,
@@ -1909,7 +1909,7 @@
         "MA10": 19.13,
         "MA20": 19.0,
         "MA60": 18.65,
-        "RSI": 59.61,
+        "RSI": 59.64,
         "KDJ_K": 80.34,
         "KDJ_D": 74.55,
         "MACD_DIF": 0.18,
@@ -1971,7 +1971,7 @@
         "KDJ_K": 69.59,
         "KDJ_D": 55.71,
         "MACD_DIF": 0.54,
-        "MACD_DEA": 0.28,
+        "MACD_DEA": 0.27,
         "BOLL_MID": 23.32,
         "BOLL_BW": 17.14,
         "VOL_RATIO": 1.12,
@@ -2095,64 +2095,6 @@
         "MFI": 46.7,
         "MFMA": 41.25,
         "chip_concentration": 10.68
-      }
-    },
-    {
-      "code": "000001",
-      "name": "上证指数",
-      "raw_score": 59.6,
-      "status": "中性",
-      "summary": "技术面中性（59.6/100）",
-      "dimensions": {
-        "trend": {
-          "score": 6.6,
-          "detail": "多头排列"
-        },
-        "momentum": {
-          "score": 6.0,
-          "detail": "RSI 58回升"
-        },
-        "volume": {
-          "score": 5.0,
-          "detail": "量比1.3，MFI死叉"
-        },
-        "volatility": {
-          "score": 6.2,
-          "detail": "带宽收窄"
-        },
-        "chip": {
-          "score": 3.1,
-          "detail": "筹码集中度8%，20日换手28%"
-        },
-        "custom_signal": {
-          "score": 8.0,
-          "detail": "v4加仓信号(2天前)"
-        }
-      },
-      "resonance": {
-        "has_signal": true,
-        "signal_type": "加仓",
-        "signal_date": "2026-02-13",
-        "is_strong": false,
-        "message": "△ 均线汇聚加仓信号（v4，2026-02-13触发）"
-      },
-      "core_indicators": {
-        "MA5": 4122.54,
-        "MA10": 4110.79,
-        "MA20": 4113.34,
-        "MA60": 4012.76,
-        "RSI": 58.06,
-        "KDJ_K": 76.89,
-        "KDJ_D": 71.33,
-        "MACD_DIF": 17.94,
-        "MACD_DEA": 20.29,
-        "BOLL_MID": 4113.34,
-        "BOLL_BW": 3.35,
-        "VOL_RATIO": 1.28,
-        "TURNOVER_20D": 28.36,
-        "MFI": 64.08,
-        "MFMA": 63.32,
-        "chip_concentration": 7.588
       }
     },
     {
@@ -2315,7 +2257,7 @@
         "MA10": 17.41,
         "MA20": 16.14,
         "MA60": 13.32,
-        "RSI": 75.38,
+        "RSI": 75.39,
         "KDJ_K": 86.29,
         "KDJ_D": 82.67,
         "MACD_DIF": 1.36,
@@ -2373,11 +2315,11 @@
         "MA10": 151.42,
         "MA20": 153.33,
         "MA60": 166.21,
-        "RSI": 47.58,
+        "RSI": 47.56,
         "KDJ_K": 61.11,
         "KDJ_D": 56.03,
-        "MACD_DIF": -3.54,
-        "MACD_DEA": -4.36,
+        "MACD_DIF": -3.55,
+        "MACD_DEA": -4.37,
         "BOLL_MID": 153.33,
         "BOLL_BW": 13.62,
         "VOL_RATIO": 0.99,
@@ -2431,10 +2373,10 @@
         "MA10": 35.52,
         "MA20": 35.2,
         "MA60": 36.45,
-        "RSI": 60.56,
+        "RSI": 60.54,
         "KDJ_K": 83.48,
         "KDJ_D": 76.64,
-        "MACD_DIF": 0.19,
+        "MACD_DIF": 0.18,
         "MACD_DEA": -0.15,
         "BOLL_MID": 35.2,
         "BOLL_BW": 13.05,
@@ -2555,7 +2497,7 @@
         "BOLL_MID": 49.97,
         "BOLL_BW": 29.29,
         "VOL_RATIO": 0.79,
-        "TURNOVER_20D": 46.81,
+        "TURNOVER_20D": 46.8,
         "MFI": 73.66,
         "MFMA": 67.72,
         "chip_concentration": 21.6
@@ -2721,7 +2663,7 @@
         "MA10": 10.4,
         "MA20": 10.51,
         "MA60": 11.99,
-        "RSI": 43.21,
+        "RSI": 43.19,
         "KDJ_K": 49.42,
         "KDJ_D": 53.81,
         "MACD_DIF": -0.36,
@@ -2794,64 +2736,6 @@
       }
     },
     {
-      "code": "603606",
-      "name": "东方电缆",
-      "raw_score": 58.0,
-      "status": "中性",
-      "summary": "技术面中性（58.0/100）",
-      "dimensions": {
-        "trend": {
-          "score": 6.2,
-          "detail": "均线缠绕，MACD金叉"
-        },
-        "momentum": {
-          "score": 6.8,
-          "detail": "RSI 50回升"
-        },
-        "volume": {
-          "score": 5.3,
-          "detail": "量比1.0，MFI中性"
-        },
-        "volatility": {
-          "score": 6.0,
-          "detail": "布林中轨附近"
-        },
-        "chip": {
-          "score": 3.5,
-          "detail": "筹码集中度10%，20日换手31%"
-        },
-        "custom_signal": {
-          "score": 5.0,
-          "detail": "无信号"
-        }
-      },
-      "resonance": {
-        "has_signal": false,
-        "signal_type": null,
-        "signal_date": null,
-        "is_strong": false,
-        "message": null
-      },
-      "core_indicators": {
-        "MA5": 57.09,
-        "MA10": 56.8,
-        "MA20": 57.26,
-        "MA60": 58.76,
-        "RSI": 50.35,
-        "KDJ_K": 76.12,
-        "KDJ_D": 64.42,
-        "MACD_DIF": -0.55,
-        "MACD_DEA": -0.76,
-        "BOLL_MID": 57.26,
-        "BOLL_BW": 11.46,
-        "VOL_RATIO": 1.04,
-        "TURNOVER_20D": 30.71,
-        "MFI": 45.04,
-        "MFMA": 42.76,
-        "chip_concentration": 10.355
-      }
-    },
-    {
       "code": "300651",
       "name": "金陵体育",
       "raw_score": 58.0,
@@ -2895,7 +2779,7 @@
         "MA10": 26.86,
         "MA20": 25.77,
         "MA60": 22.91,
-        "RSI": 79.88,
+        "RSI": 79.9,
         "KDJ_K": 84.22,
         "KDJ_D": 80.39,
         "MACD_DIF": 1.55,
@@ -2907,6 +2791,64 @@
         "MFI": 91.1,
         "MFMA": 80.14,
         "chip_concentration": 14.716
+      }
+    },
+    {
+      "code": "603606",
+      "name": "东方电缆",
+      "raw_score": 58.0,
+      "status": "中性",
+      "summary": "技术面中性（58.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 6.2,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 6.8,
+          "detail": "RSI 50回升"
+        },
+        "volume": {
+          "score": 5.3,
+          "detail": "量比1.0，MFI中性"
+        },
+        "volatility": {
+          "score": 6.0,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度10%，20日换手31%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 57.09,
+        "MA10": 56.8,
+        "MA20": 57.26,
+        "MA60": 58.76,
+        "RSI": 50.34,
+        "KDJ_K": 76.12,
+        "KDJ_D": 64.42,
+        "MACD_DIF": -0.56,
+        "MACD_DEA": -0.76,
+        "BOLL_MID": 57.26,
+        "BOLL_BW": 11.46,
+        "VOL_RATIO": 1.04,
+        "TURNOVER_20D": 30.71,
+        "MFI": 45.04,
+        "MFMA": 42.76,
+        "chip_concentration": 10.355
       }
     },
     {
@@ -3011,7 +2953,7 @@
         "MA10": 23.62,
         "MA20": 23.66,
         "MA60": 24.27,
-        "RSI": 51.61,
+        "RSI": 51.59,
         "KDJ_K": 75.67,
         "KDJ_D": 69.94,
         "MACD_DIF": -0.15,
@@ -3069,7 +3011,7 @@
         "MA10": 71.03,
         "MA20": 69.61,
         "MA60": 57.72,
-        "RSI": 58.66,
+        "RSI": 58.67,
         "KDJ_K": 66.06,
         "KDJ_D": 61.61,
         "MACD_DIF": 3.54,
@@ -3166,7 +3108,7 @@
         },
         "chip": {
           "score": 4.4,
-          "detail": "筹码集中度37%，20日换手47%"
+          "detail": "筹码集中度37%，20日换手48%"
         },
         "custom_signal": {
           "score": 5.0,
@@ -3185,7 +3127,7 @@
         "MA10": 39.02,
         "MA20": 35.6,
         "MA60": 29.66,
-        "RSI": 72.99,
+        "RSI": 73.0,
         "KDJ_K": 90.14,
         "KDJ_D": 85.66,
         "MACD_DIF": 3.45,
@@ -3193,7 +3135,7 @@
         "BOLL_MID": 35.6,
         "BOLL_BW": 48.49,
         "VOL_RATIO": 0.95,
-        "TURNOVER_20D": 47.17,
+        "TURNOVER_20D": 47.68,
         "MFI": 69.3,
         "MFMA": 66.59,
         "chip_concentration": 36.882
@@ -3243,7 +3185,7 @@
         "MA10": 11.7,
         "MA20": 11.04,
         "MA60": 9.46,
-        "RSI": 64.62,
+        "RSI": 64.63,
         "KDJ_K": 58.49,
         "KDJ_D": 63.53,
         "MACD_DIF": 0.61,
@@ -3301,7 +3243,7 @@
         "MA10": 28.74,
         "MA20": 26.18,
         "MA60": 22.78,
-        "RSI": 59.31,
+        "RSI": 59.32,
         "KDJ_K": 59.47,
         "KDJ_D": 71.23,
         "MACD_DIF": 1.77,
@@ -3359,7 +3301,7 @@
         "MA10": 8.4,
         "MA20": 8.3,
         "MA60": 7.99,
-        "RSI": 60.31,
+        "RSI": 60.32,
         "KDJ_K": 47.9,
         "KDJ_D": 51.37,
         "MACD_DIF": 0.15,
@@ -3414,7 +3356,7 @@
       },
       "core_indicators": {
         "MA5": 34.29,
-        "MA10": 32.64,
+        "MA10": 32.63,
         "MA20": 30.81,
         "MA60": 25.02,
         "RSI": 66.16,
@@ -3533,11 +3475,11 @@
         "MA10": 67.26,
         "MA20": 65.64,
         "MA60": 64.81,
-        "RSI": 60.15,
+        "RSI": 60.13,
         "KDJ_K": 78.09,
         "KDJ_D": 71.85,
-        "MACD_DIF": 1.3,
-        "MACD_DEA": 0.52,
+        "MACD_DIF": 1.29,
+        "MACD_DEA": 0.51,
         "BOLL_MID": 65.64,
         "BOLL_BW": 18.04,
         "VOL_RATIO": 0.74,
@@ -3707,10 +3649,10 @@
         "MA10": 41.49,
         "MA20": 39.64,
         "MA60": 30.8,
-        "RSI": 70.98,
+        "RSI": 70.99,
         "KDJ_K": 92.48,
         "KDJ_D": 83.74,
-        "MACD_DIF": 3.25,
+        "MACD_DIF": 3.24,
         "MACD_DEA": 2.91,
         "BOLL_MID": 39.64,
         "BOLL_BW": 28.16,
@@ -3884,8 +3826,8 @@
         "RSI": 58.9,
         "KDJ_K": 67.52,
         "KDJ_D": 49.53,
-        "MACD_DIF": 1.74,
-        "MACD_DEA": 1.95,
+        "MACD_DIF": 1.73,
+        "MACD_DEA": 1.94,
         "BOLL_MID": 127.37,
         "BOLL_BW": 18.98,
         "VOL_RATIO": 1.4,
@@ -3939,7 +3881,7 @@
         "MA10": 14.72,
         "MA20": 14.56,
         "MA60": 14.09,
-        "RSI": 53.63,
+        "RSI": 53.64,
         "KDJ_K": 29.23,
         "KDJ_D": 38.19,
         "MACD_DIF": 0.15,
@@ -3997,7 +3939,7 @@
         "MA10": 12.03,
         "MA20": 12.13,
         "MA60": 11.58,
-        "RSI": 71.69,
+        "RSI": 71.7,
         "KDJ_K": 70.12,
         "KDJ_D": 52.29,
         "MACD_DIF": 0.24,
@@ -4113,7 +4055,7 @@
         "MA10": 41.59,
         "MA20": 38.65,
         "MA60": 34.76,
-        "RSI": 66.7,
+        "RSI": 66.69,
         "KDJ_K": 79.47,
         "KDJ_D": 79.89,
         "MACD_DIF": 2.23,
@@ -4171,7 +4113,7 @@
         "MA10": 33.04,
         "MA20": 34.37,
         "MA60": 38.5,
-        "RSI": 46.66,
+        "RSI": 46.65,
         "KDJ_K": 44.27,
         "KDJ_D": 32.97,
         "MACD_DIF": -1.66,
@@ -4198,7 +4140,7 @@
         },
         "momentum": {
           "score": 7.3,
-          "detail": "RSI 41回升"
+          "detail": "RSI 40回升"
         },
         "volume": {
           "score": 5.3,
@@ -4229,11 +4171,11 @@
         "MA10": 221.71,
         "MA20": 226.2,
         "MA60": 243.34,
-        "RSI": 40.51,
+        "RSI": 40.47,
         "KDJ_K": 43.88,
         "KDJ_D": 40.49,
         "MACD_DIF": -5.5,
-        "MACD_DEA": -6.26,
+        "MACD_DEA": -6.27,
         "BOLL_MID": 226.2,
         "BOLL_BW": 13.38,
         "VOL_RATIO": 0.62,
@@ -4302,6 +4244,64 @@
       }
     },
     {
+      "code": "300957",
+      "name": "贝泰妮",
+      "raw_score": 56.0,
+      "status": "中性",
+      "summary": "技术面中性（56.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 8.1,
+          "detail": "多头排列，MACD金叉"
+        },
+        "momentum": {
+          "score": 5.0,
+          "detail": "RSI 65，动量中性"
+        },
+        "volume": {
+          "score": 3.5,
+          "detail": "量比0.8，MFI中性"
+        },
+        "volatility": {
+          "score": 5.5,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.5,
+          "detail": "筹码集中度10%，20日换手43%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "近20日有信号(减仓)"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 47.53,
+        "MA10": 47.5,
+        "MA20": 45.07,
+        "MA60": 42.32,
+        "RSI": 65.24,
+        "KDJ_K": 60.53,
+        "KDJ_D": 68.26,
+        "MACD_DIF": 1.61,
+        "MACD_DEA": 1.46,
+        "BOLL_MID": 45.07,
+        "BOLL_BW": 23.14,
+        "VOL_RATIO": 0.79,
+        "TURNOVER_20D": 43.14,
+        "MFI": 73.82,
+        "MFMA": 76.0,
+        "chip_concentration": 9.721
+      }
+    },
+    {
       "code": "688709",
       "name": "成都华微",
       "raw_score": 56.0,
@@ -4345,7 +4345,7 @@
         "MA10": 46.78,
         "MA20": 48.8,
         "MA60": 45.23,
-        "RSI": 47.37,
+        "RSI": 47.36,
         "KDJ_K": 24.03,
         "KDJ_D": 18.03,
         "MACD_DIF": -0.41,
@@ -4357,64 +4357,6 @@
         "MFI": 31.43,
         "MFMA": 33.35,
         "chip_concentration": 10.731
-      }
-    },
-    {
-      "code": "300957",
-      "name": "贝泰妮",
-      "raw_score": 56.0,
-      "status": "中性",
-      "summary": "技术面中性（56.0/100）",
-      "dimensions": {
-        "trend": {
-          "score": 8.1,
-          "detail": "多头排列，MACD金叉"
-        },
-        "momentum": {
-          "score": 5.0,
-          "detail": "RSI 65，动量中性"
-        },
-        "volume": {
-          "score": 3.5,
-          "detail": "量比0.8，MFI中性"
-        },
-        "volatility": {
-          "score": 5.5,
-          "detail": "波动正常"
-        },
-        "chip": {
-          "score": 3.5,
-          "detail": "筹码集中度10%，20日换手43%"
-        },
-        "custom_signal": {
-          "score": 5.0,
-          "detail": "近20日有信号(减仓)"
-        }
-      },
-      "resonance": {
-        "has_signal": false,
-        "signal_type": null,
-        "signal_date": null,
-        "is_strong": false,
-        "message": null
-      },
-      "core_indicators": {
-        "MA5": 47.53,
-        "MA10": 47.5,
-        "MA20": 45.06,
-        "MA60": 42.32,
-        "RSI": 65.22,
-        "KDJ_K": 60.53,
-        "KDJ_D": 68.26,
-        "MACD_DIF": 1.61,
-        "MACD_DEA": 1.46,
-        "BOLL_MID": 45.06,
-        "BOLL_BW": 23.14,
-        "VOL_RATIO": 0.79,
-        "TURNOVER_20D": 43.14,
-        "MFI": 73.82,
-        "MFMA": 76.0,
-        "chip_concentration": 9.721
       }
     },
     {
@@ -4519,15 +4461,15 @@
         "MA10": 44.67,
         "MA20": 46.65,
         "MA60": 41.68,
-        "RSI": 51.15,
+        "RSI": 51.14,
         "KDJ_K": 28.16,
         "KDJ_D": 18.43,
         "MACD_DIF": -0.12,
-        "MACD_DEA": 0.4,
+        "MACD_DEA": 0.39,
         "BOLL_MID": 46.65,
         "BOLL_BW": 22.9,
         "VOL_RATIO": 1.43,
-        "TURNOVER_20D": 56.95,
+        "TURNOVER_20D": 57.1,
         "MFI": 30.94,
         "MFMA": 24.34,
         "chip_concentration": 22.493
@@ -4577,7 +4519,7 @@
         "MA10": 27.34,
         "MA20": 27.03,
         "MA60": 23.77,
-        "RSI": 56.01,
+        "RSI": 56.02,
         "KDJ_K": 52.73,
         "KDJ_D": 53.57,
         "MACD_DIF": 0.64,
@@ -4693,7 +4635,7 @@
         "MA10": 54.43,
         "MA20": 55.67,
         "MA60": 58.62,
-        "RSI": 53.03,
+        "RSI": 53.02,
         "KDJ_K": 70.02,
         "KDJ_D": 53.75,
         "MACD_DIF": -1.08,
@@ -4809,7 +4751,7 @@
         "MA10": 30.76,
         "MA20": 30.85,
         "MA60": 27.69,
-        "RSI": 57.99,
+        "RSI": 58.0,
         "KDJ_K": 72.51,
         "KDJ_D": 58.32,
         "MACD_DIF": 0.87,
@@ -4925,7 +4867,7 @@
         "MA10": 16.3,
         "MA20": 16.13,
         "MA60": 16.6,
-        "RSI": 59.15,
+        "RSI": 59.16,
         "KDJ_K": 76.03,
         "KDJ_D": 68.05,
         "MACD_DIF": 0.03,
@@ -4983,10 +4925,10 @@
         "MA10": 51.29,
         "MA20": 48.91,
         "MA60": 39.07,
-        "RSI": 52.88,
+        "RSI": 52.89,
         "KDJ_K": 24.46,
         "KDJ_D": 35.65,
-        "MACD_DIF": 2.01,
+        "MACD_DIF": 2.02,
         "MACD_DEA": 2.9,
         "BOLL_MID": 48.91,
         "BOLL_BW": 42.56,
@@ -5041,7 +4983,7 @@
         "MA10": 12.16,
         "MA20": 12.51,
         "MA60": 11.13,
-        "RSI": 55.82,
+        "RSI": 55.81,
         "KDJ_K": 66.75,
         "KDJ_D": 55.64,
         "MACD_DIF": 0.17,
@@ -5215,7 +5157,7 @@
         "MA10": 41.72,
         "MA20": 41.79,
         "MA60": 40.28,
-        "RSI": 54.52,
+        "RSI": 54.54,
         "KDJ_K": 54.31,
         "KDJ_D": 50.78,
         "MACD_DIF": 0.28,
@@ -5447,7 +5389,7 @@
         "MA10": 7.23,
         "MA20": 7.32,
         "MA60": 6.79,
-        "RSI": 59.36,
+        "RSI": 59.37,
         "KDJ_K": 53.29,
         "KDJ_D": 40.91,
         "MACD_DIF": 0.08,
@@ -5505,11 +5447,11 @@
         "MA10": 242.63,
         "MA20": 257.59,
         "MA60": 236.46,
-        "RSI": 50.73,
+        "RSI": 50.72,
         "KDJ_K": 60.5,
         "KDJ_D": 42.52,
-        "MACD_DIF": -0.93,
-        "MACD_DEA": 0.48,
+        "MACD_DIF": -0.94,
+        "MACD_DEA": 0.45,
         "BOLL_MID": 257.59,
         "BOLL_BW": 27.86,
         "VOL_RATIO": 0.87,
@@ -5563,7 +5505,7 @@
         "MA10": 12.1,
         "MA20": 11.76,
         "MA60": 10.87,
-        "RSI": 73.0,
+        "RSI": 73.01,
         "KDJ_K": 79.76,
         "KDJ_D": 74.85,
         "MACD_DIF": 0.48,
@@ -5590,7 +5532,7 @@
         },
         "momentum": {
           "score": 5.5,
-          "detail": "RSI 43，动量中性"
+          "detail": "RSI 42，动量中性"
         },
         "volume": {
           "score": 6.6,
@@ -5621,7 +5563,7 @@
         "MA10": 29.86,
         "MA20": 30.48,
         "MA60": 30.87,
-        "RSI": 42.52,
+        "RSI": 42.49,
         "KDJ_K": 63.02,
         "KDJ_D": 53.92,
         "MACD_DIF": -0.44,
@@ -5679,7 +5621,7 @@
         "MA10": 17.38,
         "MA20": 17.6,
         "MA60": 16.17,
-        "RSI": 49.25,
+        "RSI": 49.26,
         "KDJ_K": 31.82,
         "KDJ_D": 29.38,
         "MACD_DIF": -0.14,
@@ -5737,7 +5679,7 @@
         "MA10": 7.79,
         "MA20": 7.79,
         "MA60": 7.58,
-        "RSI": 54.31,
+        "RSI": 54.33,
         "KDJ_K": 67.56,
         "KDJ_D": 62.33,
         "MACD_DIF": 0.03,
@@ -5799,7 +5741,7 @@
         "KDJ_K": 24.51,
         "KDJ_D": 37.34,
         "MACD_DIF": -0.28,
-        "MACD_DEA": 0.76,
+        "MACD_DEA": 0.77,
         "BOLL_MID": 109.82,
         "BOLL_BW": 16.02,
         "VOL_RATIO": 0.89,
@@ -5853,7 +5795,7 @@
         "MA10": 25.09,
         "MA20": 25.64,
         "MA60": 23.47,
-        "RSI": 53.1,
+        "RSI": 53.11,
         "KDJ_K": 35.49,
         "KDJ_D": 23.41,
         "MACD_DIF": 0.24,
@@ -5911,11 +5853,11 @@
         "MA10": 38.68,
         "MA20": 39.31,
         "MA60": 38.04,
-        "RSI": 51.04,
+        "RSI": 51.01,
         "KDJ_K": 43.18,
         "KDJ_D": 37.16,
         "MACD_DIF": -0.18,
-        "MACD_DEA": -0.11,
+        "MACD_DEA": -0.12,
         "BOLL_MID": 39.31,
         "BOLL_BW": 13.07,
         "VOL_RATIO": 0.98,
@@ -5969,7 +5911,7 @@
         "MA10": 18.82,
         "MA20": 18.98,
         "MA60": 19.15,
-        "RSI": 47.8,
+        "RSI": 47.79,
         "KDJ_K": 53.69,
         "KDJ_D": 52.79,
         "MACD_DIF": -0.09,
@@ -6027,7 +5969,7 @@
         "MA10": 15.24,
         "MA20": 15.58,
         "MA60": 15.84,
-        "RSI": 42.92,
+        "RSI": 42.93,
         "KDJ_K": 29.64,
         "KDJ_D": 19.69,
         "MACD_DIF": -0.29,
@@ -6216,6 +6158,64 @@
       }
     },
     {
+      "code": "300984",
+      "name": "金沃股份",
+      "raw_score": 50.8,
+      "status": "中性",
+      "summary": "技术面中性（50.8/100）",
+      "dimensions": {
+        "trend": {
+          "score": 3.9,
+          "detail": "均线缠绕，MACD死叉"
+        },
+        "momentum": {
+          "score": 6.0,
+          "detail": "RSI 41回升"
+        },
+        "volume": {
+          "score": 5.9,
+          "detail": "量比1.1，MFI中性"
+        },
+        "volatility": {
+          "score": 6.5,
+          "detail": "布林中轨附近"
+        },
+        "chip": {
+          "score": 3.7,
+          "detail": "筹码集中度15%，20日换手64%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 72.4,
+        "MA10": 73.68,
+        "MA20": 75.48,
+        "MA60": 72.17,
+        "RSI": 41.3,
+        "KDJ_K": 17.93,
+        "KDJ_D": 20.31,
+        "MACD_DIF": -1.14,
+        "MACD_DEA": -0.43,
+        "BOLL_MID": 75.48,
+        "BOLL_BW": 15.88,
+        "VOL_RATIO": 1.06,
+        "TURNOVER_20D": 63.88,
+        "MFI": 33.56,
+        "MFMA": 37.62,
+        "chip_concentration": 15.483
+      }
+    },
+    {
       "code": "688137",
       "name": "近岸蛋白",
       "raw_score": 50.8,
@@ -6317,7 +6317,7 @@
         "MA10": 30.37,
         "MA20": 31.11,
         "MA60": 30.59,
-        "RSI": 42.72,
+        "RSI": 42.73,
         "KDJ_K": 40.55,
         "KDJ_D": 38.9,
         "MACD_DIF": -0.33,
@@ -6506,64 +6506,6 @@
       }
     },
     {
-      "code": "300984",
-      "name": "金沃股份",
-      "raw_score": 50.5,
-      "status": "中性",
-      "summary": "技术面中性（50.5/100）",
-      "dimensions": {
-        "trend": {
-          "score": 3.9,
-          "detail": "均线缠绕，MACD死叉"
-        },
-        "momentum": {
-          "score": 6.0,
-          "detail": "RSI 41回升"
-        },
-        "volume": {
-          "score": 5.9,
-          "detail": "量比1.1，MFI中性"
-        },
-        "volatility": {
-          "score": 6.5,
-          "detail": "布林中轨附近"
-        },
-        "chip": {
-          "score": 3.5,
-          "detail": "筹码集中度15%，20日换手56%"
-        },
-        "custom_signal": {
-          "score": 5.0,
-          "detail": "无信号"
-        }
-      },
-      "resonance": {
-        "has_signal": false,
-        "signal_type": null,
-        "signal_date": null,
-        "is_strong": false,
-        "message": null
-      },
-      "core_indicators": {
-        "MA5": 72.4,
-        "MA10": 73.68,
-        "MA20": 75.48,
-        "MA60": 72.17,
-        "RSI": 41.32,
-        "KDJ_K": 17.93,
-        "KDJ_D": 20.31,
-        "MACD_DIF": -1.14,
-        "MACD_DEA": -0.42,
-        "BOLL_MID": 75.48,
-        "BOLL_BW": 15.88,
-        "VOL_RATIO": 1.06,
-        "TURNOVER_20D": 55.99,
-        "MFI": 33.56,
-        "MFMA": 37.62,
-        "chip_concentration": 15.483
-      }
-    },
-    {
       "code": "300836",
       "name": "佰奥智能",
       "raw_score": 50.0,
@@ -6607,11 +6549,11 @@
         "MA10": 59.72,
         "MA20": 62.01,
         "MA60": 57.14,
-        "RSI": 50.69,
+        "RSI": 50.68,
         "KDJ_K": 66.45,
         "KDJ_D": 57.08,
         "MACD_DIF": 0.23,
-        "MACD_DEA": 0.55,
+        "MACD_DEA": 0.54,
         "BOLL_MID": 62.01,
         "BOLL_BW": 24.46,
         "VOL_RATIO": 1.24,
@@ -6665,7 +6607,7 @@
         "MA10": 66.3,
         "MA20": 67.99,
         "MA60": 67.16,
-        "RSI": 47.79,
+        "RSI": 47.78,
         "KDJ_K": 42.39,
         "KDJ_D": 30.66,
         "MACD_DIF": -0.81,
@@ -6723,7 +6665,7 @@
         "MA10": 10.63,
         "MA20": 10.45,
         "MA60": 10.6,
-        "RSI": 47.48,
+        "RSI": 47.49,
         "KDJ_K": 44.45,
         "KDJ_D": 60.18,
         "MACD_DIF": 0.03,
@@ -6839,11 +6781,11 @@
         "MA10": 142.13,
         "MA20": 143.91,
         "MA60": 169.25,
-        "RSI": 35.76,
+        "RSI": 35.72,
         "KDJ_K": 29.4,
         "KDJ_D": 33.9,
-        "MACD_DIF": -5.35,
-        "MACD_DEA": -6.29,
+        "MACD_DIF": -5.36,
+        "MACD_DEA": -6.31,
         "BOLL_MID": 143.91,
         "BOLL_BW": 9.18,
         "VOL_RATIO": 0.74,
@@ -6897,7 +6839,7 @@
         "MA10": 17.68,
         "MA20": 18.36,
         "MA60": 16.5,
-        "RSI": 44.65,
+        "RSI": 44.64,
         "KDJ_K": 11.33,
         "KDJ_D": 14.15,
         "MACD_DIF": -0.11,
@@ -6955,7 +6897,7 @@
         "MA10": 49.33,
         "MA20": 50.78,
         "MA60": 51.14,
-        "RSI": 42.49,
+        "RSI": 42.48,
         "KDJ_K": 45.87,
         "KDJ_D": 39.37,
         "MACD_DIF": -0.96,
@@ -7071,7 +7013,7 @@
         "MA10": 13.06,
         "MA20": 13.21,
         "MA60": 14.43,
-        "RSI": 42.76,
+        "RSI": 42.72,
         "KDJ_K": 53.14,
         "KDJ_D": 51.55,
         "MACD_DIF": -0.28,
@@ -7129,7 +7071,7 @@
         "MA10": 19.19,
         "MA20": 19.42,
         "MA60": 19.78,
-        "RSI": 47.77,
+        "RSI": 47.76,
         "KDJ_K": 74.33,
         "KDJ_D": 66.75,
         "MACD_DIF": -0.2,
@@ -7187,7 +7129,7 @@
         "MA10": 55.85,
         "MA20": 56.12,
         "MA60": 46.95,
-        "RSI": 55.54,
+        "RSI": 55.53,
         "KDJ_K": 47.68,
         "KDJ_D": 49.8,
         "MACD_DIF": 2.04,
@@ -7303,7 +7245,7 @@
         "MA10": 344.68,
         "MA20": 349.66,
         "MA60": 339.67,
-        "RSI": 43.52,
+        "RSI": 43.51,
         "KDJ_K": 15.65,
         "KDJ_D": 17.99,
         "MACD_DIF": -3.86,
@@ -7330,7 +7272,7 @@
         },
         "momentum": {
           "score": 6.7,
-          "detail": "RSI 44回升，KDJ金叉"
+          "detail": "RSI 43回升，KDJ金叉"
         },
         "volume": {
           "score": 6.6,
@@ -7361,7 +7303,7 @@
         "MA10": 18.79,
         "MA20": 19.12,
         "MA60": 19.34,
-        "RSI": 43.52,
+        "RSI": 43.48,
         "KDJ_K": 30.64,
         "KDJ_D": 28.17,
         "MACD_DIF": -0.31,
@@ -7434,6 +7376,64 @@
       }
     },
     {
+      "code": "000001",
+      "name": "上证指数",
+      "raw_score": 47.0,
+      "status": "中性",
+      "summary": "技术面中性（47.0/100）",
+      "dimensions": {
+        "trend": {
+          "score": 4.3,
+          "detail": "均线缠绕，MACD金叉"
+        },
+        "momentum": {
+          "score": 4.8,
+          "detail": "RSI 36，动量中性"
+        },
+        "volume": {
+          "score": 5.9,
+          "detail": "量比1.6，MFI中性"
+        },
+        "volatility": {
+          "score": 5.2,
+          "detail": "波动正常"
+        },
+        "chip": {
+          "score": 3.1,
+          "detail": "筹码集中度8%，20日换手9%"
+        },
+        "custom_signal": {
+          "score": 5.0,
+          "detail": "无信号"
+        }
+      },
+      "resonance": {
+        "has_signal": false,
+        "signal_type": null,
+        "signal_date": null,
+        "is_strong": false,
+        "message": null
+      },
+      "core_indicators": {
+        "MA5": 10.94,
+        "MA10": 11.0,
+        "MA20": 10.97,
+        "MA60": 11.32,
+        "RSI": 35.83,
+        "KDJ_K": 38.77,
+        "KDJ_D": 52.63,
+        "MACD_DIF": -0.09,
+        "MACD_DEA": -0.1,
+        "BOLL_MID": 10.97,
+        "BOLL_BW": 3.21,
+        "VOL_RATIO": 1.59,
+        "TURNOVER_20D": 9.46,
+        "MFI": 41.37,
+        "MFMA": 37.74,
+        "chip_concentration": 7.588
+      }
+    },
+    {
       "code": "300321",
       "name": "同大股份",
       "raw_score": 46.8,
@@ -7477,7 +7477,7 @@
         "MA10": 42.66,
         "MA20": 42.05,
         "MA60": 44.1,
-        "RSI": 45.48,
+        "RSI": 45.47,
         "KDJ_K": 36.46,
         "KDJ_D": 52.53,
         "MACD_DIF": -0.2,
@@ -7535,7 +7535,7 @@
         "MA10": 27.89,
         "MA20": 27.33,
         "MA60": 26.69,
-        "RSI": 47.45,
+        "RSI": 47.46,
         "KDJ_K": 19.33,
         "KDJ_D": 33.51,
         "MACD_DIF": 0.21,
@@ -7596,12 +7596,12 @@
         "RSI": 43.08,
         "KDJ_K": 36.65,
         "KDJ_D": 38.04,
-        "MACD_DIF": -0.36,
+        "MACD_DIF": -0.35,
         "MACD_DEA": -0.29,
         "BOLL_MID": 23.95,
         "BOLL_BW": 13.01,
         "VOL_RATIO": 1.04,
-        "TURNOVER_20D": 63.52,
+        "TURNOVER_20D": 63.51,
         "MFI": 35.84,
         "MFMA": 28.57,
         "chip_concentration": 7.661
@@ -7709,7 +7709,7 @@
         "MA10": 47.43,
         "MA20": 46.76,
         "MA60": 43.43,
-        "RSI": 49.41,
+        "RSI": 49.4,
         "KDJ_K": 53.64,
         "KDJ_D": 63.86,
         "MACD_DIF": 1.04,
@@ -7829,7 +7829,7 @@
         "KDJ_K": 28.6,
         "KDJ_D": 24.17,
         "MACD_DIF": -0.69,
-        "MACD_DEA": -0.48,
+        "MACD_DEA": -0.47,
         "BOLL_MID": 47.75,
         "BOLL_BW": 15.46,
         "VOL_RATIO": 1.27,
@@ -7941,10 +7941,10 @@
         "MA10": 49.06,
         "MA20": 49.6,
         "MA60": 45.65,
-        "RSI": 47.59,
+        "RSI": 47.57,
         "KDJ_K": 45.64,
         "KDJ_D": 51.99,
-        "MACD_DIF": 0.37,
+        "MACD_DIF": 0.36,
         "MACD_DEA": 0.66,
         "BOLL_MID": 49.6,
         "BOLL_BW": 13.53,
@@ -8007,7 +8007,7 @@
         "BOLL_MID": 1.81,
         "BOLL_BW": 8.77,
         "VOL_RATIO": 1.4,
-        "TURNOVER_20D": 91.12,
+        "TURNOVER_20D": 91.13,
         "MFI": 36.28,
         "MFMA": 48.58
       }
@@ -8056,7 +8056,7 @@
         "MA10": 19.24,
         "MA20": 19.38,
         "MA60": 18.41,
-        "RSI": 45.6,
+        "RSI": 45.58,
         "KDJ_K": 32.34,
         "KDJ_D": 42.94,
         "MACD_DIF": 0.05,
@@ -8172,7 +8172,7 @@
         "MA10": 34.17,
         "MA20": 35.48,
         "MA60": 37.34,
-        "RSI": 25.8,
+        "RSI": 25.78,
         "KDJ_K": 7.55,
         "KDJ_D": 10.27,
         "MACD_DIF": -1.2,
@@ -8230,7 +8230,7 @@
         "MA10": 96.39,
         "MA20": 97.77,
         "MA60": 100.25,
-        "RSI": 36.19,
+        "RSI": 36.18,
         "KDJ_K": 10.2,
         "KDJ_D": 14.1,
         "MACD_DIF": -1.71,
@@ -8288,7 +8288,7 @@
         "MA10": 14.21,
         "MA20": 14.21,
         "MA60": 14.59,
-        "RSI": 35.4,
+        "RSI": 35.41,
         "KDJ_K": 11.74,
         "KDJ_D": 22.94,
         "MACD_DIF": -0.12,

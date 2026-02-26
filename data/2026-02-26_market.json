@@ -1,0 +1,120 @@
+{
+  "sector_performance": {
+    "top_gainers": [
+      {
+        "name": "综合电力设备商",
+        "change_pct": 6.3,
+        "net_inflow": null
+      },
+      {
+        "name": "激光设备",
+        "change_pct": 6.25,
+        "net_inflow": null
+      },
+      {
+        "name": "印制电路板",
+        "change_pct": 5.1,
+        "net_inflow": null
+      },
+      {
+        "name": "通信线缆及配套",
+        "change_pct": 4.88,
+        "net_inflow": null
+      },
+      {
+        "name": "元件",
+        "change_pct": 4.19,
+        "net_inflow": null
+      },
+      {
+        "name": "火电设备",
+        "change_pct": 3.99,
+        "net_inflow": null
+      },
+      {
+        "name": "特钢Ⅲ",
+        "change_pct": 3.49,
+        "net_inflow": null
+      },
+      {
+        "name": "特钢Ⅱ",
+        "change_pct": 3.49,
+        "net_inflow": null
+      },
+      {
+        "name": "集成电路封测",
+        "change_pct": 3.17,
+        "net_inflow": null
+      },
+      {
+        "name": "钨",
+        "change_pct": 3.13,
+        "net_inflow": null
+      }
+    ],
+    "top_losers": [
+      {
+        "name": "航天装备Ⅱ",
+        "change_pct": 1.9,
+        "net_outflow": null
+      },
+      {
+        "name": "航天装备Ⅲ",
+        "change_pct": 1.9,
+        "net_outflow": null
+      },
+      {
+        "name": "其他能源发电",
+        "change_pct": 1.9,
+        "net_outflow": null
+      },
+      {
+        "name": "电网自动化设备",
+        "change_pct": 1.91,
+        "net_outflow": null
+      },
+      {
+        "name": "其他电源设备Ⅲ",
+        "change_pct": 1.92,
+        "net_outflow": null
+      },
+      {
+        "name": "半导体设备",
+        "change_pct": 1.92,
+        "net_outflow": null
+      },
+      {
+        "name": "被动元件",
+        "change_pct": 1.97,
+        "net_outflow": null
+      },
+      {
+        "name": "钾肥",
+        "change_pct": 2.0,
+        "net_outflow": null
+      },
+      {
+        "name": "磨具磨料",
+        "change_pct": 2.0,
+        "net_outflow": null
+      },
+      {
+        "name": "电能综合服务",
+        "change_pct": 2.08,
+        "net_outflow": null
+      }
+    ]
+  },
+  "market_summary": "三大指数集体收跌。上证指数跌0.01%报4146.63点，深成指涨0.19%，创业板指跌0.29%。行业板块44个上涨、0个下跌。综合电力设备商领涨；航天装备Ⅱ跌幅居前。",
+  "capital_flow_summary": "上涨个股2485家，下跌个股2870家。",
+  "market_breadth": {
+    "up": 2485,
+    "down": 2870,
+    "flat": 116
+  },
+  "rotation": {
+    "hot_sectors": [],
+    "cooling_sectors": [],
+    "summary": "暂无行业轮动因子数据"
+  }
+}
