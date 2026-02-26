@@ -1009,6 +1009,15 @@
         </div>`;
     }
 
+    function renderDim(label, dim, weight) {
+        const v = dim ? dim.score : 0;
+        const cls = v >= 7 ? 'high' : v >= 5 ? 'mid' : 'low';
+        return `<div class="dim">
+            <span class="dim-label">${label}</span>
+            <span class="dim-score ${cls}">${dim ? v.toFixed(1) : '—'}</span>
+            <span class="dim-weight">权重 ${weight}</span>
+        </div>`;
+    }
 
     function renderAnalysisGroup(label, dim) {
         if (!dim) return '';
