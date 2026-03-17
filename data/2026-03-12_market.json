@@ -1,0 +1,120 @@
+{
+  "sector_performance": {
+    "top_gainers": [
+      {
+        "name": "储能",
+        "change_pct": 7.44,
+        "net_inflow": null
+      },
+      {
+        "name": "其他化学纤维",
+        "change_pct": 6.82,
+        "net_inflow": null
+      },
+      {
+        "name": "风电整机",
+        "change_pct": 5.62,
+        "net_inflow": null
+      },
+      {
+        "name": "煤化工",
+        "change_pct": 4.7,
+        "net_inflow": null
+      },
+      {
+        "name": "焦炭Ⅲ",
+        "change_pct": 4.34,
+        "net_inflow": null
+      },
+      {
+        "name": "焦炭Ⅱ",
+        "change_pct": 4.34,
+        "net_inflow": null
+      },
+      {
+        "name": "风电设备",
+        "change_pct": 4.32,
+        "net_inflow": null
+      },
+      {
+        "name": "期货",
+        "change_pct": 4.18,
+        "net_inflow": null
+      },
+      {
+        "name": "动力煤",
+        "change_pct": 4.1,
+        "net_inflow": null
+      },
+      {
+        "name": "煤炭",
+        "change_pct": 4.09,
+        "net_inflow": null
+      }
+    ],
+    "top_losers": [
+      {
+        "name": "稀土",
+        "change_pct": 0.17,
+        "net_outflow": null
+      },
+      {
+        "name": "钢结构",
+        "change_pct": 0.17,
+        "net_outflow": null
+      },
+      {
+        "name": "铁路运输",
+        "change_pct": 0.18,
+        "net_outflow": null
+      },
+      {
+        "name": "基建市政工程",
+        "change_pct": 0.21,
+        "net_outflow": null
+      },
+      {
+        "name": "钢铁管材",
+        "change_pct": 0.21,
+        "net_outflow": null
+      },
+      {
+        "name": "证券Ⅱ",
+        "change_pct": 0.22,
+        "net_outflow": null
+      },
+      {
+        "name": "证券Ⅲ",
+        "change_pct": 0.22,
+        "net_outflow": null
+      },
+      {
+        "name": "培训教育",
+        "change_pct": 0.23,
+        "net_outflow": null
+      },
+      {
+        "name": "疫苗",
+        "change_pct": 0.23,
+        "net_outflow": null
+      },
+      {
+        "name": "商用载货车",
+        "change_pct": 0.24,
+        "net_outflow": null
+      }
+    ]
+  },
+  "market_summary": "三大指数集体收跌。上证指数跌0.10%报4129.10点，深成指跌0.63%，创业板指跌0.96%。行业板块100个上涨、0个下跌。储能领涨；稀土跌幅居前。",
+  "capital_flow_summary": "上涨个股1494家，下跌个股3893家。",
+  "market_breadth": {
+    "up": 1494,
+    "down": 3893,
+    "flat": 95
+  },
+  "rotation": {
+    "hot_sectors": [],
+    "cooling_sectors": [],
+    "summary": "暂无行业轮动因子数据"
+  }
+}

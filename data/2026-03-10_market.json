@@ -1,0 +1,120 @@
+{
+  "sector_performance": {
+    "top_gainers": [
+      {
+        "name": "印制电路板",
+        "change_pct": 6.69,
+        "net_inflow": null
+      },
+      {
+        "name": "通信线缆及配套",
+        "change_pct": 6.62,
+        "net_inflow": null
+      },
+      {
+        "name": "通信网络设备及器件",
+        "change_pct": 5.85,
+        "net_inflow": null
+      },
+      {
+        "name": "分立器件",
+        "change_pct": 5.63,
+        "net_inflow": null
+      },
+      {
+        "name": "元件",
+        "change_pct": 5.61,
+        "net_inflow": null
+      },
+      {
+        "name": "光伏加工设备",
+        "change_pct": 4.65,
+        "net_inflow": null
+      },
+      {
+        "name": "粘胶",
+        "change_pct": 4.55,
+        "net_inflow": null
+      },
+      {
+        "name": "通信设备",
+        "change_pct": 4.49,
+        "net_inflow": null
+      },
+      {
+        "name": "激光设备",
+        "change_pct": 4.4,
+        "net_inflow": null
+      },
+      {
+        "name": "磁性材料",
+        "change_pct": 4.2,
+        "net_inflow": null
+      }
+    ],
+    "top_losers": [
+      {
+        "name": "改性塑料",
+        "change_pct": 2.44,
+        "net_outflow": null
+      },
+      {
+        "name": "工控设备",
+        "change_pct": 2.44,
+        "net_outflow": null
+      },
+      {
+        "name": "汽车零部件",
+        "change_pct": 2.45,
+        "net_outflow": null
+      },
+      {
+        "name": "机器人",
+        "change_pct": 2.46,
+        "net_outflow": null
+      },
+      {
+        "name": "旅游综合",
+        "change_pct": 2.46,
+        "net_outflow": null
+      },
+      {
+        "name": "横向通用软件",
+        "change_pct": 2.47,
+        "net_outflow": null
+      },
+      {
+        "name": "其他塑料制品",
+        "change_pct": 2.47,
+        "net_outflow": null
+      },
+      {
+        "name": "生物制品",
+        "change_pct": 2.47,
+        "net_outflow": null
+      },
+      {
+        "name": "医疗服务",
+        "change_pct": 2.47,
+        "net_outflow": null
+      },
+      {
+        "name": "医疗耗材",
+        "change_pct": 2.48,
+        "net_outflow": null
+      }
+    ]
+  },
+  "market_summary": "三大指数集体收涨。上证指数涨0.65%报4123.14点，深成指涨2.04%，创业板指涨3.04%。行业板块100个上涨、0个下跌。印制电路板领涨；改性塑料跌幅居前。",
+  "capital_flow_summary": "上涨个股4536家，下跌个股850家。",
+  "market_breadth": {
+    "up": 4536,
+    "down": 850,
+    "flat": 93
+  },
+  "rotation": {
+    "hot_sectors": [],
+    "cooling_sectors": [],
+    "summary": "暂无行业轮动因子数据"
+  }
+}

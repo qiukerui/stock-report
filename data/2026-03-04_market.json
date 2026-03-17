@@ -1,0 +1,120 @@
+{
+  "sector_performance": {
+    "top_gainers": [
+      {
+        "name": "燃料电池",
+        "change_pct": 8.49,
+        "net_inflow": null
+      },
+      {
+        "name": "种子",
+        "change_pct": 6.77,
+        "net_inflow": null
+      },
+      {
+        "name": "输变电设备",
+        "change_pct": 5.45,
+        "net_inflow": null
+      },
+      {
+        "name": "综合电力设备商",
+        "change_pct": 5.12,
+        "net_inflow": null
+      },
+      {
+        "name": "钨",
+        "change_pct": 5.01,
+        "net_inflow": null
+      },
+      {
+        "name": "种植业",
+        "change_pct": 3.86,
+        "net_inflow": null
+      },
+      {
+        "name": "电网设备",
+        "change_pct": 3.79,
+        "net_inflow": null
+      },
+      {
+        "name": "线缆部件及其他",
+        "change_pct": 3.75,
+        "net_inflow": null
+      },
+      {
+        "name": "电工仪器仪表",
+        "change_pct": 3.71,
+        "net_inflow": null
+      },
+      {
+        "name": "油气开采Ⅲ",
+        "change_pct": 3.47,
+        "net_inflow": null
+      }
+    ],
+    "top_losers": [
+      {
+        "name": "电能综合服务",
+        "change_pct": 1.02,
+        "net_outflow": null
+      },
+      {
+        "name": "氨纶",
+        "change_pct": 1.03,
+        "net_outflow": null
+      },
+      {
+        "name": "小金属",
+        "change_pct": 1.06,
+        "net_outflow": null
+      },
+      {
+        "name": "渔业",
+        "change_pct": 1.13,
+        "net_outflow": null
+      },
+      {
+        "name": "电力设备",
+        "change_pct": 1.14,
+        "net_outflow": null
+      },
+      {
+        "name": "其他电源设备Ⅲ",
+        "change_pct": 1.23,
+        "net_outflow": null
+      },
+      {
+        "name": "其他电源设备Ⅱ",
+        "change_pct": 1.32,
+        "net_outflow": null
+      },
+      {
+        "name": "国防军工",
+        "change_pct": 1.34,
+        "net_outflow": null
+      },
+      {
+        "name": "磷肥及磷化工",
+        "change_pct": 1.35,
+        "net_outflow": null
+      },
+      {
+        "name": "园林工程",
+        "change_pct": 1.4,
+        "net_outflow": null
+      }
+    ]
+  },
+  "market_summary": "三大指数集体收跌。上证指数跌0.98%报4082.47点，深成指跌0.75%，创业板指跌1.41%。行业板块48个上涨、0个下跌。燃料电池领涨；电能综合服务跌幅居前。",
+  "capital_flow_summary": "上涨个股1745家，下跌个股3640家。",
+  "market_breadth": {
+    "up": 1745,
+    "down": 3640,
+    "flat": 89
+  },
+  "rotation": {
+    "hot_sectors": [],
+    "cooling_sectors": [],
+    "summary": "暂无行业轮动因子数据"
+  }
+}

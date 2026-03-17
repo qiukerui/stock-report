@@ -1,0 +1,120 @@
+{
+  "sector_performance": {
+    "top_gainers": [
+      {
+        "name": "油气及炼化工程",
+        "change_pct": 13.36,
+        "net_inflow": null
+      },
+      {
+        "name": "油服工程",
+        "change_pct": 12.86,
+        "net_inflow": null
+      },
+      {
+        "name": "油田服务",
+        "change_pct": 12.49,
+        "net_inflow": null
+      },
+      {
+        "name": "燃气Ⅲ",
+        "change_pct": 10.52,
+        "net_inflow": null
+      },
+      {
+        "name": "燃气Ⅱ",
+        "change_pct": 10.52,
+        "net_inflow": null
+      },
+      {
+        "name": "油气开采Ⅲ",
+        "change_pct": 8.73,
+        "net_inflow": null
+      },
+      {
+        "name": "油气开采Ⅱ",
+        "change_pct": 8.73,
+        "net_inflow": null
+      },
+      {
+        "name": "储能",
+        "change_pct": 7.77,
+        "net_inflow": null
+      },
+      {
+        "name": "石油石化",
+        "change_pct": 7.08,
+        "net_inflow": null
+      },
+      {
+        "name": "航运",
+        "change_pct": 6.75,
+        "net_inflow": null
+      }
+    ],
+    "top_losers": [
+      {
+        "name": "卫浴电器",
+        "change_pct": 0.38,
+        "net_outflow": null
+      },
+      {
+        "name": "银行Ⅱ",
+        "change_pct": 0.43,
+        "net_outflow": null
+      },
+      {
+        "name": "银行",
+        "change_pct": 0.43,
+        "net_outflow": null
+      },
+      {
+        "name": "股份制银行Ⅲ",
+        "change_pct": 0.45,
+        "net_outflow": null
+      },
+      {
+        "name": "农业综合Ⅱ",
+        "change_pct": 0.59,
+        "net_outflow": null
+      },
+      {
+        "name": "农业综合Ⅲ",
+        "change_pct": 0.59,
+        "net_outflow": null
+      },
+      {
+        "name": "铁路运输",
+        "change_pct": 0.74,
+        "net_outflow": null
+      },
+      {
+        "name": "保险Ⅱ",
+        "change_pct": 0.81,
+        "net_outflow": null
+      },
+      {
+        "name": "保险Ⅲ",
+        "change_pct": 0.81,
+        "net_outflow": null
+      },
+      {
+        "name": "交通运输",
+        "change_pct": 0.87,
+        "net_outflow": null
+      }
+    ]
+  },
+  "market_summary": "三大指数集体收跌。上证指数跌1.43%报4122.68点，深成指跌3.07%，创业板指跌2.57%。行业板块40个上涨、0个下跌。油气及炼化工程领涨；卫浴电器跌幅居前。",
+  "capital_flow_summary": "上涨个股643家，下跌个股4807家。",
+  "market_breadth": {
+    "up": 643,
+    "down": 4807,
+    "flat": 22
+  },
+  "rotation": {
+    "hot_sectors": [],
+    "cooling_sectors": [],
+    "summary": "暂无行业轮动因子数据"
+  }
+}

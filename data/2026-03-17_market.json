@@ -1,0 +1,120 @@
+{
+  "sector_performance": {
+    "top_gainers": [
+      {
+        "name": "长材",
+        "change_pct": 4.14,
+        "net_inflow": null
+      },
+      {
+        "name": "房产租赁经纪",
+        "change_pct": 4.0,
+        "net_inflow": null
+      },
+      {
+        "name": "其他化学纤维",
+        "change_pct": 3.34,
+        "net_inflow": null
+      },
+      {
+        "name": "期货",
+        "change_pct": 2.82,
+        "net_inflow": null
+      },
+      {
+        "name": "硅料硅片",
+        "change_pct": 2.62,
+        "net_inflow": null
+      },
+      {
+        "name": "氮肥",
+        "change_pct": 2.3,
+        "net_inflow": null
+      },
+      {
+        "name": "风力发电",
+        "change_pct": 2.14,
+        "net_inflow": null
+      },
+      {
+        "name": "保险Ⅲ",
+        "change_pct": 2.1,
+        "net_inflow": null
+      },
+      {
+        "name": "保险Ⅱ",
+        "change_pct": 2.1,
+        "net_inflow": null
+      },
+      {
+        "name": "综合乘用车",
+        "change_pct": 1.61,
+        "net_inflow": null
+      }
+    ],
+    "top_losers": [
+      {
+        "name": "证券Ⅲ",
+        "change_pct": 0.55,
+        "net_outflow": null
+      },
+      {
+        "name": "贵金属",
+        "change_pct": 0.55,
+        "net_outflow": null
+      },
+      {
+        "name": "房地产开发",
+        "change_pct": 0.56,
+        "net_outflow": null
+      },
+      {
+        "name": "商用载客车",
+        "change_pct": 0.57,
+        "net_outflow": null
+      },
+      {
+        "name": "空调",
+        "change_pct": 0.59,
+        "net_outflow": null
+      },
+      {
+        "name": "房地产",
+        "change_pct": 0.6,
+        "net_outflow": null
+      },
+      {
+        "name": "乘用车",
+        "change_pct": 0.63,
+        "net_outflow": null
+      },
+      {
+        "name": "住宅开发",
+        "change_pct": 0.65,
+        "net_outflow": null
+      },
+      {
+        "name": "银行Ⅱ",
+        "change_pct": 0.68,
+        "net_outflow": null
+      },
+      {
+        "name": "银行",
+        "change_pct": 0.68,
+        "net_outflow": null
+      }
+    ]
+  },
+  "market_summary": "三大指数集体收跌。上证指数跌0.85%报4049.91点，深成指跌1.87%，创业板指跌2.29%。行业板块37个上涨、0个下跌。长材领涨；证券Ⅲ跌幅居前。",
+  "capital_flow_summary": "上涨个股867家，下跌个股4541家。",
+  "market_breadth": {
+    "up": 867,
+    "down": 4541,
+    "flat": 70
+  },
+  "rotation": {
+    "hot_sectors": [],
+    "cooling_sectors": [],
+    "summary": "暂无行业轮动因子数据"
+  }
+}

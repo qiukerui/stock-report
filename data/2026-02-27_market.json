@@ -1,0 +1,120 @@
+{
+  "sector_performance": {
+    "top_gainers": [
+      {
+        "name": "钨",
+        "change_pct": 10.0,
+        "net_inflow": null
+      },
+      {
+        "name": "钼",
+        "change_pct": 10.0,
+        "net_inflow": null
+      },
+      {
+        "name": "小金属",
+        "change_pct": 7.84,
+        "net_inflow": null
+      },
+      {
+        "name": "稀土",
+        "change_pct": 7.51,
+        "net_inflow": null
+      },
+      {
+        "name": "其他小金属",
+        "change_pct": 7.21,
+        "net_inflow": null
+      },
+      {
+        "name": "燃料电池",
+        "change_pct": 6.11,
+        "net_inflow": null
+      },
+      {
+        "name": "期货",
+        "change_pct": 5.85,
+        "net_inflow": null
+      },
+      {
+        "name": "铅锌",
+        "change_pct": 5.58,
+        "net_inflow": null
+      },
+      {
+        "name": "钴",
+        "change_pct": 4.97,
+        "net_inflow": null
+      },
+      {
+        "name": "电能综合服务",
+        "change_pct": 4.14,
+        "net_inflow": null
+      }
+    ],
+    "top_losers": [
+      {
+        "name": "油品石化贸易",
+        "change_pct": 2.53,
+        "net_outflow": null
+      },
+      {
+        "name": "工业金属",
+        "change_pct": 2.59,
+        "net_outflow": null
+      },
+      {
+        "name": "风力发电",
+        "change_pct": 2.61,
+        "net_outflow": null
+      },
+      {
+        "name": "普钢",
+        "change_pct": 2.61,
+        "net_outflow": null
+      },
+      {
+        "name": "板材",
+        "change_pct": 2.64,
+        "net_outflow": null
+      },
+      {
+        "name": "铜",
+        "change_pct": 2.65,
+        "net_outflow": null
+      },
+      {
+        "name": "钛白粉",
+        "change_pct": 2.65,
+        "net_outflow": null
+      },
+      {
+        "name": "钢铁",
+        "change_pct": 2.69,
+        "net_outflow": null
+      },
+      {
+        "name": "冶钢原料",
+        "change_pct": 2.72,
+        "net_outflow": null
+      },
+      {
+        "name": "塑料包装",
+        "change_pct": 2.77,
+        "net_outflow": null
+      }
+    ]
+  },
+  "market_summary": "三大指数集体收涨。上证指数涨0.39%报4162.88点，深成指跌0.06%，创业板指跌1.04%。行业板块49个上涨、0个下跌。钨领涨；油品石化贸易跌幅居前。",
+  "capital_flow_summary": "上涨个股3271家，下跌个股2068家。",
+  "market_breadth": {
+    "up": 3271,
+    "down": 2068,
+    "flat": 132
+  },
+  "rotation": {
+    "hot_sectors": [],
+    "cooling_sectors": [],
+    "summary": "暂无行业轮动因子数据"
+  }
+}
