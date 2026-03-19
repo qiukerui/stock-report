@@ -1,0 +1,120 @@
+{
+  "sector_performance": {
+    "top_gainers": [
+      {
+        "name": "油气开采Ⅲ",
+        "change_pct": 7.21,
+        "net_inflow": null
+      },
+      {
+        "name": "油气开采Ⅱ",
+        "change_pct": 7.21,
+        "net_inflow": null
+      },
+      {
+        "name": "燃气Ⅲ",
+        "change_pct": 4.28,
+        "net_inflow": null
+      },
+      {
+        "name": "燃气Ⅱ",
+        "change_pct": 4.28,
+        "net_inflow": null
+      },
+      {
+        "name": "卫浴电器",
+        "change_pct": 3.96,
+        "net_inflow": null
+      },
+      {
+        "name": "逆变器",
+        "change_pct": 2.72,
+        "net_inflow": null
+      },
+      {
+        "name": "油田服务",
+        "change_pct": 2.55,
+        "net_inflow": null
+      },
+      {
+        "name": "油服工程",
+        "change_pct": 2.54,
+        "net_inflow": null
+      },
+      {
+        "name": "油气及炼化工程",
+        "change_pct": 2.53,
+        "net_inflow": null
+      },
+      {
+        "name": "光伏发电",
+        "change_pct": 2.31,
+        "net_inflow": null
+      }
+    ],
+    "top_losers": [
+      {
+        "name": "铁路运输",
+        "change_pct": -1.05,
+        "net_outflow": null
+      },
+      {
+        "name": "IT服务Ⅱ",
+        "change_pct": -0.99,
+        "net_outflow": null
+      },
+      {
+        "name": "IT服务Ⅲ",
+        "change_pct": -0.99,
+        "net_outflow": null
+      },
+      {
+        "name": "酒店",
+        "change_pct": -0.97,
+        "net_outflow": null
+      },
+      {
+        "name": "风电零部件",
+        "change_pct": -0.95,
+        "net_outflow": null
+      },
+      {
+        "name": "通信网络设备及器件",
+        "change_pct": -0.94,
+        "net_outflow": null
+      },
+      {
+        "name": "光伏辅材",
+        "change_pct": -0.93,
+        "net_outflow": null
+      },
+      {
+        "name": "非银金融",
+        "change_pct": -0.91,
+        "net_outflow": null
+      },
+      {
+        "name": "公路货运",
+        "change_pct": -0.89,
+        "net_outflow": null
+      },
+      {
+        "name": "教育出版",
+        "change_pct": -0.88,
+        "net_outflow": null
+      }
+    ]
+  },
+  "market_summary": "三大指数集体收跌。上证指数跌1.39%报4006.55点，深成指跌2.02%，创业板指跌1.11%。行业板块28个上涨、34个下跌。油气开采Ⅲ领涨；铁路运输跌幅居前。",
+  "capital_flow_summary": "上涨个股505家，下跌个股4955家。",
+  "market_breadth": {
+    "up": 505,
+    "down": 4955,
+    "flat": 19
+  },
+  "rotation": {
+    "hot_sectors": [],
+    "cooling_sectors": [],
+    "summary": "暂无行业轮动因子数据"
+  }
+}

@@ -1,0 +1,776 @@
+{
+  "date": "2026-03-19",
+  "analysis": [
+    {
+      "code": "002027",
+      "name": "分众传媒",
+      "industry": "传媒/广告营销",
+      "concepts": [
+        "同花顺出海50",
+        "同花顺漂亮100",
+        "阿里巴巴概念",
+        "体育产业",
+        "DeepSeek概念"
+      ],
+      "strategies": [
+        "BUMA"
+      ],
+      "price": 6.76,
+      "score": 6.0,
+      "label": "中性",
+      "zone": "message",
+      "announcement": {
+        "score": 7.065,
+        "sentiment": "bullish",
+        "status": "中性",
+        "summary": "利空2条\n  - 分众传媒：分众传媒信息技术股份有限公司关于深圳证券交易所《关...\n    [DeepSeek] 问询函回复通常涉及监管关注，可能隐含风险，属于轻度利空。\n  - 分众传媒：公司关于发行股份及支付现金购买资产暨关联交易的审核...\n    [DeepSeek] 问询函回复通常涉及监管关注，可能隐含风险，属于轻度利空。\n利好2条\n  - 分众传媒：分众传媒信息技术股份有限公司发行股份及支付现金购买...\n    [DeepSeek] 发行股份购买资产通常被视为扩张性举措，可能利好公司长期发展，但草案修订稿尚存不...\n  - 分众传媒：分众传媒信息技术股份有限公司发行股份及支付现金购买...\n    [DeepSeek] 发行股份及支付现金购买资产，属于扩张性收购，通常为利好，但草案阶段存在不确定性...",
+        "items": [
+          {
+            "level": "弱利好",
+            "date": "2026-03-04",
+            "days_ago": 15,
+            "title": "分众传媒：分众传媒信息技术股份有限公司发行股份及支付现金购买资产暨关联交易报告书（草案）（修订稿）",
+            "reason": "[DeepSeek] 发行股份购买资产通常被视为扩张性举措，可能利好公司长期发展，但草案修订稿尚存不确定性。",
+            "raw_score": 30,
+            "decayed_score": 21.2
+          },
+          {
+            "level": "弱利好",
+            "date": "2026-03-04",
+            "days_ago": 15,
+            "title": "分众传媒：分众传媒信息技术股份有限公司发行股份及支付现金购买资产暨关联交易报告书（草案）摘要（修订稿）",
+            "reason": "[DeepSeek] 发行股份及支付现金购买资产，属于扩张性收购，通常为利好，但草案阶段存在不确定性。",
+            "raw_score": 30,
+            "decayed_score": 21.2
+          },
+          {
+            "level": "弱利空",
+            "date": "2026-03-04",
+            "days_ago": 15,
+            "title": "分众传媒：分众传媒信息技术股份有限公司关于深圳证券交易所《关于分众传媒信息技术股份有限公司发行股份及支付现金购买资产申请的审核问询函》之回复",
+            "reason": "[DeepSeek] 问询函回复通常涉及监管关注，可能隐含风险，属于轻度利空。",
+            "raw_score": -25,
+            "decayed_score": -17.7
+          },
+          {
+            "level": "弱利空",
+            "date": "2026-03-04",
+            "days_ago": 15,
+            "title": "分众传媒：公司关于发行股份及支付现金购买资产暨关联交易的审核问询函回复的提示性公告",
+            "reason": "[DeepSeek] 问询函回复通常涉及监管关注，可能隐含风险，属于轻度利空。",
+            "raw_score": -25,
+            "decayed_score": -17.7
+          }
+        ]
+      },
+      "industry_news": {
+        "score": 7.2,
+        "sentiment": "bullish",
+        "status": "",
+        "summary": "行业向AI驱动和数字化方向发展，数字广告市场增长强劲，但传统媒体投放萎缩；分众传媒作为新潮传媒收购方受益于行业整合和品牌媒体需求增加，机构看好评级支撑；近期主力资金净流向积极。",
+        "items": [
+          {
+            "title": "分众传媒拟以77.94亿元收购成都新潮传媒90.02%股权，并获深交所受理",
+            "sentiment": "positive",
+            "impact": "通过收购新潮传媒扩大线下广告版图，整合优质媒体资源，提升公司竞争力和盈利能力"
+          },
+          {
+            "title": "公司2025年三季报主营收入96.07亿元同比增3.73%，归母净利润42.4亿元同比增6.87%",
+            "sentiment": "positive",
+            "impact": "业绩稳定增长，展现公司基本面向好，盈利能力持续提升"
+          },
+          {
+            "title": "数禾退出投资：公司以7.91亿元实现投资项目退出，回笼资金用于战略布局",
+            "sentiment": "neutral",
+            "impact": "优化资产结构，提高资金使用效率，为后续发展释放流动性"
+          },
+          {
+            "title": "机构评级：9家机构给出评级，买入评级8家，目标均价9.45元",
+            "sentiment": "positive",
+            "impact": "机构高看公司前景，买入评级占比88.9%，目标价相比现价有提升空间"
+          },
+          {
+            "title": "2026年全球数字广告市场突破9000亿美元，中国市场超1800亿美元",
+            "sentiment": "positive",
+            "impact": "广告市场规模扩大，分众传媒作为领先的线下广告媒体，将受益于整体行业增长"
+          },
+          {
+            "title": "AI驱动营销变革：AI营销支出预计2028年超1070亿美元，2026年45%优化工作由AI完成",
+            "sentiment": "positive",
+            "impact": "AI技术提升广告效率，广告主投放意愿增强，线下媒体与数字营销融合拓展增长空间"
+          },
+          {
+            "title": "传统媒体预算萎缩：电视、广播、报纸、杂志等在全球广告支出占比将降至25%以下",
+            "sentiment": "negative",
+            "impact": "传统媒体生存空间被挤压，但分众传媒线下场景媒体属于新兴媒体形式，相对抗跌"
+          },
+          {
+            "title": "预期2026年70%广告主采用AI驱动的归因模型优化预算分配",
+            "sentiment": "positive",
+            "impact": "广告精准性提升将增加媒体价值，分众传媒线下媒体的精准定位优势更加凸显"
+          },
+          {
+            "title": "近期股价动向：3月17日主力资金净买入7936.15万元，显示机构看好态度",
+            "sentiment": "positive",
+            "impact": "主力资金净流入表明市场认可公司价值，为股价提供支撑"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 3.48,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "🔴 PEG=2.78 > 2.0 - 估值远超成长性，高估; ⚠️  研发费用率0.41% < 5% - 研发投入偏低",
+        "items": [
+          "🔴 PEG=2.78 > 2.0 - 估值远超成长性，高估",
+          "⚠️  研发费用率0.41% < 5% - 研发投入偏低"
+        ],
+        "core_indicators": {
+          "PE_TTM": 17.986874519446,
+          "ROE": 25.3203,
+          "毛利率": 70.4007,
+          "净利率": 43.9962,
+          "资产负债率": 29.2608,
+          "营收同比增速": 3.7283
+        }
+      },
+      "message_info": {
+        "title": "文化传媒/广告营销/deepseek",
+        "manager": "首席T/小林",
+        "detail": "1.分众传媒作为户外广告行业龙头，2025年1-9月收入同比增长3.73%，股权结构稳定巩固行业地位\n2.并购新潮传媒后市场份额提升至17%，整合阿里生态资源推动广告效果归因模型升级\n3.「碰一下」NFC技术实现线下广告精准触达，杭州/上海测试领券率达68.6%-66.8%\n4.东南亚新兴市场数字户外广告渗透率提升，越南等国智能广告屏投放助力海外业务两位数增长\n5.众智AI模型降低中小广告主投放成本，2025-2027年楼宇媒体收入预计年均增长10.4%"
+      }
+    },
+    {
+      "code": "600797",
+      "name": "浙大网新",
+      "industry": "计算机/IT服务Ⅱ",
+      "concepts": [
+        "虚拟电厂",
+        "智能电网",
+        "芯片概念",
+        "共同富裕示范区",
+        "AI应用"
+      ],
+      "strategies": [
+        "REBOUND"
+      ],
+      "price": 9.86,
+      "score": 5.8,
+      "label": "中性",
+      "zone": "strategy",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "公告中性（1条中性公告）",
+        "items": []
+      },
+      "industry_news": {
+        "score": 7.2,
+        "sentiment": "bullish",
+        "status": "",
+        "summary": "IT服务行业2026年向AI驱动和国产化方向发展，浙大网新深化AI战略布局，主营收入稳定增长，盈利能力显著提升，产业趋势向利。",
+        "items": [
+          {
+            "title": "浙大网新2025年前三季度主营业务收入23.89亿元，同比增长3.89%，净利润同比增长162.9%",
+            "sentiment": "positive",
+            "impact": "公司盈利能力大幅提升，净利润增长超160%，显示经营效率和市场竞争力提高，对股价形成支撑"
+          },
+          {
+            "title": "浙大网新推进AI驱动发展战略，布局人工智能、隐私计算、区块链、智算云等前沿技术",
+            "sentiment": "positive",
+            "impact": "对标行业2026年AI驱动趋势，公司提前布局人工智能和智算云等核心技术，符合产业发展方向，增强竞争优势"
+          },
+          {
+            "title": "杭州1500P智算中心一期已投入运营，二期3000P采购工作已启动",
+            "sentiment": "positive",
+            "impact": "智算中心投运标志产业升级成果，二期扩建显示公司对智算业务的战略投资，支撑未来收入增长"
+          },
+          {
+            "title": "2月27日主力资金净买入1.65亿元，但3月2日出现净卖出1.14亿元",
+            "sentiment": "neutral",
+            "impact": "资金流动存在波动，反映市场对公司前景预期的不确定性，短期股价波动较大"
+          },
+          {
+            "title": "IT服务行业2026年从价格竞争向价值竞争转变，工信部出台政策推动服务外包高质量发展",
+            "sentiment": "positive",
+            "impact": "行业政策环境改善，竞争格局优化，有利于具有技术优势和价值竞争力的公司获得市场份额"
+          },
+          {
+            "title": "2026年预期70%组织采用复合AI技术，国产化技术进入端到端场景工程阶段",
+            "sentiment": "positive",
+            "impact": "AI应用需求迎来爆发期，国产化浪潮加速，浙大网新作为国内IT服务龙头有望获得广阔市场机遇"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 3.818,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "✓  利润同比增速137.96% - 快速增长; ⚠️  PE_TTM处于历史87.6%分位 - 估值历史高位",
+        "items": [
+          "✓  利润同比增速137.96% - 快速增长",
+          "⚠️  PE_TTM处于历史87.6%分位 - 估值历史高位"
+        ],
+        "core_indicators": {
+          "PE_TTM": 587.4848229705,
+          "ROE": 0.9222,
+          "毛利率": 17.9681,
+          "净利率": 1.1901,
+          "资产负债率": 37.1105,
+          "营收同比增速": 3.8852
+        }
+      }
+    },
+    {
+      "code": "000419",
+      "name": "通程控股",
+      "industry": "商贸零售/一般零售",
+      "concepts": [
+        "互联网金融",
+        "国企改革",
+        "参股保险",
+        "参股银行",
+        "旅游概念"
+      ],
+      "strategies": [
+        "BUMA"
+      ],
+      "price": 6.06,
+      "score": 5.1,
+      "label": "中性",
+      "zone": "strategy",
+      "announcement": {
+        "score": 6.0,
+        "sentiment": "neutral",
+        "status": "中性",
+        "summary": "公告中性（1条中性公告）",
+        "items": []
+      },
+      "industry_news": {
+        "score": 5.5,
+        "sentiment": "neutral",
+        "status": "",
+        "summary": "公司增资消费金融显示积极态度，但行业增速放缓、消费者谨慎消费、实体零售承压，公司三季度净利润同比下降14.89%，整体偏弱",
+        "items": [
+          {
+            "title": "通程控股增资长银五八消费金融1.5亿元",
+            "sentiment": "positive",
+            "impact": "公司积极拓展金融服务，增强盈利动能"
+          },
+          {
+            "title": "2025年三季报：主营收入同比增长6.16%，净利润同比下降14.89%",
+            "sentiment": "negative",
+            "impact": "收入增长但利润下滑，反映经营成本压力和竞争加剧"
+          },
+          {
+            "title": "2026年1-2月社会消费品零售总额增长2.8%",
+            "sentiment": "neutral",
+            "impact": "行业增速放缓，零售业整体增长乏力"
+          },
+          {
+            "title": "消费者从乐观转向谨慎支出，关注性价比",
+            "sentiment": "negative",
+            "impact": "消费端疲弱，对商业零售企业销售和利润造成压力"
+          },
+          {
+            "title": "零售地产进入退潮期，空置率将逐步回落",
+            "sentiment": "negative",
+            "impact": "实体零售门店面临压力，地产合作难度上升"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 3.607,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "偏高估值; 谨慎追高",
+        "items": [],
+        "core_indicators": {
+          "PE_TTM": 25.63711835265,
+          "ROE": 3.5764,
+          "毛利率": 22.8338,
+          "净利率": 10.0941,
+          "营收同比增速": 5.68
+        }
+      }
+    },
+    {
+      "code": "603679",
+      "name": "华体科技",
+      "industry": "电子/光学光电子",
+      "concepts": [
+        "AI应用",
+        "锂电池概念",
+        "数据中心",
+        "华为数字能源",
+        "新能源汽车"
+      ],
+      "strategies": [
+        "REBOUND"
+      ],
+      "price": 15.66,
+      "score": 3.6,
+      "label": "较差",
+      "zone": "strategy",
+      "announcement": {
+        "score": 3.0475000000000003,
+        "sentiment": "neutral",
+        "status": "偏利空",
+        "summary": "利空1条\n  - 华体科技：四川华体照明科技股份有限公司关于累计诉讼的公告\n    [DeepSeek] 累计诉讼通常涉及法律纠纷和潜在赔偿，增加公司经营风险，属于一般利空。",
+        "items": [
+          {
+            "level": "中等利空",
+            "date": "2026-03-07",
+            "days_ago": 12,
+            "title": "华体科技：四川华体照明科技股份有限公司关于累计诉讼的公告",
+            "reason": "[DeepSeek] 累计诉讼通常涉及法律纠纷和潜在赔偿，增加公司经营风险，属于一般利空。",
+            "raw_score": -30,
+            "decayed_score": -22.7
+          }
+        ]
+      },
+      "industry_news": {
+        "score": 4.5,
+        "sentiment": "neutral",
+        "status": "",
+        "summary": "公司面临连续亏损和实控人减持困境，而行业正迎来光芯片和硅光技术快速发展期，公司与行业发展严重脱节",
+        "items": [
+          {
+            "title": "实控人拟套现9000万元，此前已套现4700万元",
+            "sentiment": "negative",
+            "impact": "实控人减持表现出对公司前景的悲观态度，可能打击投资者信心，造成股价进一步下跌"
+          },
+          {
+            "title": "2025年预计全年扣非后净利润亏损7500万-1.12亿元",
+            "sentiment": "negative",
+            "impact": "连续亏损反映公司经营困难，市场竞争力下降，无法跟上行业发展步伐"
+          },
+          {
+            "title": "华体转债到期兑付摘牌",
+            "sentiment": "negative",
+            "impact": "转债兑付完成后，意味着公司融资渠道受限，后续融资能力减弱"
+          },
+          {
+            "title": "2026年800G以上高速光模块占比突破60%，成为AI数据中心标准配备",
+            "sentiment": "positive",
+            "impact": "行业进入快速成长期，新产品需求旺盛，但公司未能利用行业机遇"
+          },
+          {
+            "title": "硅光技术发展迅猛，预计2026年全球硅光模块出货占比超50%",
+            "sentiment": "positive",
+            "impact": "硅光成为技术发展方向，市场规模CAGR达45%，但公司缺乏相关技术储备"
+          },
+          {
+            "title": "苹果变焦光圈技术有望2026年商用，光学创新加速",
+            "sentiment": "positive",
+            "impact": "手机光学应用创新推动行业增长，为光学企业带来新机遇，但公司应对能力不足"
+          }
+        ]
+      },
+      "valuation": {
+        "score": 3.12,
+        "sentiment": "neutral",
+        "status": "偏高估值",
+        "summary": "🔴 利润同比增速-77.93% - 利润负增长",
+        "items": [
+          "🔴 利润同比增速-77.93% - 利润负增长"
+        ],
+        "core_indicators": {
+          "PE_TTM": -28.345111344087,
+          "ROE": -7.0803,
+          "毛利率": 13.2191,
+          "净利率": -15.8093,
+          "资产负债率": 47.4178,
+          "营收同比增速": 29.6713
+        }
+      }
+    }
+  ],
+  "compare": {
+    "prev_date": "2026-03-18",
+    "new_signals": [
+      {
+        "code": "000419",
+        "name": "通程控股",
+        "industry": "商贸零售/一般零售",
+        "strategies": [
+          "BUMA"
+        ],
+        "zone": "strategy"
+      },
+      {
+        "code": "002027",
+        "name": "分众传媒",
+        "industry": "传媒/广告营销",
+        "strategies": [
+          "BUMA"
+        ],
+        "zone": "message"
+      },
+      {
+        "code": "600797",
+        "name": "浙大网新",
+        "industry": "计算机/IT服务Ⅱ",
+        "strategies": [
+          "REBOUND"
+        ],
+        "zone": "strategy"
+      },
+      {
+        "code": "603679",
+        "name": "华体科技",
+        "industry": "电子/光学光电子",
+        "strategies": [
+          "REBOUND"
+        ],
+        "zone": "strategy"
+      }
+    ],
+    "disappeared": [
+      {
+        "code": "688331",
+        "name": "荣昌生物",
+        "industry": "医药生物",
+        "strategy": "REBOUND",
+        "change": -1.23
+      },
+      {
+        "code": "002923",
+        "name": "润都股份",
+        "industry": "医药生物",
+        "strategy": "MTOP",
+        "change": -1.38
+      },
+      {
+        "code": "002572",
+        "name": "索菲亚",
+        "industry": "轻工制造",
+        "strategy": "MTOP",
+        "change": -1.78
+      },
+      {
+        "code": "002298",
+        "name": "中电鑫龙",
+        "industry": "计算机",
+        "strategy": "REBOUND",
+        "change": -1.88
+      },
+      {
+        "code": "300467",
+        "name": "迅游科技",
+        "industry": "传媒",
+        "strategy": "BUMA",
+        "change": -1.89
+      },
+      {
+        "code": "002158",
+        "name": "汉钟精机",
+        "industry": "机械设备",
+        "strategy": "BUMA",
+        "change": -2.05
+      },
+      {
+        "code": "001229",
+        "name": "魅视科技",
+        "industry": "计算机",
+        "strategy": "REBOUND",
+        "change": -2.18
+      },
+      {
+        "code": "300952",
+        "name": "恒辉安防",
+        "industry": "纺织服饰",
+        "strategy": "BUMA",
+        "change": -2.24
+      },
+      {
+        "code": "002026",
+        "name": "山东威达",
+        "industry": "机械设备",
+        "strategy": "BUMA",
+        "change": -2.58
+      },
+      {
+        "code": "002058",
+        "name": "*ST威尔",
+        "industry": "机械设备",
+        "strategy": "BUMA",
+        "change": -2.87
+      },
+      {
+        "code": "688553",
+        "name": "汇宇制药-W",
+        "industry": "医药生物",
+        "strategy": "REBOUND",
+        "change": -3.07
+      },
+      {
+        "code": "300553",
+        "name": "集智股份",
+        "industry": "机械设备",
+        "strategy": "BUMA",
+        "change": -3.33
+      },
+      {
+        "code": "300445",
+        "name": "康斯特",
+        "industry": "机械设备",
+        "strategy": "BUMA",
+        "change": -3.43
+      },
+      {
+        "code": "688433",
+        "name": "华曙高科",
+        "industry": "机械设备",
+        "strategy": "REBOUND",
+        "change": -3.57
+      },
+      {
+        "code": "603308",
+        "name": "应流股份",
+        "industry": "机械设备",
+        "strategy": "BUMA, MTOP",
+        "change": -3.67
+      },
+      {
+        "code": "300539",
+        "name": "横河精密",
+        "industry": "基础化工",
+        "strategy": "BUMA",
+        "change": -3.9
+      },
+      {
+        "code": "002943",
+        "name": "宇晶股份",
+        "industry": "机械设备",
+        "strategy": "BUMA",
+        "change": -4.62
+      },
+      {
+        "code": "301468",
+        "name": "博盈特焊",
+        "industry": "机械设备",
+        "strategy": "BUMA",
+        "change": -4.96
+      },
+      {
+        "code": "00981",
+        "name": "中芯国际",
+        "industry": null,
+        "strategy": "BUMA, REBOUND",
+        "change": null
+      },
+      {
+        "code": "02507",
+        "name": "西锐",
+        "industry": null,
+        "strategy": "BUMA, MTOP",
+        "change": null
+      },
+      {
+        "code": "06160",
+        "name": "百济神州",
+        "industry": null,
+        "strategy": "BUMA",
+        "change": null
+      },
+      {
+        "code": "09858",
+        "name": "优然牧业",
+        "industry": null,
+        "strategy": "BUMA",
+        "change": null
+      },
+      {
+        "code": "09988",
+        "name": "阿里巴巴-W",
+        "industry": null,
+        "strategy": "BUMA",
+        "change": null
+      }
+    ],
+    "stats": {
+      "up": 0,
+      "down": 18,
+      "flat": 0,
+      "max_gain": -1.23,
+      "max_loss": -4.96,
+      "avg": -2.81
+    },
+    "strategy_dist": [
+      {
+        "name": "BUMA",
+        "count": 16,
+        "pct": 69.6
+      },
+      {
+        "name": "REBOUND",
+        "count": 6,
+        "pct": 26.1
+      },
+      {
+        "name": "MTOP",
+        "count": 4,
+        "pct": 17.4
+      }
+    ],
+    "industry_dist": [
+      {
+        "name": "机械设备",
+        "count": 9,
+        "pct": 39.1
+      },
+      {
+        "name": "医药生物",
+        "count": 3,
+        "pct": 13.0
+      },
+      {
+        "name": "计算机",
+        "count": 2,
+        "pct": 8.7
+      },
+      {
+        "name": "轻工制造",
+        "count": 1,
+        "pct": 4.3
+      },
+      {
+        "name": "传媒",
+        "count": 1,
+        "pct": 4.3
+      },
+      {
+        "name": "基础化工",
+        "count": 1,
+        "pct": 4.3
+      },
+      {
+        "name": "纺织服饰",
+        "count": 1,
+        "pct": 4.3
+      }
+    ]
+  },
+  "market": {
+    "sector_performance": {
+      "top_gainers": [
+        {
+          "name": "油气开采Ⅲ",
+          "change_pct": 7.21,
+          "net_inflow": null
+        },
+        {
+          "name": "油气开采Ⅱ",
+          "change_pct": 7.21,
+          "net_inflow": null
+        },
+        {
+          "name": "燃气Ⅲ",
+          "change_pct": 4.28,
+          "net_inflow": null
+        },
+        {
+          "name": "燃气Ⅱ",
+          "change_pct": 4.28,
+          "net_inflow": null
+        },
+        {
+          "name": "卫浴电器",
+          "change_pct": 3.96,
+          "net_inflow": null
+        },
+        {
+          "name": "逆变器",
+          "change_pct": 2.72,
+          "net_inflow": null
+        },
+        {
+          "name": "油田服务",
+          "change_pct": 2.55,
+          "net_inflow": null
+        },
+        {
+          "name": "油服工程",
+          "change_pct": 2.54,
+          "net_inflow": null
+        },
+        {
+          "name": "油气及炼化工程",
+          "change_pct": 2.53,
+          "net_inflow": null
+        },
+        {
+          "name": "光伏发电",
+          "change_pct": 2.31,
+          "net_inflow": null
+        }
+      ],
+      "top_losers": [
+        {
+          "name": "铁路运输",
+          "change_pct": -1.05,
+          "net_outflow": null
+        },
+        {
+          "name": "IT服务Ⅱ",
+          "change_pct": -0.99,
+          "net_outflow": null
+        },
+        {
+          "name": "IT服务Ⅲ",
+          "change_pct": -0.99,
+          "net_outflow": null
+        },
+        {
+          "name": "酒店",
+          "change_pct": -0.97,
+          "net_outflow": null
+        },
+        {
+          "name": "风电零部件",
+          "change_pct": -0.95,
+          "net_outflow": null
+        },
+        {
+          "name": "通信网络设备及器件",
+          "change_pct": -0.94,
+          "net_outflow": null
+        },
+        {
+          "name": "光伏辅材",
+          "change_pct": -0.93,
+          "net_outflow": null
+        },
+        {
+          "name": "非银金融",
+          "change_pct": -0.91,
+          "net_outflow": null
+        },
+        {
+          "name": "公路货运",
+          "change_pct": -0.89,
+          "net_outflow": null
+        },
+        {
+          "name": "教育出版",
+          "change_pct": -0.88,
+          "net_outflow": null
+        }
+      ]
+    },
+    "market_summary": "三大指数集体收跌。上证指数跌1.39%报4006.55点，深成指跌2.02%，创业板指跌1.11%。行业板块28个上涨、34个下跌。油气开采Ⅲ领涨；铁路运输跌幅居前。",
+    "capital_flow_summary": "上涨个股505家，下跌个股4955家。",
+    "market_breadth": {
+      "up": 505,
+      "down": 4955,
+      "flat": 19
+    },
+    "rotation": {
+      "hot_sectors": [],
+      "cooling_sectors": [],
+      "summary": "暂无行业轮动因子数据"
+    }
+  }
+}
