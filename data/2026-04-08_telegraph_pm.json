@@ -1,0 +1,233 @@
+{
+  "report_type": "pm",
+  "report_date": "2026-04-08",
+  "generated_at": "2026-04-08T18:30:00",
+  "telegraph_count": 14,
+  "headline": "美伊停火初现曙光但以色列态度暧昧，全球风险资产大幅反弹，科技板块领涨",
+  "categories": [
+    {
+      "name": "国际事件",
+      "category_id": "INT",
+      "icon": "🌍",
+      "priority": "P1",
+      "impact": "bullish",
+      "summary": "美伊停火取得关键进展：以色列国防军宣布暂停打击伊朗，双方同意通过巴基斯坦斡旋谈判，首批船只已通过霍尔木兹海峡恢复通航。但以色列被曝希望战事再持续至少一个月，伊朗坚持十点计划为签约前提，停火前景存在不确定性。全球市场积极反应，美股期货涨超2.5%，科技股盘前领涨。",
+      "events": [
+        {
+          "id": 2337898,
+          "title": "以色列国防军宣布暂停打击伊朗",
+          "level": "B",
+          "priority": "P1",
+          "impact": "bullish",
+          "time": "16:02"
+        },
+        {
+          "id": 2337858,
+          "title": "伊朗议长将率团与美国谈判 美方由副总统万斯率团",
+          "level": "B",
+          "priority": "P1",
+          "impact": "bullish",
+          "time": "15:37"
+        },
+        {
+          "id": 2338087,
+          "title": "美伊同意停火后 首批船只通过霍尔木兹海峡",
+          "level": "B",
+          "priority": "P1",
+          "impact": "bullish",
+          "time": "17:50"
+        },
+        {
+          "id": 2337908,
+          "title": "以军称将遵守对伊朗的停火安排 同时继续打击黎真主党",
+          "level": "B",
+          "priority": "P1",
+          "impact": "bullish",
+          "time": "16:08"
+        },
+        {
+          "id": 2338064,
+          "title": "以色列被曝不愿收手 希望伊朗战事再持续至少一个月",
+          "level": "B",
+          "priority": "P1",
+          "impact": "bearish",
+          "time": "17:37"
+        },
+        {
+          "id": 2337893,
+          "title": "伊朗官员：若美不接受十点计划 最高领袖将不会批准停火协议",
+          "level": "B",
+          "priority": "P1.5",
+          "impact": "bearish",
+          "time": "15:59"
+        },
+        {
+          "id": 2337911,
+          "title": "伊朗向中方寻求安全保障？外交部回应",
+          "level": "B",
+          "priority": "P1.5",
+          "impact": "neutral",
+          "time": "16:10"
+        },
+        {
+          "id": 2337876,
+          "title": "美股股指期货涨幅扩大 标普涨2.5%纳指涨3.2%",
+          "level": "B",
+          "priority": "P2",
+          "impact": "bullish",
+          "time": "15:50"
+        },
+        {
+          "id": 2337897,
+          "title": "美股明星科技股盘前大涨 阿斯麦涨超6%",
+          "level": "B",
+          "priority": "P2",
+          "impact": "bullish",
+          "time": "16:00"
+        },
+        {
+          "id": 2337896,
+          "title": "美股芯片存储板块盘前普涨 美光、闪迪涨超8%",
+          "level": "B",
+          "priority": "P2",
+          "impact": "bullish",
+          "time": "16:00"
+        }
+      ]
+    },
+    {
+      "name": "产业政策",
+      "category_id": "IP",
+      "icon": "🏭",
+      "priority": "P1",
+      "impact": "neutral",
+      "summary": "国务院国资委新设境外国资工作局，加强央企国际化经营和境外资产监管，体现国资走出去战略深化。短期对市场影响有限，但中长期利好央企国际化布局。",
+      "events": [
+        {
+          "id": 2337888,
+          "title": "国务院国资委成立境外国资工作局",
+          "level": "B",
+          "priority": "P1",
+          "impact": "neutral",
+          "time": "15:55"
+        }
+      ]
+    },
+    {
+      "name": "大宗商品",
+      "category_id": "COM",
+      "icon": "🛢️",
+      "priority": "P2",
+      "impact": "bearish",
+      "summary": "停火预期下美股能源股盘前大跌6-8%，油价承压。但以色列不愿收手的消息可能限制油价下行空间。",
+      "events": [
+        {
+          "id": 2337906,
+          "title": "美股能源股盘前下跌 埃克森美孚雪佛龙均跌6%",
+          "level": "B",
+          "priority": "P2",
+          "impact": "bearish",
+          "time": "16:06"
+        }
+      ]
+    },
+    {
+      "name": "资金流向",
+      "category_id": "CF",
+      "icon": "💵",
+      "priority": "P2",
+      "impact": "neutral",
+      "summary": "南向资金大额净卖出200亿港元，但港股恒生指数仍收涨3.09%、恒生科技涨5.22%，显示市场风险偏好依然强劲，卖出可能是获利了结。",
+      "events": [
+        {
+          "id": 2337887,
+          "title": "南向资金净卖出额达200亿港元",
+          "level": "B",
+          "priority": "P2",
+          "impact": "bearish",
+          "time": "15:54"
+        },
+        {
+          "id": 2337910,
+          "title": "香港恒生指数收涨3.09% 恒生科技指数大涨5.22%",
+          "level": "B",
+          "priority": "P2",
+          "impact": "bullish",
+          "time": "16:10"
+        }
+      ]
+    }
+  ],
+  "sector_impact": [
+    {
+      "sector": "科技",
+      "direction": "bullish",
+      "logic": "美股科技股盘前领涨+港股科技指数大涨5.22%联动A股",
+      "actual_change": 6.67,
+      "verified": true,
+      "detail": "预测利好 → 实际+6.67% ✓"
+    },
+    {
+      "sector": "新能源",
+      "direction": "bullish",
+      "logic": "油价下行利好新能源替代逻辑，风险偏好回升利好成长",
+      "actual_change": 3.88,
+      "verified": true,
+      "detail": "预测利好 → 实际+3.88% ✓"
+    },
+    {
+      "sector": "金融",
+      "direction": "bullish",
+      "logic": "市场情绪大幅改善提振券商板块",
+      "actual_change": 4.3,
+      "verified": true,
+      "detail": "预测利好 → 实际+4.30% ✓"
+    },
+    {
+      "sector": "交运",
+      "direction": "bullish",
+      "logic": "霍尔木兹海峡恢复通航降低航运风险和成本",
+      "actual_change": 2.13,
+      "verified": true,
+      "detail": "预测利好 → 实际+2.13% ✓"
+    },
+    {
+      "sector": "有色金属",
+      "direction": "bullish",
+      "logic": "战争期间贵金属超跌后反弹+有色金属受益全球经济预期改善",
+      "actual_change": 5.95,
+      "verified": true,
+      "detail": "预测利好 → 实际+5.95% ✓"
+    },
+    {
+      "sector": "煤炭石油",
+      "direction": "bearish",
+      "logic": "停火缓解供应担忧油价下行，美股能源股大跌6-8%",
+      "actual_change": -2.09,
+      "verified": true,
+      "detail": "预测利空 → 实际-2.09% ✓"
+    },
+    {
+      "sector": "军工",
+      "direction": "neutral",
+      "logic": "停火利空但以色列不愿收手对冲，方向不明确",
+      "actual_change": 4.76,
+      "verified": false,
+      "detail": "预测中性 → 实际+4.76% ✗"
+    }
+  ],
+  "overall_assessment": "美伊停火是今日核心叙事，推动全球风险资产大幅反弹。以色列暂停打击伊朗后首批船只通过霍尔木兹海峡，航运恢复正常化，油价显著下行。美股期货涨幅扩大至2-3%，科技股领涨。但两个不确定因素值得关注：一是以色列被曝不愿收手希望再打一个月，二是伊朗坚持十点计划为前提。4月10日伊斯兰堡谈判将是关键节点。整体看，停火方向确立但进程可能反复，市场风险偏好短期改善明确。",
+  "trading_implications": "次日A股有望受风险偏好提振高开。重点关注科技板块（芯片/AI联动美股科技涨势）和新能源（油价下行替代逻辑）。交运板块受益航运正常化。回避煤炭石油板块短期压力。有色金属板块关注贵金属超跌反弹机会。军工方向不明确，观望为主。",
+  "risk_factors": [
+    "以色列不愿收手，停火可能随时破裂导致市场剧烈反转",
+    "4月10日伊斯兰堡谈判结果不及预期",
+    "南向资金大额净卖出200亿可能反映机构获利了结",
+    "A股今日百点长阳后短期有技术性回调压力"
+  ],
+  "verification": {
+    "accuracy": 85.7,
+    "correct": 6,
+    "total": 7,
+    "summary": "板块验证: 6/7 正确 (85.7%)"
+  }
+}
