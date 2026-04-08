@@ -859,6 +859,121 @@
             .zone-tab { flex: none; padding: 8px 12px; font-size: 0.8125rem; }
             .golden-detail, .message-detail { margin: 0 16px; }
         }
+
+        /* ========== Telegraph Module ========== */
+        .telegraph-toggle {
+            display: flex; gap: 4px; margin-top: 12px;
+            background: var(--color-bg-alt); border-radius: 8px; padding: 3px; width: fit-content;
+        }
+        .telegraph-toggle-btn {
+            padding: 6px 20px; border-radius: 6px; border: none; background: transparent;
+            font-size: 0.875rem; font-weight: 500; color: var(--color-text-secondary);
+            cursor: pointer; transition: all 0.15s ease;
+        }
+        .telegraph-toggle-btn.active {
+            background: var(--color-accent); color: #fff; box-shadow: var(--shadow-sm);
+        }
+        .telegraph-headline {
+            font-family: var(--font-serif); font-size: 20px; font-weight: 700;
+            color: var(--color-text); margin-bottom: 8px; line-height: 1.5;
+        }
+        .telegraph-category {
+            border: 1px solid var(--color-border); border-radius: var(--radius-md);
+            padding: 20px; margin-bottom: 16px; background: var(--color-surface);
+        }
+        .telegraph-category-title {
+            font-family: var(--font-serif); font-size: 1.05rem; font-weight: 600;
+            margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
+        }
+        .telegraph-accuracy {
+            font-size: 0.8125rem; font-weight: 500; color: var(--color-text-secondary);
+            background: var(--color-bg-alt); padding: 2px 8px; border-radius: 4px;
+        }
+        .telegraph-priority-tag {
+            display: inline-block; font-size: 14px; font-weight: 700;
+            padding: 1px 8px; border-radius: 4px; margin-right: 6px; line-height: 1.6;
+        }
+        .telegraph-priority-tag.p0 {
+            background: var(--color-bearish); color: #fff;
+        }
+        .telegraph-priority-tag.p1 {
+            background: transparent; color: var(--color-bearish);
+            border: 1.5px solid var(--color-bearish);
+        }
+        .telegraph-priority-tag.p1-5 {
+            background: transparent; color: var(--color-warning);
+            border: 1.5px solid var(--color-warning);
+        }
+        .telegraph-priority-tag.p2 {
+            background: var(--color-warning-bg); color: var(--color-warning);
+        }
+        .telegraph-impact-tag {
+            display: inline-block; font-size: 14px; font-weight: 700;
+            padding: 1px 8px; border-radius: 4px; margin-right: 6px; line-height: 1.6;
+        }
+        .telegraph-impact-tag.bullish {
+            background: var(--color-bullish); color: #fff;
+        }
+        .telegraph-impact-tag.bearish {
+            background: var(--color-bearish); color: #fff;
+        }
+        .telegraph-impact-tag.neutral {
+            background: var(--color-text-tertiary); color: #fff;
+        }
+        .telegraph-event {
+            display: flex; align-items: flex-start; gap: 8px; padding: 8px 0;
+            border-bottom: 1px solid var(--color-border-subtle);
+        }
+        .telegraph-event:last-child { border-bottom: none; }
+        .telegraph-event-time {
+            font-family: var(--font-mono); font-size: 0.8125rem; color: var(--color-text-tertiary);
+            flex-shrink: 0; min-width: 44px; padding-top: 2px;
+        }
+        .telegraph-event-title {
+            font-size: 0.9375rem; color: var(--color-text); line-height: 1.5; flex: 1;
+        }
+        .telegraph-sector-item {
+            padding: 10px 14px; margin-bottom: 8px; border-radius: var(--radius-sm);
+            border-left: 3px solid var(--color-text-tertiary); background: var(--color-surface);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .telegraph-sector-item.bullish { border-left-color: var(--color-bullish); }
+        .telegraph-sector-item.bearish { border-left-color: var(--color-bearish); }
+        .telegraph-sector-item.neutral { border-left-color: var(--color-text-tertiary); }
+        .telegraph-sector-item.verify-fail {
+            border-right: 3px solid var(--color-bearish); background: var(--color-bearish-bg);
+        }
+        .telegraph-sector-item.verify-ok {
+            background: var(--color-bullish-bg);
+        }
+        .telegraph-sector-name {
+            font-weight: 600; font-size: 0.9375rem;
+        }
+        .telegraph-sector-detail {
+            font-size: 0.8125rem; color: var(--color-text-secondary); margin-top: 2px;
+        }
+        .telegraph-sector-change {
+            font-family: var(--font-mono); font-size: 0.875rem; font-weight: 600;
+            text-align: right; flex-shrink: 0;
+        }
+        .telegraph-assessment {
+            background: var(--color-bg-alt); border-radius: var(--radius-sm);
+            padding: 14px 16px; margin-top: 12px; font-size: 0.9375rem; line-height: 1.7;
+        }
+        .telegraph-assessment-title {
+            font-weight: 600; margin-bottom: 6px; font-size: 0.9375rem;
+        }
+        .telegraph-risks {
+            background: var(--color-bearish-bg); border-radius: var(--radius-sm);
+            padding: 14px 16px; margin-top: 10px; font-size: 0.9375rem; line-height: 1.7;
+        }
+        .telegraph-risks-title {
+            font-weight: 600; margin-bottom: 6px; color: var(--color-bearish); font-size: 0.9375rem;
+        }
+        .telegraph-summary-box {
+            background: var(--color-surface); border: 1px solid var(--color-border);
+            border-radius: var(--radius-md); padding: 20px; margin-bottom: 16px;
+        }
     </style>
 </head>
 <body>
@@ -874,6 +989,7 @@
             <div class="nav-tabs">
                 <button class="nav-tab active" data-page="analysis">基本面分析</button>
                 <button class="nav-tab" data-page="compare">信号对比</button>
+                <button class="nav-tab" data-page="telegraph">宏观电报</button>
                 <button class="nav-tab" data-page="market">市场表现</button>
             </div>
         </div>
@@ -918,6 +1034,21 @@
         <div id="compare-content"></div>
     </div>
 
+    <!-- Page 5: 宏观电报 -->
+    <div id="page-telegraph" class="page">
+        <div class="page-header">
+            <h1 class="page-title">宏观电报</h1>
+            <p class="page-subtitle" id="telegraph-subtitle">财联社重要电报分析</p>
+            <div class="telegraph-toggle" id="telegraphToggle">
+                <button class="telegraph-toggle-btn active" data-type="pm">盘后报告</button>
+                <button class="telegraph-toggle-btn" data-type="am">晨间报告</button>
+            </div>
+        </div>
+        <div id="telegraph-content">
+            <div class="empty-state">暂无电报报告数据</div>
+        </div>
+    </div>
+
     <!-- Page 3: 市场表现 -->
     <div id="page-market" class="page">
         <div class="page-header">
@@ -949,8 +1080,136 @@
     let manifest = null;
     let currentData = null;
     let currentPage = 'analysis';
+    let telegraphData = null;
+    let telegraphType = 'pm';
 
     const $ = id => document.getElementById(id);
+
+    // ========== Telegraph Module ==========
+    function escHtml(s) {
+        if (!s) return '';
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+
+    function formatImpact(impact) {
+        if (!impact) return '';
+        const cls = impact === 'bullish' ? 'bullish' : impact === 'bearish' ? 'bearish' : 'neutral';
+        const label = impact === 'bullish' ? '利好' : impact === 'bearish' ? '利空' : '中性';
+        return '<span class="telegraph-impact-tag ' + cls + '">' + label + '</span>';
+    }
+
+    function formatDirection(dir) {
+        if (!dir) return '';
+        if (dir === 'bullish' || dir === 'up') return '<span style="color:var(--color-bullish)">&#9650;</span>';
+        if (dir === 'bearish' || dir === 'down') return '<span style="color:var(--color-bearish)">&#9660;</span>';
+        return '<span style="color:var(--color-text-tertiary)">&#9644;</span>';
+    }
+
+    function setupTelegraphToggle() {
+        document.querySelectorAll('.telegraph-toggle-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.telegraph-toggle-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                telegraphType = btn.dataset.type;
+                renderTelegraph();
+            });
+        });
+    }
+
+    function renderTelegraph() {
+        const container = $('telegraph-content');
+        if (!telegraphData || (!telegraphData.pm && !telegraphData.am)) {
+            container.innerHTML = '<div class="empty-state">暂无电报报告数据</div>';
+            return;
+        }
+        const data = telegraphData[telegraphType];
+        if (!data) {
+            container.innerHTML = '<div class="empty-state">暂无' + (telegraphType === 'pm' ? '盘后' : '晨间') + '报告数据</div>';
+            return;
+        }
+
+        let html = '';
+
+        // Headline
+        if (data.headline) {
+            html += '<div class="telegraph-headline">' + escHtml(data.headline) + '</div>';
+        }
+
+        // Summary / assessment at top
+        if (data.summary) {
+            html += '<div class="telegraph-summary-box">' + escHtml(data.summary) + '</div>';
+        }
+
+        // Events
+        if (data.events && data.events.length > 0) {
+            html += '<div class="telegraph-category"><div class="telegraph-category-title">重要事件</div>';
+            data.events.forEach(ev => {
+                const prCls = ev.priority === 'P0' ? 'p0' : ev.priority === 'P1' ? 'p1' : ev.priority === 'P1.5' ? 'p1-5' : 'p2';
+                html += '<div class="telegraph-event">';
+                if (ev.time) html += '<span class="telegraph-event-time">' + escHtml(ev.time) + '</span>';
+                html += '<span class="telegraph-priority-tag ' + prCls + '">' + escHtml(ev.priority || 'P2') + '</span>';
+                html += formatImpact(ev.impact);
+                html += '<span class="telegraph-event-title">' + escHtml(ev.title) + '</span>';
+                html += '</div>';
+            });
+            html += '</div>';
+        }
+
+        // Sectors - sort: bullish first, then neutral, then bearish
+        if (data.sectors && data.sectors.length > 0) {
+            const order = {bullish: 0, neutral: 1, bearish: 2};
+            const sorted = [...data.sectors].sort((a, b) => (order[a.direction] || 1) - (order[b.direction] || 1));
+
+            // Calculate accuracy if verification data exists
+            let verifiedCount = 0, correctCount = 0;
+            sorted.forEach(s => {
+                if (s.verified !== undefined) {
+                    verifiedCount++;
+                    if (s.verified) correctCount++;
+                }
+            });
+            const accText = verifiedCount > 0 ? ' <span class="telegraph-accuracy">准确率 ' + Math.round(correctCount / verifiedCount * 100) + '%（' + correctCount + '/' + verifiedCount + '）</span>' : '';
+
+            html += '<div class="telegraph-category"><div class="telegraph-category-title">板块影响' + accText + '</div>';
+            sorted.forEach(s => {
+                const dir = s.direction || 'neutral';
+                let cls = 'telegraph-sector-item ' + dir;
+                if (s.verified === true) cls += ' verify-ok';
+                else if (s.verified === false) cls += ' verify-fail';
+
+                html += '<div class="' + cls + '">';
+                html += '<div>';
+                html += '<div class="telegraph-sector-name">' + formatDirection(dir) + ' ' + escHtml(s.name) + '</div>';
+                if (s.reason) html += '<div class="telegraph-sector-detail">' + escHtml(s.reason) + '</div>';
+                html += '</div>';
+                if (s.change !== undefined && s.change !== null) {
+                    const chgColor = s.change > 0 ? 'var(--color-bearish)' : s.change < 0 ? 'var(--color-bullish)' : 'var(--color-text-secondary)';
+                    const sign = s.change > 0 ? '+' : '';
+                    html += '<div class="telegraph-sector-change" style="color:' + chgColor + '">' + sign + s.change.toFixed(2) + '%';
+                    if (s.verified === true) html += ' &#10003;';
+                    else if (s.verified === false) html += ' &#10007;';
+                    html += '</div>';
+                }
+                html += '</div>';
+            });
+            html += '</div>';
+        }
+
+        // Assessment
+        if (data.assessment) {
+            html += '<div class="telegraph-assessment"><div class="telegraph-assessment-title">综合评估</div>' + escHtml(data.assessment) + '</div>';
+        }
+
+        // Risks
+        if (data.risks && data.risks.length > 0) {
+            html += '<div class="telegraph-risks"><div class="telegraph-risks-title">风险提示</div>';
+            html += '<ul style="margin:0;padding-left:18px;">';
+            data.risks.forEach(r => { html += '<li>' + escHtml(r) + '</li>'; });
+            html += '</ul></div>';
+        }
+
+        container.innerHTML = html;
+    }
 
     // ========== Init ==========
     async function init() {
@@ -959,6 +1218,14 @@
             manifest = await fetchJSON('data/manifest.json');
             populateDatePicker();
             await loadReport(manifest.latest);
+            try {
+                telegraphData = {};
+                const pmData = await fetchJSON('data/' + manifest.latest + '_telegraph_pm.json').catch(() => null);
+                const amData = await fetchJSON('data/' + manifest.latest + '_telegraph_am.json').catch(() => null);
+                if (pmData) telegraphData.pm = pmData;
+                if (amData) telegraphData.am = amData;
+                renderTelegraph();
+            } catch(e) { console.log('No telegraph data:', e); }
         } catch (e) {
             $('loading').innerHTML = '<div class="empty-state">无法加载报告索引，请刷新重试</div>';
         }
@@ -978,6 +1245,7 @@
         document.querySelectorAll('.market-sub-tab').forEach(tab => {
             tab.addEventListener('click', () => switchMarketSub(tab.dataset.sub));
         });
+        setupTelegraphToggle();
     }
 
     function showPage(page) {
@@ -1004,6 +1272,7 @@
         $('loading').style.display = 'flex';
         $('page-analysis').classList.remove('active');
         $('page-compare').classList.remove('active');
+        $('page-telegraph').classList.remove('active');
         $('page-market').classList.remove('active');
 
         try {
@@ -1012,6 +1281,14 @@
             renderAnalysis(currentData);
             renderCompare(currentData);
             renderMarket(currentData);
+            try {
+                telegraphData = {};
+                const pmData = await fetchJSON('data/' + date + '_telegraph_pm.json').catch(() => null);
+                const amData = await fetchJSON('data/' + date + '_telegraph_am.json').catch(() => null);
+                if (pmData) telegraphData.pm = pmData;
+                if (amData) telegraphData.am = amData;
+                renderTelegraph();
+            } catch(e) { console.log('No telegraph data:', e); }
             showPage(currentPage);
             $('dateSelector').value = date;
         } catch (e) {
